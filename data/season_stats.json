@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-14",
-  "total_challenges": 446,
+  "last_updated": "2026-04-15",
+  "total_challenges": 447,
   "total_overturned": 62,
   "team_stats": {
     "CIN": {
@@ -64,7 +64,7 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 38,
+      "challenges": 39,
       "overturned": 4,
       "missed_calls": 19
     },
@@ -104,7 +104,7 @@
       "missed_calls": 0
     },
     "AZ": {
-      "challenges": 31,
+      "challenges": 32,
       "overturned": 2,
       "missed_calls": 19
     },
@@ -236,9 +236,9 @@
       "correct_rate": 0.0
     },
     "John Tumpane": {
-      "total": 4,
+      "total": 5,
       "correct": 3,
-      "correct_rate": 0.75
+      "correct_rate": 0.6
     },
     "Lance Barrett": {
       "total": 10,
