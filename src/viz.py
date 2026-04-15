@@ -201,54 +201,55 @@ def _draw_zone(ax: plt.Axes,
             ha="center", va="center",
             color="#4b5563", fontsize=4.5, fontweight="bold")
 
-    # ── Strike zone box (drawn twice: fill behind dots, border in front) ─────
-    # Fill layer (behind wrong-call dots, zorder=1)
+    # ── Wrong strikes (red — outside zone, drawn first) ──────────────────────
+    ws = ua.get("wrong_strike_coords", [])
+    if ws:
+        xs, zs = zip(*ws)
+        ax.scatter(xs, zs,
+                   s=22, color="#f85149", alpha=0.85,
+                   linewidths=0, zorder=2)
+
+    # ── Zone fill (opaque — covers any wrong-strike bleed into the zone) ──────
+    # zorder=3: above wrong strikes (2) but below wrong balls (4) and ABS dots (6)
     zone_fill = mpatches.Rectangle(
         (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
         ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
         linewidth=0,
         facecolor="#161b22",
-        zorder=1,
+        zorder=3,
     )
     ax.add_patch(zone_fill)
-    # Border layer (in front of wrong-call dots, zorder=5)
-    zone_border = mpatches.Rectangle(
-        (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
-        ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
-        linewidth=2.0,
-        edgecolor="#6e7681",
-        facecolor="none",
-        zorder=5,
-    )
-    ax.add_patch(zone_border)
 
-    # ── 3 × 3 quadrant grid inside zone ──────────────────────────────────────
+    # ── 3 × 3 quadrant grid (above fill) ─────────────────────────────────────
     w  = ZONE_HALF_WIDTH_FT
     dz = (_SZ_TOP - _SZ_BOT) / 3
     dx = w * 2 / 3
     for i in (1, 2):
         ax.plot([-w, w],
                 [_SZ_BOT + i * dz, _SZ_BOT + i * dz],
-                color="#2d333b", linewidth=0.8, zorder=5)
+                color="#2d333b", linewidth=0.8, zorder=4)
         ax.plot([-w + i * dx, -w + i * dx],
                 [_SZ_BOT, _SZ_TOP],
-                color="#2d333b", linewidth=0.8, zorder=5)
+                color="#2d333b", linewidth=0.8, zorder=4)
 
-    # ── Wrong strikes (red circles outside zone) ──────────────────────────────
-    ws = ua.get("wrong_strike_coords", [])
-    if ws:
-        xs, zs = zip(*ws)
-        ax.scatter(xs, zs,
-                   s=22, color="#f85149", alpha=0.72,
-                   linewidths=0, zorder=4)
+    # ── Zone border (above fill and grid) ─────────────────────────────────────
+    zone_border = mpatches.Rectangle(
+        (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
+        ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
+        linewidth=2.0,
+        edgecolor="#6e7681",
+        facecolor="none",
+        zorder=4,
+    )
+    ax.add_patch(zone_border)
 
-    # ── Wrong balls (gold circles inside zone) ────────────────────────────────
+    # ── Wrong balls (gold — inside zone, drawn above fill so they're visible) ─
     wb = ua.get("wrong_ball_coords", [])
     if wb:
         xb, zb = zip(*wb)
         ax.scatter(xb, zb,
-                   s=22, color="#e3b341", alpha=0.72,
-                   linewidths=0, zorder=4)
+                   s=22, color="#e3b341", alpha=0.85,
+                   linewidths=0, zorder=5)
 
     # ── ABS challenge dots ────────────────────────────────────────────────────
     for ch in abs_challenges:
