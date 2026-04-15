@@ -510,11 +510,14 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
     Scan every called pitch (Called Strike / Ball) in the game and evaluate
     whether the call was correct using the play-by-play pitch coordinates.
 
-    Returns a dict with total/correct/incorrect counts and accuracy %.
+    Returns counts, accuracy %, and pitch coordinates for every wrong call
+    so the viz can plot them on the unified zone diagram.
     Only pitches with valid coordinates are evaluated.
     """
     total = correct = incorrect = 0
-    wrong_strikes = wrong_balls = 0   # called strike outside / ball inside
+    wrong_strikes = wrong_balls = 0
+    wrong_strike_coords: list[tuple[float, float]] = []  # (px, pz) outside zone
+    wrong_ball_coords:   list[tuple[float, float]] = []  # (px, pz) inside zone
 
     for play in play_by_play.get("allPlays", []):
         for ev in play.get("playEvents", []):
@@ -522,7 +525,7 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
                 continue
 
             desc = (ev.get("details", {}).get("description") or "").lower().strip()
-            is_cs  = desc == "called strike"
+            is_cs   = desc == "called strike"
             is_ball = desc in ("ball", "ball in dirt")
             if not is_cs and not is_ball:
                 continue
@@ -543,24 +546,28 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
             total += 1
             if is_cs:
                 if in_zone:
-                    correct += 1       # called strike, pitch in zone ✓
+                    correct += 1
                 else:
                     incorrect += 1
-                    wrong_strikes += 1  # called strike, pitch outside ✗
+                    wrong_strikes += 1
+                    wrong_strike_coords.append((px, pz))
             else:  # called ball
                 if not in_zone:
-                    correct += 1       # called ball, pitch outside zone ✓
+                    correct += 1
                 else:
                     incorrect += 1
-                    wrong_balls += 1   # called ball, pitch inside zone ✗
+                    wrong_balls += 1
+                    wrong_ball_coords.append((px, pz))
 
     return {
-        "total_called":   total,
-        "correct":        correct,
-        "incorrect":      incorrect,
-        "accuracy_pct":   round(correct / total * 100, 1) if total else None,
-        "wrong_strikes":  wrong_strikes,   # called strike but outside zone
-        "wrong_balls":    wrong_balls,     # called ball but inside zone
+        "total_called":        total,
+        "correct":             correct,
+        "incorrect":           incorrect,
+        "accuracy_pct":        round(correct / total * 100, 1) if total else None,
+        "wrong_strikes":       wrong_strikes,
+        "wrong_balls":         wrong_balls,
+        "wrong_strike_coords": wrong_strike_coords,
+        "wrong_ball_coords":   wrong_ball_coords,
     }
 
 

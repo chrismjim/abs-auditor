@@ -125,8 +125,12 @@ def run_live(game_date: date, dry_run: bool = True,
 
             audit_result = audit_day(challenges, pitches_df, game_date,
                                      ump_accuracy=ump_accuracy)
-            audit_result["matchup"]  = matchup
-            audit_result["game_pk"]  = game_pk
+            audit_result["matchup"]    = matchup
+            audit_result["game_pk"]    = game_pk
+            audit_result["final_score"] = {
+                "away": game.get("teams", {}).get("away", {}).get("score"),
+                "home": game.get("teams", {}).get("home", {}).get("score"),
+            }
 
             season_stats = update_season_stats(audit_result)
 

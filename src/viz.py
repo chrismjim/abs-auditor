@@ -1,13 +1,11 @@
 """
-ABS Auditor — visualization (v2).
+ABS Auditor — visualization (v3).
 
-Per-game cards with:
-  • Matchup header (AWAY @ HOME) with team colour accents
-  • Strike zone panels with pitch location + edge-distance annotation
-  • Team colour accent on each panel (batting team)
-  • Outcome-coloured dots (brighter palette)
-  • Clean summary bar and legend
-  • Season leaderboard (Mondays / forced)
+Per-game card layout:
+  LEFT  (58%): Unified strike zone — every wrong strike + wrong ball plotted,
+               ABS challenges overlaid as larger labelled dots.
+  RIGHT (42%): Stats panel — ump accuracy, ABS challenge list.
+  FOOTER:      Legend + data source.
 """
 from __future__ import annotations
 
@@ -16,7 +14,7 @@ from datetime import date
 from pathlib import Path
 
 import matplotlib
-matplotlib.use("Agg")   # headless / no display
+matplotlib.use("Agg")
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import numpy as np
@@ -33,7 +31,6 @@ from src.config import (
     DPI,
     FIGURE_HEIGHT_PX,
     FIGURE_WIDTH_PX,
-    MAX_CHALLENGES_ON_CARD,
     OUTPUT_DIR,
     TEAM_COLORS,
     ZONE_HALF_WIDTH_FT,
@@ -41,31 +38,32 @@ from src.config import (
 
 log = logging.getLogger(__name__)
 
-FW = FIGURE_WIDTH_PX  / DPI
+FW = FIGURE_WIDTH_PX / DPI
 FH = FIGURE_HEIGHT_PX / DPI
+
+# Zone display bounds (ft from centre of plate) — tight crop around zone
+_ZX     = 1.35   # ± horizontal limit (clips <1% of edge outliers)
+_ZZ_BOT = 0.9
+_ZZ_TOP = 4.4
+
+# Standard zone for the background box (average MLB batter)
+_SZ_TOP = 3.5
+_SZ_BOT = 1.5
 
 OUTCOME_COLORS = {
     CORRECT_OVERTURN:   COLORS["correct"],
-    INCORRECT_OVERTURN: COLORS["missed"],
+    INCORRECT_OVERTURN: COLORS["highlight"],
     CORRECT_UPHELD:     COLORS["neutral"],
     MISSED_CALL:        COLORS["missed"],
     None:               COLORS["neutral"],
 }
 
-OUTCOME_LABELS = {
-    CORRECT_OVERTURN:   "Correct Overturn",
-    INCORRECT_OVERTURN: "Wrong Overturn",
-    CORRECT_UPHELD:     "Upheld ✓",
-    MISSED_CALL:        "Missed Call",
+OUTCOME_SHORT = {
+    CORRECT_OVERTURN:   "Overturned",
+    INCORRECT_OVERTURN: "Wrong OT",
+    CORRECT_UPHELD:     "Upheld",
+    MISSED_CALL:        "Missed",
     None:               "—",
-}
-
-OUTCOME_ICONS = {
-    CORRECT_OVERTURN:   "🟢",
-    INCORRECT_OVERTURN: "🟡",
-    CORRECT_UPHELD:     "⚪",
-    MISSED_CALL:        "🔴",
-    None:               "⚪",
 }
 
 
@@ -78,7 +76,6 @@ def _set_dark_bg(fig: plt.Figure, axes: list) -> None:
 
 
 def _last_name(full: str | None) -> str:
-    """Return last name (or full string if no space)."""
     if not full:
         return "?"
     parts = full.split()
@@ -90,182 +87,210 @@ def _team_color(abbr: str | None) -> str:
 
 
 def _parse_matchup(matchup: str | None) -> tuple[str, str]:
-    """Return (away_abbr, home_abbr) from 'AWAY @ HOME', or ('', '')."""
     if matchup and " @ " in matchup:
         away, _, home = matchup.partition(" @ ")
         return away.strip(), home.strip()
     return "", ""
 
 
-# ── Strike zone panel ─────────────────────────────────────────────────────────
-
-def draw_strike_zone(ax: plt.Axes, challenge: dict) -> None:
-    """Draw strike zone box + pitch dot. Caller is responsible for ax limits."""
-    sz_top = challenge.get("sz_top") or 3.5
-    sz_bot = challenge.get("sz_bot") or 1.5
-    px     = challenge.get("pitch_x")
-    pz     = challenge.get("pitch_z")
-    outcome = challenge.get("outcome")
-    edge_d  = challenge.get("edge_dist")
-
-    # Zone box
-    zone = mpatches.FancyBboxPatch(
-        (-ZONE_HALF_WIDTH_FT, sz_bot),
-        ZONE_HALF_WIDTH_FT * 2, sz_top - sz_bot,
-        boxstyle="square,pad=0",
-        linewidth=1.4,
-        edgecolor=COLORS["zone_edge"],
-        facecolor=COLORS["zone_fill"],
-        zorder=2,
-    )
-    ax.add_patch(zone)
-
-    # Inner zone quadrant lines (subtle)
-    mid_z = (sz_top + sz_bot) / 2
-    ax.plot([-ZONE_HALF_WIDTH_FT, ZONE_HALF_WIDTH_FT], [mid_z, mid_z],
-            color=COLORS["border"], linewidth=0.4, zorder=2)
-    ax.plot([0, 0], [sz_bot, sz_top],
-            color=COLORS["border"], linewidth=0.4, zorder=2)
-
-    # Pitch dot
-    if px is not None and pz is not None:
-        dot_color = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
-        ax.scatter([px], [pz], s=90, color=dot_color, zorder=5,
-                   linewidths=1.0, edgecolors="white")
-
-        # Edge-distance annotation inside the panel
-        if edge_d is not None:
-            d_in = abs(edge_d) * 12
-            loc  = "in" if edge_d > 0 else "out"
-            ax.text(
-                ZONE_HALF_WIDTH_FT + 0.33, sz_bot - 0.25,
-                f"{d_in:.1f}\"",
-                ha="right", va="top",
-                color=COLORS["text_muted"],
-                fontsize=5.5,
-                zorder=6,
-            )
-
-    pad_x = 0.42
-    pad_z = 0.52
-    ax.set_xlim(-ZONE_HALF_WIDTH_FT - pad_x, ZONE_HALF_WIDTH_FT + pad_x)
-    ax.set_ylim(sz_bot - pad_z, sz_top + pad_z)
-    ax.set_aspect("equal")
-    ax.axis("off")
-
-
 # ── Header ────────────────────────────────────────────────────────────────────
 
 def _draw_header(fig: plt.Figure, audit_result: dict, game_date: date) -> float:
-    """
-    Draw the matchup header and return the y-coordinate where content begins
-    (i.e. where the panel grid should start from the top).
-    """
     matchup  = audit_result.get("matchup", "")
     date_str = game_date.strftime("%B %-d, %Y").upper()
     away, home = _parse_matchup(matchup)
+    score    = audit_result.get("final_score", {}) or {}
+    away_sc  = score.get("away")
+    home_sc  = score.get("home")
 
     if away and home:
         away_c = _team_color(away)
         home_c = _team_color(home)
 
-        # Team colour accent bar spanning full width (split away | home)
         for x0, colour in [(0.0, away_c), (0.5, home_c)]:
-            bar = mpatches.Rectangle(
+            fig.add_artist(mpatches.Rectangle(
                 (x0, 0.892), 0.5, 0.009,
                 transform=fig.transFigure,
                 color=colour, alpha=0.9, zorder=4,
-            )
-            fig.add_artist(bar)
+            ))
 
-        # Away abbreviation (left-of-centre)
-        fig.text(
-            0.30, 0.950, away,
-            ha="center", va="center",
-            color=away_c,
-            fontsize=26, fontweight="bold",
-            transform=fig.transFigure,
-        )
-        # "@" separator
-        fig.text(
-            0.50, 0.948, "@",
-            ha="center", va="center",
-            color=COLORS["text_muted"],
-            fontsize=18,
-            transform=fig.transFigure,
-        )
-        # Home abbreviation (right-of-centre)
-        fig.text(
-            0.70, 0.950, home,
-            ha="center", va="center",
-            color=home_c,
-            fontsize=26, fontweight="bold",
-            transform=fig.transFigure,
-        )
-        # Sub-title: "ABS CHALLENGE AUDIT · DATE"
-        fig.text(
-            0.50, 0.905,
-            f"ABS CHALLENGE AUDIT  ·  {date_str}",
-            ha="center", va="center",
-            color=COLORS["text_muted"],
-            fontsize=9.5,
-            transform=fig.transFigure,
-        )
+        # Away abbreviation
+        fig.text(0.22, 0.950, away, ha="center", va="center",
+                 color=away_c, fontsize=26, fontweight="bold",
+                 transform=fig.transFigure)
+
+        # Score (if available)
+        if away_sc is not None and home_sc is not None:
+            score_str = f"{away_sc}  –  {home_sc}"
+            fig.text(0.50, 0.951, score_str, ha="center", va="center",
+                     color=COLORS["text"], fontsize=20, fontweight="bold",
+                     transform=fig.transFigure)
+        else:
+            fig.text(0.50, 0.948, "@", ha="center", va="center",
+                     color=COLORS["text_muted"], fontsize=18,
+                     transform=fig.transFigure)
+
+        # Home abbreviation
+        fig.text(0.78, 0.950, home, ha="center", va="center",
+                 color=home_c, fontsize=26, fontweight="bold",
+                 transform=fig.transFigure)
+
+        fig.text(0.50, 0.905,
+                 f"ABS CHALLENGE AUDIT  ·  {date_str}",
+                 ha="center", va="center",
+                 color=COLORS["text_muted"], fontsize=9.5,
+                 transform=fig.transFigure)
         content_top = 0.885
 
     else:
-        # No matchup (batch / daily mode)
-        fig.text(
-            0.50, 0.950,
-            "MLB ABS CHALLENGE AUDIT",
-            ha="center", va="center",
-            color=COLORS["text"],
-            fontsize=16, fontweight="bold",
-            transform=fig.transFigure,
-        )
-        fig.text(
-            0.50, 0.910, date_str,
-            ha="center", va="center",
-            color=COLORS["text_muted"],
-            fontsize=10,
-            transform=fig.transFigure,
-        )
+        fig.text(0.50, 0.950, "MLB ABS CHALLENGE AUDIT",
+                 ha="center", va="center",
+                 color=COLORS["text"], fontsize=16, fontweight="bold",
+                 transform=fig.transFigure)
+        fig.text(0.50, 0.910, date_str, ha="center", va="center",
+                 color=COLORS["text_muted"], fontsize=10,
+                 transform=fig.transFigure)
         content_top = 0.890
 
     return content_top
 
 
-# ── Summary bar + legend ──────────────────────────────────────────────────────
+# ── Unified zone diagram ──────────────────────────────────────────────────────
 
-def _add_summary_bar(fig: plt.Figure, summary: dict, matchup: str = "",
-                     ump_accuracy: dict | None = None) -> None:
+def _draw_unified_zone(ax: plt.Axes, abs_challenges: list[dict],
+                       ump_accuracy: dict) -> None:
     """
-    Three-line footer:
-      Line 1 — ABS challenge results
-      Line 2 — Full-game umpire accuracy
-      Line 3 — Data source
+    Single strike-zone axes showing:
+      • Small red ×  — every wrong strike (CS outside zone)
+      • Small yellow +  — every wrong ball (ball inside zone)
+      • Large coloured ●  — each ABS challenge (outcome colour)
     """
-    ua       = ump_accuracy or {}
-    total    = summary.get("total_challenges", 0)
-    overturn = summary.get("overturned", 0)
-    missed   = summary.get("missed_calls", 0)
-    upheld   = summary.get("correct_upheld", 0)
+    ua = ump_accuracy or {}
 
-    # Line 1: ABS challenges
-    if total == 0:
-        abs_line = "No ABS challenges this game"
-    else:
-        abs_line = (
-            f"ABS:  {total} challenge{'s' if total != 1 else ''}  ·  "
-            f"{overturn} overturned  ·  "
-            f"{missed} missed  ·  "
-            f"{upheld} upheld"
+    ax.set_facecolor(COLORS["bg"])
+    ax.set_xlim(-_ZX, _ZX)
+    ax.set_ylim(_ZZ_BOT, _ZZ_TOP)
+    ax.axis("off")
+
+    # ── Background: plate shadow ─────────────────────────────────────────────
+    plate_w = 17 / 12   # 17 inches = 1.4167 ft
+    plate_h = 0.15
+    ax.add_patch(mpatches.FancyBboxPatch(
+        (-plate_w / 2, _SZ_BOT - plate_h - 0.05), plate_w, plate_h,
+        boxstyle="square,pad=0",
+        linewidth=0, facecolor="#222b38", zorder=1,
+    ))
+
+    # ── Strike zone box ──────────────────────────────────────────────────────
+    ax.add_patch(mpatches.FancyBboxPatch(
+        (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
+        ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
+        boxstyle="square,pad=0",
+        linewidth=1.6, edgecolor=COLORS["zone_edge"],
+        facecolor=COLORS["zone_fill"], zorder=2,
+    ))
+
+    # Inner quadrant lines
+    mid_z = (_SZ_TOP + _SZ_BOT) / 2
+    for xs, xe, ys, ye in [
+        (-ZONE_HALF_WIDTH_FT, ZONE_HALF_WIDTH_FT, mid_z, mid_z),
+        (0, 0, _SZ_BOT, _SZ_TOP),
+    ]:
+        ax.plot([xs, xe], [ys, ye], color=COLORS["border"],
+                linewidth=0.5, zorder=2)
+
+    # ── Wrong strikes (small red ×) ──────────────────────────────────────────
+    ws_coords = ua.get("wrong_strike_coords", [])
+    if ws_coords:
+        xs, zs = zip(*ws_coords)
+        ax.scatter(xs, zs, marker="x", s=55, color=COLORS["missed"],
+                   linewidths=1.4, alpha=0.75, zorder=3,
+                   label=f"Wrong strike ({len(ws_coords)})")
+
+    # ── Wrong balls (small yellow +) ─────────────────────────────────────────
+    wb_coords = ua.get("wrong_ball_coords", [])
+    if wb_coords:
+        xb, zb = zip(*wb_coords)
+        ax.scatter(xb, zb, marker="+", s=55, color=COLORS["highlight"],
+                   linewidths=1.4, alpha=0.75, zorder=3,
+                   label=f"Wrong ball ({len(wb_coords)})")
+
+    # ── ABS challenges (large coloured dots with inning label) ───────────────
+    for ch in abs_challenges:
+        px = ch.get("pitch_x")
+        pz = ch.get("pitch_z")
+        if px is None or pz is None:
+            continue
+
+        outcome   = ch.get("outcome")
+        dot_color = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
+        half      = "T" if ch.get("half_inning") == "top" else "B"
+        inn       = ch.get("inning", "?")
+        cnt       = ch.get("count") or {}
+        b, s      = cnt.get("balls"), cnt.get("strikes")
+        cnt_str   = f"{b}-{s}" if b is not None else ""
+
+        # Large dot
+        ax.scatter([px], [pz], s=160, color=dot_color,
+                   linewidths=1.2, edgecolors="white", zorder=5)
+
+        # Inning label above dot
+        label = f"{half}{inn}" + (f"\n{cnt_str}" if cnt_str else "")
+        ax.annotate(
+            label,
+            xy=(px, pz),
+            xytext=(0, 11),
+            textcoords="offset points",
+            ha="center", va="bottom",
+            color=dot_color,
+            fontsize=5.5, fontweight="bold",
+            zorder=6,
         )
-    fig.text(0.50, 0.132, abs_line,
-             ha="center", va="center", color=COLORS["text"],
-             fontsize=8.5, transform=fig.transFigure)
 
-    # Line 2: Umpire full-game accuracy
+    # ── Zone label ───────────────────────────────────────────────────────────
+    ax.text(0, _SZ_BOT - 0.12, "STRIKE ZONE",
+            ha="center", va="top",
+            color=COLORS["text_muted"], fontsize=6, alpha=0.7)
+
+
+# ── Right stats panel ─────────────────────────────────────────────────────────
+
+def _draw_stats_panel(fig: plt.Figure, audit_result: dict,
+                      content_top: float) -> None:
+    """
+    Text panel occupying the right 40% of the card.
+    Shows ump accuracy breakdown + ABS challenge list.
+    """
+    ua       = audit_result.get("ump_accuracy", {}) or {}
+    abs_ch   = audit_result.get("abs_challenges", [])
+    mgr_ch   = audit_result.get("manager_challenges", [])
+    summary  = audit_result.get("summary", {})
+
+    x_left  = 0.700   # figure fraction
+    y_start = content_top - 0.02
+    line_h  = 0.068   # vertical step per line
+    y       = y_start
+
+    def _txt(text, x=x_left, dy=0, size=8.5, color=COLORS["text"],
+             weight="normal", alpha=1.0):
+        nonlocal y
+        fig.text(x + 0.005, y + dy, text,
+                 ha="left", va="top",
+                 color=color, fontsize=size, fontweight=weight,
+                 alpha=alpha, transform=fig.transFigure)
+
+    def _step(n=1):
+        nonlocal y
+        y -= line_h * n
+
+    # ── Divider ──────────────────────────────────────────────────────────────
+    fig.add_artist(mpatches.Rectangle(
+        (x_left - 0.014, 0.17), 0.002, content_top - 0.19,
+        transform=fig.transFigure,
+        color=COLORS["border"], zorder=3,
+    ))
+
+    # ── Umpire section ───────────────────────────────────────────────────────
     ump_name = ua.get("name")
     ump_tot  = ua.get("total_called", 0)
     ump_cor  = ua.get("correct", 0)
@@ -273,246 +298,163 @@ def _add_summary_bar(fig: plt.Figure, summary: dict, matchup: str = "",
     ws       = ua.get("wrong_strikes", 0)
     wb       = ua.get("wrong_balls", 0)
 
-    if ump_name and ump_tot >= 5 and ump_pct is not None:
-        ump_detail = ""
-        if ws or wb:
-            parts = []
-            if ws:
-                parts.append(f"{ws} wrong strike{'s' if ws != 1 else ''}")
-            if wb:
-                parts.append(f"{wb} wrong ball{'s' if wb != 1 else ''}")
-            ump_detail = "  (" + ", ".join(parts) + ")"
-        ump_line = (
-            f"HP Ump {ump_name}  ·  "
-            f"{ump_cor}/{ump_tot} called pitches correct ({ump_pct:.0f}%)"
-            f"{ump_detail}"
-        )
-        ump_color = COLORS["text"]
-    elif ump_name:
-        ump_line  = f"HP Ump: {ump_name}"
-        ump_color = COLORS["text_muted"]
-    else:
-        ump_line  = ""
-        ump_color = COLORS["text_muted"]
+    _txt("HP UMPIRE", size=7, color=COLORS["text_muted"], weight="bold")
+    _step(0.6)
 
-    if ump_line:
-        fig.text(0.50, 0.090, ump_line,
-                 ha="center", va="center", color=ump_color,
-                 fontsize=8, transform=fig.transFigure)
+    if ump_name:
+        _txt(ump_name, size=11, weight="bold")
+        _step(0.85)
 
-    # Line 3: data source
-    fig.text(0.50, 0.050,
-             "Data: MLB Stats API  +  Baseball Savant / Statcast",
-             ha="center", va="center", color=COLORS["text_muted"],
-             fontsize=6.5, transform=fig.transFigure)
+    if ump_tot >= 5 and ump_pct is not None:
+        pct_color = COLORS["correct"] if ump_pct >= 95 else \
+                    COLORS["highlight"] if ump_pct >= 88 else COLORS["missed"]
+        _txt(f"{ump_pct:.0f}%  accurate", size=14, color=pct_color, weight="bold")
+        _step(0.75)
+        _txt(f"{ump_cor} / {ump_tot} called pitches correct",
+             size=7.5, color=COLORS["text_muted"])
+        _step(0.75)
+
+    if ws:
+        _txt(f"✕  {ws} wrong strike{'s' if ws != 1 else ''}",
+             size=8, color=COLORS["missed"])
+        _step(0.75)
+    if wb:
+        _txt(f"+  {wb} wrong ball{'s' if wb != 1 else ''}",
+             size=8, color=COLORS["highlight"])
+        _step(0.75)
+
+    # Spacer
+    _step(0.4)
+
+    # ── ABS Challenges section ───────────────────────────────────────────────
+    if abs_ch:
+        _txt("ABS CHALLENGES", size=7, color=COLORS["text_muted"], weight="bold")
+        _step(0.65)
+
+        for ch in abs_ch:
+            outcome   = ch.get("outcome")
+            dot_color = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
+            short     = OUTCOME_SHORT.get(outcome, "—")
+            half      = "T" if ch.get("half_inning") == "top" else "B"
+            inn       = ch.get("inning", "?")
+            pitcher   = _last_name(ch.get("pitcher"))
+            batter    = _last_name(ch.get("batter"))
+            cnt       = ch.get("count") or {}
+            b, s      = cnt.get("balls"), cnt.get("strikes")
+            cnt_str   = f" {b}-{s}" if b is not None else ""
+            edge_d    = ch.get("edge_dist")
+            orig      = (ch.get("original_call") or "").lower()
+            call_w    = "CS" if "called strike" in orig else "Ball"
+
+            dist_str = ""
+            if edge_d is not None:
+                d_in = abs(edge_d) * 12
+                loc  = "in" if edge_d > 0 else "out"
+                dist_str = f"  {d_in:.1f}\"{loc}"
+
+            # Coloured dot marker + challenge line
+            fig.text(x_left + 0.005, y, "●",
+                     ha="left", va="top",
+                     color=dot_color, fontsize=9,
+                     transform=fig.transFigure)
+            fig.text(x_left + 0.023, y,
+                     f"{half}{inn}{cnt_str}  {pitcher}→{batter}",
+                     ha="left", va="top",
+                     color=COLORS["text"], fontsize=8, fontweight="bold",
+                     transform=fig.transFigure)
+            _step(0.60)
+            _txt(f"   {call_w}  ·  {short}{dist_str}",
+                 size=7, color=dot_color)
+            _step(0.75)
+
+    elif summary.get("no_challenges"):
+        _txt("ABS CHALLENGES", size=7, color=COLORS["text_muted"], weight="bold")
+        _step(0.65)
+        _txt("None this game ✓", size=8.5, color=COLORS["correct"])
+        _step(0.75)
+
+    # ── Manager challenges (brief) ───────────────────────────────────────────
+    if mgr_ch:
+        _step(0.3)
+        mgr_over = sum(1 for c in mgr_ch if c.get("outcome") == CORRECT_OVERTURN)
+        _txt("REPLAY CHALLENGES", size=7, color=COLORS["text_muted"], weight="bold")
+        _step(0.65)
+        _txt(f"{len(mgr_ch)} total  ·  {mgr_over} overturned",
+             size=8, color=COLORS["text"])
+        _step(0.75)
 
 
-def _add_legend(fig: plt.Figure) -> None:
-    items = [
-        (COLORS["correct"], "Correct Overturn"),
-        (COLORS["missed"],  "Missed Call / Wrong Overturn"),
-        (COLORS["neutral"], "Upheld Correctly"),
+# ── Footer ────────────────────────────────────────────────────────────────────
+
+def _add_footer(fig: plt.Figure, ump_accuracy: dict | None = None) -> None:
+    ua = ump_accuracy or {}
+
+    # Legend row
+    legend_items = [
+        (COLORS["missed"],    "×",  "Wrong Strike"),
+        (COLORS["highlight"], "+",  "Wrong Ball"),
+        (COLORS["correct"],   "●",  "ABS: Overturned"),
+        (COLORS["missed"],    "●",  "ABS: Missed"),
+        (COLORS["neutral"],   "●",  "ABS: Upheld"),
     ]
-    total_w = 0.80
+    n     = len(legend_items)
+    total_w = 0.88
     start_x = (1.0 - total_w) / 2
-    step    = total_w / len(items)
-    for i, (color, label) in enumerate(items):
+    step    = total_w / n
+
+    for i, (color, marker, label) in enumerate(legend_items):
         x = start_x + i * step + step / 2
-        fig.text(x - 0.03, 0.183, "●", color=color, fontsize=10,
-                 ha="right", va="center", transform=fig.transFigure)
-        fig.text(x - 0.025, 0.183, label, color=COLORS["text_muted"],
-                 fontsize=7, ha="left", va="center",
+        fig.text(x - 0.02, 0.155, marker,
+                 color=color, fontsize=9 if marker == "●" else 8,
+                 ha="right", va="center",
                  transform=fig.transFigure)
+        fig.text(x - 0.015, 0.155, label,
+                 color=COLORS["text_muted"], fontsize=6.5,
+                 ha="left", va="center",
+                 transform=fig.transFigure)
+
+    # Data source
+    fig.text(0.50, 0.045,
+             "Data: MLB Stats API  +  Baseball Savant / Statcast",
+             ha="center", va="center",
+             color=COLORS["text_muted"], fontsize=6.5,
+             transform=fig.transFigure)
 
 
 # ── Image 1: per-game audit card ──────────────────────────────────────────────
 
 def make_game_card(audit_result: dict, game_date: date,
                    game_pk: int | None = None) -> Path:
-    """
-    Generate one game's ABS challenge card.
-    game_pk is used to create a unique filename when multiple games are on the
-    same date (live mode).
-    """
     abs_challs = audit_result.get("abs_challenges", [])
-    summary    = audit_result.get("summary", {})
-    matchup    = audit_result.get("matchup", "")
-    away, home = _parse_matchup(matchup)
-
-    display_challs = abs_challs[:MAX_CHALLENGES_ON_CARD]
-    n = len(display_challs)
+    ua         = audit_result.get("ump_accuracy", {}) or {}
 
     fig = plt.figure(figsize=(FW, FH), dpi=DPI)
     _set_dark_bg(fig, [])
 
     content_top = _draw_header(fig, audit_result, game_date)
 
-    # ── No challenges ────────────────────────────────────────────────────────
-    if n == 0:
-        mgr        = audit_result.get("manager_challenges", [])
-        mgr_over   = sum(1 for c in mgr if c.get("outcome") == CORRECT_OVERTURN)
+    # ── Left: unified zone axes (70% of figure width) ───────────────────────
+    grid_bot = 0.18
+    ax_h     = content_top - 0.005 - grid_bot
+    ax = fig.add_axes([0.02, grid_bot, 0.66, ax_h])
+    _set_dark_bg(fig, [ax])
+    _draw_unified_zone(ax, abs_challs, ua)
 
-        if mgr:
-            body = (
-                f"No ABS challenges this game.\n\n"
-                f"Replay challenges: {mgr_over}/{len(mgr)} overturned."
-            )
-        else:
-            body = "No challenges this game — clean game ✓"
+    # ── Right: stats panel ───────────────────────────────────────────────────
+    _draw_stats_panel(fig, audit_result, content_top)
 
-        fig.text(
-            0.50, 0.50, body,
-            ha="center", va="center",
-            color=COLORS["text_muted"],
-            fontsize=14, fontstyle="italic",
-            multialignment="center",
-            transform=fig.transFigure,
-        )
-        _add_summary_bar(fig, summary, matchup,
-                         ump_accuracy=audit_result.get("ump_accuracy", {}))
-        _add_legend(fig)
-        pk_suffix = f"_{game_pk}" if game_pk else ""
-        out_path = OUTPUT_DIR / f"game_card_{game_date.isoformat()}{pk_suffix}.png"
-        plt.savefig(out_path, dpi=DPI, bbox_inches="tight", facecolor=COLORS["bg"])
-        plt.close(fig)
-        log.info("Saved game card → %s", out_path)
-        return out_path
-
-    # ── Grid layout ──────────────────────────────────────────────────────────
-    cols       = min(n, 3)
-    rows       = (n + cols - 1) // cols
-    grid_top   = content_top - 0.02
-    grid_bot   = 0.215
-    grid_h     = grid_top - grid_bot
-    row_h      = grid_h / rows
-    col_w      = 1.0 / cols
-
-    zone_frac  = 0.57   # fraction of cell height for the zone ax
-    label_frac = 0.38   # fraction of cell height for text below
-
-    axes: list[plt.Axes] = []
-
-    for idx, ch in enumerate(display_challs):
-        row = idx // cols
-        col = idx %  cols
-
-        # Figure-coord bounding box for this cell
-        cell_left   = col * col_w
-        cell_bottom = grid_top - (row + 1) * row_h
-        cell_width  = col_w
-        cell_height = row_h
-
-        # Zone axes (inset from cell edges for spacing)
-        pad = 0.015
-        ax_left   = cell_left   + pad
-        ax_bottom = cell_bottom + cell_height * (1 - zone_frac) + pad
-        ax_width  = cell_width  - pad * 2
-        ax_height = cell_height * zone_frac - pad * 2
-
-        ax = fig.add_axes([ax_left, ax_bottom, ax_width, ax_height])
-        ax.set_facecolor(COLORS["bg"])
-        axes.append(ax)
-
-        # Batting-team colour accent (top strip of zone ax)
-        batting_team = ch.get("away_team") if ch.get("half_inning") == "top" \
-                       else ch.get("home_team")
-        tc = _team_color(batting_team)
-        accent = mpatches.Rectangle(
-            (0, 0.94), 1.0, 0.06,
-            transform=ax.transAxes,
-            color=tc, alpha=0.55, zorder=6,
-        )
-        ax.add_patch(accent)
-
-        draw_strike_zone(ax, ch)
-
-        # ── Labels below zone ────────────────────────────────────────────────
-        outcome   = ch.get("outcome")
-        dot_color = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
-        label     = OUTCOME_LABELS.get(outcome, "—")
-        inning    = ch.get("inning", "?")
-        half      = "T" if ch.get("half_inning") == "top" else "B"
-        inn_str   = f"{half}{inning}"
-        pitcher_s = _last_name(ch.get("pitcher"))
-        batter_s  = _last_name(ch.get("batter"))
-        edge_d    = ch.get("edge_dist")
-
-        # Count and original call
-        cnt       = ch.get("count") or {}
-        b_cnt     = cnt.get("balls")
-        s_cnt     = cnt.get("strikes")
-        count_str = f"{b_cnt}-{s_cnt}" if b_cnt is not None else ""
-        orig      = (ch.get("original_call") or "").strip()
-        orig_low  = orig.lower()
-        if "called strike" in orig_low:
-            orig_short = "Called Strike"
-        elif "ball" in orig_low:
-            orig_short = "Ball"
-        else:
-            orig_short = orig[:12] if orig else ""
-
-        # Edge distance
-        dist_str = ""
-        if edge_d is not None:
-            d_in = abs(edge_d) * 12
-            loc  = "inside zone" if edge_d > 0 else "outside zone"
-            dist_str = f"  ·  {d_in:.1f}\" {loc}"
-
-        label_top    = cell_bottom + cell_height * (1 - zone_frac) - pad
-        label_center = cell_left + cell_width / 2
-
-        # Row 1: inning · count · original call
-        meta_parts = [inn_str]
-        if count_str:
-            meta_parts.append(count_str)
-        if orig_short:
-            meta_parts.append(orig_short)
-        fig.text(
-            label_center,
-            label_top - cell_height * label_frac * 0.10,
-            "  ·  ".join(meta_parts),
-            ha="center", va="top",
-            color=COLORS["text_muted"],
-            fontsize=6.5,
-            transform=fig.transFigure,
-        )
-
-        # Row 2: pitcher → batter
-        fig.text(
-            label_center,
-            label_top - cell_height * label_frac * 0.44,
-            f"{pitcher_s}  →  {batter_s}",
-            ha="center", va="top",
-            color=COLORS["text"],
-            fontsize=8, fontweight="bold",
-            transform=fig.transFigure,
-        )
-
-        # Row 3: outcome + edge distance (coloured)
-        fig.text(
-            label_center,
-            label_top - cell_height * label_frac * 0.80,
-            f"● {label}{dist_str}",
-            ha="center", va="top",
-            color=dot_color,
-            fontsize=6.5,
-            transform=fig.transFigure,
-        )
-
-    _set_dark_bg(fig, axes)
-    _add_summary_bar(fig, summary, matchup,
-                     ump_accuracy=audit_result.get("ump_accuracy", {}))
-    _add_legend(fig)
+    # ── Footer ───────────────────────────────────────────────────────────────
+    _add_footer(fig, ua)
 
     pk_suffix = f"_{game_pk}" if game_pk else ""
-    out_path = OUTPUT_DIR / f"game_card_{game_date.isoformat()}{pk_suffix}.png"
+    out_path  = OUTPUT_DIR / f"game_card_{game_date.isoformat()}{pk_suffix}.png"
     plt.savefig(out_path, dpi=DPI, bbox_inches="tight", facecolor=COLORS["bg"])
     plt.close(fig)
     log.info("Saved game card → %s", out_path)
     return out_path
 
 
-# Back-compat alias used by batch/daily mode
+# Back-compat alias
 def make_daily_card(audit_result: dict, game_date: date,
                     game_pk: int | None = None) -> Path:
     return make_game_card(audit_result, game_date, game_pk=game_pk)
@@ -521,15 +463,10 @@ def make_daily_card(audit_result: dict, game_date: date,
 # ── Image 2: Season leaderboard ───────────────────────────────────────────────
 
 def make_leaderboard(leaderboard_df: pd.DataFrame, game_date: date) -> Path | None:
-    """
-    Season-to-date ABS overturn rate by team (horizontal bar chart).
-    leaderboard_df: result of fetch.get_abs_leaderboard(), batter type.
-    """
     if leaderboard_df is None or leaderboard_df.empty:
         log.info("Leaderboard data empty — skipping")
         return None
 
-    # Aggregate batter rows to team level
     agg = (
         leaderboard_df
         .groupby("team_abbr", as_index=False)
@@ -541,7 +478,6 @@ def make_leaderboard(leaderboard_df: pd.DataFrame, game_date: date) -> Path | No
     agg = agg.sort_values("rate", ascending=True)
 
     if agg.empty:
-        log.info("No team ABS data — skipping leaderboard")
         return None
 
     teams  = agg["team_abbr"].tolist()
@@ -555,28 +491,22 @@ def make_leaderboard(leaderboard_df: pd.DataFrame, game_date: date) -> Path | No
 
     bar_colors = [TEAM_COLORS.get(t, COLORS["neutral"]) for t in teams]
     bar_h = max(0.35, min(0.72, 8.0 / n))
-
-    bars = ax.barh(teams, rates, color=bar_colors, height=bar_h, zorder=3,
-                   alpha=0.85)
+    bars  = ax.barh(teams, rates, color=bar_colors, height=bar_h,
+                    zorder=3, alpha=0.85)
 
     ax.xaxis.grid(True, color=COLORS["border"], linewidth=0.5, zorder=0)
     ax.set_axisbelow(True)
-
     max_rate = max(rates) if rates else 100
-    xlim = max(100, max_rate * 1.22)
-
+    xlim     = max(100, max_rate * 1.22)
     fs_label = max(6, min(9, int(200 / n)))
-    for bar, rate, cnt in zip(bars, rates, counts):
-        x = bar.get_width() + xlim * 0.015
-        ax.text(
-            x, bar.get_y() + bar.get_height() / 2,
-            f"{rate:.0f}%  ({cnt})",
-            va="center", ha="left",
-            color=COLORS["text"],
-            fontsize=fs_label,
-        )
 
-    # League average line
+    for bar, rate, cnt in zip(bars, rates, counts):
+        ax.text(bar.get_width() + xlim * 0.015,
+                bar.get_y() + bar.get_height() / 2,
+                f"{rate:.0f}%  ({cnt})",
+                va="center", ha="left",
+                color=COLORS["text"], fontsize=fs_label)
+
     league_rate = sum(agg["overturns"]) / sum(agg["challenges"]) * 100
     ax.axvline(league_rate, color=COLORS["highlight"], linewidth=1.4,
                linestyle="--", label=f"MLB avg {league_rate:.0f}%", zorder=4)
@@ -596,13 +526,11 @@ def make_leaderboard(leaderboard_df: pd.DataFrame, game_date: date) -> Path | No
         ax.spines[spine].set_color(COLORS["border"])
     ax.set_xlim(0, xlim)
 
-    fig.text(
-        0.50, 0.005,
-        "Source: Baseball Savant  |  ABS batter challenges aggregated by team  |  2026 season",
-        ha="center", va="bottom",
-        color=COLORS["text_muted"], fontsize=7,
-        transform=fig.transFigure,
-    )
+    fig.text(0.50, 0.005,
+             "Source: Baseball Savant  |  ABS batter challenges  |  2026 season",
+             ha="center", va="bottom",
+             color=COLORS["text_muted"], fontsize=7,
+             transform=fig.transFigure)
 
     out_path = OUTPUT_DIR / f"leaderboard_{game_date.isoformat()}.png"
     plt.savefig(out_path, dpi=DPI, bbox_inches="tight", facecolor=COLORS["bg"])
@@ -619,11 +547,6 @@ def generate_images(audit_result: dict, season_stats: dict,
                     force_leaderboard: bool = False,
                     game_pk: int | None = None,
                     ) -> dict[str, "Path | None"]:
-    """
-    Generate all images for one game (or a full day in batch mode).
-
-    Returns dict with keys 'daily_card' and 'leaderboard' (may be None).
-    """
     daily_card  = make_game_card(audit_result, game_date, game_pk=game_pk)
     leaderboard = None
     if (force_leaderboard or game_date.weekday() == 0) and leaderboard_df is not None:
