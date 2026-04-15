@@ -18,7 +18,6 @@ import numpy as np
 import pandas as pd
 
 from src.config import (
-    FOCUS_TEAM,
     SEASON_STATS,
     ZONE_HALF_WIDTH_FT,
 )
@@ -224,16 +223,6 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
     for u in umpire_stats.values():
         u["correct_rate"] = u["correct"] / u["total"] if u["total"] else 0.0
 
-    # ── Focus team challenges ─────────────────────────────────────────────────
-    focus_abs = [
-        c for c in abs_challenges
-        if c.get("home_team") == FOCUS_TEAM or c.get("away_team") == FOCUS_TEAM
-    ]
-    focus_mgr = [
-        c for c in manager_challenges
-        if c.get("home_team") == FOCUS_TEAM or c.get("away_team") == FOCUS_TEAM
-    ]
-
     # ── Storyline generation ──────────────────────────────────────────────────
     storylines = _generate_storylines(abs_challenges, umpire_stats, game_date)
 
@@ -243,8 +232,6 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
         "manager_challenges":  manager_challenges,
         "team_stats":          team_stats,
         "umpire_stats":        umpire_stats,
-        "focus_abs":           focus_abs,
-        "focus_mgr":           focus_mgr,
         "storylines":          storylines,
         "summary": {
             "total_challenges": len(abs_challenges),
@@ -262,36 +249,39 @@ def _generate_storylines(abs_challenges: list[dict], umpire_stats: dict,
     """Build 1-3 short storyline strings for the thread reply."""
     stories: list[str] = []
 
-    # Best/worst umpire crew
+    # Plate umpire accuracy for this game
     if umpire_stats:
-        sorted_umps = sorted(umpire_stats.items(),
-                             key=lambda x: x[1]["correct_rate"], reverse=True)
-        best_ump, best_stats = sorted_umps[0]
-        rate = best_stats["correct_rate"] * 100
-        if best_stats["total"] >= 2:
-            stories.append(
-                f"Umpire {best_ump} had the best accuracy rate ({rate:.0f}%)."
-            )
+        for ump, stats in umpire_stats.items():
+            if stats["total"] >= 2:
+                rate = stats["correct_rate"] * 100
+                stories.append(
+                    f"Plate ump {ump}: {stats['correct']}/{stats['total']} "
+                    f"calls correct ({rate:.0f}%)."
+                )
+                break   # only one plate ump per game
 
-    # Most notable missed call (closest pitch to zone that was wrongly upheld)
+    # Most notable missed call (pitch farthest outside zone that was wrongly upheld)
     missed = [c for c in abs_challenges if c.get("outcome") == MISSED_CALL
               and c.get("edge_dist") is not None]
     if missed:
         worst = max(missed, key=lambda c: abs(c["edge_dist"]))
-        dist_in = abs(worst["edge_dist"]) * 12  # ft → inches
-        inn = worst.get("inning", "?")
+        dist_in = abs(worst["edge_dist"]) * 12   # ft → inches
+        half    = "T" if worst.get("half_inning") == "top" else "B"
+        inn     = worst.get("inning", "?")
         stories.append(
-            f"Biggest missed call: {worst['pitcher']} vs {worst['batter']} "
-            f"(inning {inn}) — pitch was {dist_in:.1f}\" off the corner."
+            f"Biggest miss: {worst.get('pitcher','?')} → {worst.get('batter','?')} "
+            f"({half}{inn}) — pitch was {dist_in:.1f}\" outside the zone, call upheld."
         )
 
-    # Focus team performance
-    focus = [c for c in abs_challenges
-             if c.get("home_team") == FOCUS_TEAM or c.get("away_team") == FOCUS_TEAM]
-    if focus:
-        won = sum(1 for c in focus if c.get("outcome") == CORRECT_OVERTURN)
+    # Flag any incorrect overturns (ABS reversed a correct call)
+    wrong = [c for c in abs_challenges if c.get("outcome") == INCORRECT_OVERTURN]
+    if wrong:
+        c = wrong[0]
+        half = "T" if c.get("half_inning") == "top" else "B"
+        inn  = c.get("inning", "?")
         stories.append(
-            f"{FOCUS_TEAM} challenged {len(focus)} time(s), went {won}-for-{len(focus)}."
+            f"Questionable overturn: {c.get('pitcher','?')} → {c.get('batter','?')} "
+            f"({half}{inn}) — pitch was in the zone but call was reversed."
         )
 
     return stories

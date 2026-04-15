@@ -1,10 +1,11 @@
 """
 ABS Auditor — X (Twitter) posting via Tweepy v4+ OAuth 1.0a.
 
-Builds a 2-3 tweet thread:
-  Tweet 1: daily card image + summary caption
-  Tweet 2: top storyline reply
-  Tweet 3: focus-team breakdown (if applicable)
+Per-game thread (up to 3 tweets):
+  Tweet 1: game card image + headline stats
+  Tweet 2: storylines / notable plays
+  Tweet 3: pitch-by-pitch breakdown (if ≥ 2 ABS challenges)
+  + Leaderboard reply on Mondays
 """
 from __future__ import annotations
 
@@ -15,26 +16,19 @@ from datetime import date
 
 import tweepy
 
-from src.config import ACCOUNT_HANDLE, FOCUS_TEAM
-
 log = logging.getLogger(__name__)
 
 
 def _get_client() -> tuple[tweepy.Client, tweepy.API]:
-    """
-    Return (tweepy.Client, tweepy.API).
-    Client is used for v2 tweet creation; API (v1.1) for media upload.
-    """
+    """Return (tweepy.Client v2, tweepy.API v1.1)."""
     api_key    = os.environ["TWITTER_API_KEY"]
     api_secret = os.environ["TWITTER_API_SECRET"]
     acc_token  = os.environ["TWITTER_ACCESS_TOKEN"]
     acc_secret = os.environ["TWITTER_ACCESS_SECRET"]
 
-    # v1.1 API — needed for media_upload
     auth = tweepy.OAuth1UserHandler(api_key, api_secret, acc_token, acc_secret)
     api_v1 = tweepy.API(auth, wait_on_rate_limit=True)
 
-    # v2 client — for tweet creation with reply threading
     client = tweepy.Client(
         consumer_key=api_key,
         consumer_secret=api_secret,
@@ -46,147 +40,161 @@ def _get_client() -> tuple[tweepy.Client, tweepy.API]:
 
 
 def _upload_media(api_v1: tweepy.API, image_path: Path) -> str:
-    """Upload image via v1.1 endpoint, return media_id string."""
     media = api_v1.media_upload(filename=str(image_path))
     log.info("Uploaded media: %s → id=%s", image_path.name, media.media_id_string)
     return media.media_id_string
 
 
+def _team_tags(matchup: str | None) -> str:
+    """Return '#AWAY #HOME' hashtags from 'AWAY @ HOME' string."""
+    if matchup and " @ " in matchup:
+        away, _, home = matchup.partition(" @ ")
+        return f"#{away.strip()} #{home.strip()}"
+    return ""
+
+
 def _build_tweet1(audit_result: dict, game_date: date) -> str:
-    summary      = audit_result["summary"]
-    total        = summary["total_challenges"]
-    overturn     = summary["overturned"]
-    missed       = summary["missed_calls"]
-    date_str     = game_date.strftime("%B %-d, %Y")
-    mgr_challs   = audit_result.get("manager_challenges", [])
-    mgr_count    = len(mgr_challs)
-    mgr_over     = sum(1 for c in mgr_challs if c.get("outcome") == "correct_overturn")
+    summary  = audit_result.get("summary", {})
+    matchup  = audit_result.get("matchup", "")
+    total    = summary.get("total_challenges", 0)
+    overturn = summary.get("overturned", 0)
+    missed   = summary.get("missed_calls", 0)
+    date_str = game_date.strftime("%B %-d, %Y")
+    tags     = _team_tags(matchup)
+    mgr      = audit_result.get("manager_challenges", [])
+    mgr_over = sum(1 for c in mgr if c.get("outcome") == "correct_overturn")
 
-    if summary["no_challenges"] and mgr_count == 0:
-        return (
-            f"No challenges yesterday — clean game. ⚾\n"
-            f"#MLB #ABS #Statcast"
-        )
+    header = f"{matchup} — " if matchup else ""
 
-    if summary["no_challenges"] and mgr_count > 0:
-        # ABS not yet active / no ABS challenges — report manager challenges
+    if summary.get("no_challenges") and not mgr:
         return (
-            f"Challenge Audit — {date_str} ⚾\n"
-            f"ABS: no challenges\n"
-            f"Replay: {mgr_over}/{mgr_count} overturned\n"
-            f"#{FOCUS_TEAM} #MLB #ABS #Statcast"
-        )
+            f"{header}ABS Audit ⚾\n"
+            f"{date_str}\n\n"
+            f"No challenges this game — clean game.\n"
+            f"{tags} #MLB #ABS"
+        ).strip()
+
+    if summary.get("no_challenges") and mgr:
+        return (
+            f"{header}ABS Audit ⚾\n"
+            f"{date_str}\n\n"
+            f"No ABS challenges.\n"
+            f"Replay: {mgr_over}/{len(mgr)} overturned.\n"
+            f"{tags} #MLB #ABS"
+        ).strip()
 
     return (
-        f"ABS Challenge Audit — {date_str} ⚾\n"
-        f"{total} ABS challenge(s) | {overturn} overturned | {missed} missed call(s)\n"
-        f"🟢 correct overturn | 🔴 missed call | ⚪ upheld correctly\n"
-        f"#{FOCUS_TEAM} #MLB #ABS #Statcast"
-    )
+        f"{header}ABS Challenge Audit ⚾\n"
+        f"{date_str}\n\n"
+        f"{total} challenge{'s' if total != 1 else ''}  ·  "
+        f"{overturn} overturned  ·  "
+        f"{missed} missed call{'s' if missed != 1 else ''}\n"
+        f"🟢 correct overturn  🔴 missed call  ⚪ upheld\n"
+        f"{tags} #MLB #ABS #Statcast"
+    ).strip()
 
 
 def _build_tweet2(audit_result: dict) -> str | None:
+    """Storylines + manager challenge highlights."""
     stories = audit_result.get("storylines", [])
     mgr     = audit_result.get("manager_challenges", [])
+    lines: list[str] = list(stories[:3])
 
-    lines: list[str] = []
-    lines.extend(stories[:2])
-
-    # If no ABS storylines but manager challenges exist, summarise them
+    # Summarise manager challenges if no ABS storylines
     if not lines and mgr:
         over   = [c for c in mgr if c.get("outcome") == "correct_overturn"]
         upheld = [c for c in mgr if c.get("outcome") == "correct_upheld"]
-        lines.append(
-            f"Replay challenges: {len(over)} overturned, {len(upheld)} upheld."
-        )
-        # Most interesting overturn
+        lines.append(f"Replay challenges: {len(over)} overturned, {len(upheld)} upheld.")
         if over:
             c = over[0]
-            subtype = c.get("challenge_subtype", "")
             lines.append(
-                f"Notable: {c.get('challenger', '?')} ({subtype}) — overturned."
+                f"Notable: {c.get('challenger','?')} "
+                f"({c.get('challenge_subtype','')}) — overturned."
             )
 
     return "\n".join(lines) if lines else None
 
 
-def _build_tweet3(audit_result: dict, game_date: date) -> str | None:
-    focus_abs = audit_result.get("focus_abs", [])
-    if not focus_abs:
+def _build_tweet3(audit_result: dict) -> str | None:
+    """
+    Pitch-by-pitch breakdown for games with ≥ 2 ABS challenges.
+    Replaces the old focus-team breakdown.
+    """
+    challs = audit_result.get("abs_challenges", [])
+    if len(challs) < 2:
         return None
 
-    lines = [f"{FOCUS_TEAM} challenge breakdown:"]
-    for ch in focus_abs[:4]:
-        pitcher = ch.get("pitcher", "?")
-        batter  = ch.get("batter", "?")
-        inning  = ch.get("inning", "?")
+    outcome_icon = {
+        "correct_overturn":   "🟢",
+        "incorrect_overturn": "🟡",
+        "correct_upheld":     "⚪",
+        "missed_call":        "🔴",
+    }
+
+    lines = ["Challenge breakdown:"]
+    for ch in challs[:5]:
         half    = "T" if ch.get("half_inning") == "top" else "B"
-        outcome_label = {
-            "correct_overturn":   "✅ Overturned (correct)",
-            "incorrect_overturn": "⚠️ Overturned (was right)",
-            "correct_upheld":     "✅ Upheld (correct)",
-            "missed_call":        "❌ Upheld (missed call)",
-        }.get(ch.get("outcome") or "", "— unknown")
+        inn     = ch.get("inning", "?")
+        pitcher = ch.get("pitcher", "?").split()[-1]
+        batter  = ch.get("batter", "?").split()[-1]
+        outcome = ch.get("outcome") or ""
+        icon    = outcome_icon.get(outcome, "⚪")
+        edge_d  = ch.get("edge_dist")
 
-        dist = ch.get("edge_dist")
-        dist_str = f"  {abs(dist)*12:.1f}\" from edge" if dist is not None else ""
+        dist_str = ""
+        if edge_d is not None:
+            d_in = abs(edge_d) * 12
+            loc  = "in" if edge_d > 0 else "out"
+            dist_str = f" ({d_in:.1f}\" {loc})"
 
-        lines.append(f"• {half}{inning}  {pitcher} → {batter}: {outcome_label}{dist_str}")
+        lines.append(f"• {half}{inn}  {pitcher} → {batter}: {icon}{dist_str}")
 
     return "\n".join(lines)
-
-
-def _season_totals_line(audit_result: dict) -> str:
-    # Caller should pass season stats but we fall back gracefully
-    return "Season totals available in data/season_stats.json"
 
 
 def post_thread(audit_result: dict, images: dict, game_date: date,
                 dry_run: bool = True) -> list[str]:
     """
-    Post the full thread.
-
-    dry_run=True (default) — logs tweet text and saves images but does NOT post.
-    Returns list of tweet IDs (or fake IDs in dry-run mode).
+    Post the full thread for one game.
+    dry_run=True (default) — logs content but does NOT post.
+    Returns list of tweet IDs.
     """
     tweet1_text = _build_tweet1(audit_result, game_date)
     tweet2_text = _build_tweet2(audit_result)
-    tweet3_text = _build_tweet3(audit_result, game_date)
+    tweet3_text = _build_tweet3(audit_result)
 
     daily_card  = images.get("daily_card")
     leaderboard = images.get("leaderboard")
 
     if dry_run:
-        log.info("=== DRY RUN — no tweets will be posted ===")
+        log.info("=== DRY RUN — no tweets posted ===")
         log.info("── Tweet 1 ──\n%s", tweet1_text)
         if tweet2_text:
             log.info("── Tweet 2 ──\n%s", tweet2_text)
         if tweet3_text:
             log.info("── Tweet 3 ──\n%s", tweet3_text)
         if daily_card:
-            log.info("Image 1: %s", daily_card)
+            log.info("Image: %s", daily_card)
         if leaderboard:
-            log.info("Image 2: %s", leaderboard)
+            log.info("Leaderboard: %s", leaderboard)
         return ["dry-run-id-1", "dry-run-id-2", "dry-run-id-3"]
 
-    # ── Live posting ──────────────────────────────────────────────────────
+    # ── Live posting ──────────────────────────────────────────────────────────
     try:
         client, api_v1 = _get_client()
     except KeyError as exc:
         raise RuntimeError(
-            f"Missing Twitter credential env var: {exc}. "
-            "Set TWITTER_API_KEY, TWITTER_API_SECRET, "
-            "TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_SECRET."
+            f"Missing Twitter credential: {exc}. "
+            "Set TWITTER_API_KEY / SECRET and TWITTER_ACCESS_TOKEN / SECRET."
         ) from exc
 
     tweet_ids: list[str] = []
 
-    # ── Tweet 1: daily card image + caption ───────────────────────────────
+    # Tweet 1: card image + stats
     media_ids: list[str] = []
-    if daily_card and daily_card.exists():
+    if daily_card and Path(daily_card).exists():
         try:
-            mid = _upload_media(api_v1, daily_card)
-            media_ids.append(mid)
+            media_ids.append(_upload_media(api_v1, Path(daily_card)))
         except Exception as exc:
             log.warning("Media upload failed: %s", exc)
 
@@ -202,7 +210,7 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
         log.error("Failed to post tweet 1: %s", exc)
         raise
 
-    # ── Tweet 2: storyline reply ───────────────────────────────────────────
+    # Tweet 2: storylines
     if tweet2_text:
         try:
             t2 = client.create_tweet(
@@ -215,7 +223,7 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
         except Exception as exc:
             log.warning("Failed to post tweet 2: %s", exc)
 
-    # ── Tweet 3: focus team breakdown ─────────────────────────────────────
+    # Tweet 3: pitch-by-pitch breakdown
     if tweet3_text:
         try:
             t3 = client.create_tweet(
@@ -228,31 +236,31 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
         except Exception as exc:
             log.warning("Failed to post tweet 3: %s", exc)
 
-    # ── Leaderboard reply (Mondays) ────────────────────────────────────────
-    if leaderboard and leaderboard.exists():
+    # Leaderboard reply (Mondays)
+    if leaderboard and Path(leaderboard).exists():
         try:
-            lb_mid = _upload_media(api_v1, leaderboard)
+            lb_mid = _upload_media(api_v1, Path(leaderboard))
             lb_text = (
-                f"Season challenge leaderboard as of {game_date.strftime('%B %-d')} ⚾\n"
-                f"#{FOCUS_TEAM} #MLB #ABS #Statcast"
+                f"Season ABS challenge leaderboard — "
+                f"{game_date.strftime('%B %-d, %Y')} ⚾\n"
+                f"#MLB #ABS #Statcast"
             )
             lb = client.create_tweet(
                 text=lb_text,
                 in_reply_to_tweet_id=tweet_ids[0],
                 media_ids=[lb_mid],
             )
-            lb_id = str(lb.data["id"])
-            tweet_ids.append(lb_id)
-            log.info("Posted leaderboard tweet: id=%s", lb_id)
+            tweet_ids.append(str(lb.data["id"]))
+            log.info("Posted leaderboard: id=%s", lb.data["id"])
         except Exception as exc:
-            log.warning("Failed to post leaderboard tweet: %s", exc)
+            log.warning("Failed to post leaderboard: %s", exc)
 
     return tweet_ids
 
 
 def post_error_tweet(message: str, dry_run: bool = True) -> None:
-    """Post a brief failure notification so you know the pipeline broke."""
-    text = f"⚠️ ABS Auditor pipeline failed:\n{message[:200]}"
+    """Post a brief failure notification."""
+    text = f"⚠️ ABS Auditor pipeline error:\n{message[:200]}"
     if dry_run:
         log.info("DRY RUN error tweet:\n%s", text)
         return

@@ -1,15 +1,14 @@
-name: ABS Auditor — daily catch-up
-
-# Runs at 8 AM ET (12:00 UTC) to catch any games missed by the live runner.
-# Uses --live mode for yesterday so it only posts games not already in posted_games.json.
+name: ABS Auditor — live (per-game)
 
 on:
   schedule:
-    - cron: "0 12 * * *"
-  workflow_dispatch:
+    # Every 20 min during MLB game hours: 11 AM – 1 AM ET = 15:00–06:00 UTC
+    - cron: "*/20 15-23 * * *"
+    - cron: "*/20 0-6  * * *"
+  workflow_dispatch:   # manual trigger
 
 jobs:
-  catchup:
+  live:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,15 +32,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run catch-up (yesterday, live mode)
+      - name: Run live pipeline
         env:
           TWITTER_API_KEY:       ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET:    ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN:  ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
-        run: |
-          YESTERDAY=$(python -c "from datetime import date,timedelta; print((date.today()-timedelta(1)).isoformat())")
-          python main.py --live --post --date "$YESTERDAY"
+        run: python main.py --live --post
 
       - name: Commit state files
         run: |
@@ -49,21 +46,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/season_stats.json data/posted_games.json || true
           git diff --staged --quiet || \
-            git commit -m "Catch-up state update [$(date -u +%Y-%m-%d)]"
+            git commit -m "Live run state update [$(date -u +%Y-%m-%dT%H:%M)]"
           git push || echo "Nothing to push"
 
       - name: Upload output images
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: catchup-output-${{ github.run_id }}
+          name: live-output-${{ github.run_id }}
           path: output/
-          retention-days: 7
-
-      - name: Upload error log on failure
-        uses: actions/upload-artifact@v4
-        if: failure()
-        with:
-          name: error-log-${{ github.run_id }}
-          path: data/error_log.txt
-          retention-days: 14
+          retention-days: 3
