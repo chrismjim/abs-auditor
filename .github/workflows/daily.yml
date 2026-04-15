@@ -1,0 +1,67 @@
+name: ABS Auditor — daily run
+
+on:
+  schedule:
+    # 7 AM ET = 12:00 UTC (EST) / 11:00 UTC (EDT)
+    # Running at 12 UTC covers both; game data is finalised by then.
+    - cron: "0 12 * * *"
+  workflow_dispatch:   # manual trigger for testing
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit season_stats.json back
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          TWITTER_API_KEY:    ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN:  ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+        run: python main.py --post
+
+      - name: Commit updated season stats
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/season_stats.json || true
+          git diff --staged --quiet || \
+            git commit -m "Update season stats [$(date -u +%Y-%m-%d)]"
+          git push || echo "Nothing to push"
+
+      - name: Upload output images as artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-output-${{ github.run_id }}
+          path: output/
+          retention-days: 7
+
+      - name: Upload error log on failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: error-log-${{ github.run_id }}
+          path: data/error_log.txt
+          retention-days: 14
