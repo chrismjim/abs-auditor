@@ -1,0 +1,524 @@
+{
+  "last_updated": "2026-04-13",
+  "total_challenges": 295,
+  "total_overturned": 58,
+  "team_stats": {
+    "CIN": {
+      "challenges": 12,
+      "overturned": 2,
+      "missed_calls": 3
+    },
+    "PIT": {
+      "challenges": 12,
+      "overturned": 3,
+      "missed_calls": 1
+    },
+    "TB": {
+      "challenges": 18,
+      "overturned": 3,
+      "missed_calls": 3
+    },
+    "ATL": {
+      "challenges": 19,
+      "overturned": 2,
+      "missed_calls": 5
+    },
+    "ATH": {
+      "challenges": 23,
+      "overturned": 5,
+      "missed_calls": 2
+    },
+    "NYM": {
+      "challenges": 22,
+      "overturned": 3,
+      "missed_calls": 7
+    },
+    "SEA": {
+      "challenges": 24,
+      "overturned": 4,
+      "missed_calls": 5
+    },
+    "TEX": {
+      "challenges": 15,
+      "overturned": 2,
+      "missed_calls": 4
+    },
+    "LAD": {
+      "challenges": 15,
+      "overturned": 4,
+      "missed_calls": 4
+    },
+    "CHC": {
+      "challenges": 19,
+      "overturned": 5,
+      "missed_calls": 2
+    },
+    "NYY": {
+      "challenges": 26,
+      "overturned": 4,
+      "missed_calls": 6
+    },
+    "SF": {
+      "challenges": 18,
+      "overturned": 5,
+      "missed_calls": 1
+    },
+    "BAL": {
+      "challenges": 23,
+      "overturned": 4,
+      "missed_calls": 6
+    },
+    "TOR": {
+      "challenges": 18,
+      "overturned": 6,
+      "missed_calls": 1
+    },
+    "STL": {
+      "challenges": 24,
+      "overturned": 3,
+      "missed_calls": 5
+    },
+    "PHI": {
+      "challenges": 20,
+      "overturned": 3,
+      "missed_calls": 3
+    },
+    "CWS": {
+      "challenges": 15,
+      "overturned": 5,
+      "missed_calls": 2
+    },
+    "BOS": {
+      "challenges": 19,
+      "overturned": 1,
+      "missed_calls": 2
+    },
+    "MIA": {
+      "challenges": 17,
+      "overturned": 3,
+      "missed_calls": 8
+    },
+    "WSH": {
+      "challenges": 8,
+      "overturned": 1,
+      "missed_calls": 0
+    },
+    "AZ": {
+      "challenges": 16,
+      "overturned": 2,
+      "missed_calls": 6
+    },
+    "LAA": {
+      "challenges": 22,
+      "overturned": 2,
+      "missed_calls": 8
+    },
+    "MIN": {
+      "challenges": 39,
+      "overturned": 10,
+      "missed_calls": 5
+    },
+    "CLE": {
+      "challenges": 33,
+      "overturned": 6,
+      "missed_calls": 8
+    },
+    "HOU": {
+      "challenges": 18,
+      "overturned": 5,
+      "missed_calls": 4
+    },
+    "SD": {
+      "challenges": 16,
+      "overturned": 3,
+      "missed_calls": 3
+    },
+    "DET": {
+      "challenges": 23,
+      "overturned": 7,
+      "missed_calls": 3
+    },
+    "KC": {
+      "challenges": 19,
+      "overturned": 5,
+      "missed_calls": 4
+    },
+    "COL": {
+      "challenges": 20,
+      "overturned": 5,
+      "missed_calls": 2
+    },
+    "MIL": {
+      "challenges": 17,
+      "overturned": 3,
+      "missed_calls": 3
+    }
+  },
+  "umpire_stats": {
+    "Brennan Miller": {
+      "total": 7,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Nate Tomlinson": {
+      "total": 9,
+      "correct": 5,
+      "correct_rate": 0.5555555555555556
+    },
+    "Ryan Additon": {
+      "total": 7,
+      "correct": 2,
+      "correct_rate": 0.2857142857142857
+    },
+    "Dan Iassogna": {
+      "total": 11,
+      "correct": 5,
+      "correct_rate": 0.45454545454545453
+    },
+    "Willie Traynor": {
+      "total": 8,
+      "correct": 8,
+      "correct_rate": 1.0
+    },
+    "Jim Wolf": {
+      "total": 8,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Nic Lentz": {
+      "total": 7,
+      "correct": 2,
+      "correct_rate": 0.2857142857142857
+    },
+    "Adrian Johnson": {
+      "total": 6,
+      "correct": 1,
+      "correct_rate": 0.16666666666666666
+    },
+    "Laz Diaz": {
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8
+    },
+    "Chris Conroy": {
+      "total": 2,
+      "correct": 1,
+      "correct_rate": 0.5
+    },
+    "Chris Guccione": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "James Hoye": {
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6
+    },
+    "Lance Barksdale": {
+      "total": 5,
+      "correct": 5,
+      "correct_rate": 1.0
+    },
+    "Chad Fairchild": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Marvin Hudson": {
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8
+    },
+    "Doug Eddings": {
+      "total": 2,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "John Tumpane": {
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75
+    },
+    "Lance Barrett": {
+      "total": 6,
+      "correct": 4,
+      "correct_rate": 0.6666666666666666
+    },
+    "Will Little": {
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6
+    },
+    "Cory Blaser": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "David Rackley": {
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8
+    },
+    "Tripp Gibson": {
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6
+    },
+    "Brian O'Nora": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "D.J. Reyburn": {
+      "total": 4,
+      "correct": 1,
+      "correct_rate": 0.25
+    },
+    "CB Bucknor": {
+      "total": 1,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Rob Drake": {
+      "total": 2,
+      "correct": 1,
+      "correct_rate": 0.5
+    },
+    "Bruce Dreckman": {
+      "total": 6,
+      "correct": 2,
+      "correct_rate": 0.3333333333333333
+    },
+    "Chad Whitson": {
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6
+    },
+    "Malachi Moore": {
+      "total": 7,
+      "correct": 4,
+      "correct_rate": 0.5714285714285714
+    },
+    "Chris Segal": {
+      "total": 7,
+      "correct": 4,
+      "correct_rate": 0.5714285714285714
+    },
+    "Gabe Morales": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Ryan Blakney": {
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75
+    },
+    "Adam Beck": {
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6
+    },
+    "Carlos Torres": {
+      "total": 8,
+      "correct": 6,
+      "correct_rate": 0.75
+    },
+    "Nestor Ceja": {
+      "total": 5,
+      "correct": 5,
+      "correct_rate": 1.0
+    },
+    "Ryan Wills": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Ron Kulpa": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Emil Jimenez": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Erich Bacchus": {
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75
+    },
+    "Dan Bellino": {
+      "total": 5,
+      "correct": 1,
+      "correct_rate": 0.2
+    },
+    "Vic Carapazza": {
+      "total": 4,
+      "correct": 2,
+      "correct_rate": 0.5
+    },
+    "Mike Estabrook": {
+      "total": 2,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Jordan Baker": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Mark Ripperger": {
+      "total": 7,
+      "correct": 6,
+      "correct_rate": 0.8571428571428571
+    },
+    "Hunter Wendelstedt": {
+      "total": 4,
+      "correct": 2,
+      "correct_rate": 0.5
+    },
+    "Bill Miller": {
+      "total": 3,
+      "correct": 1,
+      "correct_rate": 0.3333333333333333
+    },
+    "Alfonso M\u00e1rquez": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Shane Livensparger": {
+      "total": 3,
+      "correct": 1,
+      "correct_rate": 0.3333333333333333
+    },
+    "Manny Gonzalez": {
+      "total": 7,
+      "correct": 1,
+      "correct_rate": 0.14285714285714285
+    },
+    "Andy Fletcher": {
+      "total": 7,
+      "correct": 3,
+      "correct_rate": 0.42857142857142855
+    },
+    "Quinn Wolcott": {
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75
+    },
+    "Tom Hanahan": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Dan Merzel": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Jeremie Rehak": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "Ramon De Jesus": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Edwin Moscoso": {
+      "total": 5,
+      "correct": 5,
+      "correct_rate": 1.0
+    },
+    "Charlie Ramos": {
+      "total": 9,
+      "correct": 6,
+      "correct_rate": 0.6666666666666666
+    },
+    "Junior Valentine": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Todd Tichenor": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Nick Mahrley": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Alex Tosi": {
+      "total": 3,
+      "correct": 1,
+      "correct_rate": 0.3333333333333333
+    },
+    "Paul Clemons": {
+      "total": 1,
+      "correct": 1,
+      "correct_rate": 1.0
+    },
+    "James Jean": {
+      "total": 1,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Edwin Jimenez": {
+      "total": 1,
+      "correct": 0,
+      "correct_rate": 0.0
+    },
+    "Mark Wegner": {
+      "total": 3,
+      "correct": 3,
+      "correct_rate": 1.0
+    },
+    "Alex MacKay": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Adam Hamari": {
+      "total": 6,
+      "correct": 2,
+      "correct_rate": 0.3333333333333333
+    },
+    "Ben May": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Derek Thomas": {
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8
+    },
+    "Alan Porter": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Steven Jaschinski": {
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666
+    },
+    "Dexter Kelley": {
+      "total": 2,
+      "correct": 2,
+      "correct_rate": 1.0
+    },
+    "Brock Ballou": {
+      "total": 1,
+      "correct": 0,
+      "correct_rate": 0.0
+    }
+  }
+}
