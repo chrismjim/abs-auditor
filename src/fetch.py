@@ -196,6 +196,7 @@ def extract_challenges(play_by_play: dict, game_pk: int) -> list[dict]:
         # ── Grab pitch data from the play's last pitch event (if any) ─────
         pitch_x = pitch_z = sz_top = sz_bot = None
         original_call = None
+        pitch_count: dict = {}
         for ev in reversed(play.get("playEvents", [])):
             if not ev.get("isPitch"):
                 continue
@@ -205,34 +206,49 @@ def extract_challenges(play_by_play: dict, game_pk: int) -> list[dict]:
             pz  = coords.get("pZ")
             top = pd_api.get("strikeZoneTop")
             bot = pd_api.get("strikeZoneBottom")
+            call_desc = (ev.get("details", {}).get("description") or "").strip()
+            raw_count = ev.get("count") or {}
             if px is not None and pz is not None:
                 pitch_x = float(px)
                 pitch_z = float(pz)
                 sz_top  = float(top) if top is not None else None
                 sz_bot  = float(bot) if bot is not None else None
-                call_desc = ev.get("details", {}).get("description", "")
                 original_call = call_desc
+                pitch_count   = {
+                    "balls":   raw_count.get("balls"),
+                    "strikes": raw_count.get("strikes"),
+                    "outs":    raw_count.get("outs"),
+                }
                 break
+            elif call_desc and not original_call:
+                # No coords but at least grab the call description
+                original_call = call_desc
+                pitch_count   = {
+                    "balls":   raw_count.get("balls"),
+                    "strikes": raw_count.get("strikes"),
+                    "outs":    raw_count.get("outs"),
+                }
 
         rec = {
-            "game_pk":          game_pk,
-            "at_bat_idx":       at_bat_idx,
-            "inning":           inning,
-            "half_inning":      half,
-            "batter":           batter,
-            "batter_id":        batter_id,
-            "pitcher":          pitcher,
-            "challenge_type":   ctype,
+            "game_pk":           game_pk,
+            "at_bat_idx":        at_bat_idx,
+            "inning":            inning,
+            "half_inning":       half,
+            "batter":            batter,
+            "batter_id":         batter_id,
+            "pitcher":           pitcher,
+            "challenge_type":    ctype,
             "challenge_subtype": subtype,
-            "challenger":       challenger,
-            "overturned":       overturned,
-            "description":      desc,
-            "pitch_x":          pitch_x,
-            "pitch_z":          pitch_z,
-            "sz_top":           sz_top,
-            "sz_bot":           sz_bot,
-            "original_call":    original_call,
-            "source":           "hasReview",
+            "challenger":        challenger,
+            "overturned":        overturned,
+            "description":       desc,
+            "pitch_x":           pitch_x,
+            "pitch_z":           pitch_z,
+            "sz_top":            sz_top,
+            "sz_bot":            sz_bot,
+            "original_call":     original_call,
+            "count":             pitch_count,
+            "source":            "hasReview",
         }
         challenges.append(rec)
 
@@ -485,6 +501,107 @@ def enrich_challenge_with_statcast(challenge: dict,
             challenge[ch_key] = float(val)
 
     return challenge
+
+
+# ── Full-game umpire accuracy ─────────────────────────────────────────────────
+
+def compute_game_ump_accuracy(play_by_play: dict) -> dict:
+    """
+    Scan every called pitch (Called Strike / Ball) in the game and evaluate
+    whether the call was correct using the play-by-play pitch coordinates.
+
+    Returns a dict with total/correct/incorrect counts and accuracy %.
+    Only pitches with valid coordinates are evaluated.
+    """
+    total = correct = incorrect = 0
+    wrong_strikes = wrong_balls = 0   # called strike outside / ball inside
+
+    for play in play_by_play.get("allPlays", []):
+        for ev in play.get("playEvents", []):
+            if not ev.get("isPitch"):
+                continue
+
+            desc = (ev.get("details", {}).get("description") or "").lower().strip()
+            is_cs  = desc == "called strike"
+            is_ball = desc in ("ball", "ball in dirt")
+            if not is_cs and not is_ball:
+                continue
+
+            pd_api = ev.get("pitchData", {}) or {}
+            coords = pd_api.get("coordinates", {}) or {}
+            px  = coords.get("pX")
+            pz  = coords.get("pZ")
+            top = pd_api.get("strikeZoneTop")
+            bot = pd_api.get("strikeZoneBottom")
+
+            if None in (px, pz, top, bot):
+                continue
+
+            px, pz, top, bot = float(px), float(pz), float(top), float(bot)
+            in_zone = abs(px) <= ZONE_HALF_WIDTH_FT and bot <= pz <= top
+
+            total += 1
+            if is_cs:
+                if in_zone:
+                    correct += 1       # called strike, pitch in zone ✓
+                else:
+                    incorrect += 1
+                    wrong_strikes += 1  # called strike, pitch outside ✗
+            else:  # called ball
+                if not in_zone:
+                    correct += 1       # called ball, pitch outside zone ✓
+                else:
+                    incorrect += 1
+                    wrong_balls += 1   # called ball, pitch inside zone ✗
+
+    return {
+        "total_called":   total,
+        "correct":        correct,
+        "incorrect":      incorrect,
+        "accuracy_pct":   round(correct / total * 100, 1) if total else None,
+        "wrong_strikes":  wrong_strikes,   # called strike but outside zone
+        "wrong_balls":    wrong_balls,     # called ball but inside zone
+    }
+
+
+# ── Per-game fetch ────────────────────────────────────────────────────────────
+
+def fetch_game(game_pk: int, game: dict, game_date: date,
+               pitches_df: pd.DataFrame) -> tuple[list[dict], dict]:
+    """
+    Fetch challenges + full-game umpire accuracy for a single completed game.
+
+    Returns:
+        challenges    : list of challenge dicts (ABS + manager + umpire review)
+        ump_accuracy  : dict from compute_game_ump_accuracy(), keyed with ump name
+    """
+    try:
+        pbp = get_play_by_play(game_pk)
+    except requests.RequestException as exc:
+        log.warning("Could not fetch PBP for gamePk=%s: %s", game_pk, exc)
+        return [], {}
+
+    challenges   = extract_challenges(pbp, game_pk)
+    ump_accuracy = compute_game_ump_accuracy(pbp)
+    umpire       = get_umpire_crew(game)
+    home         = game.get("teams", {}).get("home", {}).get("team", {}).get("abbreviation", "")
+    away         = game.get("teams", {}).get("away", {}).get("team", {}).get("abbreviation", "")
+
+    ump_accuracy["name"] = umpire   # attach ump name to accuracy dict
+
+    for ch in challenges:
+        ch["home_team"] = home
+        ch["away_team"] = away
+        ch["umpire"]    = umpire
+        ch["game_date"] = game_date.isoformat()
+
+    log.info("gamePk=%s (%s @ %s): %d challenge(s) | ump %s %d/%d (%.0f%%)",
+             game_pk, away, home, len(challenges),
+             umpire or "?",
+             ump_accuracy.get("correct", 0),
+             ump_accuracy.get("total_called", 0),
+             ump_accuracy.get("accuracy_pct") or 0)
+    return challenges, ump_accuracy
 
 
 # ── Top-level fetch orchestrator ──────────────────────────────────────────────

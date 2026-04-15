@@ -237,37 +237,74 @@ def _draw_header(fig: plt.Figure, audit_result: dict, game_date: date) -> float:
 
 # ── Summary bar + legend ──────────────────────────────────────────────────────
 
-def _add_summary_bar(fig: plt.Figure, summary: dict, matchup: str = "") -> None:
+def _add_summary_bar(fig: plt.Figure, summary: dict, matchup: str = "",
+                     ump_accuracy: dict | None = None) -> None:
+    """
+    Three-line footer:
+      Line 1 — ABS challenge results
+      Line 2 — Full-game umpire accuracy
+      Line 3 — Data source
+    """
+    ua       = ump_accuracy or {}
     total    = summary.get("total_challenges", 0)
     overturn = summary.get("overturned", 0)
     missed   = summary.get("missed_calls", 0)
     upheld   = summary.get("correct_upheld", 0)
 
+    # Line 1: ABS challenges
     if total == 0:
-        line = "No ABS challenges this game."
+        abs_line = "No ABS challenges this game"
     else:
-        line = (
-            f"{total} ABS challenge{'s' if total != 1 else ''}  ·  "
+        abs_line = (
+            f"ABS:  {total} challenge{'s' if total != 1 else ''}  ·  "
             f"{overturn} overturned  ·  "
-            f"{missed} missed call{'s' if missed != 1 else ''}  ·  "
-            f"{upheld} upheld correctly"
+            f"{missed} missed  ·  "
+            f"{upheld} upheld"
         )
+    fig.text(0.50, 0.132, abs_line,
+             ha="center", va="center", color=COLORS["text"],
+             fontsize=8.5, transform=fig.transFigure)
 
-    fig.text(
-        0.50, 0.115, line,
-        ha="center", va="center",
-        color=COLORS["text"],
-        fontsize=9,
-        transform=fig.transFigure,
-    )
-    fig.text(
-        0.50, 0.060,
-        "Data: MLB Stats API  +  Baseball Savant / Statcast",
-        ha="center", va="center",
-        color=COLORS["text_muted"],
-        fontsize=7,
-        transform=fig.transFigure,
-    )
+    # Line 2: Umpire full-game accuracy
+    ump_name = ua.get("name")
+    ump_tot  = ua.get("total_called", 0)
+    ump_cor  = ua.get("correct", 0)
+    ump_pct  = ua.get("accuracy_pct")
+    ws       = ua.get("wrong_strikes", 0)
+    wb       = ua.get("wrong_balls", 0)
+
+    if ump_name and ump_tot >= 5 and ump_pct is not None:
+        ump_detail = ""
+        if ws or wb:
+            parts = []
+            if ws:
+                parts.append(f"{ws} wrong strike{'s' if ws != 1 else ''}")
+            if wb:
+                parts.append(f"{wb} wrong ball{'s' if wb != 1 else ''}")
+            ump_detail = "  (" + ", ".join(parts) + ")"
+        ump_line = (
+            f"HP Ump {ump_name}  ·  "
+            f"{ump_cor}/{ump_tot} called pitches correct ({ump_pct:.0f}%)"
+            f"{ump_detail}"
+        )
+        ump_color = COLORS["text"]
+    elif ump_name:
+        ump_line  = f"HP Ump: {ump_name}"
+        ump_color = COLORS["text_muted"]
+    else:
+        ump_line  = ""
+        ump_color = COLORS["text_muted"]
+
+    if ump_line:
+        fig.text(0.50, 0.090, ump_line,
+                 ha="center", va="center", color=ump_color,
+                 fontsize=8, transform=fig.transFigure)
+
+    # Line 3: data source
+    fig.text(0.50, 0.050,
+             "Data: MLB Stats API  +  Baseball Savant / Statcast",
+             ha="center", va="center", color=COLORS["text_muted"],
+             fontsize=6.5, transform=fig.transFigure)
 
 
 def _add_legend(fig: plt.Figure) -> None:
@@ -281,10 +318,10 @@ def _add_legend(fig: plt.Figure) -> None:
     step    = total_w / len(items)
     for i, (color, label) in enumerate(items):
         x = start_x + i * step + step / 2
-        fig.text(x - 0.03, 0.170, "●", color=color, fontsize=11,
+        fig.text(x - 0.03, 0.183, "●", color=color, fontsize=10,
                  ha="right", va="center", transform=fig.transFigure)
-        fig.text(x - 0.025, 0.170, label, color=COLORS["text_muted"],
-                 fontsize=7.5, ha="left", va="center",
+        fig.text(x - 0.025, 0.183, label, color=COLORS["text_muted"],
+                 fontsize=7, ha="left", va="center",
                  transform=fig.transFigure)
 
 
@@ -331,7 +368,8 @@ def make_game_card(audit_result: dict, game_date: date,
             multialignment="center",
             transform=fig.transFigure,
         )
-        _add_summary_bar(fig, summary, matchup)
+        _add_summary_bar(fig, summary, matchup,
+                         ump_accuracy=audit_result.get("ump_accuracy", {}))
         _add_legend(fig)
         pk_suffix = f"_{game_pk}" if game_pk else ""
         out_path = OUTPUT_DIR / f"game_card_{game_date.isoformat()}{pk_suffix}.png"
@@ -389,34 +427,60 @@ def make_game_card(audit_result: dict, game_date: date,
         draw_strike_zone(ax, ch)
 
         # ── Labels below zone ────────────────────────────────────────────────
-        outcome    = ch.get("outcome")
-        dot_color  = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
-        label      = OUTCOME_LABELS.get(outcome, "—")
-        inning     = ch.get("inning", "?")
-        half       = "T" if ch.get("half_inning") == "top" else "B"
-        inn_str    = f"{half}{inning}"
-        pitcher_s  = _last_name(ch.get("pitcher"))
-        batter_s   = _last_name(ch.get("batter"))
-        edge_d     = ch.get("edge_dist")
+        outcome   = ch.get("outcome")
+        dot_color = OUTCOME_COLORS.get(outcome, COLORS["neutral"])
+        label     = OUTCOME_LABELS.get(outcome, "—")
+        inning    = ch.get("inning", "?")
+        half      = "T" if ch.get("half_inning") == "top" else "B"
+        inn_str   = f"{half}{inning}"
+        pitcher_s = _last_name(ch.get("pitcher"))
+        batter_s  = _last_name(ch.get("batter"))
+        edge_d    = ch.get("edge_dist")
+
+        # Count and original call
+        cnt       = ch.get("count") or {}
+        b_cnt     = cnt.get("balls")
+        s_cnt     = cnt.get("strikes")
+        count_str = f"{b_cnt}-{s_cnt}" if b_cnt is not None else ""
+        orig      = (ch.get("original_call") or "").strip()
+        orig_low  = orig.lower()
+        if "called strike" in orig_low:
+            orig_short = "Called Strike"
+        elif "ball" in orig_low:
+            orig_short = "Ball"
+        else:
+            orig_short = orig[:12] if orig else ""
+
+        # Edge distance
+        dist_str = ""
+        if edge_d is not None:
+            d_in = abs(edge_d) * 12
+            loc  = "inside zone" if edge_d > 0 else "outside zone"
+            dist_str = f"  ·  {d_in:.1f}\" {loc}"
 
         label_top    = cell_bottom + cell_height * (1 - zone_frac) - pad
         label_center = cell_left + cell_width / 2
 
-        # Row 1: inning + teams
+        # Row 1: inning · count · original call
+        meta_parts = [inn_str]
+        if count_str:
+            meta_parts.append(count_str)
+        if orig_short:
+            meta_parts.append(orig_short)
         fig.text(
             label_center,
             label_top - cell_height * label_frac * 0.10,
-            f"{inn_str}",
+            "  ·  ".join(meta_parts),
             ha="center", va="top",
             color=COLORS["text_muted"],
-            fontsize=7,
+            fontsize=6.5,
             transform=fig.transFigure,
         )
 
         # Row 2: pitcher → batter
         fig.text(
             label_center,
-            label_top - cell_height * label_frac * 0.42,
+            label_top - cell_height * label_frac * 0.44,
             f"{pitcher_s}  →  {batter_s}",
             ha="center", va="top",
             color=COLORS["text"],
@@ -424,25 +488,20 @@ def make_game_card(audit_result: dict, game_date: date,
             transform=fig.transFigure,
         )
 
-        # Row 3: outcome (coloured)
-        dist_str = ""
-        if edge_d is not None:
-            d_in = abs(edge_d) * 12
-            loc  = "in" if edge_d > 0 else "out"
-            dist_str = f"  {d_in:.1f}\" {loc}"
-
+        # Row 3: outcome + edge distance (coloured)
         fig.text(
             label_center,
-            label_top - cell_height * label_frac * 0.78,
+            label_top - cell_height * label_frac * 0.80,
             f"● {label}{dist_str}",
             ha="center", va="top",
             color=dot_color,
-            fontsize=7,
+            fontsize=6.5,
             transform=fig.transFigure,
         )
 
     _set_dark_bg(fig, axes)
-    _add_summary_bar(fig, summary, matchup)
+    _add_summary_bar(fig, summary, matchup,
+                     ump_accuracy=audit_result.get("ump_accuracy", {}))
     _add_legend(fig)
 
     pk_suffix = f"_{game_pk}" if game_pk else ""

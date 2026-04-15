@@ -121,9 +121,10 @@ def run_live(game_date: date, dry_run: bool = True,
         log.info("── %s (gamePk=%s) ──", matchup, game_pk)
 
         try:
-            challenges = fetch_game(game_pk, game, game_date, pitches_df)
+            challenges, ump_accuracy = fetch_game(game_pk, game, game_date, pitches_df)
 
-            audit_result = audit_day(challenges, pitches_df, game_date)
+            audit_result = audit_day(challenges, pitches_df, game_date,
+                                     ump_accuracy=ump_accuracy)
             audit_result["matchup"]  = matchup
             audit_result["game_pk"]  = game_pk
 

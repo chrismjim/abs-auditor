@@ -158,7 +158,7 @@ def score_manager_challenge(challenge: dict) -> dict:
 # ── Main audit function ───────────────────────────────────────────────────────
 
 def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
-              game_date: date) -> dict:
+              game_date: date, ump_accuracy: dict | None = None) -> dict:
     """
     Process all challenge events for a day.
 
@@ -224,7 +224,8 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
         u["correct_rate"] = u["correct"] / u["total"] if u["total"] else 0.0
 
     # ── Storyline generation ──────────────────────────────────────────────────
-    storylines = _generate_storylines(abs_challenges, umpire_stats, game_date)
+    storylines = _generate_storylines(abs_challenges, umpire_stats, game_date,
+                                      ump_accuracy=ump_accuracy or {})
 
     result = {
         "game_date":           game_date.isoformat(),
@@ -232,6 +233,7 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
         "manager_challenges":  manager_challenges,
         "team_stats":          team_stats,
         "umpire_stats":        umpire_stats,
+        "ump_accuracy":        ump_accuracy or {},
         "storylines":          storylines,
         "summary": {
             "total_challenges": len(abs_challenges),
@@ -245,43 +247,58 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
 
 
 def _generate_storylines(abs_challenges: list[dict], umpire_stats: dict,
-                          game_date: date) -> list[str]:
-    """Build 1-3 short storyline strings for the thread reply."""
+                          game_date: date,
+                          ump_accuracy: dict | None = None) -> list[str]:
+    """Build storyline strings for the thread reply."""
     stories: list[str] = []
+    ua = ump_accuracy or {}
 
-    # Plate umpire accuracy for this game
-    if umpire_stats:
-        for ump, stats in umpire_stats.items():
-            if stats["total"] >= 2:
-                rate = stats["correct_rate"] * 100
-                stories.append(
-                    f"Plate ump {ump}: {stats['correct']}/{stats['total']} "
-                    f"calls correct ({rate:.0f}%)."
-                )
-                break   # only one plate ump per game
+    # Full-game umpire accuracy (from all called pitches)
+    ump_name  = ua.get("name") or (list(umpire_stats.keys())[0] if umpire_stats else None)
+    total     = ua.get("total_called", 0)
+    correct   = ua.get("correct", 0)
+    pct       = ua.get("accuracy_pct")
+    ws        = ua.get("wrong_strikes", 0)   # called strike outside zone
+    wb        = ua.get("wrong_balls", 0)     # called ball inside zone
 
-    # Most notable missed call (pitch farthest outside zone that was wrongly upheld)
+    if ump_name and total >= 5 and pct is not None:
+        parts = [f"HP Ump {ump_name}: {correct}/{total} called pitches correct ({pct:.0f}%)"]
+        if ws:
+            parts.append(f"{ws} pitch{'es' if ws != 1 else ''} called strike outside the zone")
+        if wb:
+            parts.append(f"{wb} pitch{'es' if wb != 1 else ''} called ball inside the zone")
+        stories.append(" — ".join(parts) + ".")
+
+    # Most notable ABS missed call
     missed = [c for c in abs_challenges if c.get("outcome") == MISSED_CALL
               and c.get("edge_dist") is not None]
     if missed:
-        worst = max(missed, key=lambda c: abs(c["edge_dist"]))
-        dist_in = abs(worst["edge_dist"]) * 12   # ft → inches
+        worst   = max(missed, key=lambda c: abs(c["edge_dist"]))
+        dist_in = abs(worst["edge_dist"]) * 12
         half    = "T" if worst.get("half_inning") == "top" else "B"
         inn     = worst.get("inning", "?")
+        cnt     = worst.get("count") or {}
+        b, s    = cnt.get("balls"), cnt.get("strikes")
+        cnt_str = f" ({b}-{s} count)" if b is not None and s is not None else ""
+        orig    = (worst.get("original_call") or "").lower()
+        call_w  = "called strike" if "called strike" in orig else "called ball"
         stories.append(
-            f"Biggest miss: {worst.get('pitcher','?')} → {worst.get('batter','?')} "
-            f"({half}{inn}) — pitch was {dist_in:.1f}\" outside the zone, call upheld."
+            f"Biggest miss: {worst.get('pitcher','?')} → {worst.get('batter','?')}"
+            f" ({half}{inn}{cnt_str}) — {call_w} was {dist_in:.1f}\" outside the zone, "
+            f"challenge denied."
         )
 
-    # Flag any incorrect overturns (ABS reversed a correct call)
+    # Incorrect overturn (ABS reversed a correct call)
     wrong = [c for c in abs_challenges if c.get("outcome") == INCORRECT_OVERTURN]
     if wrong:
-        c = wrong[0]
+        c    = wrong[0]
         half = "T" if c.get("half_inning") == "top" else "B"
         inn  = c.get("inning", "?")
+        dist = c.get("edge_dist")
+        dist_str = f" (pitch was {abs(dist)*12:.1f}\" inside the zone)" if dist else ""
         stories.append(
-            f"Questionable overturn: {c.get('pitcher','?')} → {c.get('batter','?')} "
-            f"({half}{inn}) — pitch was in the zone but call was reversed."
+            f"Questionable overturn: {c.get('pitcher','?')} → {c.get('batter','?')}"
+            f" ({half}{inn}){dist_str} — umpire's call was reversed but pitch was correct."
         )
 
     return stories
