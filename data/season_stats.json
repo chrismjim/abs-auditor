@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-13",
-  "total_challenges": 295,
+  "total_challenges": 394,
   "total_overturned": 58,
   "team_stats": {
     "CIN": {
@@ -19,9 +19,9 @@
       "missed_calls": 3
     },
     "ATL": {
-      "challenges": 19,
+      "challenges": 30,
       "overturned": 2,
-      "missed_calls": 5
+      "missed_calls": 16
     },
     "ATH": {
       "challenges": 23,
@@ -29,9 +29,9 @@
       "missed_calls": 2
     },
     "NYM": {
-      "challenges": 22,
+      "challenges": 33,
       "overturned": 3,
-      "missed_calls": 7
+      "missed_calls": 18
     },
     "SEA": {
       "challenges": 24,
@@ -44,19 +44,19 @@
       "missed_calls": 4
     },
     "LAD": {
-      "challenges": 15,
+      "challenges": 26,
       "overturned": 4,
-      "missed_calls": 4
+      "missed_calls": 15
     },
     "CHC": {
-      "challenges": 19,
+      "challenges": 30,
       "overturned": 5,
       "missed_calls": 2
     },
     "NYY": {
-      "challenges": 26,
+      "challenges": 37,
       "overturned": 4,
-      "missed_calls": 6
+      "missed_calls": 17
     },
     "SF": {
       "challenges": 18,
@@ -64,9 +64,9 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 23,
+      "challenges": 34,
       "overturned": 4,
-      "missed_calls": 6
+      "missed_calls": 17
     },
     "TOR": {
       "challenges": 18,
@@ -74,12 +74,12 @@
       "missed_calls": 1
     },
     "STL": {
-      "challenges": 24,
+      "challenges": 46,
       "overturned": 3,
-      "missed_calls": 5
+      "missed_calls": 16
     },
     "PHI": {
-      "challenges": 20,
+      "challenges": 31,
       "overturned": 3,
       "missed_calls": 3
     },
@@ -89,14 +89,14 @@
       "missed_calls": 2
     },
     "BOS": {
-      "challenges": 19,
+      "challenges": 41,
       "overturned": 1,
       "missed_calls": 2
     },
     "MIA": {
-      "challenges": 17,
+      "challenges": 28,
       "overturned": 3,
-      "missed_calls": 8
+      "missed_calls": 19
     },
     "WSH": {
       "challenges": 8,
@@ -104,24 +104,24 @@
       "missed_calls": 0
     },
     "AZ": {
-      "challenges": 16,
+      "challenges": 27,
       "overturned": 2,
-      "missed_calls": 6
+      "missed_calls": 17
     },
     "LAA": {
-      "challenges": 22,
+      "challenges": 33,
       "overturned": 2,
-      "missed_calls": 8
+      "missed_calls": 19
     },
     "MIN": {
-      "challenges": 39,
+      "challenges": 61,
       "overturned": 10,
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 33,
+      "challenges": 55,
       "overturned": 6,
-      "missed_calls": 8
+      "missed_calls": 19
     },
     "HOU": {
       "challenges": 18,
@@ -156,39 +156,39 @@
   },
   "umpire_stats": {
     "Brennan Miller": {
-      "total": 7,
+      "total": 18,
       "correct": 0,
       "correct_rate": 0.0
     },
     "Nate Tomlinson": {
-      "total": 9,
-      "correct": 5,
-      "correct_rate": 0.5555555555555556
+      "total": 20,
+      "correct": 16,
+      "correct_rate": 0.8
     },
     "Ryan Additon": {
-      "total": 7,
+      "total": 18,
       "correct": 2,
-      "correct_rate": 0.2857142857142857
+      "correct_rate": 0.1111111111111111
     },
     "Dan Iassogna": {
-      "total": 11,
+      "total": 22,
       "correct": 5,
-      "correct_rate": 0.45454545454545453
+      "correct_rate": 0.22727272727272727
     },
     "Willie Traynor": {
-      "total": 8,
-      "correct": 8,
+      "total": 30,
+      "correct": 30,
       "correct_rate": 1.0
     },
     "Jim Wolf": {
-      "total": 8,
+      "total": 30,
       "correct": 0,
       "correct_rate": 0.0
     },
     "Nic Lentz": {
-      "total": 7,
+      "total": 18,
       "correct": 2,
-      "correct_rate": 0.2857142857142857
+      "correct_rate": 0.1111111111111111
     },
     "Adrian Johnson": {
       "total": 6,

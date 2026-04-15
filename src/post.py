@@ -181,7 +181,7 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
 
     tweet_ids: list[str] = []
 
-    # Tweet 1 + daily card image
+    # ── Tweet 1: daily card image + caption ───────────────────────────────
     media_ids: list[str] = []
     if daily_card and daily_card.exists():
         try:
@@ -191,57 +191,59 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
             log.warning("Media upload failed: %s", exc)
 
     try:
-        resp = client.create_tweet(
-            text=tweet1_text,
-            media_ids=media_ids if media_ids else None,
-        )
-        t1_id = resp.data["id"]
+        kwargs: dict = {}
+        if media_ids:
+            kwargs["media_ids"] = media_ids
+        t1 = client.create_tweet(text=tweet1_text, **kwargs)
+        t1_id = str(t1.data["id"])
         tweet_ids.append(t1_id)
         log.info("Posted tweet 1: id=%s", t1_id)
     except Exception as exc:
         log.error("Failed to post tweet 1: %s", exc)
         raise
 
-    # Tweet 2 — storyline reply
+    # ── Tweet 2: storyline reply ───────────────────────────────────────────
     if tweet2_text:
         try:
-            resp = client.create_tweet(
+            t2 = client.create_tweet(
                 text=tweet2_text,
                 in_reply_to_tweet_id=tweet_ids[-1],
             )
-            t2_id = resp.data["id"]
+            t2_id = str(t2.data["id"])
             tweet_ids.append(t2_id)
             log.info("Posted tweet 2: id=%s", t2_id)
         except Exception as exc:
             log.warning("Failed to post tweet 2: %s", exc)
 
-    # Tweet 3 — focus team breakdown
+    # ── Tweet 3: focus team breakdown ─────────────────────────────────────
     if tweet3_text:
         try:
-            resp = client.create_tweet(
+            t3 = client.create_tweet(
                 text=tweet3_text,
                 in_reply_to_tweet_id=tweet_ids[-1],
             )
-            t3_id = resp.data["id"]
+            t3_id = str(t3.data["id"])
             tweet_ids.append(t3_id)
             log.info("Posted tweet 3: id=%s", t3_id)
         except Exception as exc:
             log.warning("Failed to post tweet 3: %s", exc)
 
-    # Leaderboard (Monday only) — reply to tweet 1
+    # ── Leaderboard reply (Mondays) ────────────────────────────────────────
     if leaderboard and leaderboard.exists():
         try:
-            lb_media_id = _upload_media(api_v1, leaderboard)
+            lb_mid = _upload_media(api_v1, leaderboard)
             lb_text = (
                 f"Season challenge leaderboard as of {game_date.strftime('%B %-d')} ⚾\n"
                 f"#{FOCUS_TEAM} #MLB #ABS #Statcast"
             )
-            resp = client.create_tweet(
+            lb = client.create_tweet(
                 text=lb_text,
                 in_reply_to_tweet_id=tweet_ids[0],
-                media_ids=[lb_media_id],
+                media_ids=[lb_mid],
             )
-            tweet_ids.append(resp.data["id"])
+            lb_id = str(lb.data["id"])
+            tweet_ids.append(lb_id)
+            log.info("Posted leaderboard tweet: id=%s", lb_id)
         except Exception as exc:
             log.warning("Failed to post leaderboard tweet: %s", exc)
 
