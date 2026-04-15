@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-14",
-  "total_challenges": 514,
-  "total_overturned": 70,
+  "last_updated": "2026-04-15",
+  "total_challenges": 515,
+  "total_overturned": 71,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -74,8 +74,8 @@
       "missed_calls": 1
     },
     "STL": {
-      "challenges": 62,
-      "overturned": 9,
+      "challenges": 63,
+      "overturned": 10,
       "missed_calls": 24
     },
     "PHI": {
@@ -119,8 +119,8 @@
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 71,
-      "overturned": 12,
+      "challenges": 72,
+      "overturned": 13,
       "missed_calls": 27
     },
     "HOU": {
@@ -481,9 +481,9 @@
       "correct_rate": 0.3333333333333333
     },
     "Alex MacKay": {
-      "total": 3,
-      "correct": 2,
-      "correct_rate": 0.6666666666666666
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75
     },
     "Adam Hamari": {
       "total": 6,
