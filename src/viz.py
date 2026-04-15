@@ -39,7 +39,9 @@ from src.config import (
     FIGURE_WIDTH_PX,
     OUTPUT_DIR,
     TEAM_COLORS,
+    ZONE_BOT_FT,
     ZONE_HALF_WIDTH_FT,
+    ZONE_TOP_FT,
 )
 
 log = logging.getLogger(__name__)
@@ -54,9 +56,9 @@ _DX      = 1.25   # ± ft shown on X axis
 _DZ_BOT  = 1.20   # ft — bottom of display
 _DZ_TOP  = 3.95   # ft — top of display
 
-# Standard MLB average zone used for the drawn box
-_SZ_TOP  = 3.50
-_SZ_BOT  = 1.50
+# Standard MLB zone used for the drawn box — must match fetch.py's in_zone check
+_SZ_TOP  = ZONE_TOP_FT
+_SZ_BOT  = ZONE_BOT_FT
 
 # Outcome colours / labels
 OUTCOME_COLOR = {

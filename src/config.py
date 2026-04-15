@@ -12,6 +12,11 @@ TIMEZONE = "America/New_York"
 ZONE_HALF_WIDTH_FT = 0.7083
 ZONE_WIDTH_FT      = ZONE_HALF_WIDTH_FT * 2   # 1.4167 ft total
 
+# Standard MLB rulebook zone heights (used for accuracy calc AND visualization)
+# Using fixed heights keeps the accuracy logic consistent with what's drawn.
+ZONE_TOP_FT = 3.50
+ZONE_BOT_FT = 1.50
+
 # ── Visualization ─────────────────────────────────────────────────────────────
 MAX_CHALLENGES_ON_CARD = 6
 FIGURE_WIDTH_PX  = 1200

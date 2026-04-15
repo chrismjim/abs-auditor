@@ -48,6 +48,8 @@ from src.config import (
     MLB_API_BASE,
     RETRY_BACKOFF_S,
     SAVANT_CSV_URL,
+    ZONE_BOT_FT,
+    ZONE_TOP_FT,
     ZONE_HALF_WIDTH_FT,
 )
 
@@ -532,16 +534,16 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
 
             pd_api = ev.get("pitchData", {}) or {}
             coords = pd_api.get("coordinates", {}) or {}
-            px  = coords.get("pX")
-            pz  = coords.get("pZ")
-            top = pd_api.get("strikeZoneTop")
-            bot = pd_api.get("strikeZoneBottom")
+            px = coords.get("pX")
+            pz = coords.get("pZ")
 
-            if None in (px, pz, top, bot):
+            if None in (px, pz):
                 continue
 
-            px, pz, top, bot = float(px), float(pz), float(top), float(bot)
-            in_zone = abs(px) <= ZONE_HALF_WIDTH_FT and bot <= pz <= top
+            px, pz = float(px), float(pz)
+            # Use fixed standard zone — same boundaries drawn in the visualization
+            # so wrong-call dots are consistent with the zone box shown on the card.
+            in_zone = abs(px) <= ZONE_HALF_WIDTH_FT and ZONE_BOT_FT <= pz <= ZONE_TOP_FT
 
             total += 1
             if is_cs:
