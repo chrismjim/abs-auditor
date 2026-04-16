@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-16",
-  "total_challenges": 559,
+  "total_challenges": 562,
   "total_overturned": 77,
   "team_stats": {
     "CIN": {
@@ -54,7 +54,7 @@
       "missed_calls": 10
     },
     "NYY": {
-      "challenges": 47,
+      "challenges": 50,
       "overturned": 4,
       "missed_calls": 19
     },
@@ -109,7 +109,7 @@
       "missed_calls": 19
     },
     "LAA": {
-      "challenges": 43,
+      "challenges": 46,
       "overturned": 2,
       "missed_calls": 21
     },
@@ -266,9 +266,14 @@
       "accuracy_pct": 87.5
     },
     "Will Little": {
-      "total": 5,
-      "correct": 3,
-      "correct_rate": 0.6
+      "total": 8,
+      "correct": 4,
+      "correct_rate": 0.5,
+      "total_called": 187,
+      "correct_called": 180,
+      "wrong_strikes": 2,
+      "wrong_balls": 5,
+      "accuracy_pct": 96.3
     },
     "Cory Blaser": {
       "total": 10,
