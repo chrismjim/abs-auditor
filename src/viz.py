@@ -236,10 +236,10 @@ def _draw_zone(ax: plt.Axes,
     cx_v, cz_v = 0.0, (_SZ_BOT + _SZ_TOP) / 2.0
     rad = np.sqrt(((VX - cx_v) / (_DX * 1.1))**2
                   + ((VZ - cz_v) / ((_DZ_TOP - _DZ_BOT) / 1.6))**2)
-    vignette = np.clip(rad - 0.3, 0, 1) * 0.55
+    vignette = np.clip(rad - 0.5, 0, 1) * 0.6
     ax.imshow(vignette, extent=[-_DX, _DX, _DZ_BOT, _DZ_TOP],
               origin="lower", aspect="auto", cmap="Greys",
-              alpha=0.85, zorder=1, interpolation="bilinear")
+              alpha=0.35, zorder=1, interpolation="bilinear")
 
     # ── 5-sided home plate (catcher's view) ───────────────────────────────────
     pw       = ZONE_HALF_WIDTH_FT
@@ -629,7 +629,9 @@ def make_game_card(audit_result: dict, game_date: date,
     pk_suffix = f"_{game_pk}" if game_pk else ""
     out_path  = OUTPUT_DIR / f"game_card_{game_date.isoformat()}{pk_suffix}.png"
     plt.savefig(out_path, dpi=DPI, bbox_inches="tight",
-                facecolor=COLORS["bg"], pad_inches=0.05)
+                facecolor=COLORS["bg"], pad_inches=0.05,
+                metadata={"Software": "ABS Auditor"},
+                pil_kwargs={"compress_level": 1})
     plt.close(fig)
     log.info("Saved → %s", out_path)
     return out_path
