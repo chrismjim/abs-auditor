@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-16",
-  "total_challenges": 564,
+  "total_challenges": 566,
   "total_overturned": 78,
   "team_stats": {
     "CIN": {
@@ -24,7 +24,7 @@
       "missed_calls": 26
     },
     "ATH": {
-      "challenges": 31,
+      "challenges": 32,
       "overturned": 5,
       "missed_calls": 2
     },
@@ -39,7 +39,7 @@
       "missed_calls": 5
     },
     "TEX": {
-      "challenges": 23,
+      "challenges": 24,
       "overturned": 2,
       "missed_calls": 4
     },
@@ -134,12 +134,12 @@
       "missed_calls": 3
     },
     "DET": {
-      "challenges": 31,
+      "challenges": 32,
       "overturned": 7,
       "missed_calls": 3
     },
     "KC": {
-      "challenges": 27,
+      "challenges": 28,
       "overturned": 5,
       "missed_calls": 4
     },
@@ -241,9 +241,14 @@
       "correct_rate": 0.8
     },
     "Doug Eddings": {
-      "total": 2,
-      "correct": 0,
-      "correct_rate": 0.0
+      "total": 3,
+      "correct": 1,
+      "correct_rate": 0.3333333333333333,
+      "total_called": 190,
+      "correct_called": 169,
+      "wrong_strikes": 11,
+      "wrong_balls": 10,
+      "accuracy_pct": 88.9
     },
     "John Tumpane": {
       "total": 5,
@@ -486,9 +491,14 @@
       "correct_rate": 0.14285714285714285
     },
     "Andy Fletcher": {
-      "total": 7,
+      "total": 8,
       "correct": 3,
-      "correct_rate": 0.42857142857142855
+      "correct_rate": 0.375,
+      "total_called": 160,
+      "correct_called": 144,
+      "wrong_strikes": 10,
+      "wrong_balls": 6,
+      "accuracy_pct": 90.0
     },
     "Quinn Wolcott": {
       "total": 4,
