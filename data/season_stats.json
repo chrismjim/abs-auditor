@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-14",
-  "total_challenges": 549,
-  "total_overturned": 75,
+  "last_updated": "2026-04-15",
+  "total_challenges": 555,
+  "total_overturned": 77,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -14,7 +14,7 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 26,
+      "challenges": 27,
       "overturned": 3,
       "missed_calls": 11
     },
@@ -64,18 +64,18 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 44,
+      "challenges": 45,
       "overturned": 4,
       "missed_calls": 19
     },
     "TOR": {
-      "challenges": 26,
+      "challenges": 27,
       "overturned": 6,
       "missed_calls": 1
     },
     "STL": {
-      "challenges": 67,
-      "overturned": 12,
+      "challenges": 68,
+      "overturned": 13,
       "missed_calls": 26
     },
     "PHI": {
@@ -84,7 +84,7 @@
       "missed_calls": 11
     },
     "CWS": {
-      "challenges": 23,
+      "challenges": 24,
       "overturned": 5,
       "missed_calls": 10
     },
@@ -104,7 +104,7 @@
       "missed_calls": 0
     },
     "AZ": {
-      "challenges": 37,
+      "challenges": 38,
       "overturned": 2,
       "missed_calls": 19
     },
@@ -119,13 +119,13 @@
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 76,
-      "overturned": 15,
+      "challenges": 77,
+      "overturned": 16,
       "missed_calls": 29
     },
     "HOU": {
-      "challenges": 26,
-      "overturned": 5,
+      "challenges": 28,
+      "overturned": 6,
       "missed_calls": 4
     },
     "SD": {
@@ -144,12 +144,12 @@
       "missed_calls": 4
     },
     "COL": {
-      "challenges": 28,
-      "overturned": 5,
+      "challenges": 30,
+      "overturned": 6,
       "missed_calls": 2
     },
     "MIL": {
-      "challenges": 25,
+      "challenges": 26,
       "overturned": 3,
       "missed_calls": 3
     }
@@ -211,9 +211,14 @@
       "accuracy_pct": 91.2
     },
     "Chris Guccione": {
-      "total": 2,
-      "correct": 2,
-      "correct_rate": 1.0
+      "total": 3,
+      "correct": 3,
+      "correct_rate": 1.0,
+      "total_called": 144,
+      "correct_called": 133,
+      "wrong_strikes": 6,
+      "wrong_balls": 5,
+      "accuracy_pct": 92.4
     },
     "James Hoye": {
       "total": 5,
@@ -241,9 +246,14 @@
       "correct_rate": 0.0
     },
     "John Tumpane": {
-      "total": 4,
+      "total": 5,
       "correct": 3,
-      "correct_rate": 0.75
+      "correct_rate": 0.6,
+      "total_called": 155,
+      "correct_called": 147,
+      "wrong_strikes": 6,
+      "wrong_balls": 2,
+      "accuracy_pct": 94.8
     },
     "Lance Barrett": {
       "total": 22,
@@ -328,7 +338,12 @@
     "Malachi Moore": {
       "total": 7,
       "correct": 4,
-      "correct_rate": 0.5714285714285714
+      "correct_rate": 0.5714285714285714,
+      "total_called": 171,
+      "correct_called": 151,
+      "wrong_strikes": 14,
+      "wrong_balls": 6,
+      "accuracy_pct": 88.3
     },
     "Chris Segal": {
       "total": 7,
@@ -353,7 +368,12 @@
     "Adam Beck": {
       "total": 5,
       "correct": 3,
-      "correct_rate": 0.6
+      "correct_rate": 0.6,
+      "total_called": 138,
+      "correct_called": 129,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "accuracy_pct": 93.5
     },
     "Carlos Torres": {
       "total": 8,
@@ -546,14 +566,24 @@
       "accuracy_pct": 89.9
     },
     "Alex MacKay": {
-      "total": 4,
-      "correct": 3,
-      "correct_rate": 0.75
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8,
+      "total_called": 169,
+      "correct_called": 155,
+      "wrong_strikes": 14,
+      "wrong_balls": 0,
+      "accuracy_pct": 91.7
     },
     "Adam Hamari": {
-      "total": 6,
+      "total": 7,
       "correct": 2,
-      "correct_rate": 0.3333333333333333
+      "correct_rate": 0.2857142857142857,
+      "total_called": 166,
+      "correct_called": 154,
+      "wrong_strikes": 7,
+      "wrong_balls": 5,
+      "accuracy_pct": 92.8
     },
     "Ben May": {
       "total": 2,
@@ -604,6 +634,16 @@
       "wrong_strikes": 16,
       "wrong_balls": 10,
       "accuracy_pct": 92.4
+    },
+    "Stu Scheurwater": {
+      "total": 2,
+      "correct": 1,
+      "total_called": 154,
+      "correct_called": 141,
+      "wrong_strikes": 7,
+      "wrong_balls": 6,
+      "correct_rate": 0.5,
+      "accuracy_pct": 91.6
     }
   }
 }
