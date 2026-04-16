@@ -195,6 +195,15 @@ def extract_challenges(play_by_play: dict, game_pk: int) -> list[dict]:
             subtype    = "unknown"
             challenger = "Umpire"
 
+        # ── Runner situation before this play ─────────────────────────────
+        runners = play.get("runners", [])
+        runner_starts: set[str] = set()
+        for r in runners:
+            start = r.get("movement", {}).get("start")
+            if start in ("1B", "2B", "3B"):
+                runner_starts.add(start)
+        runners_on = len(runner_starts)
+
         # ── Grab pitch data from the play's last pitch event (if any) ─────
         pitch_x = pitch_z = sz_top = sz_bot = None
         original_call = None
@@ -250,6 +259,7 @@ def extract_challenges(play_by_play: dict, game_pk: int) -> list[dict]:
             "sz_bot":            sz_bot,
             "original_call":     original_call,
             "count":             pitch_count,
+            "runners_on":        runners_on,
             "source":            "hasReview",
         }
         challenges.append(rec)
@@ -493,14 +503,27 @@ def enrich_challenge_with_statcast(challenge: dict,
 
     # Take the last pitch of the at-bat (most likely the challenged call)
     row = subset.iloc[-1]
+    import numpy as np
+
     for sc_col, ch_key in [("plate_x", "pitch_x"), ("plate_z", "pitch_z"),
                             ("sz_top", "sz_top"), ("sz_bot", "sz_bot")]:
         val = row.get(sc_col) if hasattr(row, "get") else (
             row[sc_col] if sc_col in row.index else None
         )
-        import numpy as np
         if val is not None and not (isinstance(val, float) and np.isnan(val)):
             challenge[ch_key] = float(val)
+
+    # Enrich runner situation from Statcast (on_1b/on_2b/on_3b are player IDs or NaN)
+    runners_on = 0
+    for col in ("on_1b", "on_2b", "on_3b"):
+        val = row.get(col) if hasattr(row, "get") else (
+            row[col] if col in row.index else None
+        )
+        if val is not None and not (isinstance(val, float) and np.isnan(val)):
+            runners_on += 1
+    # Override play-by-play estimate only if Statcast has definitive data
+    if any(col in (row.index if hasattr(row, "index") else []) for col in ("on_1b", "on_2b", "on_3b")):
+        challenge["runners_on"] = runners_on
 
     return challenge
 
@@ -561,6 +584,10 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
                     wrong_balls += 1
                     wrong_ball_coords.append((px, pz))
 
+    # favor_score: positive = pitcher-friendly (more wrong strikes called),
+    # negative = batter-friendly (more wrong balls called).
+    favor_score = wrong_strikes - wrong_balls
+
     return {
         "total_called":        total,
         "correct":             correct,
@@ -570,6 +597,7 @@ def compute_game_ump_accuracy(play_by_play: dict) -> dict:
         "wrong_balls":         wrong_balls,
         "wrong_strike_coords": wrong_strike_coords,
         "wrong_ball_coords":   wrong_ball_coords,
+        "favor_score":         favor_score,
     }
 
 

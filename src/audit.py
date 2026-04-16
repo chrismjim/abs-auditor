@@ -18,6 +18,7 @@ import numpy as np
 import pandas as pd
 
 from src.config import (
+    DAILY_HISTORY,
     SEASON_STATS,
     ZONE_HALF_WIDTH_FT,
 )
@@ -227,6 +228,12 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
     storylines = _generate_storylines(abs_challenges, umpire_stats, game_date,
                                       ump_accuracy=ump_accuracy or {})
 
+    total_abs   = len(abs_challenges)
+    overturned  = sum(1 for c in abs_challenges if c.get("outcome") == CORRECT_OVERTURN)
+    missed      = sum(1 for c in abs_challenges if c.get("outcome") == MISSED_CALL)
+    upheld      = sum(1 for c in abs_challenges if c.get("outcome") == CORRECT_UPHELD)
+    total_called = (ump_accuracy or {}).get("total_called", 0)
+
     result = {
         "game_date":           game_date.isoformat(),
         "abs_challenges":      abs_challenges,
@@ -236,11 +243,14 @@ def audit_day(raw_challenges: list[dict], pitches_df: pd.DataFrame,
         "ump_accuracy":        ump_accuracy or {},
         "storylines":          storylines,
         "summary": {
-            "total_challenges": len(abs_challenges),
-            "overturned":       sum(1 for c in abs_challenges if c.get("outcome") == CORRECT_OVERTURN),
-            "missed_calls":     sum(1 for c in abs_challenges if c.get("outcome") == MISSED_CALL),
-            "correct_upheld":   sum(1 for c in abs_challenges if c.get("outcome") == CORRECT_UPHELD),
-            "no_challenges":    len(abs_challenges) == 0,
+            "total_challenges": total_abs,
+            "overturned":       overturned,
+            "missed_calls":     missed,
+            "correct_upheld":   upheld,
+            "no_challenges":    total_abs == 0,
+            # Rates
+            "challenge_rate":   round(total_abs / total_called * 100, 1) if total_called else 0.0,
+            "overturn_rate":    round(overturned / total_abs * 100, 1) if total_abs else 0.0,
         },
     }
     return result
@@ -313,7 +323,7 @@ def load_season_stats() -> dict:
         except Exception as exc:
             log.warning("Could not read season stats: %s", exc)
     return {
-        "last_updated":    None,
+        "last_updated":     None,
         "total_challenges": 0,
         "total_overturned": 0,
         "team_stats":       {},
@@ -321,31 +331,88 @@ def load_season_stats() -> dict:
     }
 
 
+def load_daily_history() -> list[dict]:
+    if DAILY_HISTORY.exists():
+        try:
+            return json.loads(DAILY_HISTORY.read_text())
+        except Exception as exc:
+            log.warning("Could not read daily_history: %s", exc)
+    return []
+
+
 def update_season_stats(audit_result: dict) -> dict:
     """Merge today's audit into the running season totals and persist."""
-    stats = load_season_stats()
+    stats   = load_season_stats()
+    summary = audit_result["summary"]
+    ua      = audit_result.get("ump_accuracy", {}) or {}
 
-    stats["last_updated"]     = audit_result["game_date"]
-    stats["total_challenges"] += audit_result["summary"]["total_challenges"]
-    stats["total_overturned"] += audit_result["summary"]["overturned"]
+    stats["last_updated"]      = audit_result["game_date"]
+    stats["total_challenges"] += summary["total_challenges"]
+    stats["total_overturned"] += summary["overturned"]
 
+    # ── Team stats ────────────────────────────────────────────────────────────
     for team, day_stats in audit_result["team_stats"].items():
         s = stats["team_stats"].setdefault(team, {
             "challenges": 0, "overturned": 0, "missed_calls": 0
         })
-        s["challenges"]  += day_stats.get("challenges", 0)
-        s["overturned"]  += day_stats.get("overturned", 0)
+        s["challenges"]   += day_stats.get("challenges", 0)
+        s["overturned"]   += day_stats.get("overturned", 0)
         s["missed_calls"] += day_stats.get("missed_calls", 0)
 
+    # ── Umpire ABS-challenge stats ────────────────────────────────────────────
     for umpire, day_u in audit_result["umpire_stats"].items():
-        u = stats["umpire_stats"].setdefault(umpire, {"total": 0, "correct": 0})
+        u = stats["umpire_stats"].setdefault(umpire, {
+            "total": 0, "correct": 0,
+            "total_called": 0, "correct_called": 0,
+            "wrong_strikes": 0, "wrong_balls": 0,
+        })
         u["total"]   += day_u.get("total", 0)
         u["correct"] += day_u.get("correct", 0)
 
-    # Recompute correct_rate
+    # ── Full-game umpire accuracy (from all called pitches) ───────────────────
+    ump_name = ua.get("name")
+    if ump_name and ua.get("total_called", 0) > 0:
+        u = stats["umpire_stats"].setdefault(ump_name, {
+            "total": 0, "correct": 0,
+            "total_called": 0, "correct_called": 0,
+            "wrong_strikes": 0, "wrong_balls": 0,
+        })
+        u["total_called"]   = u.get("total_called", 0) + ua.get("total_called", 0)
+        u["correct_called"] = u.get("correct_called", 0) + ua.get("correct", 0)
+        u["wrong_strikes"]  = u.get("wrong_strikes", 0) + ua.get("wrong_strikes", 0)
+        u["wrong_balls"]    = u.get("wrong_balls", 0) + ua.get("wrong_balls", 0)
+
+    # Recompute derived rates for all umpires
     for u in stats["umpire_stats"].values():
         u["correct_rate"] = u["correct"] / u["total"] if u["total"] else 0.0
+        if u.get("total_called", 0) > 0:
+            u["accuracy_pct"] = round(u["correct_called"] / u["total_called"] * 100, 1)
 
     SEASON_STATS.write_text(json.dumps(stats, indent=2))
     log.info("Season stats updated → %s", SEASON_STATS)
+
+    # ── Daily history (upsert by date) ────────────────────────────────────────
+    history = load_daily_history()
+    today   = audit_result["game_date"]
+    entry   = next((e for e in history if e["date"] == today), None)
+    if entry is None:
+        entry = {"date": today, "abs_challenges": 0, "overturned": 0,
+                 "total_called": 0, "correct_called": 0,
+                 "wrong_strikes": 0, "wrong_balls": 0}
+        history.append(entry)
+
+    entry["abs_challenges"] += summary["total_challenges"]
+    entry["overturned"]     += summary["overturned"]
+    entry["total_called"]   += ua.get("total_called", 0)
+    entry["correct_called"] += ua.get("correct", 0)
+    entry["wrong_strikes"]  += ua.get("wrong_strikes", 0)
+    entry["wrong_balls"]    += ua.get("wrong_balls", 0)
+    if entry["total_called"]:
+        entry["accuracy_pct"]   = round(entry["correct_called"] / entry["total_called"] * 100, 1)
+    if entry["abs_challenges"]:
+        entry["overturn_rate"]  = round(entry["overturned"] / entry["abs_challenges"] * 100, 1)
+
+    history.sort(key=lambda e: e["date"])
+    DAILY_HISTORY.write_text(json.dumps(history, indent=2))
+
     return stats

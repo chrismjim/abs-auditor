@@ -41,9 +41,10 @@ COLORS = {
 ROOT_DIR     = pathlib.Path(__file__).parent.parent
 DATA_DIR     = ROOT_DIR / "data"
 OUTPUT_DIR   = ROOT_DIR / "output"
-SEASON_STATS = DATA_DIR / "season_stats.json"
-POSTED_GAMES = DATA_DIR / "posted_games.json"
-ERROR_LOG    = DATA_DIR / "error_log.txt"
+SEASON_STATS  = DATA_DIR / "season_stats.json"
+DAILY_HISTORY = DATA_DIR / "daily_history.json"
+POSTED_GAMES  = DATA_DIR / "posted_games.json"
+ERROR_LOG     = DATA_DIR / "error_log.txt"
 
 DATA_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)

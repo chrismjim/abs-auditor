@@ -34,6 +34,7 @@ from src.audit import (
 )
 from src.config import (
     COLORS,
+    DAILY_HISTORY,
     DPI,
     FIGURE_HEIGHT_PX,
     FIGURE_WIDTH_PX,
@@ -369,7 +370,38 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
             size=8, color=COLORS["highlight"])
         step(0.75, small=True)
 
-    step(0.55)   # spacer
+    # ── Favor metric ──────────────────────────────────────────────────────────
+    favor = ua.get("favor_score")
+    if favor is not None and favor != 0:
+        if favor > 0:
+            favor_color = "#f85149"   # red — pitcher-friendly (extra strikes)
+            favor_txt   = f"+{favor} pitcher favor"
+        else:
+            favor_color = "#3fb950"   # green — batter-friendly (extra balls)
+            favor_txt   = f"{favor} batter favor"
+        txt(f"● {favor_txt}", size=7.5, color=favor_color)
+        step(0.75, small=True)
+
+    step(0.40)   # spacer
+
+    # ── Game rates ────────────────────────────────────────────────────────────
+    ch_rate = summary.get("challenge_rate", 0)
+    ot_rate = summary.get("overturn_rate", 0)
+    total_abs = summary.get("total_challenges", 0)
+    if ump_tot >= 5:
+        txt("GAME RATES", size=7, color=COLORS["text_muted"], weight="bold")
+        step(0.55)
+        txt(f"Challenge rate  {ch_rate:.1f}% of called pitches",
+            size=7.5, color=COLORS["text"])
+        step(0.70, small=True)
+        if total_abs > 0:
+            ot_color = (COLORS["correct"] if ot_rate >= 55 else
+                        COLORS["highlight"] if ot_rate >= 40 else
+                        COLORS["text_muted"])
+            txt(f"Overturn rate   {ot_rate:.0f}%  ({summary.get('overturned', 0)}/{total_abs})",
+                size=7.5, color=ot_color)
+            step(0.70, small=True)
+        step(0.30)
 
     # ── ABS CHALLENGES ────────────────────────────────────────────────────────
     if abs_ch:
@@ -377,19 +409,26 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
         step(0.55)
 
         for ch in abs_ch:
-            outcome = ch.get("outcome")
-            color   = OUTCOME_COLOR.get(outcome, COLORS["neutral"])
-            label   = OUTCOME_LABEL.get(outcome, "—")
-            half    = "T" if ch.get("half_inning") == "top" else "B"
-            inn     = ch.get("inning", "?")
-            pitcher = _last(ch.get("pitcher"))
-            batter  = _last(ch.get("batter"))
-            cnt     = ch.get("count") or {}
-            b, s    = cnt.get("balls"), cnt.get("strikes")
-            cnt_str = f" {b}-{s}" if b is not None else ""
-            edge_d  = ch.get("edge_dist")
-            orig    = (ch.get("original_call") or "").lower()
+            outcome  = ch.get("outcome")
+            color    = OUTCOME_COLOR.get(outcome, COLORS["neutral"])
+            label    = OUTCOME_LABEL.get(outcome, "—")
+            half     = "T" if ch.get("half_inning") == "top" else "B"
+            inn      = ch.get("inning", "?")
+            pitcher  = _last(ch.get("pitcher"))
+            batter   = _last(ch.get("batter"))
+            cnt      = ch.get("count") or {}
+            b, s     = cnt.get("balls"), cnt.get("strikes")
+            cnt_str  = f" {b}-{s}" if b is not None else ""
+            edge_d   = ch.get("edge_dist")
+            orig     = (ch.get("original_call") or "").lower()
             call_lbl = "CS" if "called strike" in orig else "Ball"
+            runners  = ch.get("runners_on")
+
+            # Runners on base indicator
+            if runners is not None:
+                runner_icons = ["—", "1on", "2on", "LOB"][min(runners, 3)]
+            else:
+                runner_icons = ""
 
             dist = ""
             if edge_d is not None:
@@ -408,7 +447,8 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
                      color=COLORS["text"], fontsize=8, fontweight="bold",
                      transform=fig.transFigure)
             step(0.60, small=True)
-            txt(f"    {call_lbl}  ·  {label}{dist}",
+            runner_part = f"  {runner_icons}" if runner_icons else ""
+            txt(f"    {call_lbl}  ·  {label}{dist}{runner_part}",
                 size=7, color=color)
             step(0.90, small=True)
 
@@ -584,6 +624,188 @@ def make_leaderboard(leaderboard_df: pd.DataFrame, game_date: date) -> Path | No
     return out_path
 
 
+# ── Umpire accuracy season leaderboard ───────────────────────────────────────
+
+def make_ump_accuracy_leaderboard(season_stats: dict, game_date: date) -> Path | None:
+    """
+    Bar chart of every umpire's full-game called-pitch accuracy for the season,
+    ranked best → worst.  Only includes umps with ≥ 50 total called pitches.
+    """
+    ump_data = season_stats.get("umpire_stats", {})
+    rows = []
+    for name, u in ump_data.items():
+        tc = u.get("total_called", 0)
+        if tc < 50:
+            continue
+        rows.append({
+            "name":    name.split()[-1],   # last name only
+            "pct":     u.get("accuracy_pct", 0),
+            "total":   tc,
+            "ws":      u.get("wrong_strikes", 0),
+            "wb":      u.get("wrong_balls", 0),
+        })
+
+    if not rows:
+        return None
+
+    rows.sort(key=lambda r: r["pct"])    # ascending: worst at top, best at bottom
+    n    = len(rows)
+    names = [r["name"] for r in rows]
+    pcts  = [r["pct"]  for r in rows]
+    totals= [r["total"] for r in rows]
+
+    fig_h = max(4.5, min(14.0, n * 0.42 + 1.5))
+    fig, ax = plt.subplots(figsize=(FW, fig_h), dpi=DPI)
+    fig.patch.set_facecolor(COLORS["bg"])
+    ax.set_facecolor(COLORS["bg"])
+
+    bar_colors = [
+        COLORS["correct"]   if p >= 95 else
+        COLORS["highlight"] if p >= 88 else
+        COLORS["missed"]
+        for p in pcts
+    ]
+    bar_h = max(0.35, min(0.72, 8.0 / n))
+    bars  = ax.barh(names, pcts, color=bar_colors, height=bar_h, zorder=3, alpha=0.85)
+
+    ax.xaxis.grid(True, color=COLORS["border"], linewidth=0.5, zorder=0)
+    ax.set_axisbelow(True)
+    xlim = max(100, max(pcts) * 1.12)
+    fs   = max(6, min(9, int(220 / n)))
+
+    for bar, pct, total, r in zip(bars, pcts, totals, rows):
+        favor = r["ws"] - r["wb"]
+        bias  = f"  +{favor}P" if favor > 0 else (f"  {favor}B" if favor < 0 else "")
+        ax.text(bar.get_width() + xlim * 0.012,
+                bar.get_y() + bar.get_height() / 2,
+                f"{pct:.1f}%  ({total} pitches){bias}",
+                va="center", ha="left",
+                color=COLORS["text"], fontsize=fs)
+
+    league_avg = sum(r["pct"] * r["total"] for r in rows) / sum(r["total"] for r in rows)
+    ax.axvline(league_avg, color=COLORS["highlight"], linewidth=1.4,
+               linestyle="--", label=f"MLB avg {league_avg:.1f}%", zorder=4)
+    ax.legend(facecolor=COLORS["surface"], edgecolor=COLORS["border"],
+              labelcolor=COLORS["text"], fontsize=8, loc="lower right")
+    ax.set_xlabel("Called-pitch accuracy (%)", color=COLORS["text"], fontsize=10)
+    ax.set_title(
+        f"HP UMPIRE ACCURACY LEADERBOARD — {game_date.strftime('%B %-d, %Y').upper()}",
+        color=COLORS["text"], fontsize=13, fontweight="bold", pad=12)
+    ax.tick_params(colors=COLORS["text"], labelsize=fs)
+    ax.yaxis.tick_left()
+    for sp in ("top", "right"):
+        ax.spines[sp].set_visible(False)
+    for sp in ("left", "bottom"):
+        ax.spines[sp].set_color(COLORS["border"])
+    ax.set_xlim(max(80, min(pcts) - 3), xlim)
+
+    fig.text(0.50, 0.005,
+             "Based on called strikes + called balls vs. standard zone  |  2026 season",
+             ha="center", va="bottom",
+             color=COLORS["text_muted"], fontsize=7,
+             transform=fig.transFigure)
+
+    out_path = OUTPUT_DIR / f"ump_leaderboard_{game_date.isoformat()}.png"
+    plt.savefig(out_path, dpi=DPI, bbox_inches="tight", facecolor=COLORS["bg"])
+    plt.close(fig)
+    log.info("Saved ump leaderboard → %s", out_path)
+    return out_path
+
+
+# ── Accuracy trend chart ──────────────────────────────────────────────────────
+
+def make_trend_chart(game_date: date, lookback_days: int = 14) -> Path | None:
+    """
+    Dual-axis line chart showing rolling daily called-pitch accuracy (left axis)
+    and ABS overturn rate (right axis) over the last `lookback_days` days.
+    """
+    import json as _json
+    if not DAILY_HISTORY.exists():
+        return None
+
+    try:
+        history = _json.loads(DAILY_HISTORY.read_text())
+    except Exception:
+        return None
+
+    # Filter to lookback window, require accuracy data
+    history = [e for e in history if e.get("accuracy_pct") is not None]
+    history = history[-lookback_days:]
+    if len(history) < 2:
+        return None
+
+    dates       = [e["date"] for e in history]
+    accuracy    = [e["accuracy_pct"] for e in history]
+    overturn    = [e.get("overturn_rate", 0) for e in history]
+    x           = list(range(len(dates)))
+    short_dates = [d[5:] for d in dates]   # "MM-DD"
+
+    fig, ax1 = plt.subplots(figsize=(FW, 4.0), dpi=DPI)
+    fig.patch.set_facecolor(COLORS["bg"])
+    ax1.set_facecolor(COLORS["bg"])
+
+    # Accuracy line
+    ax1.plot(x, accuracy, color=COLORS["correct"], linewidth=2.0,
+             marker="o", markersize=4, label="Called accuracy %", zorder=3)
+    ax1.fill_between(x, accuracy, alpha=0.15, color=COLORS["correct"])
+    ax1.set_ylabel("Called-pitch accuracy (%)", color=COLORS["correct"], fontsize=9)
+    ax1.tick_params(axis="y", colors=COLORS["correct"])
+    ax1.set_ylim(max(80, min(accuracy) - 2), 100)
+
+    # Overturn rate on right axis
+    ax2 = ax1.twinx()
+    ax2.set_facecolor(COLORS["bg"])
+    ax2.plot(x, overturn, color=COLORS["highlight"], linewidth=2.0,
+             marker="s", markersize=4, linestyle="--",
+             label="ABS overturn rate %", zorder=3)
+    ax2.set_ylabel("ABS overturn rate (%)", color=COLORS["highlight"], fontsize=9)
+    ax2.tick_params(axis="y", colors=COLORS["highlight"])
+    ax2.set_ylim(0, 100)
+
+    # League-average reference lines
+    avg_acc = sum(accuracy) / len(accuracy)
+    avg_ot  = sum(o for o in overturn if o) / max(1, sum(1 for o in overturn if o))
+    ax1.axhline(avg_acc, color=COLORS["correct"], linewidth=0.8, linestyle=":", alpha=0.5)
+    ax2.axhline(avg_ot, color=COLORS["highlight"], linewidth=0.8, linestyle=":", alpha=0.5)
+
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(short_dates, rotation=45, ha="right",
+                        color=COLORS["text"], fontsize=7)
+    ax1.set_xlim(-0.5, len(x) - 0.5)
+
+    for sp in ("top",):
+        ax1.spines[sp].set_visible(False)
+        ax2.spines[sp].set_visible(False)
+    for sp in ("left", "bottom", "right"):
+        ax1.spines[sp].set_color(COLORS["border"])
+        ax2.spines[sp].set_color(COLORS["border"])
+    ax1.xaxis.grid(True, color=COLORS["border"], linewidth=0.4, alpha=0.5)
+
+    # Combined legend
+    lines  = ax1.get_lines() + ax2.get_lines()
+    labels = [l.get_label() for l in lines]
+    ax1.legend(lines, labels, facecolor=COLORS["surface"], edgecolor=COLORS["border"],
+               labelcolor=COLORS["text"], fontsize=8, loc="lower left")
+
+    fig.suptitle(
+        f"MLB ABS ACCURACY TREND — last {len(history)} days",
+        color=COLORS["text"], fontsize=11, fontweight="bold", y=1.01,
+    )
+    fig.text(0.50, -0.04,
+             "Called accuracy = correct ball/strike calls ÷ all called pitches",
+             ha="center", va="top",
+             color=COLORS["text_muted"], fontsize=7,
+             transform=fig.transFigure)
+
+    fig.tight_layout()
+    out_path = OUTPUT_DIR / f"trend_{game_date.isoformat()}.png"
+    plt.savefig(out_path, dpi=DPI, bbox_inches="tight",
+                facecolor=COLORS["bg"], pad_inches=0.10)
+    plt.close(fig)
+    log.info("Saved trend chart → %s", out_path)
+    return out_path
+
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def generate_images(audit_result: dict, season_stats: dict,
@@ -592,7 +814,28 @@ def generate_images(audit_result: dict, season_stats: dict,
                     force_leaderboard: bool = False,
                     game_pk: int | None = None) -> dict:
     card = make_game_card(audit_result, game_date, game_pk=game_pk)
-    lb   = None
-    if (force_leaderboard or game_date.weekday() == 0) and leaderboard_df is not None:
-        lb = make_leaderboard(leaderboard_df, game_date)
-    return {"daily_card": card, "leaderboard": lb}
+
+    is_monday = game_date.weekday() == 0
+    do_lb     = force_leaderboard or is_monday
+
+    # ABS challenge leaderboard (team/batter overturn rates)
+    abs_lb = None
+    if do_lb and leaderboard_df is not None:
+        abs_lb = make_leaderboard(leaderboard_df, game_date)
+
+    # Umpire accuracy leaderboard (season, Mondays)
+    ump_lb = None
+    if do_lb and season_stats:
+        ump_lb = make_ump_accuracy_leaderboard(season_stats, game_date)
+
+    # Accuracy trend chart (Mondays)
+    trend = None
+    if do_lb:
+        trend = make_trend_chart(game_date)
+
+    return {
+        "daily_card":       card,
+        "leaderboard":      abs_lb,
+        "ump_leaderboard":  ump_lb,
+        "trend":            trend,
+    }

@@ -145,21 +145,23 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
                 dry_run: bool = True) -> list[str]:
     """
     Post one tweet (with card image) for the completed game.
-    Leaderboard (Mondays) is posted as a reply.
+    On Mondays, also reply with ump leaderboard and trend chart.
     Returns list of tweet IDs posted.
     """
-    tweet_text  = build_tweet(audit_result, game_date)
-    daily_card  = images.get("daily_card")
-    leaderboard = images.get("leaderboard")
+    tweet_text   = build_tweet(audit_result, game_date)
+    daily_card   = images.get("daily_card")
+    abs_lb       = images.get("leaderboard")
+    ump_lb       = images.get("ump_leaderboard")
+    trend        = images.get("trend")
 
     if dry_run:
         log.info("=== DRY RUN — no tweets posted ===")
         log.info("── Tweet ──\n%s", tweet_text)
         log.info("Char count: %d", len(tweet_text))
-        if daily_card:
-            log.info("Image: %s", daily_card)
-        if leaderboard:
-            log.info("Leaderboard: %s", leaderboard)
+        for label, img in [("Card", daily_card), ("ABS LB", abs_lb),
+                           ("Ump LB", ump_lb), ("Trend", trend)]:
+            if img:
+                log.info("%s: %s", label, img)
         return ["dry-run-id-1"]
 
     # ── Live posting ──────────────────────────────────────────────────────────
@@ -173,7 +175,7 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
 
     tweet_ids: list[str] = []
 
-    # Main tweet with card image
+    # ── Main game tweet with card image ───────────────────────────────────────
     media_ids: list[str] = []
     if daily_card and Path(daily_card).exists():
         try:
@@ -193,24 +195,61 @@ def post_thread(audit_result: dict, images: dict, game_date: date,
         log.error("Failed to post tweet: %s", exc)
         raise
 
-    # Leaderboard reply (Mondays)
-    if leaderboard and Path(leaderboard).exists():
+    date_str = game_date.strftime("%-m/%-d/%Y")
+
+    # ── ABS challenge leaderboard reply (Mondays) ─────────────────────────────
+    if abs_lb and Path(abs_lb).exists():
         try:
-            lb_mid  = _upload_media(api_v1, Path(leaderboard))
-            lb_text = (
-                f"Season ABS leaderboard — "
-                f"{game_date.strftime('%-m/%-d/%Y')} ⚾\n"
-                f"#MLB #ABS"
-            )
+            lb_mid  = _upload_media(api_v1, Path(abs_lb))
+            lb_text = f"ABS challenge leaderboard — {date_str} ⚾\n#MLB #ABS"
             lb = client.create_tweet(
                 text=lb_text,
                 in_reply_to_tweet_id=tweet_ids[0],
                 media_ids=[lb_mid],
             )
             tweet_ids.append(str(lb.data["id"]))
-            log.info("Posted leaderboard reply: id=%s", lb.data["id"])
+            log.info("Posted ABS leaderboard reply: id=%s", lb.data["id"])
         except Exception as exc:
-            log.warning("Failed to post leaderboard: %s", exc)
+            log.warning("Failed to post ABS leaderboard: %s", exc)
+
+    # ── Umpire accuracy leaderboard reply (Mondays) ───────────────────────────
+    if ump_lb and Path(ump_lb).exists():
+        try:
+            ul_mid  = _upload_media(api_v1, Path(ump_lb))
+            ul_text = (
+                f"HP umpire accuracy leaderboard — {date_str} ⚾\n"
+                f"Called-pitch accuracy (wrong strikes + wrong balls) · 2026 season\n"
+                f"#MLB #ABS #Umpires"
+            )
+            reply_to = tweet_ids[-1]
+            ul = client.create_tweet(
+                text=ul_text,
+                in_reply_to_tweet_id=reply_to,
+                media_ids=[ul_mid],
+            )
+            tweet_ids.append(str(ul.data["id"]))
+            log.info("Posted ump leaderboard reply: id=%s", ul.data["id"])
+        except Exception as exc:
+            log.warning("Failed to post ump leaderboard: %s", exc)
+
+    # ── Trend chart reply (Mondays) ───────────────────────────────────────────
+    if trend and Path(trend).exists():
+        try:
+            tr_mid  = _upload_media(api_v1, Path(trend))
+            tr_text = (
+                f"MLB ump accuracy + ABS overturn rate trend — {date_str} ⚾\n"
+                f"#MLB #ABS"
+            )
+            reply_to = tweet_ids[-1]
+            tr = client.create_tweet(
+                text=tr_text,
+                in_reply_to_tweet_id=reply_to,
+                media_ids=[tr_mid],
+            )
+            tweet_ids.append(str(tr.data["id"]))
+            log.info("Posted trend chart reply: id=%s", tr.data["id"])
+        except Exception as exc:
+            log.warning("Failed to post trend chart: %s", exc)
 
     return tweet_ids
 
