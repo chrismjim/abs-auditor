@@ -19,9 +19,9 @@ ZONE_BOT_FT = 1.50
 
 # ── Visualization ─────────────────────────────────────────────────────────────
 MAX_CHALLENGES_ON_CARD = 6
-FIGURE_WIDTH_PX  = 1200
-FIGURE_HEIGHT_PX = 675
-DPI              = 100   # 1200×675 @ 100 dpi
+FIGURE_WIDTH_PX  = 2400
+FIGURE_HEIGHT_PX = 1350
+DPI              = 200   # 2400×1350 @ 200 dpi
 
 COLORS = {
     "bg":         "#0d1117",
