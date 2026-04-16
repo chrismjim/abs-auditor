@@ -544,7 +544,7 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
     elif summary.get("no_challenges"):
         txt("ABS CHALLENGES", size=7, color=COLORS["text_muted"], weight="bold")
         step(0.55)
-        txt("None this game  ✓", size=9, color=COLORS["correct"])
+        txt("None this game", size=9, color=COLORS["correct"])
         step(0.80)
 
     # ── REPLAY CHALLENGES ─────────────────────────────────────────────────────
