@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-16",
-  "total_challenges": 562,
-  "total_overturned": 77,
+  "total_challenges": 564,
+  "total_overturned": 78,
   "team_stats": {
     "CIN": {
       "challenges": 14,
@@ -14,8 +14,8 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 27,
-      "overturned": 3,
+      "challenges": 29,
+      "overturned": 4,
       "missed_calls": 11
     },
     "ATL": {
@@ -84,8 +84,8 @@
       "missed_calls": 11
     },
     "CWS": {
-      "challenges": 24,
-      "overturned": 5,
+      "challenges": 26,
+      "overturned": 6,
       "missed_calls": 10
     },
     "BOS": {
@@ -679,6 +679,16 @@
       "wrong_balls": 6,
       "correct_rate": 0.5,
       "accuracy_pct": 91.6
+    },
+    "Austin Jones": {
+      "total": 2,
+      "correct": 2,
+      "total_called": 194,
+      "correct_called": 184,
+      "wrong_strikes": 6,
+      "wrong_balls": 4,
+      "correct_rate": 1.0,
+      "accuracy_pct": 94.8
     }
   }
 }
