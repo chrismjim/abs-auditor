@@ -383,7 +383,12 @@
     "Nestor Ceja": {
       "total": 5,
       "correct": 5,
-      "correct_rate": 1.0
+      "correct_rate": 1.0,
+      "total_called": 116,
+      "correct_called": 105,
+      "wrong_strikes": 6,
+      "wrong_balls": 5,
+      "accuracy_pct": 90.5
     },
     "Ryan Wills": {
       "total": 10,
