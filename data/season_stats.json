@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-15",
-  "total_challenges": 556,
+  "last_updated": "2026-04-16",
+  "total_challenges": 558,
   "total_overturned": 77,
   "team_stats": {
     "CIN": {
-      "challenges": 12,
+      "challenges": 14,
       "overturned": 2,
       "missed_calls": 3
     },
@@ -59,7 +59,7 @@
       "missed_calls": 19
     },
     "SF": {
-      "challenges": 18,
+      "challenges": 20,
       "overturned": 5,
       "missed_calls": 1
     },
@@ -516,9 +516,14 @@
       "correct_rate": 0.6666666666666666
     },
     "Junior Valentine": {
-      "total": 2,
-      "correct": 2,
-      "correct_rate": 1.0
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75,
+      "total_called": 158,
+      "correct_called": 148,
+      "wrong_strikes": 10,
+      "wrong_balls": 0,
+      "accuracy_pct": 93.7
     },
     "Todd Tichenor": {
       "total": 3,
