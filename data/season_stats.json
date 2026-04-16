@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-15",
-  "total_challenges": 515,
+  "total_challenges": 518,
   "total_overturned": 71,
   "team_stats": {
     "CIN": {
@@ -54,7 +54,7 @@
       "missed_calls": 8
     },
     "NYY": {
-      "challenges": 45,
+      "challenges": 46,
       "overturned": 4,
       "missed_calls": 19
     },
@@ -109,7 +109,7 @@
       "missed_calls": 19
     },
     "LAA": {
-      "challenges": 41,
+      "challenges": 42,
       "overturned": 2,
       "missed_calls": 21
     },
@@ -134,14 +134,14 @@
       "missed_calls": 3
     },
     "DET": {
-      "challenges": 29,
+      "challenges": 31,
       "overturned": 7,
-      "missed_calls": 3
+      "missed_calls": 4
     },
     "KC": {
-      "challenges": 25,
+      "challenges": 27,
       "overturned": 5,
-      "missed_calls": 4
+      "missed_calls": 5
     },
     "COL": {
       "challenges": 26,
@@ -213,12 +213,22 @@
     "James Hoye": {
       "total": 5,
       "correct": 3,
-      "correct_rate": 0.6
+      "correct_rate": 0.6,
+      "total_called": 125,
+      "correct_called": 111,
+      "wrong_strikes": 8,
+      "wrong_balls": 6,
+      "accuracy_pct": 88.8
     },
     "Lance Barksdale": {
-      "total": 5,
-      "correct": 5,
-      "correct_rate": 1.0
+      "total": 6,
+      "correct": 6,
+      "correct_rate": 1.0,
+      "total_called": 139,
+      "correct_called": 127,
+      "wrong_strikes": 7,
+      "wrong_balls": 5,
+      "accuracy_pct": 91.4
     },
     "Chad Fairchild": {
       "total": 1,
@@ -288,7 +298,12 @@
     "Bruce Dreckman": {
       "total": 6,
       "correct": 2,
-      "correct_rate": 0.3333333333333333
+      "correct_rate": 0.3333333333333333,
+      "total_called": 154,
+      "correct_called": 140,
+      "wrong_strikes": 11,
+      "wrong_balls": 3,
+      "accuracy_pct": 90.9
     },
     "Chad Whitson": {
       "total": 17,
@@ -408,7 +423,12 @@
     "Quinn Wolcott": {
       "total": 4,
       "correct": 3,
-      "correct_rate": 0.75
+      "correct_rate": 0.75,
+      "total_called": 155,
+      "correct_called": 147,
+      "wrong_strikes": 4,
+      "wrong_balls": 4,
+      "accuracy_pct": 94.8
     },
     "Tom Hanahan": {
       "total": 3,
@@ -529,6 +549,16 @@
       "total": 12,
       "correct": 6,
       "correct_rate": 0.5
+    },
+    "Jansen Visconti": {
+      "total": 2,
+      "correct": 1,
+      "total_called": 149,
+      "correct_called": 138,
+      "wrong_strikes": 8,
+      "wrong_balls": 3,
+      "correct_rate": 0.5,
+      "accuracy_pct": 92.6
     }
   }
 }
