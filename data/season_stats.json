@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-15",
-  "total_challenges": 555,
+  "total_challenges": 556,
   "total_overturned": 77,
   "team_stats": {
     "CIN": {
@@ -34,7 +34,7 @@
       "missed_calls": 20
     },
     "SEA": {
-      "challenges": 40,
+      "challenges": 41,
       "overturned": 4,
       "missed_calls": 5
     },
@@ -129,7 +129,7 @@
       "missed_calls": 4
     },
     "SD": {
-      "challenges": 32,
+      "challenges": 33,
       "overturned": 3,
       "missed_calls": 3
     },
@@ -446,9 +446,14 @@
       "accuracy_pct": 90.7
     },
     "Bill Miller": {
-      "total": 3,
+      "total": 4,
       "correct": 1,
-      "correct_rate": 0.3333333333333333
+      "correct_rate": 0.25,
+      "total_called": 172,
+      "correct_called": 160,
+      "wrong_strikes": 7,
+      "wrong_balls": 5,
+      "accuracy_pct": 93.0
     },
     "Alfonso M\u00e1rquez": {
       "total": 1,
@@ -498,7 +503,12 @@
     "Edwin Moscoso": {
       "total": 5,
       "correct": 5,
-      "correct_rate": 1.0
+      "correct_rate": 1.0,
+      "total_called": 136,
+      "correct_called": 126,
+      "wrong_strikes": 7,
+      "wrong_balls": 3,
+      "accuracy_pct": 92.6
     },
     "Charlie Ramos": {
       "total": 9,
@@ -553,7 +563,12 @@
     "Edwin Jimenez": {
       "total": 1,
       "correct": 0,
-      "correct_rate": 0.0
+      "correct_rate": 0.0,
+      "total_called": 168,
+      "correct_called": 158,
+      "wrong_strikes": 7,
+      "wrong_balls": 3,
+      "accuracy_pct": 94.0
     },
     "Mark Wegner": {
       "total": 11,
