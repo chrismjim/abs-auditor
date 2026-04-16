@@ -19,11 +19,13 @@ from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+import matplotlib.colors as mcolors
 import matplotlib.patches as mpatches
 import matplotlib.patheffects as pe
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.lines import Line2D
 
 from src.audit import (
@@ -78,6 +80,38 @@ OUTCOME_LABEL = {
 }
 
 
+# ── Font setup ────────────────────────────────────────────────────────────────
+
+def _setup_font() -> str:
+    """Return the best available premium font family."""
+    from matplotlib import font_manager as fm
+    available = {f.name for f in fm.fontManager.ttflist}
+    for font in ("Inter", "Roboto", "Helvetica Neue", "Helvetica", "Gill Sans", "Arial"):
+        if font in available:
+            return font
+    return "sans-serif"
+
+
+_FONT = _setup_font()
+
+
+# ── Glow scatter helper ────────────────────────────────────────────────────────
+
+def _scatter_glow(ax: plt.Axes,
+                  xs, zs, color: str,
+                  size: float = 110,
+                  layers: int = 3,
+                  zorder: float = 6,
+                  edge: bool = False) -> None:
+    """Neon-glow scatter: concentric layers from large+transparent to core dot."""
+    glow_sizes  = [size * 3.2, size * 2.0, size * 1.35]
+    glow_alphas = [0.06,       0.11,        0.20       ]
+    for s, a in zip(glow_sizes[-layers:], glow_alphas[-layers:]):
+        ax.scatter(xs, zs, s=s, c=color, alpha=a, linewidths=0, zorder=zorder - 0.1)
+    kw: dict = dict(linewidths=1.5, edgecolors="white") if edge else dict(linewidths=0)
+    ax.scatter(xs, zs, s=size, c=color, alpha=0.95, zorder=zorder, **kw)
+
+
 # ── Tiny utilities ────────────────────────────────────────────────────────────
 
 def _tc(abbr: str | None) -> str:
@@ -102,63 +136,70 @@ def _parse_matchup(m: str | None) -> tuple[str, str]:
 
 def _draw_header(fig: plt.Figure, audit_result: dict, game_date: date) -> None:
     """
-    Clean two-row header:
-      Row 1: thin team-colour accent bar (very top)
-      Row 2: AWAY  score  HOME  (large, team colours)
-      Row 3: subtitle — ABS AUDIT · DATE
-    No overlapping elements.
+    Premium gradient header: away-color → dark → home-color band behind
+    team abbreviations, score, and subtitle.
     """
-    matchup = audit_result.get("matchup", "")
+    matchup  = audit_result.get("matchup", "")
     away, home = _parse_matchup(matchup)
-    score   = audit_result.get("final_score", {}) or {}
-    a_sc    = score.get("away")
-    h_sc    = score.get("home")
+    score    = audit_result.get("final_score", {}) or {}
+    a_sc     = score.get("away")
+    h_sc     = score.get("home")
     date_str = game_date.strftime("%B %-d, %Y").upper()
 
-    # ── Thin accent bars at very top (not touching text) ─────────────────────
+    # ── Gradient band filling the full header region ──────────────────────────
+    hax = fig.add_axes([0.0, 0.818, 1.0, 0.182], zorder=1)
+    hax.set_axis_off()
     if away and home:
-        for x0, c in [(0.0, _tc(away)), (0.5, _tc(home))]:
-            fig.add_artist(mpatches.Rectangle(
-                (x0, 0.960), 0.5, 0.040,
-                transform=fig.transFigure,
-                color=c, alpha=0.90, zorder=5,
-            ))
+        away_c = mcolors.to_rgb(_tc(away))
+        home_c = mcolors.to_rgb(_tc(home))
+        dark_c = mcolors.to_rgb("#0d1117")
+        cmap_hdr = LinearSegmentedColormap.from_list(
+            "hdr", [away_c, dark_c, home_c])
+        grad = np.linspace(0, 1, 512).reshape(1, 512)
+        hax.imshow(grad, aspect="auto", cmap=cmap_hdr,
+                   alpha=0.45, extent=[0, 1, 0, 1], zorder=1)
+    hax.set_facecolor(COLORS["bg"])
 
     # ── Team / score row ─────────────────────────────────────────────────────
     if away and home:
-        # Away
         fig.text(0.275, 0.895, away,
                  ha="center", va="center",
                  color=_tc(away), fontsize=30, fontweight="bold",
-                 transform=fig.transFigure)
-        # Score
+                 fontfamily=_FONT,
+                 path_effects=[pe.withStroke(linewidth=3, foreground="#0d1117")],
+                 transform=fig.transFigure, zorder=10)
         if a_sc is not None and h_sc is not None:
             fig.text(0.500, 0.895, f"{a_sc}  –  {h_sc}",
                      ha="center", va="center",
                      color=COLORS["text"], fontsize=24, fontweight="bold",
-                     transform=fig.transFigure)
+                     fontfamily=_FONT,
+                     transform=fig.transFigure, zorder=10)
         else:
             fig.text(0.500, 0.895, "vs",
                      ha="center", va="center",
                      color=COLORS["text_muted"], fontsize=18,
-                     transform=fig.transFigure)
-        # Home
+                     fontfamily=_FONT,
+                     transform=fig.transFigure, zorder=10)
         fig.text(0.725, 0.895, home,
                  ha="center", va="center",
                  color=_tc(home), fontsize=30, fontweight="bold",
-                 transform=fig.transFigure)
+                 fontfamily=_FONT,
+                 path_effects=[pe.withStroke(linewidth=3, foreground="#0d1117")],
+                 transform=fig.transFigure, zorder=10)
     else:
         fig.text(0.500, 0.895, "MLB ABS AUDIT",
                  ha="center", va="center",
                  color=COLORS["text"], fontsize=22, fontweight="bold",
-                 transform=fig.transFigure)
+                 fontfamily=_FONT,
+                 transform=fig.transFigure, zorder=10)
 
     # ── Subtitle ─────────────────────────────────────────────────────────────
     fig.text(0.500, 0.840,
              f"ABS CHALLENGE AUDIT  ·  {date_str}",
              ha="center", va="center",
              color=COLORS["text_muted"], fontsize=8.5,
-             transform=fig.transFigure)
+             fontfamily=_FONT,
+             transform=fig.transFigure, zorder=10)
 
     # ── Hairline separator ────────────────────────────────────────────────────
     fig.add_artist(mpatches.Rectangle(
@@ -188,21 +229,42 @@ def _draw_zone(ax: plt.Axes,
     ax.set_aspect("equal", adjustable="box")
     ax.axis("off")
 
-    # ── Home plate silhouette ─────────────────────────────────────────────────
-    pw = ZONE_HALF_WIDTH_FT           # 0.7083 ft = half plate width
-    ph = 0.12
-    plate_y = _SZ_BOT - ph - 0.05
-    plate = mpatches.FancyBboxPatch(
-        (-pw, plate_y), pw * 2, ph,
-        boxstyle="round,pad=0.02",
-        linewidth=0, facecolor="#1f2937",
-    )
-    ax.add_patch(plate)
-    ax.text(0, plate_y + ph / 2, "HOME PLATE",
-            ha="center", va="center",
-            color="#4b5563", fontsize=4.5, fontweight="bold")
+    # ── Radial vignette (darkens display edges, spotlight on zone) ────────────
+    vx = np.linspace(-_DX, _DX, 200)
+    vz = np.linspace(_DZ_BOT, _DZ_TOP, 200)
+    VX, VZ = np.meshgrid(vx, vz)
+    cx_v, cz_v = 0.0, (_SZ_BOT + _SZ_TOP) / 2.0
+    rad = np.sqrt(((VX - cx_v) / (_DX * 1.1))**2
+                  + ((VZ - cz_v) / ((_DZ_TOP - _DZ_BOT) / 1.6))**2)
+    vignette = np.clip(rad - 0.3, 0, 1) * 0.55
+    ax.imshow(vignette, extent=[-_DX, _DX, _DZ_BOT, _DZ_TOP],
+              origin="lower", aspect="auto", cmap="Greys",
+              alpha=0.85, zorder=1, interpolation="bilinear")
 
-    # ── Zone fill + grid + border ─────────────────────────────────────────────
+    # ── 5-sided home plate (catcher's view) ───────────────────────────────────
+    pw       = ZONE_HALF_WIDTH_FT
+    ph       = 0.15       # height of plate rectangle
+    pp       = 0.075      # depth from rectangle bottom to pointed tip
+    plate_base = _SZ_BOT - ph - 0.05
+    plate_verts = np.array([
+        [-pw, plate_base + ph],   # back-left
+        [-pw, plate_base + pp],   # front-left
+        [ 0,  plate_base],        # point (home)
+        [ pw, plate_base + pp],   # front-right
+        [ pw, plate_base + ph],   # back-right
+    ])
+    plate_patch = plt.Polygon(
+        plate_verts, closed=True,
+        facecolor="#1a2030", edgecolor="#3d4f6b",
+        linewidth=1.2, zorder=2,
+    )
+    ax.add_patch(plate_patch)
+    ax.text(0, plate_base + (ph + pp) / 2 + 0.01, "HOME PLATE",
+            ha="center", va="center",
+            color="#4b5563", fontsize=4.0, fontweight="bold",
+            fontfamily=_FONT)
+
+    # ── Zone fill + interior subtle gradient ──────────────────────────────────
     zone_fill = mpatches.Rectangle(
         (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
         ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
@@ -210,24 +272,29 @@ def _draw_zone(ax: plt.Axes,
     )
     ax.add_patch(zone_fill)
 
+    # Subtle blue interior gradient — depth cue (lighter at centre)
+    zg = np.linspace(0.0, 0.12, 80).reshape(80, 1)
+    grad_arr = np.tile(zg, (1, 60))
+    ax.imshow(grad_arr,
+              extent=[-ZONE_HALF_WIDTH_FT, ZONE_HALF_WIDTH_FT, _SZ_BOT, _SZ_TOP],
+              origin="lower", aspect="auto", cmap="Blues",
+              alpha=0.18, zorder=3, interpolation="bilinear")
+
     w  = ZONE_HALF_WIDTH_FT
     dz = (_SZ_TOP - _SZ_BOT) / 3
     dx = w * 2 / 3
     for i in (1, 2):
-        ax.plot([-w, w], [_SZ_BOT + i * dz]*2, color="#2d333b", lw=0.8, zorder=3)
-        ax.plot([-w + i*dx]*2, [_SZ_BOT, _SZ_TOP], color="#2d333b", lw=0.8, zorder=3)
+        ax.plot([-w, w], [_SZ_BOT + i * dz]*2, color="#2d333b", lw=0.8, zorder=4)
+        ax.plot([-w + i*dx]*2, [_SZ_BOT, _SZ_TOP], color="#2d333b", lw=0.8, zorder=4)
 
     zone_border = mpatches.Rectangle(
         (-ZONE_HALF_WIDTH_FT, _SZ_BOT),
         ZONE_HALF_WIDTH_FT * 2, _SZ_TOP - _SZ_BOT,
-        linewidth=2.0, edgecolor="#6e7681", facecolor="none", zorder=3,
+        linewidth=2.0, edgecolor="#6e7681", facecolor="none", zorder=4,
     )
     ax.add_patch(zone_border)
 
     # ── Build an inverted clip patch for wrong strikes ────────────────────────
-    # Compound path: full display rect with a zone-box hole.
-    # Wrong-strike dots are geometrically clipped to the region OUTSIDE the zone,
-    # so no amount of dot radius can bleed across the boundary.
     _outer = np.array([
         [-_DX, _DZ_BOT], [_DX, _DZ_BOT], [_DX, _DZ_TOP], [-_DX, _DZ_TOP], [-_DX, _DZ_BOT],
     ])
@@ -239,32 +306,35 @@ def _draw_zone(ax: plt.Axes,
         [-ZONE_HALF_WIDTH_FT, _SZ_BOT],
     ])
     from matplotlib.path import Path as MPath
-    _codes = lambda pts: (
+    _codes_fn = lambda pts: (
         [MPath.MOVETO] + [MPath.LINETO] * (len(pts) - 2) + [MPath.CLOSEPOLY]
     )
     outside_clip = mpatches.PathPatch(
         MPath(np.vstack([_outer, _inner]),
-              _codes(_outer) + _codes(_inner)),
+              _codes_fn(_outer) + _codes_fn(_inner)),
         transform=ax.transData, visible=False,
     )
     ax.add_patch(outside_clip)
 
-    # ── Wrong strikes — clipped to outside-zone region ────────────────────────
+    # ── Wrong strikes — glow dots clipped to outside-zone region ─────────────
     ws = ua.get("wrong_strike_coords", [])
     if ws:
-        xs, zs = zip(*ws)
-        sc = ax.scatter(xs, zs, s=22, color="#f85149", alpha=0.85,
-                        linewidths=0, zorder=4)
-        sc.set_clip_path(outside_clip)
+        xs_w, zs_w = zip(*ws)
+        # Glow layers (large → transparent, then core)
+        for gsize, galpha in [(80, 0.05), (45, 0.10), (20, 0.80)]:
+            sc = ax.scatter(xs_w, zs_w, s=gsize, color="#f85149", alpha=galpha,
+                            linewidths=0, zorder=5)
+            sc.set_clip_path(outside_clip)
 
-    # ── Wrong balls (inside zone, no special clip needed) ─────────────────────
+    # ── Wrong balls — glow dots inside zone ───────────────────────────────────
     wb = ua.get("wrong_ball_coords", [])
     if wb:
         xb, zb = zip(*wb)
-        ax.scatter(xb, zb, s=22, color="#e3b341", alpha=0.85,
-                   linewidths=0, zorder=4)
+        for gsize, galpha in [(80, 0.05), (45, 0.10), (20, 0.80)]:
+            ax.scatter(xb, zb, s=gsize, color="#e3b341", alpha=galpha,
+                       linewidths=0, zorder=5)
 
-    # ── ABS challenge dots ────────────────────────────────────────────────────
+    # ── ABS challenge dots — neon glow ────────────────────────────────────────
     for ch in abs_challenges:
         px = ch.get("pitch_x")
         pz = ch.get("pitch_z")
@@ -279,12 +349,9 @@ def _draw_zone(ax: plt.Axes,
         b, s    = cnt.get("balls"), cnt.get("strikes")
         cnt_str = f"{b}-{s}" if b is not None else ""
 
-        # Large dot with white border
-        ax.scatter([px], [pz],
-                   s=110, color=color, zorder=6,
-                   linewidths=1.5, edgecolors="white")
+        # Neon glow layers + core with white ring
+        _scatter_glow(ax, [px], [pz], color, size=110, layers=3, zorder=6, edge=True)
 
-        # Label: inning on first line, count on second
         label = f"{half}{inn}" + (f"\n{cnt_str}" if cnt_str else "")
         ax.annotate(
             label,
@@ -292,7 +359,8 @@ def _draw_zone(ax: plt.Axes,
             textcoords="offset points",
             ha="center", va="bottom",
             color=color, fontsize=5.5, fontweight="bold",
-            zorder=7,
+            fontfamily=_FONT,
+            zorder=8,
         )
 
     # ── "STRIKE ZONE" label ───────────────────────────────────────────────────
@@ -360,6 +428,27 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
         txt(f"{ump_cor} / {ump_tot} called pitches correct",
             size=7.5, color=COLORS["text_muted"])
         step(0.80)
+        # ── Accuracy progress bar ─────────────────────────────────────────────
+        BAR_W = 0.445
+        BAR_H = 0.018
+        bar_y = y - BAR_H - 0.005
+        # Background track
+        fig.add_artist(mpatches.FancyBboxPatch(
+            (X, bar_y), BAR_W, BAR_H,
+            boxstyle="round,pad=0.003",
+            facecolor="#1c2128", edgecolor=COLORS["border"],
+            linewidth=0.8, transform=fig.transFigure, zorder=3,
+        ))
+        # Filled portion (clamped to BAR_W)
+        fill_w = min(BAR_W, BAR_W * (ump_pct / 100.0))
+        if fill_w > 0.004:
+            fig.add_artist(mpatches.FancyBboxPatch(
+                (X, bar_y), fill_w, BAR_H,
+                boxstyle="round,pad=0.003",
+                facecolor=pct_color, edgecolor="none",
+                linewidth=0, transform=fig.transFigure, zorder=4,
+            ))
+        y -= BAR_H + 0.024   # advance cursor past bar + gap
 
     if ws:
         txt(f"● {ws} wrong strike{'s' if ws != 1 else ''}",
@@ -442,7 +531,7 @@ def _draw_stats(fig: plt.Figure, audit_result: dict) -> None:
                      color=color, fontsize=8.5,
                      transform=fig.transFigure)
             fig.text(X + 0.018, y,
-                     f"{half}{inn}{cnt_str}  {pitcher} → {batter}",
+                     f"{half}{inn}{cnt_str}  {pitcher} vs {batter}",
                      ha="left", va="top",
                      color=COLORS["text"], fontsize=8, fontweight="bold",
                      transform=fig.transFigure)
@@ -512,6 +601,7 @@ def make_game_card(audit_result: dict, game_date: date,
     abs_ch = audit_result.get("abs_challenges", [])
     ua     = audit_result.get("ump_accuracy", {}) or {}
 
+    plt.rcParams["font.family"] = _FONT
     fig = plt.figure(figsize=(FW, FH), dpi=DPI)
     fig.patch.set_facecolor(COLORS["bg"])
 
