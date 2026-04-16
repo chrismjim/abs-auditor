@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-16",
-  "total_challenges": 558,
+  "total_challenges": 559,
   "total_overturned": 77,
   "team_stats": {
     "CIN": {
@@ -9,7 +9,7 @@
       "missed_calls": 3
     },
     "PIT": {
-      "challenges": 20,
+      "challenges": 21,
       "overturned": 3,
       "missed_calls": 1
     },
@@ -99,7 +99,7 @@
       "missed_calls": 29
     },
     "WSH": {
-      "challenges": 16,
+      "challenges": 17,
       "overturned": 1,
       "missed_calls": 0
     },
@@ -301,9 +301,14 @@
       "correct_rate": 1.0
     },
     "D.J. Reyburn": {
-      "total": 4,
-      "correct": 1,
-      "correct_rate": 0.25
+      "total": 5,
+      "correct": 2,
+      "correct_rate": 0.4,
+      "total_called": 154,
+      "correct_called": 142,
+      "wrong_strikes": 5,
+      "wrong_balls": 7,
+      "accuracy_pct": 92.2
     },
     "CB Bucknor": {
       "total": 1,
