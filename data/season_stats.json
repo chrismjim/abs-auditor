@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-16",
-  "total_challenges": 567,
+  "total_challenges": 570,
   "total_overturned": 78,
   "team_stats": {
     "CIN": {
@@ -34,7 +34,7 @@
       "missed_calls": 20
     },
     "SEA": {
-      "challenges": 41,
+      "challenges": 44,
       "overturned": 4,
       "missed_calls": 5
     },
@@ -129,7 +129,7 @@
       "missed_calls": 4
     },
     "SD": {
-      "challenges": 33,
+      "challenges": 36,
       "overturned": 3,
       "missed_calls": 3
     },
@@ -704,6 +704,26 @@
       "wrong_balls": 4,
       "correct_rate": 1.0,
       "accuracy_pct": 94.8
+    },
+    "John Bacon": {
+      "total": 0,
+      "correct": 0,
+      "total_called": 180,
+      "correct_called": 166,
+      "wrong_strikes": 10,
+      "wrong_balls": 4,
+      "correct_rate": 0.0,
+      "accuracy_pct": 92.2
+    },
+    "Brian Walsh": {
+      "total": 3,
+      "correct": 3,
+      "total_called": 141,
+      "correct_called": 132,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "correct_rate": 1.0,
+      "accuracy_pct": 93.6
     }
   }
 }
