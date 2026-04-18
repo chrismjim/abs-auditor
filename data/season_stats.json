@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-17",
-  "total_challenges": 575,
+  "total_challenges": 576,
   "total_overturned": 79,
   "team_stats": {
     "CIN": {
@@ -94,7 +94,7 @@
       "missed_calls": 2
     },
     "MIA": {
-      "challenges": 38,
+      "challenges": 39,
       "overturned": 3,
       "missed_calls": 29
     },
@@ -149,7 +149,7 @@
       "missed_calls": 2
     },
     "MIL": {
-      "challenges": 26,
+      "challenges": 27,
       "overturned": 3,
       "missed_calls": 3
     }
@@ -173,7 +173,12 @@
     "Ryan Additon": {
       "total": 20,
       "correct": 2,
-      "correct_rate": 0.1
+      "correct_rate": 0.1,
+      "total_called": 141,
+      "correct_called": 135,
+      "wrong_strikes": 5,
+      "wrong_balls": 1,
+      "accuracy_pct": 95.7
     },
     "Dan Iassogna": {
       "total": 24,
@@ -548,7 +553,12 @@
     "Charlie Ramos": {
       "total": 9,
       "correct": 6,
-      "correct_rate": 0.6666666666666666
+      "correct_rate": 0.6666666666666666,
+      "total_called": 138,
+      "correct_called": 136,
+      "wrong_strikes": 1,
+      "wrong_balls": 1,
+      "accuracy_pct": 98.6
     },
     "Junior Valentine": {
       "total": 4,
@@ -651,9 +661,14 @@
       "correct_rate": 1.0
     },
     "Derek Thomas": {
-      "total": 5,
-      "correct": 4,
-      "correct_rate": 0.8
+      "total": 6,
+      "correct": 5,
+      "correct_rate": 0.8333333333333334,
+      "total_called": 197,
+      "correct_called": 188,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "accuracy_pct": 95.4
     },
     "Alan Porter": {
       "total": 2,
