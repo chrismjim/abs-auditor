@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-18",
-  "total_challenges": 585,
+  "total_challenges": 586,
   "total_overturned": 80,
   "team_stats": {
     "CIN": {
@@ -24,7 +24,7 @@
       "missed_calls": 26
     },
     "ATH": {
-      "challenges": 33,
+      "challenges": 34,
       "overturned": 5,
       "missed_calls": 2
     },
@@ -84,7 +84,7 @@
       "missed_calls": 11
     },
     "CWS": {
-      "challenges": 27,
+      "challenges": 28,
       "overturned": 6,
       "missed_calls": 10
     },
@@ -158,7 +158,12 @@
     "Brennan Miller": {
       "total": 20,
       "correct": 0,
-      "correct_rate": 0.0
+      "correct_rate": 0.0,
+      "total_called": 183,
+      "correct_called": 170,
+      "wrong_strikes": 10,
+      "wrong_balls": 3,
+      "accuracy_pct": 92.9
     },
     "Nate Tomlinson": {
       "total": 24,
@@ -361,14 +366,14 @@
       "correct_rate": 0.3333333333333333
     },
     "Chad Whitson": {
-      "total": 21,
+      "total": 22,
       "correct": 11,
-      "correct_rate": 0.5238095238095238,
-      "total_called": 246,
-      "correct_called": 236,
-      "wrong_strikes": 10,
-      "wrong_balls": 0,
-      "accuracy_pct": 95.9
+      "correct_rate": 0.5,
+      "total_called": 437,
+      "correct_called": 410,
+      "wrong_strikes": 17,
+      "wrong_balls": 10,
+      "accuracy_pct": 93.8
     },
     "Malachi Moore": {
       "total": 7,
