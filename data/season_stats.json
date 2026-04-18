@@ -829,6 +829,16 @@
       "wrong_balls": 10,
       "correct_rate": 0.0,
       "accuracy_pct": 90.1
+    },
+    "Sean Barber": {
+      "total": 0,
+      "correct": 0,
+      "total_called": 168,
+      "correct_called": 156,
+      "wrong_strikes": 6,
+      "wrong_balls": 6,
+      "correct_rate": 0.0,
+      "accuracy_pct": 92.9
     }
   }
 }
