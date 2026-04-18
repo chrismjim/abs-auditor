@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-18",
-  "total_challenges": 584,
+  "total_challenges": 585,
   "total_overturned": 80,
   "team_stats": {
     "CIN": {
@@ -89,7 +89,7 @@
       "missed_calls": 10
     },
     "BOS": {
-      "challenges": 61,
+      "challenges": 62,
       "overturned": 9,
       "missed_calls": 2
     },
@@ -134,7 +134,7 @@
       "missed_calls": 5
     },
     "DET": {
-      "challenges": 32,
+      "challenges": 33,
       "overturned": 7,
       "missed_calls": 3
     },
@@ -819,6 +819,16 @@
       "wrong_balls": 7,
       "correct_rate": 0.0,
       "accuracy_pct": 92.0
+    },
+    "Felix Neon": {
+      "total": 1,
+      "correct": 0,
+      "total_called": 162,
+      "correct_called": 146,
+      "wrong_strikes": 6,
+      "wrong_balls": 10,
+      "correct_rate": 0.0,
+      "accuracy_pct": 90.1
     }
   }
 }
