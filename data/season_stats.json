@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-17",
+  "last_updated": "2026-04-18",
   "total_challenges": 583,
   "total_overturned": 80,
   "team_stats": {
@@ -804,6 +804,16 @@
       "wrong_balls": 8,
       "correct_rate": 0.25,
       "accuracy_pct": 87.2
+    },
+    "Tyler Jones": {
+      "total": 0,
+      "correct": 0,
+      "total_called": 162,
+      "correct_called": 149,
+      "wrong_strikes": 6,
+      "wrong_balls": 7,
+      "correct_rate": 0.0,
+      "accuracy_pct": 92.0
     }
   }
 }
