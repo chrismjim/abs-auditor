@@ -198,7 +198,12 @@
     "Nic Lentz": {
       "total": 20,
       "correct": 2,
-      "correct_rate": 0.1
+      "correct_rate": 0.1,
+      "total_called": 183,
+      "correct_called": 173,
+      "wrong_strikes": 5,
+      "wrong_balls": 5,
+      "accuracy_pct": 94.5
     },
     "Adrian Johnson": {
       "total": 6,
