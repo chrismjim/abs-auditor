@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-18",
-  "total_challenges": 586,
-  "total_overturned": 80,
+  "total_challenges": 592,
+  "total_overturned": 81,
   "team_stats": {
     "CIN": {
       "challenges": 15,
@@ -9,14 +9,14 @@
       "missed_calls": 4
     },
     "PIT": {
-      "challenges": 21,
+      "challenges": 25,
       "overturned": 3,
-      "missed_calls": 1
+      "missed_calls": 3
     },
     "TB": {
-      "challenges": 29,
+      "challenges": 33,
       "overturned": 4,
-      "missed_calls": 11
+      "missed_calls": 13
     },
     "ATL": {
       "challenges": 41,
@@ -34,13 +34,13 @@
       "missed_calls": 20
     },
     "SEA": {
-      "challenges": 44,
-      "overturned": 4,
+      "challenges": 46,
+      "overturned": 5,
       "missed_calls": 5
     },
     "TEX": {
-      "challenges": 24,
-      "overturned": 2,
+      "challenges": 26,
+      "overturned": 3,
       "missed_calls": 4
     },
     "LAD": {
@@ -193,12 +193,22 @@
     "Willie Traynor": {
       "total": 34,
       "correct": 34,
-      "correct_rate": 1.0
+      "correct_rate": 1.0,
+      "total_called": 190,
+      "correct_called": 180,
+      "wrong_strikes": 6,
+      "wrong_balls": 4,
+      "accuracy_pct": 94.7
     },
     "Jim Wolf": {
       "total": 34,
       "correct": 0,
-      "correct_rate": 0.0
+      "correct_rate": 0.0,
+      "total_called": 108,
+      "correct_called": 99,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "accuracy_pct": 91.7
     },
     "Nic Lentz": {
       "total": 20,
@@ -211,9 +221,14 @@
       "accuracy_pct": 94.5
     },
     "Adrian Johnson": {
-      "total": 6,
-      "correct": 1,
-      "correct_rate": 0.16666666666666666
+      "total": 10,
+      "correct": 3,
+      "correct_rate": 0.3,
+      "total_called": 237,
+      "correct_called": 220,
+      "wrong_strikes": 14,
+      "wrong_balls": 3,
+      "accuracy_pct": 92.8
     },
     "Laz Diaz": {
       "total": 5,
@@ -243,7 +258,12 @@
     "James Hoye": {
       "total": 5,
       "correct": 3,
-      "correct_rate": 0.6
+      "correct_rate": 0.6,
+      "total_called": 139,
+      "correct_called": 127,
+      "wrong_strikes": 6,
+      "wrong_balls": 6,
+      "accuracy_pct": 91.4
     },
     "Lance Barksdale": {
       "total": 5,
@@ -351,14 +371,14 @@
       "correct_rate": 0.0
     },
     "Rob Drake": {
-      "total": 10,
-      "correct": 9,
-      "correct_rate": 0.9,
-      "total_called": 286,
-      "correct_called": 268,
-      "wrong_strikes": 18,
-      "wrong_balls": 0,
-      "accuracy_pct": 93.7
+      "total": 12,
+      "correct": 11,
+      "correct_rate": 0.9166666666666666,
+      "total_called": 452,
+      "correct_called": 424,
+      "wrong_strikes": 21,
+      "wrong_balls": 7,
+      "accuracy_pct": 93.8
     },
     "Bruce Dreckman": {
       "total": 6,
