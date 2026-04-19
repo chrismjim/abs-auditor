@@ -714,11 +714,11 @@
       "total": 7,
       "correct": 2,
       "correct_rate": 0.2857142857142857,
-      "total_called": 166,
-      "correct_called": 154,
-      "wrong_strikes": 7,
-      "wrong_balls": 5,
-      "accuracy_pct": 92.8
+      "total_called": 323,
+      "correct_called": 297,
+      "wrong_strikes": 15,
+      "wrong_balls": 11,
+      "accuracy_pct": 92.0
     },
     "Ben May": {
       "total": 2,
