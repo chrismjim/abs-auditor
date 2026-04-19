@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-19",
-  "total_challenges": 610,
-  "total_overturned": 83,
+  "total_challenges": 612,
+  "total_overturned": 84,
   "team_stats": {
     "CIN": {
       "challenges": 16,
@@ -89,8 +89,8 @@
       "missed_calls": 10
     },
     "BOS": {
-      "challenges": 62,
-      "overturned": 9,
+      "challenges": 63,
+      "overturned": 10,
       "missed_calls": 2
     },
     "MIA": {
@@ -109,7 +109,7 @@
       "missed_calls": 20
     },
     "LAA": {
-      "challenges": 50,
+      "challenges": 51,
       "overturned": 3,
       "missed_calls": 23
     },
@@ -129,13 +129,13 @@
       "missed_calls": 5
     },
     "SD": {
-      "challenges": 40,
+      "challenges": 41,
       "overturned": 4,
       "missed_calls": 5
     },
     "DET": {
-      "challenges": 33,
-      "overturned": 7,
+      "challenges": 34,
+      "overturned": 8,
       "missed_calls": 3
     },
     "KC": {
@@ -271,9 +271,14 @@
       "accuracy_pct": 91.4
     },
     "Lance Barksdale": {
-      "total": 5,
-      "correct": 5,
-      "correct_rate": 1.0
+      "total": 6,
+      "correct": 6,
+      "correct_rate": 1.0,
+      "total_called": 153,
+      "correct_called": 137,
+      "wrong_strikes": 13,
+      "wrong_balls": 3,
+      "accuracy_pct": 89.5
     },
     "Chad Fairchild": {
       "total": 2,
@@ -681,14 +686,14 @@
       "accuracy_pct": 93.4
     },
     "Edwin Jimenez": {
-      "total": 1,
+      "total": 2,
       "correct": 0,
       "correct_rate": 0.0,
-      "total_called": 168,
-      "correct_called": 158,
-      "wrong_strikes": 7,
-      "wrong_balls": 3,
-      "accuracy_pct": 94.0
+      "total_called": 335,
+      "correct_called": 308,
+      "wrong_strikes": 17,
+      "wrong_balls": 10,
+      "accuracy_pct": 91.9
     },
     "Mark Wegner": {
       "total": 11,
