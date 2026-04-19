@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-19",
-  "total_challenges": 594,
+  "total_challenges": 596,
   "total_overturned": 81,
   "team_stats": {
     "CIN": {
@@ -64,7 +64,7 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 48,
+      "challenges": 50,
       "overturned": 4,
       "missed_calls": 19
     },
@@ -119,7 +119,7 @@
       "missed_calls": 6
     },
     "CLE": {
-      "challenges": 80,
+      "challenges": 82,
       "overturned": 16,
       "missed_calls": 29
     },
@@ -386,9 +386,14 @@
       "accuracy_pct": 93.8
     },
     "Bruce Dreckman": {
-      "total": 6,
-      "correct": 2,
-      "correct_rate": 0.3333333333333333
+      "total": 8,
+      "correct": 3,
+      "correct_rate": 0.375,
+      "total_called": 174,
+      "correct_called": 157,
+      "wrong_strikes": 11,
+      "wrong_balls": 6,
+      "accuracy_pct": 90.2
     },
     "Chad Whitson": {
       "total": 22,
