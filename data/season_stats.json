@@ -674,11 +674,11 @@
       "total": 9,
       "correct": 0,
       "correct_rate": 0.0,
-      "total_called": 288,
-      "correct_called": 272,
-      "wrong_strikes": 10,
-      "wrong_balls": 6,
-      "accuracy_pct": 94.4
+      "total_called": 467,
+      "correct_called": 436,
+      "wrong_strikes": 16,
+      "wrong_balls": 15,
+      "accuracy_pct": 93.4
     },
     "Edwin Jimenez": {
       "total": 1,
