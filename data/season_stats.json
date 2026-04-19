@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-04-19",
-  "total_challenges": 600,
-  "total_overturned": 81,
+  "total_challenges": 602,
+  "total_overturned": 82,
   "team_stats": {
     "CIN": {
-      "challenges": 15,
-      "overturned": 2,
+      "challenges": 16,
+      "overturned": 3,
       "missed_calls": 4
     },
     "PIT": {
@@ -74,7 +74,7 @@
       "missed_calls": 1
     },
     "STL": {
-      "challenges": 69,
+      "challenges": 70,
       "overturned": 13,
       "missed_calls": 27
     },
@@ -114,8 +114,8 @@
       "missed_calls": 23
     },
     "MIN": {
-      "challenges": 82,
-      "overturned": 18,
+      "challenges": 83,
+      "overturned": 19,
       "missed_calls": 6
     },
     "CLE": {
@@ -124,7 +124,7 @@
       "missed_calls": 29
     },
     "HOU": {
-      "challenges": 29,
+      "challenges": 30,
       "overturned": 6,
       "missed_calls": 5
     },
@@ -311,14 +311,14 @@
       "accuracy_pct": 94.8
     },
     "Lance Barrett": {
-      "total": 22,
+      "total": 23,
       "correct": 20,
-      "correct_rate": 0.9090909090909091,
-      "total_called": 304,
-      "correct_called": 266,
-      "wrong_strikes": 20,
-      "wrong_balls": 18,
-      "accuracy_pct": 87.5
+      "correct_rate": 0.8695652173913043,
+      "total_called": 490,
+      "correct_called": 434,
+      "wrong_strikes": 31,
+      "wrong_balls": 25,
+      "accuracy_pct": 88.6
     },
     "Will Little": {
       "total": 8,
@@ -526,14 +526,14 @@
       "correct_rate": 0.8571428571428571
     },
     "Hunter Wendelstedt": {
-      "total": 12,
-      "correct": 10,
-      "correct_rate": 0.8333333333333334,
-      "total_called": 236,
-      "correct_called": 214,
-      "wrong_strikes": 14,
-      "wrong_balls": 8,
-      "accuracy_pct": 90.7
+      "total": 13,
+      "correct": 11,
+      "correct_rate": 0.8461538461538461,
+      "total_called": 441,
+      "correct_called": 399,
+      "wrong_strikes": 29,
+      "wrong_balls": 13,
+      "accuracy_pct": 90.5
     },
     "Bill Miller": {
       "total": 4,
@@ -714,11 +714,11 @@
       "total": 7,
       "correct": 2,
       "correct_rate": 0.2857142857142857,
-      "total_called": 323,
-      "correct_called": 297,
-      "wrong_strikes": 15,
-      "wrong_balls": 11,
-      "accuracy_pct": 92.0
+      "total_called": 480,
+      "correct_called": 440,
+      "wrong_strikes": 23,
+      "wrong_balls": 17,
+      "accuracy_pct": 91.7
     },
     "Ben May": {
       "total": 2,
