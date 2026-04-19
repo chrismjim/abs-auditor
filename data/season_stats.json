@@ -664,11 +664,11 @@
       "total": 11,
       "correct": 3,
       "correct_rate": 0.2727272727272727,
-      "total_called": 358,
-      "correct_called": 322,
-      "wrong_strikes": 32,
-      "wrong_balls": 4,
-      "accuracy_pct": 89.9
+      "total_called": 499,
+      "correct_called": 447,
+      "wrong_strikes": 41,
+      "wrong_balls": 11,
+      "accuracy_pct": 89.6
     },
     "Alex MacKay": {
       "total": 5,
