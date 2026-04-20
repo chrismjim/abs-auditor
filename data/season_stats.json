@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19",
+  "last_updated": "2026-04-20",
   "total_challenges": 614,
   "total_overturned": 84,
   "team_stats": {
@@ -329,11 +329,11 @@
       "total": 8,
       "correct": 4,
       "correct_rate": 0.5,
-      "total_called": 187,
-      "correct_called": 180,
-      "wrong_strikes": 2,
-      "wrong_balls": 5,
-      "accuracy_pct": 96.3
+      "total_called": 361,
+      "correct_called": 340,
+      "wrong_strikes": 9,
+      "wrong_balls": 12,
+      "accuracy_pct": 94.2
     },
     "Cory Blaser": {
       "total": 10,
