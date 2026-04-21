@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-20",
-  "total_challenges": 622,
+  "total_challenges": 629,
   "total_overturned": 87,
   "team_stats": {
     "CIN": {
@@ -44,7 +44,7 @@
       "missed_calls": 4
     },
     "LAD": {
-      "challenges": 38,
+      "challenges": 40,
       "overturned": 4,
       "missed_calls": 17
     },
@@ -64,12 +64,12 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 52,
+      "challenges": 55,
       "overturned": 4,
-      "missed_calls": 19
+      "missed_calls": 20
     },
     "TOR": {
-      "challenges": 29,
+      "challenges": 31,
       "overturned": 6,
       "missed_calls": 2
     },
@@ -109,7 +109,7 @@
       "missed_calls": 20
     },
     "LAA": {
-      "challenges": 51,
+      "challenges": 53,
       "overturned": 3,
       "missed_calls": 23
     },
@@ -139,12 +139,12 @@
       "missed_calls": 3
     },
     "KC": {
-      "challenges": 29,
+      "challenges": 32,
       "overturned": 5,
-      "missed_calls": 5
+      "missed_calls": 6
     },
     "COL": {
-      "challenges": 32,
+      "challenges": 34,
       "overturned": 6,
       "missed_calls": 2
     },
@@ -446,14 +446,14 @@
       "correct_rate": 0.75
     },
     "Adam Beck": {
-      "total": 5,
-      "correct": 3,
-      "correct_rate": 0.6,
-      "total_called": 138,
-      "correct_called": 129,
-      "wrong_strikes": 7,
-      "wrong_balls": 2,
-      "accuracy_pct": 93.5
+      "total": 7,
+      "correct": 5,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 295,
+      "correct_called": 274,
+      "wrong_strikes": 13,
+      "wrong_balls": 8,
+      "accuracy_pct": 92.9
     },
     "Carlos Torres": {
       "total": 9,
@@ -523,7 +523,12 @@
     "Mike Estabrook": {
       "total": 2,
       "correct": 0,
-      "correct_rate": 0.0
+      "correct_rate": 0.0,
+      "total_called": 138,
+      "correct_called": 124,
+      "wrong_strikes": 9,
+      "wrong_balls": 5,
+      "accuracy_pct": 89.9
     },
     "Jordan Baker": {
       "total": 1,
@@ -591,9 +596,14 @@
       "accuracy_pct": 89.5
     },
     "Quinn Wolcott": {
-      "total": 4,
-      "correct": 3,
-      "correct_rate": 0.75
+      "total": 7,
+      "correct": 5,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 227,
+      "correct_called": 205,
+      "wrong_strikes": 16,
+      "wrong_balls": 6,
+      "accuracy_pct": 90.3
     },
     "Tom Hanahan": {
       "total": 3,
@@ -831,14 +841,14 @@
       "accuracy_pct": 92.2
     },
     "Brian Walsh": {
-      "total": 3,
-      "correct": 3,
-      "total_called": 141,
-      "correct_called": 132,
-      "wrong_strikes": 7,
-      "wrong_balls": 2,
+      "total": 5,
+      "correct": 5,
+      "total_called": 291,
+      "correct_called": 270,
+      "wrong_strikes": 12,
+      "wrong_balls": 9,
       "correct_rate": 1.0,
-      "accuracy_pct": 93.6
+      "accuracy_pct": 92.8
     },
     "Jen Pawol": {
       "total": 1,
