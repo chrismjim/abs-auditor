@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-04-20",
-  "total_challenges": 614,
-  "total_overturned": 84,
+  "total_challenges": 619,
+  "total_overturned": 86,
   "team_stats": {
     "CIN": {
-      "challenges": 16,
-      "overturned": 3,
+      "challenges": 18,
+      "overturned": 4,
       "missed_calls": 4
     },
     "PIT": {
@@ -14,8 +14,8 @@
       "missed_calls": 3
     },
     "TB": {
-      "challenges": 33,
-      "overturned": 4,
+      "challenges": 35,
+      "overturned": 5,
       "missed_calls": 13
     },
     "ATL": {
@@ -74,7 +74,7 @@
       "missed_calls": 2
     },
     "STL": {
-      "challenges": 70,
+      "challenges": 71,
       "overturned": 13,
       "missed_calls": 27
     },
@@ -94,7 +94,7 @@
       "missed_calls": 2
     },
     "MIA": {
-      "challenges": 41,
+      "challenges": 42,
       "overturned": 3,
       "missed_calls": 30
     },
@@ -119,14 +119,14 @@
       "missed_calls": 6
     },
     "CLE": {
-      "challenges": 84,
-      "overturned": 16,
-      "missed_calls": 29
+      "challenges": 86,
+      "overturned": 17,
+      "missed_calls": 30
     },
     "HOU": {
-      "challenges": 30,
-      "overturned": 6,
-      "missed_calls": 5
+      "challenges": 32,
+      "overturned": 7,
+      "missed_calls": 6
     },
     "SD": {
       "challenges": 41,
@@ -291,9 +291,14 @@
       "accuracy_pct": 91.1
     },
     "Marvin Hudson": {
-      "total": 5,
-      "correct": 4,
-      "correct_rate": 0.8
+      "total": 7,
+      "correct": 6,
+      "correct_rate": 0.8571428571428571,
+      "total_called": 150,
+      "correct_called": 143,
+      "wrong_strikes": 5,
+      "wrong_balls": 2,
+      "accuracy_pct": 95.3
     },
     "Doug Eddings": {
       "total": 3,
@@ -493,7 +498,12 @@
     "Erich Bacchus": {
       "total": 4,
       "correct": 3,
-      "correct_rate": 0.75
+      "correct_rate": 0.75,
+      "total_called": 133,
+      "correct_called": 122,
+      "wrong_strikes": 4,
+      "wrong_balls": 7,
+      "accuracy_pct": 91.7
     },
     "Dan Bellino": {
       "total": 5,
@@ -571,14 +581,14 @@
       "correct_rate": 0.14285714285714285
     },
     "Andy Fletcher": {
-      "total": 8,
-      "correct": 3,
-      "correct_rate": 0.375,
-      "total_called": 160,
-      "correct_called": 144,
-      "wrong_strikes": 10,
-      "wrong_balls": 6,
-      "accuracy_pct": 90.0
+      "total": 10,
+      "correct": 4,
+      "correct_rate": 0.4,
+      "total_called": 344,
+      "correct_called": 308,
+      "wrong_strikes": 24,
+      "wrong_balls": 12,
+      "accuracy_pct": 89.5
     },
     "Quinn Wolcott": {
       "total": 4,
@@ -889,6 +899,16 @@
       "wrong_balls": 4,
       "correct_rate": 0.5,
       "accuracy_pct": 94.3
+    },
+    "Scott Barry": {
+      "total": 1,
+      "correct": 1,
+      "total_called": 145,
+      "correct_called": 130,
+      "wrong_strikes": 6,
+      "wrong_balls": 9,
+      "correct_rate": 1.0,
+      "accuracy_pct": 89.7
     }
   }
 }
