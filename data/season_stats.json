@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-20",
-  "total_challenges": 619,
-  "total_overturned": 86,
+  "total_challenges": 622,
+  "total_overturned": 87,
   "team_stats": {
     "CIN": {
       "challenges": 18,
@@ -49,9 +49,9 @@
       "missed_calls": 17
     },
     "CHC": {
-      "challenges": 42,
-      "overturned": 5,
-      "missed_calls": 10
+      "challenges": 45,
+      "overturned": 6,
+      "missed_calls": 11
     },
     "NYY": {
       "challenges": 51,
@@ -79,9 +79,9 @@
       "missed_calls": 27
     },
     "PHI": {
-      "challenges": 44,
-      "overturned": 4,
-      "missed_calls": 11
+      "challenges": 47,
+      "overturned": 5,
+      "missed_calls": 12
     },
     "CWS": {
       "challenges": 29,
@@ -621,14 +621,14 @@
       "correct_rate": 1.0
     },
     "Edwin Moscoso": {
-      "total": 5,
-      "correct": 5,
-      "correct_rate": 1.0,
-      "total_called": 136,
-      "correct_called": 126,
-      "wrong_strikes": 7,
-      "wrong_balls": 3,
-      "accuracy_pct": 92.6
+      "total": 8,
+      "correct": 6,
+      "correct_rate": 0.75,
+      "total_called": 309,
+      "correct_called": 288,
+      "wrong_strikes": 15,
+      "wrong_balls": 6,
+      "accuracy_pct": 93.2
     },
     "Charlie Ramos": {
       "total": 9,
