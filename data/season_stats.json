@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-20",
-  "total_challenges": 629,
+  "last_updated": "2026-04-21",
+  "total_challenges": 632,
   "total_overturned": 87,
   "team_stats": {
     "CIN": {
@@ -54,9 +54,9 @@
       "missed_calls": 11
     },
     "NYY": {
-      "challenges": 51,
+      "challenges": 53,
       "overturned": 4,
-      "missed_calls": 20
+      "missed_calls": 21
     },
     "SF": {
       "challenges": 21,
@@ -89,9 +89,9 @@
       "missed_calls": 10
     },
     "BOS": {
-      "challenges": 63,
+      "challenges": 65,
       "overturned": 10,
-      "missed_calls": 2
+      "missed_calls": 3
     },
     "MIA": {
       "challenges": 42,
@@ -119,12 +119,12 @@
       "missed_calls": 6
     },
     "CLE": {
-      "challenges": 86,
+      "challenges": 87,
       "overturned": 17,
       "missed_calls": 30
     },
     "HOU": {
-      "challenges": 32,
+      "challenges": 33,
       "overturned": 7,
       "missed_calls": 6
     },
@@ -751,14 +751,14 @@
       "correct_rate": 1.0
     },
     "Derek Thomas": {
-      "total": 6,
+      "total": 7,
       "correct": 5,
-      "correct_rate": 0.8333333333333334,
-      "total_called": 197,
-      "correct_called": 188,
-      "wrong_strikes": 7,
-      "wrong_balls": 2,
-      "accuracy_pct": 95.4
+      "correct_rate": 0.7142857142857143,
+      "total_called": 377,
+      "correct_called": 359,
+      "wrong_strikes": 11,
+      "wrong_balls": 7,
+      "accuracy_pct": 95.2
     },
     "Alan Porter": {
       "total": 2,
@@ -821,14 +821,14 @@
       "accuracy_pct": 92.4
     },
     "Austin Jones": {
-      "total": 2,
-      "correct": 2,
-      "total_called": 194,
-      "correct_called": 184,
-      "wrong_strikes": 6,
-      "wrong_balls": 4,
-      "correct_rate": 1.0,
-      "accuracy_pct": 94.8
+      "total": 4,
+      "correct": 3,
+      "total_called": 354,
+      "correct_called": 329,
+      "wrong_strikes": 17,
+      "wrong_balls": 8,
+      "correct_rate": 0.75,
+      "accuracy_pct": 92.9
     },
     "John Bacon": {
       "total": 0,
