@@ -373,7 +373,12 @@
     "Ryan Blakney": {
       "total": 4,
       "correct": 3,
-      "correct_rate": 0.75
+      "correct_rate": 0.75,
+      "total_called": 118,
+      "correct_called": 107,
+      "wrong_strikes": 10,
+      "wrong_balls": 1,
+      "accuracy_pct": 90.7
     },
     "Adam Beck": {
       "total": 5,
