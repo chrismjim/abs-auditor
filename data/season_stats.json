@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-22",
-  "total_challenges": 579,
-  "total_overturned": 82,
+  "total_challenges": 580,
+  "total_overturned": 83,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -69,8 +69,8 @@
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 28,
-      "overturned": 6,
+      "challenges": 29,
+      "overturned": 7,
       "missed_calls": 1
     },
     "STL": {
@@ -109,8 +109,8 @@
       "missed_calls": 19
     },
     "LAA": {
-      "challenges": 44,
-      "overturned": 2,
+      "challenges": 45,
+      "overturned": 3,
       "missed_calls": 21
     },
     "MIN": {
@@ -341,14 +341,14 @@
       "correct_rate": 0.3333333333333333
     },
     "Chad Whitson": {
-      "total": 23,
-      "correct": 12,
-      "correct_rate": 0.5217391304347826,
-      "total_called": 246,
-      "correct_called": 236,
-      "wrong_strikes": 10,
-      "wrong_balls": 0,
-      "accuracy_pct": 95.9
+      "total": 24,
+      "correct": 13,
+      "correct_rate": 0.5416666666666666,
+      "total_called": 392,
+      "correct_called": 367,
+      "wrong_strikes": 19,
+      "wrong_balls": 6,
+      "accuracy_pct": 93.6
     },
     "Malachi Moore": {
       "total": 9,
