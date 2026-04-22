@@ -18,23 +18,32 @@ ZONE_TOP_FT = 3.50
 ZONE_BOT_FT = 1.50
 
 # ── Visualization ─────────────────────────────────────────────────────────────
-MAX_CHALLENGES_ON_CARD = 6
+MAX_CHALLENGES_ON_CARD = 5
+
+# Portrait game card (9:16 — Instagram / Twitter story)
+CARD_WIDTH_PX  = 2160
+CARD_HEIGHT_PX = 3840
+CARD_DPI       = 320
+
+# Legacy landscape dimensions — still used by leaderboard / trend charts
 FIGURE_WIDTH_PX  = 3840
 FIGURE_HEIGHT_PX = 2160
-DPI              = 320   # 3840×2160 @ 320 dpi — true 4K
+DPI              = 320
 
+# Off-white theme — portrait card
 COLORS = {
-    "bg":         "#0d1117",
-    "surface":    "#161b22",
-    "border":     "#30363d",
-    "text":       "#e6edf3",
-    "text_muted": "#8b949e",
-    "correct":    "#3fb950",   # bright green  — correct overturn
-    "missed":     "#f85149",   # bright red    — missed call / wrong overturn
-    "neutral":    "#848d97",   # gray          — correctly upheld
-    "highlight":  "#e3b341",   # amber         — league average / accents
-    "zone_fill":  "#1c2128",
-    "zone_edge":  "#444c56",
+    "bg":         "#FAF8F3",   # off-white background (subtle warmth)
+    "surface":    "#EFEADF",   # stat-card / panel fill (slightly darker)
+    "border":     "#DCD4C3",   # hairline / divider
+    "text":       "#1A1A1A",   # near-black body
+    "text_muted": "#6B6056",   # warm-gray secondary
+    "correct":    "#3E8E4F",   # saturated green   — correct overturn / pass
+    "missed":     "#D84C3E",   # saturated red     — missed call / fail
+    "neutral":    "#8A8478",   # warm gray         — upheld
+    "highlight":  "#E0A43A",   # amber             — wrong OT / wrong ball
+    "accent":     "#3A5CB8",   # indigo            — correct calls
+    "zone_fill":  "#FFFFFF",   # zone interior
+    "zone_edge":  "#8A8478",   # zone border
 }
 
 # ── Data paths ────────────────────────────────────────────────────────────────

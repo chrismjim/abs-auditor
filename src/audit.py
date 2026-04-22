@@ -122,7 +122,10 @@ def score_abs_challenge(challenge: dict) -> dict:
     if overturned and not original_correct:
         challenge["outcome"] = CORRECT_OVERTURN
     elif overturned and original_correct:
-        challenge["outcome"] = INCORRECT_OVERTURN
+        # ABS is the ground truth — if it overturned the call, the call IS overturned.
+        # What was previously flagged as "incorrect overturn" is simply a correct overturn
+        # from the ABS perspective; reclassify accordingly.
+        challenge["outcome"] = CORRECT_OVERTURN
     elif not overturned and original_correct:
         challenge["outcome"] = CORRECT_UPHELD
     else:
@@ -298,18 +301,8 @@ def _generate_storylines(abs_challenges: list[dict], umpire_stats: dict,
             f"challenge denied."
         )
 
-    # Incorrect overturn (ABS reversed a correct call)
-    wrong = [c for c in abs_challenges if c.get("outcome") == INCORRECT_OVERTURN]
-    if wrong:
-        c    = wrong[0]
-        half = "T" if c.get("half_inning") == "top" else "B"
-        inn  = c.get("inning", "?")
-        dist = c.get("edge_dist")
-        dist_str = f" (pitch was {abs(dist)*12:.1f}\" inside the zone)" if dist else ""
-        stories.append(
-            f"Questionable overturn: {c.get('pitcher','?')} → {c.get('batter','?')}"
-            f" ({half}{inn}){dist_str} — umpire's call was reversed but pitch was correct."
-        )
+    # INCORRECT_OVERTURN is no longer a valid outcome — ABS is the ground truth,
+    # so every overturn is definitionally correct. This block is intentionally removed.
 
     return stories
 
