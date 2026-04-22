@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-22",
-  "total_challenges": 577,
-  "total_overturned": 81,
+  "total_challenges": 578,
+  "total_overturned": 82,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -119,13 +119,13 @@
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 79,
-      "overturned": 17,
+      "challenges": 80,
+      "overturned": 18,
       "missed_calls": 30
     },
     "HOU": {
-      "challenges": 29,
-      "overturned": 6,
+      "challenges": 30,
+      "overturned": 7,
       "missed_calls": 4
     },
     "SD": {
@@ -551,14 +551,14 @@
       "correct_rate": 0.6666666666666666
     },
     "Alex Tosi": {
-      "total": 12,
-      "correct": 1,
-      "correct_rate": 0.08333333333333333,
-      "total_called": 362,
-      "correct_called": 338,
-      "wrong_strikes": 18,
-      "wrong_balls": 6,
-      "accuracy_pct": 93.4
+      "total": 13,
+      "correct": 2,
+      "correct_rate": 0.15384615384615385,
+      "total_called": 511,
+      "correct_called": 479,
+      "wrong_strikes": 25,
+      "wrong_balls": 7,
+      "accuracy_pct": 93.7
     },
     "Paul Clemons": {
       "total": 1,
