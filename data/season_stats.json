@@ -478,7 +478,12 @@
     "Alfonso M\u00e1rquez": {
       "total": 1,
       "correct": 1,
-      "correct_rate": 1.0
+      "correct_rate": 1.0,
+      "total_called": 148,
+      "correct_called": 135,
+      "wrong_strikes": 10,
+      "wrong_balls": 3,
+      "accuracy_pct": 91.2
     },
     "Shane Livensparger": {
       "total": 3,
