@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "total_challenges": 577,
   "total_overturned": 81,
   "team_stats": {
@@ -674,6 +674,16 @@
       "wrong_balls": 6,
       "correct_rate": 0.5,
       "accuracy_pct": 91.6
+    },
+    "Jacob Metz": {
+      "total": 0,
+      "correct": 0,
+      "total_called": 138,
+      "correct_called": 124,
+      "wrong_strikes": 10,
+      "wrong_balls": 4,
+      "correct_rate": 0.0,
+      "accuracy_pct": 89.9
     }
   }
 }
