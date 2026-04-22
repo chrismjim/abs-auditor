@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-22",
-  "total_challenges": 578,
+  "total_challenges": 579,
   "total_overturned": 82,
   "team_stats": {
     "CIN": {
@@ -64,9 +64,9 @@
       "missed_calls": 1
     },
     "BAL": {
-      "challenges": 46,
+      "challenges": 47,
       "overturned": 4,
-      "missed_calls": 19
+      "missed_calls": 20
     },
     "TOR": {
       "challenges": 28,
@@ -139,9 +139,9 @@
       "missed_calls": 3
     },
     "KC": {
-      "challenges": 28,
+      "challenges": 29,
       "overturned": 5,
-      "missed_calls": 4
+      "missed_calls": 5
     },
     "COL": {
       "challenges": 31,
@@ -191,9 +191,14 @@
       "correct_rate": 0.1
     },
     "Adrian Johnson": {
-      "total": 6,
+      "total": 7,
       "correct": 1,
-      "correct_rate": 0.16666666666666666
+      "correct_rate": 0.14285714285714285,
+      "total_called": 144,
+      "correct_called": 132,
+      "wrong_strikes": 7,
+      "wrong_balls": 5,
+      "accuracy_pct": 91.7
     },
     "Laz Diaz": {
       "total": 5,
