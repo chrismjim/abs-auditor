@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-22",
-  "total_challenges": 582,
-  "total_overturned": 84,
+  "total_challenges": 585,
+  "total_overturned": 85,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -9,7 +9,7 @@
       "missed_calls": 3
     },
     "PIT": {
-      "challenges": 21,
+      "challenges": 22,
       "overturned": 3,
       "missed_calls": 1
     },
@@ -39,7 +39,7 @@
       "missed_calls": 6
     },
     "TEX": {
-      "challenges": 24,
+      "challenges": 25,
       "overturned": 2,
       "missed_calls": 4
     },
@@ -49,8 +49,8 @@
       "missed_calls": 17
     },
     "CHC": {
-      "challenges": 41,
-      "overturned": 5,
+      "challenges": 43,
+      "overturned": 6,
       "missed_calls": 11
     },
     "NYY": {
@@ -79,8 +79,8 @@
       "missed_calls": 27
     },
     "PHI": {
-      "challenges": 42,
-      "overturned": 3,
+      "challenges": 44,
+      "overturned": 4,
       "missed_calls": 12
     },
     "CWS": {
@@ -414,11 +414,11 @@
       "total": 11,
       "correct": 2,
       "correct_rate": 0.18181818181818182,
-      "total_called": 342,
-      "correct_called": 304,
-      "wrong_strikes": 26,
-      "wrong_balls": 12,
-      "accuracy_pct": 88.9
+      "total_called": 492,
+      "correct_called": 446,
+      "wrong_strikes": 29,
+      "wrong_balls": 17,
+      "accuracy_pct": 90.7
     },
     "Ron Kulpa": {
       "total": 2,
@@ -491,9 +491,14 @@
       "accuracy_pct": 91.2
     },
     "Shane Livensparger": {
-      "total": 3,
-      "correct": 1,
-      "correct_rate": 0.3333333333333333
+      "total": 4,
+      "correct": 2,
+      "correct_rate": 0.5,
+      "total_called": 139,
+      "correct_called": 127,
+      "wrong_strikes": 7,
+      "wrong_balls": 5,
+      "accuracy_pct": 91.4
     },
     "Manny Gonzalez": {
       "total": 7,
@@ -719,6 +724,16 @@
       "wrong_balls": 4,
       "correct_rate": 0.0,
       "accuracy_pct": 94.6
+    },
+    "John Bacon": {
+      "total": 2,
+      "correct": 2,
+      "total_called": 150,
+      "correct_called": 134,
+      "wrong_strikes": 12,
+      "wrong_balls": 4,
+      "correct_rate": 1.0,
+      "accuracy_pct": 89.3
     }
   }
 }
