@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-22",
-  "total_challenges": 589,
-  "total_overturned": 88,
+  "last_updated": "2026-04-23",
+  "total_challenges": 591,
+  "total_overturned": 90,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -19,8 +19,8 @@
       "missed_calls": 12
     },
     "ATL": {
-      "challenges": 42,
-      "overturned": 2,
+      "challenges": 44,
+      "overturned": 4,
       "missed_calls": 27
     },
     "ATH": {
@@ -99,8 +99,8 @@
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 18,
-      "overturned": 1,
+      "challenges": 20,
+      "overturned": 3,
       "missed_calls": 0
     },
     "AZ": {
@@ -366,18 +366,23 @@
       "accuracy_pct": 90.6
     },
     "Chris Segal": {
-      "total": 7,
-      "correct": 4,
-      "correct_rate": 0.5714285714285714
+      "total": 9,
+      "correct": 6,
+      "correct_rate": 0.6666666666666666,
+      "total_called": 137,
+      "correct_called": 128,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "accuracy_pct": 93.4
     },
     "Gabe Morales": {
       "total": 10,
       "correct": 1,
       "correct_rate": 0.1,
-      "total_called": 340,
-      "correct_called": 316,
-      "wrong_strikes": 12,
-      "wrong_balls": 12,
+      "total_called": 492,
+      "correct_called": 457,
+      "wrong_strikes": 21,
+      "wrong_balls": 14,
       "accuracy_pct": 92.9
     },
     "Ryan Blakney": {
