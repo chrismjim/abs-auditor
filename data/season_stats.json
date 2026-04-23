@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-23",
-  "total_challenges": 595,
-  "total_overturned": 94,
+  "total_challenges": 600,
+  "total_overturned": 97,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -19,8 +19,8 @@
       "missed_calls": 12
     },
     "ATL": {
-      "challenges": 48,
-      "overturned": 8,
+      "challenges": 50,
+      "overturned": 10,
       "missed_calls": 27
     },
     "ATH": {
@@ -49,9 +49,9 @@
       "missed_calls": 17
     },
     "CHC": {
-      "challenges": 43,
-      "overturned": 6,
-      "missed_calls": 11
+      "challenges": 46,
+      "overturned": 7,
+      "missed_calls": 12
     },
     "NYY": {
       "challenges": 49,
@@ -79,9 +79,9 @@
       "missed_calls": 27
     },
     "PHI": {
-      "challenges": 44,
-      "overturned": 4,
-      "missed_calls": 12
+      "challenges": 47,
+      "overturned": 5,
+      "missed_calls": 13
     },
     "CWS": {
       "challenges": 27,
@@ -99,8 +99,8 @@
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 24,
-      "overturned": 7,
+      "challenges": 26,
+      "overturned": 9,
       "missed_calls": 0
     },
     "AZ": {
@@ -366,23 +366,23 @@
       "accuracy_pct": 90.6
     },
     "Chris Segal": {
-      "total": 13,
-      "correct": 10,
-      "correct_rate": 0.7692307692307693,
-      "total_called": 411,
-      "correct_called": 384,
-      "wrong_strikes": 21,
-      "wrong_balls": 6,
+      "total": 15,
+      "correct": 12,
+      "correct_rate": 0.8,
+      "total_called": 548,
+      "correct_called": 512,
+      "wrong_strikes": 28,
+      "wrong_balls": 8,
       "accuracy_pct": 93.4
     },
     "Gabe Morales": {
       "total": 10,
       "correct": 1,
       "correct_rate": 0.1,
-      "total_called": 796,
-      "correct_called": 739,
-      "wrong_strikes": 39,
-      "wrong_balls": 18,
+      "total_called": 948,
+      "correct_called": 880,
+      "wrong_strikes": 48,
+      "wrong_balls": 20,
       "accuracy_pct": 92.8
     },
     "Ryan Blakney": {
@@ -471,14 +471,14 @@
       "correct_rate": 0.8571428571428571
     },
     "Hunter Wendelstedt": {
-      "total": 13,
-      "correct": 11,
-      "correct_rate": 0.8461538461538461,
-      "total_called": 236,
-      "correct_called": 214,
-      "wrong_strikes": 14,
-      "wrong_balls": 8,
-      "accuracy_pct": 90.7
+      "total": 16,
+      "correct": 13,
+      "correct_rate": 0.8125,
+      "total_called": 388,
+      "correct_called": 358,
+      "wrong_strikes": 16,
+      "wrong_balls": 14,
+      "accuracy_pct": 92.3
     },
     "Bill Miller": {
       "total": 4,
