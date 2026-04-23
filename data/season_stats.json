@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-22",
-  "total_challenges": 580,
-  "total_overturned": 83,
+  "total_challenges": 582,
+  "total_overturned": 84,
   "team_stats": {
     "CIN": {
       "challenges": 12,
@@ -19,7 +19,7 @@
       "missed_calls": 12
     },
     "ATL": {
-      "challenges": 41,
+      "challenges": 42,
       "overturned": 2,
       "missed_calls": 27
     },
@@ -54,8 +54,8 @@
       "missed_calls": 11
     },
     "NYY": {
-      "challenges": 48,
-      "overturned": 4,
+      "challenges": 49,
+      "overturned": 5,
       "missed_calls": 19
     },
     "SF": {
@@ -89,8 +89,8 @@
       "missed_calls": 11
     },
     "BOS": {
-      "challenges": 63,
-      "overturned": 10,
+      "challenges": 64,
+      "overturned": 11,
       "missed_calls": 2
     },
     "MIA": {
@@ -99,7 +99,7 @@
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 17,
+      "challenges": 18,
       "overturned": 1,
       "missed_calls": 0
     },
@@ -311,9 +311,14 @@
       "correct_rate": 0.6
     },
     "Brian O'Nora": {
-      "total": 2,
-      "correct": 2,
-      "correct_rate": 1.0
+      "total": 3,
+      "correct": 3,
+      "correct_rate": 1.0,
+      "total_called": 153,
+      "correct_called": 130,
+      "wrong_strikes": 14,
+      "wrong_balls": 9,
+      "accuracy_pct": 85.0
     },
     "D.J. Reyburn": {
       "total": 4,
@@ -551,9 +556,14 @@
       "accuracy_pct": 93.1
     },
     "Todd Tichenor": {
-      "total": 3,
-      "correct": 2,
-      "correct_rate": 0.6666666666666666
+      "total": 4,
+      "correct": 3,
+      "correct_rate": 0.75,
+      "total_called": 133,
+      "correct_called": 119,
+      "wrong_strikes": 10,
+      "wrong_balls": 4,
+      "accuracy_pct": 89.5
     },
     "Nick Mahrley": {
       "total": 3,
@@ -699,6 +709,16 @@
       "wrong_balls": 4,
       "correct_rate": 0.0,
       "accuracy_pct": 89.9
+    },
+    "Mike Muchlinski": {
+      "total": 0,
+      "correct": 0,
+      "total_called": 166,
+      "correct_called": 157,
+      "wrong_strikes": 5,
+      "wrong_balls": 4,
+      "correct_rate": 0.0,
+      "accuracy_pct": 94.6
     }
   }
 }
