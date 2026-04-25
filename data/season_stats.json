@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-25",
-  "total_challenges": 733,
-  "total_overturned": 172,
+  "total_challenges": 736,
+  "total_overturned": 174,
   "team_stats": {
     "CIN": {
       "challenges": 13,
@@ -14,8 +14,8 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 28,
-      "overturned": 3,
+      "challenges": 30,
+      "overturned": 5,
       "missed_calls": 12
     },
     "ATL": {
@@ -69,7 +69,7 @@
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 40,
+      "challenges": 41,
       "overturned": 10,
       "missed_calls": 4
     },
@@ -114,12 +114,12 @@
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 83,
-      "overturned": 19,
+      "challenges": 85,
+      "overturned": 21,
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 91,
+      "challenges": 92,
       "overturned": 21,
       "missed_calls": 33
     },
@@ -479,10 +479,10 @@
       "total": 4,
       "correct": 2,
       "correct_rate": 0.5,
-      "total_called": 447,
-      "correct_called": 405,
-      "wrong_strikes": 30,
-      "wrong_balls": 12,
+      "total_called": 596,
+      "correct_called": 540,
+      "wrong_strikes": 40,
+      "wrong_balls": 16,
       "accuracy_pct": 90.6
     },
     "Mike Estabrook": {
@@ -554,20 +554,20 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 1638,
-      "correct_called": 1521,
-      "wrong_strikes": 99,
-      "wrong_balls": 18,
+      "total_called": 1820,
+      "correct_called": 1690,
+      "wrong_strikes": 110,
+      "wrong_balls": 20,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
-      "total": 6,
-      "correct": 5,
-      "correct_rate": 0.8333333333333334,
-      "total_called": 298,
-      "correct_called": 266,
-      "wrong_strikes": 20,
-      "wrong_balls": 12,
+      "total": 7,
+      "correct": 6,
+      "correct_rate": 0.8571428571428571,
+      "total_called": 447,
+      "correct_called": 399,
+      "wrong_strikes": 30,
+      "wrong_balls": 18,
       "accuracy_pct": 89.3
     },
     "Tom Hanahan": {
@@ -839,6 +839,16 @@
       "wrong_balls": 24,
       "correct_rate": 1.0,
       "accuracy_pct": 85.6
+    },
+    "Brian Walsh": {
+      "total": 2,
+      "correct": 2,
+      "total_called": 136,
+      "correct_called": 129,
+      "wrong_strikes": 5,
+      "wrong_balls": 2,
+      "correct_rate": 1.0,
+      "accuracy_pct": 94.9
     }
   }
 }
