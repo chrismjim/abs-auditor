@@ -549,10 +549,10 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 182,
-      "correct_called": 169,
-      "wrong_strikes": 11,
-      "wrong_balls": 2,
+      "total_called": 364,
+      "correct_called": 338,
+      "wrong_strikes": 22,
+      "wrong_balls": 4,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
