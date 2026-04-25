@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-25",
-  "total_challenges": 731,
+  "total_challenges": 732,
   "total_overturned": 172,
   "team_stats": {
     "CIN": {
@@ -69,7 +69,7 @@
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 38,
+      "challenges": 39,
       "overturned": 10,
       "missed_calls": 4
     },
@@ -119,7 +119,7 @@
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 89,
+      "challenges": 90,
       "overturned": 21,
       "missed_calls": 33
     },
@@ -479,10 +479,10 @@
       "total": 4,
       "correct": 2,
       "correct_rate": 0.5,
-      "total_called": 149,
-      "correct_called": 135,
-      "wrong_strikes": 10,
-      "wrong_balls": 4,
+      "total_called": 298,
+      "correct_called": 270,
+      "wrong_strikes": 20,
+      "wrong_balls": 8,
       "accuracy_pct": 90.6
     },
     "Mike Estabrook": {
@@ -554,16 +554,21 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 1274,
-      "correct_called": 1183,
-      "wrong_strikes": 77,
-      "wrong_balls": 14,
+      "total_called": 1456,
+      "correct_called": 1352,
+      "wrong_strikes": 88,
+      "wrong_balls": 16,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
-      "total": 4,
-      "correct": 3,
-      "correct_rate": 0.75
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8,
+      "total_called": 149,
+      "correct_called": 133,
+      "wrong_strikes": 10,
+      "wrong_balls": 6,
+      "accuracy_pct": 89.3
     },
     "Tom Hanahan": {
       "total": 3,
