@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-25",
-  "total_challenges": 736,
-  "total_overturned": 174,
+  "total_challenges": 739,
+  "total_overturned": 176,
   "team_stats": {
     "CIN": {
       "challenges": 13,
@@ -14,8 +14,8 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 30,
-      "overturned": 5,
+      "challenges": 32,
+      "overturned": 7,
       "missed_calls": 12
     },
     "ATL": {
@@ -69,7 +69,7 @@
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 41,
+      "challenges": 42,
       "overturned": 10,
       "missed_calls": 4
     },
@@ -114,12 +114,12 @@
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 85,
-      "overturned": 21,
+      "challenges": 87,
+      "overturned": 23,
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 92,
+      "challenges": 93,
       "overturned": 21,
       "missed_calls": 33
     },
@@ -479,10 +479,10 @@
       "total": 4,
       "correct": 2,
       "correct_rate": 0.5,
-      "total_called": 596,
-      "correct_called": 540,
-      "wrong_strikes": 40,
-      "wrong_balls": 16,
+      "total_called": 745,
+      "correct_called": 675,
+      "wrong_strikes": 50,
+      "wrong_balls": 20,
       "accuracy_pct": 90.6
     },
     "Mike Estabrook": {
@@ -503,7 +503,12 @@
     "Mark Ripperger": {
       "total": 7,
       "correct": 6,
-      "correct_rate": 0.8571428571428571
+      "correct_rate": 0.8571428571428571,
+      "total_called": 171,
+      "correct_called": 164,
+      "wrong_strikes": 5,
+      "wrong_balls": 2,
+      "accuracy_pct": 95.9
     },
     "Hunter Wendelstedt": {
       "total": 43,
@@ -554,20 +559,20 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 1820,
-      "correct_called": 1690,
-      "wrong_strikes": 110,
-      "wrong_balls": 20,
+      "total_called": 2002,
+      "correct_called": 1859,
+      "wrong_strikes": 121,
+      "wrong_balls": 22,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
-      "total": 7,
-      "correct": 6,
-      "correct_rate": 0.8571428571428571,
-      "total_called": 447,
-      "correct_called": 399,
-      "wrong_strikes": 30,
-      "wrong_balls": 18,
+      "total": 8,
+      "correct": 7,
+      "correct_rate": 0.875,
+      "total_called": 596,
+      "correct_called": 532,
+      "wrong_strikes": 40,
+      "wrong_balls": 24,
       "accuracy_pct": 89.3
     },
     "Tom Hanahan": {
@@ -841,12 +846,12 @@
       "accuracy_pct": 85.6
     },
     "Brian Walsh": {
-      "total": 2,
-      "correct": 2,
-      "total_called": 136,
-      "correct_called": 129,
-      "wrong_strikes": 5,
-      "wrong_balls": 2,
+      "total": 4,
+      "correct": 4,
+      "total_called": 272,
+      "correct_called": 258,
+      "wrong_strikes": 10,
+      "wrong_balls": 4,
       "correct_rate": 1.0,
       "accuracy_pct": 94.9
     }
