@@ -478,7 +478,12 @@
     "Vic Carapazza": {
       "total": 4,
       "correct": 2,
-      "correct_rate": 0.5
+      "correct_rate": 0.5,
+      "total_called": 149,
+      "correct_called": 135,
+      "wrong_strikes": 10,
+      "wrong_balls": 4,
+      "accuracy_pct": 90.6
     },
     "Mike Estabrook": {
       "total": 2,
@@ -549,10 +554,10 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 1092,
-      "correct_called": 1014,
-      "wrong_strikes": 66,
-      "wrong_balls": 12,
+      "total_called": 1274,
+      "correct_called": 1183,
+      "wrong_strikes": 77,
+      "wrong_balls": 14,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
