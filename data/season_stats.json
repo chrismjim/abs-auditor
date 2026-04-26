@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-25",
-  "total_challenges": 751,
-  "total_overturned": 184,
+  "total_challenges": 757,
+  "total_overturned": 188,
   "team_stats": {
     "CIN": {
       "challenges": 13,
@@ -14,8 +14,8 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 36,
-      "overturned": 11,
+      "challenges": 38,
+      "overturned": 13,
       "missed_calls": 12
     },
     "ATL": {
@@ -69,7 +69,7 @@
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 44,
+      "challenges": 45,
       "overturned": 10,
       "missed_calls": 4
     },
@@ -84,8 +84,8 @@
       "missed_calls": 22
     },
     "CWS": {
-      "challenges": 44,
-      "overturned": 21,
+      "challenges": 47,
+      "overturned": 23,
       "missed_calls": 11
     },
     "BOS": {
@@ -99,8 +99,8 @@
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 53,
-      "overturned": 34,
+      "challenges": 56,
+      "overturned": 36,
       "missed_calls": 0
     },
     "AZ": {
@@ -114,12 +114,12 @@
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 91,
-      "overturned": 27,
+      "challenges": 93,
+      "overturned": 29,
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 95,
+      "challenges": 96,
       "overturned": 21,
       "missed_calls": 33
     },
@@ -166,13 +166,13 @@
       "correct_rate": 0.8181818181818182
     },
     "Ryan Additon": {
-      "total": 26,
-      "correct": 8,
-      "correct_rate": 0.3076923076923077,
-      "total_called": 366,
-      "correct_called": 324,
-      "wrong_strikes": 20,
-      "wrong_balls": 22,
+      "total": 29,
+      "correct": 11,
+      "correct_rate": 0.3793103448275862,
+      "total_called": 549,
+      "correct_called": 486,
+      "wrong_strikes": 30,
+      "wrong_balls": 33,
       "accuracy_pct": 88.5
     },
     "Dan Iassogna": {
@@ -484,10 +484,10 @@
       "total": 4,
       "correct": 2,
       "correct_rate": 0.5,
-      "total_called": 1043,
-      "correct_called": 945,
-      "wrong_strikes": 70,
-      "wrong_balls": 28,
+      "total_called": 1192,
+      "correct_called": 1080,
+      "wrong_strikes": 80,
+      "wrong_balls": 32,
       "accuracy_pct": 90.6
     },
     "Mike Estabrook": {
@@ -509,10 +509,10 @@
       "total": 7,
       "correct": 6,
       "correct_rate": 0.8571428571428571,
-      "total_called": 513,
-      "correct_called": 492,
-      "wrong_strikes": 15,
-      "wrong_balls": 6,
+      "total_called": 684,
+      "correct_called": 656,
+      "wrong_strikes": 20,
+      "wrong_balls": 8,
       "accuracy_pct": 95.9
     },
     "Hunter Wendelstedt": {
@@ -564,20 +564,20 @@
       "total": 7,
       "correct": 3,
       "correct_rate": 0.42857142857142855,
-      "total_called": 2366,
-      "correct_called": 2197,
-      "wrong_strikes": 143,
-      "wrong_balls": 26,
+      "total_called": 2548,
+      "correct_called": 2366,
+      "wrong_strikes": 154,
+      "wrong_balls": 28,
       "accuracy_pct": 92.9
     },
     "Quinn Wolcott": {
-      "total": 10,
-      "correct": 9,
-      "correct_rate": 0.9,
-      "total_called": 894,
-      "correct_called": 798,
-      "wrong_strikes": 60,
-      "wrong_balls": 36,
+      "total": 11,
+      "correct": 10,
+      "correct_rate": 0.9090909090909091,
+      "total_called": 1043,
+      "correct_called": 931,
+      "wrong_strikes": 70,
+      "wrong_balls": 42,
       "accuracy_pct": 89.3
     },
     "Tom Hanahan": {
@@ -851,12 +851,12 @@
       "accuracy_pct": 85.6
     },
     "Brian Walsh": {
-      "total": 8,
-      "correct": 8,
-      "total_called": 544,
-      "correct_called": 516,
-      "wrong_strikes": 20,
-      "wrong_balls": 8,
+      "total": 10,
+      "correct": 10,
+      "total_called": 680,
+      "correct_called": 645,
+      "wrong_strikes": 25,
+      "wrong_balls": 10,
       "correct_rate": 1.0,
       "accuracy_pct": 94.9
     }
