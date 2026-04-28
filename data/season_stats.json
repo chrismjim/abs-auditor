@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-26",
-  "total_challenges": 941,
-  "total_overturned": 262,
+  "last_updated": "2026-04-27",
+  "total_challenges": 945,
+  "total_overturned": 265,
   "team_stats": {
     "CIN": {
       "challenges": 41,
@@ -14,8 +14,8 @@
       "missed_calls": 1
     },
     "TB": {
-      "challenges": 57,
-      "overturned": 19,
+      "challenges": 61,
+      "overturned": 22,
       "missed_calls": 12
     },
     "ATL": {
@@ -119,8 +119,8 @@
       "missed_calls": 5
     },
     "CLE": {
-      "challenges": 112,
-      "overturned": 21,
+      "challenges": 116,
+      "overturned": 24,
       "missed_calls": 33
     },
     "HOU": {
@@ -836,14 +836,14 @@
       "accuracy_pct": 93.5
     },
     "Jacob Metz": {
-      "total": 0,
-      "correct": 0,
-      "total_called": 138,
-      "correct_called": 124,
-      "wrong_strikes": 10,
-      "wrong_balls": 4,
-      "correct_rate": 0.0,
-      "accuracy_pct": 89.9
+      "total": 4,
+      "correct": 4,
+      "total_called": 295,
+      "correct_called": 266,
+      "wrong_strikes": 22,
+      "wrong_balls": 7,
+      "correct_rate": 1.0,
+      "accuracy_pct": 90.2
     },
     "Mike Muchlinski": {
       "total": 13,
