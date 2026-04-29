@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-29",
-  "total_challenges": 1004,
-  "total_overturned": 286,
+  "total_challenges": 1009,
+  "total_overturned": 287,
   "team_stats": {
     "CIN": {
       "challenges": 44,
@@ -34,12 +34,12 @@
       "missed_calls": 20
     },
     "SEA": {
-      "challenges": 71,
-      "overturned": 31,
+      "challenges": 72,
+      "overturned": 32,
       "missed_calls": 6
     },
     "TEX": {
-      "challenges": 34,
+      "challenges": 37,
       "overturned": 5,
       "missed_calls": 6
     },
@@ -54,7 +54,7 @@
       "missed_calls": 24
     },
     "NYY": {
-      "challenges": 61,
+      "challenges": 64,
       "overturned": 9,
       "missed_calls": 21
     },
@@ -84,7 +84,7 @@
       "missed_calls": 25
     },
     "CWS": {
-      "challenges": 74,
+      "challenges": 75,
       "overturned": 31,
       "missed_calls": 23
     },
@@ -109,13 +109,13 @@
       "missed_calls": 19
     },
     "LAA": {
-      "challenges": 60,
+      "challenges": 61,
       "overturned": 11,
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 114,
-      "overturned": 37,
+      "challenges": 115,
+      "overturned": 38,
       "missed_calls": 5
     },
     "CLE": {
@@ -526,14 +526,14 @@
       "accuracy_pct": 90.5
     },
     "Vic Carapazza": {
-      "total": 6,
-      "correct": 4,
-      "correct_rate": 0.6666666666666666,
-      "total_called": 1981,
-      "correct_called": 1797,
-      "wrong_strikes": 136,
-      "wrong_balls": 48,
-      "accuracy_pct": 90.7
+      "total": 7,
+      "correct": 5,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 2152,
+      "correct_called": 1953,
+      "wrong_strikes": 149,
+      "wrong_balls": 50,
+      "accuracy_pct": 90.8
     },
     "Mike Estabrook": {
       "total": 4,
@@ -821,14 +821,14 @@
       "correct_rate": 0.6666666666666666
     },
     "Dexter Kelley": {
-      "total": 5,
-      "correct": 5,
+      "total": 6,
+      "correct": 6,
       "correct_rate": 1.0,
-      "total_called": 387,
-      "correct_called": 363,
-      "wrong_strikes": 12,
-      "wrong_balls": 12,
-      "accuracy_pct": 93.8
+      "total_called": 563,
+      "correct_called": 527,
+      "wrong_strikes": 23,
+      "wrong_balls": 13,
+      "accuracy_pct": 93.6
     },
     "Brock Ballou": {
       "total": 1,
@@ -938,10 +938,10 @@
     "Scott Barry": {
       "total": 6,
       "correct": 6,
-      "total_called": 304,
-      "correct_called": 280,
-      "wrong_strikes": 12,
-      "wrong_balls": 12,
+      "total_called": 416,
+      "correct_called": 383,
+      "wrong_strikes": 17,
+      "wrong_balls": 16,
       "correct_rate": 1.0,
       "accuracy_pct": 92.1
     },
@@ -964,6 +964,16 @@
       "wrong_balls": 9,
       "correct_rate": 1.0,
       "accuracy_pct": 91.9
+    },
+    "Tyler Jones": {
+      "total": 3,
+      "correct": 3,
+      "total_called": 145,
+      "correct_called": 136,
+      "wrong_strikes": 6,
+      "wrong_balls": 3,
+      "correct_rate": 1.0,
+      "accuracy_pct": 93.8
     }
   }
 }
