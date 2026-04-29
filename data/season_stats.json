@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-04-29",
-  "total_challenges": 1002,
+  "total_challenges": 1003,
   "total_overturned": 286,
   "team_stats": {
     "CIN": {
@@ -84,7 +84,7 @@
       "missed_calls": 25
     },
     "CWS": {
-      "challenges": 72,
+      "challenges": 73,
       "overturned": 31,
       "missed_calls": 23
     },
@@ -109,7 +109,7 @@
       "missed_calls": 19
     },
     "LAA": {
-      "challenges": 58,
+      "challenges": 59,
       "overturned": 11,
       "missed_calls": 24
     },
@@ -526,14 +526,14 @@
       "accuracy_pct": 90.5
     },
     "Vic Carapazza": {
-      "total": 4,
-      "correct": 2,
-      "correct_rate": 0.5,
-      "total_called": 1639,
-      "correct_called": 1485,
-      "wrong_strikes": 110,
-      "wrong_balls": 44,
-      "accuracy_pct": 90.6
+      "total": 5,
+      "correct": 3,
+      "correct_rate": 0.6,
+      "total_called": 1810,
+      "correct_called": 1641,
+      "wrong_strikes": 123,
+      "wrong_balls": 46,
+      "accuracy_pct": 90.7
     },
     "Mike Estabrook": {
       "total": 4,
