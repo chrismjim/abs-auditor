@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-29",
-  "total_challenges": 1079,
-  "total_overturned": 308,
+  "last_updated": "2026-04-30",
+  "total_challenges": 1084,
+  "total_overturned": 310,
   "team_stats": {
     "CIN": {
-      "challenges": 44,
-      "overturned": 19,
+      "challenges": 46,
+      "overturned": 20,
       "missed_calls": 16
     },
     "PIT": {
@@ -19,8 +19,8 @@
       "missed_calls": 12
     },
     "ATL": {
-      "challenges": 96,
-      "overturned": 31,
+      "challenges": 98,
+      "overturned": 32,
       "missed_calls": 32
     },
     "ATH": {
@@ -64,7 +64,7 @@
       "missed_calls": 4
     },
     "BAL": {
-      "challenges": 60,
+      "challenges": 61,
       "overturned": 4,
       "missed_calls": 20
     },
@@ -124,7 +124,7 @@
       "missed_calls": 33
     },
     "HOU": {
-      "challenges": 34,
+      "challenges": 35,
       "overturned": 7,
       "missed_calls": 4
     },
@@ -134,8 +134,8 @@
       "missed_calls": 4
     },
     "DET": {
-      "challenges": 71,
-      "overturned": 24,
+      "challenges": 73,
+      "overturned": 25,
       "missed_calls": 21
     },
     "KC": {
@@ -144,8 +144,8 @@
       "missed_calls": 8
     },
     "COL": {
-      "challenges": 74,
-      "overturned": 30,
+      "challenges": 76,
+      "overturned": 31,
       "missed_calls": 2
     },
     "MIL": {
@@ -391,19 +391,24 @@
       "correct_rate": 0.0
     },
     "Rob Drake": {
-      "total": 29,
-      "correct": 28,
-      "correct_rate": 0.9655172413793104,
-      "total_called": 1456,
-      "correct_called": 1330,
-      "wrong_strikes": 108,
-      "wrong_balls": 18,
+      "total": 30,
+      "correct": 29,
+      "correct_rate": 0.9666666666666667,
+      "total_called": 1615,
+      "correct_called": 1475,
+      "wrong_strikes": 115,
+      "wrong_balls": 25,
       "accuracy_pct": 91.3
     },
     "Bruce Dreckman": {
-      "total": 6,
-      "correct": 2,
-      "correct_rate": 0.3333333333333333
+      "total": 8,
+      "correct": 4,
+      "correct_rate": 0.5,
+      "total_called": 127,
+      "correct_called": 114,
+      "wrong_strikes": 8,
+      "wrong_balls": 5,
+      "accuracy_pct": 89.8
     },
     "Chad Whitson": {
       "total": 27,
@@ -693,7 +698,12 @@
     "Charlie Ramos": {
       "total": 9,
       "correct": 6,
-      "correct_rate": 0.6666666666666666
+      "correct_rate": 0.6666666666666666,
+      "total_called": 131,
+      "correct_called": 123,
+      "wrong_strikes": 4,
+      "wrong_balls": 4,
+      "accuracy_pct": 93.9
     },
     "Junior Valentine": {
       "total": 4,
@@ -851,14 +861,14 @@
       "accuracy_pct": 92.2
     },
     "Roberto Ortiz": {
-      "total": 34,
-      "correct": 25,
-      "correct_rate": 0.7352941176470589,
-      "total_called": 1608,
-      "correct_called": 1438,
-      "wrong_strikes": 72,
-      "wrong_balls": 98,
-      "accuracy_pct": 89.4
+      "total": 36,
+      "correct": 27,
+      "correct_rate": 0.75,
+      "total_called": 1773,
+      "correct_called": 1590,
+      "wrong_strikes": 82,
+      "wrong_balls": 101,
+      "accuracy_pct": 89.7
     },
     "Stu Scheurwater": {
       "total": 2,
