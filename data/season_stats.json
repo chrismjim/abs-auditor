@@ -898,12 +898,12 @@
     "Mike Muchlinski": {
       "total": 13,
       "correct": 13,
-      "total_called": 2588,
-      "correct_called": 2338,
-      "wrong_strikes": 138,
-      "wrong_balls": 112,
+      "total_called": 2759,
+      "correct_called": 2499,
+      "wrong_strikes": 146,
+      "wrong_balls": 114,
       "correct_rate": 1.0,
-      "accuracy_pct": 90.3
+      "accuracy_pct": 90.6
     },
     "John Bacon": {
       "total": 26,
