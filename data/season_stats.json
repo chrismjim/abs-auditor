@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-05-02",
-  "total_challenges": 1211,
+  "total_challenges": 1214,
   "total_overturned": 351,
   "team_stats": {
     "CIN": {
@@ -54,9 +54,9 @@
       "missed_calls": 24
     },
     "NYY": {
-      "challenges": 94,
+      "challenges": 96,
       "overturned": 11,
-      "missed_calls": 22
+      "missed_calls": 23
     },
     "SF": {
       "challenges": 57,
@@ -64,14 +64,14 @@
       "missed_calls": 10
     },
     "BAL": {
-      "challenges": 86,
+      "challenges": 88,
       "overturned": 13,
-      "missed_calls": 21
+      "missed_calls": 22
     },
     "TOR": {
-      "challenges": 63,
+      "challenges": 64,
       "overturned": 12,
-      "missed_calls": 4
+      "missed_calls": 5
     },
     "STL": {
       "challenges": 120,
@@ -114,9 +114,9 @@
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 125,
+      "challenges": 126,
       "overturned": 48,
-      "missed_calls": 5
+      "missed_calls": 6
     },
     "CLE": {
       "challenges": 136,
@@ -326,14 +326,14 @@
       "accuracy_pct": 93.0
     },
     "Lance Barrett": {
-      "total": 28,
-      "correct": 25,
-      "correct_rate": 0.8928571428571429,
-      "total_called": 847,
-      "correct_called": 761,
-      "wrong_strikes": 47,
-      "wrong_balls": 39,
-      "accuracy_pct": 89.8
+      "total": 30,
+      "correct": 26,
+      "correct_rate": 0.8666666666666667,
+      "total_called": 1052,
+      "correct_called": 954,
+      "wrong_strikes": 54,
+      "wrong_balls": 44,
+      "accuracy_pct": 90.7
     },
     "Will Little": {
       "total": 14,
@@ -454,11 +454,11 @@
       "total": 12,
       "correct": 3,
       "correct_rate": 0.25,
-      "total_called": 2670,
-      "correct_called": 2479,
-      "wrong_strikes": 143,
+      "total_called": 2801,
+      "correct_called": 2603,
+      "wrong_strikes": 150,
       "wrong_balls": 48,
-      "accuracy_pct": 92.8
+      "accuracy_pct": 92.9
     },
     "Ryan Blakney": {
       "total": 16,
@@ -656,14 +656,14 @@
       "accuracy_pct": 89.3
     },
     "Tom Hanahan": {
-      "total": 11,
+      "total": 12,
       "correct": 10,
-      "correct_rate": 0.9090909090909091,
-      "total_called": 924,
-      "correct_called": 817,
-      "wrong_strikes": 68,
-      "wrong_balls": 39,
-      "accuracy_pct": 88.4
+      "correct_rate": 0.8333333333333334,
+      "total_called": 1075,
+      "correct_called": 960,
+      "wrong_strikes": 72,
+      "wrong_balls": 43,
+      "accuracy_pct": 89.3
     },
     "Dan Merzel": {
       "total": 7,
