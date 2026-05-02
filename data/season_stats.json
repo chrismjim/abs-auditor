@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-05-01",
-  "total_challenges": 1183,
+  "total_challenges": 1186,
   "total_overturned": 341,
   "team_stats": {
     "CIN": {
@@ -14,9 +14,9 @@
       "missed_calls": 4
     },
     "TB": {
-      "challenges": 81,
+      "challenges": 83,
       "overturned": 31,
-      "missed_calls": 12
+      "missed_calls": 14
     },
     "ATL": {
       "challenges": 122,
@@ -59,9 +59,9 @@
       "missed_calls": 21
     },
     "SF": {
-      "challenges": 51,
+      "challenges": 53,
       "overturned": 26,
-      "missed_calls": 4
+      "missed_calls": 6
     },
     "BAL": {
       "challenges": 80,
@@ -89,7 +89,7 @@
       "missed_calls": 23
     },
     "BOS": {
-      "challenges": 81,
+      "challenges": 82,
       "overturned": 15,
       "missed_calls": 2
     },
@@ -124,7 +124,7 @@
       "missed_calls": 33
     },
     "HOU": {
-      "challenges": 54,
+      "challenges": 55,
       "overturned": 14,
       "missed_calls": 4
     },
@@ -436,14 +436,14 @@
       "accuracy_pct": 89.3
     },
     "Chris Segal": {
-      "total": 36,
-      "correct": 33,
-      "correct_rate": 0.9166666666666666,
-      "total_called": 2177,
-      "correct_called": 2033,
-      "wrong_strikes": 103,
-      "wrong_balls": 41,
-      "accuracy_pct": 93.4
+      "total": 37,
+      "correct": 34,
+      "correct_rate": 0.918918918918919,
+      "total_called": 2299,
+      "correct_called": 2144,
+      "wrong_strikes": 104,
+      "wrong_balls": 51,
+      "accuracy_pct": 93.3
     },
     "Gabe Morales": {
       "total": 12,
@@ -898,22 +898,22 @@
     "Mike Muchlinski": {
       "total": 13,
       "correct": 13,
-      "total_called": 3443,
-      "correct_called": 3143,
-      "wrong_strikes": 178,
-      "wrong_balls": 122,
+      "total_called": 3614,
+      "correct_called": 3304,
+      "wrong_strikes": 186,
+      "wrong_balls": 124,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.3
+      "accuracy_pct": 91.4
     },
     "John Bacon": {
-      "total": 26,
+      "total": 28,
       "correct": 26,
-      "total_called": 2010,
-      "correct_called": 1778,
-      "wrong_strikes": 180,
-      "wrong_balls": 52,
-      "correct_rate": 1.0,
-      "accuracy_pct": 88.5
+      "total_called": 2122,
+      "correct_called": 1881,
+      "wrong_strikes": 188,
+      "wrong_balls": 53,
+      "correct_rate": 0.9285714285714286,
+      "accuracy_pct": 88.6
     },
     "Jansen Visconti": {
       "total": 0,
