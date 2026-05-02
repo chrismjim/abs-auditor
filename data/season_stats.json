@@ -1,27 +1,27 @@
 {
   "last_updated": "2026-05-01",
-  "total_challenges": 1196,
-  "total_overturned": 346,
+  "total_challenges": 1209,
+  "total_overturned": 351,
   "team_stats": {
     "CIN": {
-      "challenges": 72,
-      "overturned": 34,
+      "challenges": 74,
+      "overturned": 36,
       "missed_calls": 16
     },
     "PIT": {
-      "challenges": 66,
-      "overturned": 16,
+      "challenges": 68,
+      "overturned": 18,
       "missed_calls": 4
     },
     "TB": {
-      "challenges": 85,
+      "challenges": 87,
       "overturned": 31,
-      "missed_calls": 16
+      "missed_calls": 18
     },
     "ATL": {
-      "challenges": 122,
+      "challenges": 123,
       "overturned": 44,
-      "missed_calls": 32
+      "missed_calls": 33
     },
     "ATH": {
       "challenges": 48,
@@ -34,7 +34,7 @@
       "missed_calls": 20
     },
     "SEA": {
-      "challenges": 80,
+      "challenges": 82,
       "overturned": 40,
       "missed_calls": 6
     },
@@ -44,9 +44,9 @@
       "missed_calls": 6
     },
     "LAD": {
-      "challenges": 74,
-      "overturned": 28,
-      "missed_calls": 20
+      "challenges": 76,
+      "overturned": 29,
+      "missed_calls": 21
     },
     "CHC": {
       "challenges": 91,
@@ -54,29 +54,29 @@
       "missed_calls": 24
     },
     "NYY": {
-      "challenges": 90,
-      "overturned": 10,
+      "challenges": 92,
+      "overturned": 11,
       "missed_calls": 21
     },
     "SF": {
-      "challenges": 55,
+      "challenges": 57,
       "overturned": 26,
-      "missed_calls": 8
+      "missed_calls": 10
     },
     "BAL": {
-      "challenges": 82,
-      "overturned": 12,
+      "challenges": 84,
+      "overturned": 13,
       "missed_calls": 20
     },
     "TOR": {
-      "challenges": 62,
-      "overturned": 11,
+      "challenges": 63,
+      "overturned": 12,
       "missed_calls": 4
     },
     "STL": {
-      "challenges": 118,
-      "overturned": 46,
-      "missed_calls": 31
+      "challenges": 120,
+      "overturned": 47,
+      "missed_calls": 32
     },
     "PHI": {
       "challenges": 95,
@@ -89,7 +89,7 @@
       "missed_calls": 23
     },
     "BOS": {
-      "challenges": 83,
+      "challenges": 84,
       "overturned": 15,
       "missed_calls": 2
     },
@@ -114,8 +114,8 @@
       "missed_calls": 24
     },
     "MIN": {
-      "challenges": 124,
-      "overturned": 47,
+      "challenges": 125,
+      "overturned": 48,
       "missed_calls": 5
     },
     "CLE": {
@@ -124,7 +124,7 @@
       "missed_calls": 33
     },
     "HOU": {
-      "challenges": 56,
+      "challenges": 57,
       "overturned": 14,
       "missed_calls": 4
     },
@@ -139,14 +139,14 @@
       "missed_calls": 21
     },
     "KC": {
-      "challenges": 49,
+      "challenges": 51,
       "overturned": 11,
       "missed_calls": 8
     },
     "COL": {
-      "challenges": 100,
+      "challenges": 101,
       "overturned": 43,
-      "missed_calls": 2
+      "missed_calls": 3
     },
     "MIL": {
       "challenges": 58,
@@ -206,14 +206,14 @@
       "accuracy_pct": 97.2
     },
     "Jim Wolf": {
-      "total": 42,
-      "correct": 5,
-      "correct_rate": 0.11904761904761904,
-      "total_called": 610,
-      "correct_called": 559,
-      "wrong_strikes": 32,
-      "wrong_balls": 19,
-      "accuracy_pct": 91.6
+      "total": 44,
+      "correct": 7,
+      "correct_rate": 0.1590909090909091,
+      "total_called": 781,
+      "correct_called": 716,
+      "wrong_strikes": 39,
+      "wrong_balls": 26,
+      "accuracy_pct": 91.7
     },
     "Nic Lentz": {
       "total": 24,
@@ -256,19 +256,24 @@
       "accuracy_pct": 91.3
     },
     "Chris Guccione": {
-      "total": 5,
-      "correct": 4,
-      "correct_rate": 0.8,
-      "total_called": 314,
-      "correct_called": 292,
-      "wrong_strikes": 13,
-      "wrong_balls": 9,
-      "accuracy_pct": 93.0
+      "total": 7,
+      "correct": 5,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 484,
+      "correct_called": 451,
+      "wrong_strikes": 20,
+      "wrong_balls": 13,
+      "accuracy_pct": 93.2
     },
     "James Hoye": {
       "total": 5,
       "correct": 3,
-      "correct_rate": 0.6
+      "correct_rate": 0.6,
+      "total_called": 166,
+      "correct_called": 154,
+      "wrong_strikes": 6,
+      "wrong_balls": 6,
+      "accuracy_pct": 92.8
     },
     "Lance Barksdale": {
       "total": 5,
@@ -281,14 +286,14 @@
       "accuracy_pct": 93.3
     },
     "Chad Fairchild": {
-      "total": 14,
+      "total": 15,
       "correct": 14,
-      "correct_rate": 1.0,
-      "total_called": 1848,
-      "correct_called": 1785,
-      "wrong_strikes": 20,
-      "wrong_balls": 43,
-      "accuracy_pct": 96.6
+      "correct_rate": 0.9333333333333333,
+      "total_called": 1987,
+      "correct_called": 1911,
+      "wrong_strikes": 31,
+      "wrong_balls": 45,
+      "accuracy_pct": 96.2
     },
     "Marvin Hudson": {
       "total": 5,
@@ -426,24 +431,24 @@
       "accuracy_pct": 92.5
     },
     "Malachi Moore": {
-      "total": 11,
-      "correct": 7,
-      "correct_rate": 0.6363636363636364,
-      "total_called": 1648,
-      "correct_called": 1477,
-      "wrong_strikes": 75,
-      "wrong_balls": 96,
-      "accuracy_pct": 89.6
+      "total": 13,
+      "correct": 9,
+      "correct_rate": 0.6923076923076923,
+      "total_called": 1824,
+      "correct_called": 1639,
+      "wrong_strikes": 85,
+      "wrong_balls": 100,
+      "accuracy_pct": 89.9
     },
     "Chris Segal": {
-      "total": 38,
-      "correct": 35,
-      "correct_rate": 0.9210526315789473,
-      "total_called": 2421,
-      "correct_called": 2255,
-      "wrong_strikes": 105,
-      "wrong_balls": 61,
-      "accuracy_pct": 93.1
+      "total": 39,
+      "correct": 36,
+      "correct_rate": 0.9230769230769231,
+      "total_called": 2543,
+      "correct_called": 2366,
+      "wrong_strikes": 106,
+      "wrong_balls": 71,
+      "accuracy_pct": 93.0
     },
     "Gabe Morales": {
       "total": 12,
@@ -459,10 +464,10 @@
       "total": 16,
       "correct": 15,
       "correct_rate": 0.9375,
-      "total_called": 2143,
-      "correct_called": 1999,
-      "wrong_strikes": 102,
-      "wrong_balls": 42,
+      "total_called": 2332,
+      "correct_called": 2175,
+      "wrong_strikes": 110,
+      "wrong_balls": 47,
       "accuracy_pct": 93.3
     },
     "Adam Beck": {
@@ -614,10 +619,10 @@
       "total": 12,
       "correct": 10,
       "correct_rate": 0.8333333333333334,
-      "total_called": 1147,
-      "correct_called": 1031,
-      "wrong_strikes": 79,
-      "wrong_balls": 37,
+      "total_called": 1338,
+      "correct_called": 1203,
+      "wrong_strikes": 92,
+      "wrong_balls": 43,
       "accuracy_pct": 89.9
     },
     "Manny Gonzalez": {
@@ -714,11 +719,11 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 1235,
-      "correct_called": 1140,
-      "wrong_strikes": 69,
-      "wrong_balls": 26,
-      "accuracy_pct": 92.3
+      "total_called": 1413,
+      "correct_called": 1307,
+      "wrong_strikes": 77,
+      "wrong_balls": 29,
+      "accuracy_pct": 92.5
     },
     "Todd Tichenor": {
       "total": 4,
@@ -784,11 +789,11 @@
       "total": 12,
       "correct": 3,
       "correct_rate": 0.25,
-      "total_called": 539,
-      "correct_called": 491,
-      "wrong_strikes": 41,
-      "wrong_balls": 7,
-      "accuracy_pct": 91.1
+      "total_called": 720,
+      "correct_called": 660,
+      "wrong_strikes": 50,
+      "wrong_balls": 10,
+      "accuracy_pct": 91.7
     },
     "Alex MacKay": {
       "total": 8,
@@ -801,19 +806,24 @@
       "accuracy_pct": 93.2
     },
     "Adam Hamari": {
-      "total": 7,
-      "correct": 2,
-      "correct_rate": 0.2857142857142857,
-      "total_called": 166,
-      "correct_called": 154,
-      "wrong_strikes": 7,
-      "wrong_balls": 5,
-      "accuracy_pct": 92.8
+      "total": 9,
+      "correct": 4,
+      "correct_rate": 0.4444444444444444,
+      "total_called": 322,
+      "correct_called": 297,
+      "wrong_strikes": 15,
+      "wrong_balls": 10,
+      "accuracy_pct": 92.2
     },
     "Ben May": {
       "total": 2,
       "correct": 2,
-      "correct_rate": 1.0
+      "correct_rate": 1.0,
+      "total_called": 124,
+      "correct_called": 114,
+      "wrong_strikes": 7,
+      "wrong_balls": 3,
+      "accuracy_pct": 91.9
     },
     "Derek Thomas": {
       "total": 5,
@@ -886,34 +896,34 @@
       "accuracy_pct": 91.8
     },
     "Jacob Metz": {
-      "total": 17,
-      "correct": 17,
-      "total_called": 891,
-      "correct_called": 805,
-      "wrong_strikes": 67,
-      "wrong_balls": 19,
+      "total": 18,
+      "correct": 18,
+      "total_called": 1016,
+      "correct_called": 919,
+      "wrong_strikes": 76,
+      "wrong_balls": 21,
       "correct_rate": 1.0,
-      "accuracy_pct": 90.3
+      "accuracy_pct": 90.5
     },
     "Mike Muchlinski": {
       "total": 13,
       "correct": 13,
-      "total_called": 3785,
-      "correct_called": 3465,
-      "wrong_strikes": 194,
-      "wrong_balls": 126,
+      "total_called": 3956,
+      "correct_called": 3626,
+      "wrong_strikes": 202,
+      "wrong_balls": 128,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.5
+      "accuracy_pct": 91.7
     },
     "John Bacon": {
-      "total": 30,
+      "total": 32,
       "correct": 26,
-      "total_called": 2234,
-      "correct_called": 1984,
-      "wrong_strikes": 196,
-      "wrong_balls": 54,
-      "correct_rate": 0.8666666666666667,
-      "accuracy_pct": 88.8
+      "total_called": 2346,
+      "correct_called": 2087,
+      "wrong_strikes": 204,
+      "wrong_balls": 55,
+      "correct_rate": 0.8125,
+      "accuracy_pct": 89.0
     },
     "Jansen Visconti": {
       "total": 0,
