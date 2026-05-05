@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-03",
-  "total_challenges": 1434,
-  "total_overturned": 472,
+  "last_updated": "2026-05-04",
+  "total_challenges": 1437,
+  "total_overturned": 473,
   "team_stats": {
     "CIN": {
       "challenges": 86,
@@ -29,8 +29,8 @@
       "missed_calls": 3
     },
     "NYM": {
-      "challenges": 77,
-      "overturned": 23,
+      "challenges": 80,
+      "overturned": 24,
       "missed_calls": 27
     },
     "SEA": {
@@ -144,8 +144,8 @@
       "missed_calls": 8
     },
     "COL": {
-      "challenges": 135,
-      "overturned": 67,
+      "challenges": 138,
+      "overturned": 68,
       "missed_calls": 3
     },
     "MIL": {
@@ -386,14 +386,14 @@
       "accuracy_pct": 90.0
     },
     "D.J. Reyburn": {
-      "total": 13,
-      "correct": 10,
-      "correct_rate": 0.7692307692307693,
-      "total_called": 1323,
-      "correct_called": 1188,
-      "wrong_strikes": 90,
-      "wrong_balls": 45,
-      "accuracy_pct": 89.8
+      "total": 16,
+      "correct": 13,
+      "correct_rate": 0.8125,
+      "total_called": 1429,
+      "correct_called": 1278,
+      "wrong_strikes": 100,
+      "wrong_balls": 51,
+      "accuracy_pct": 89.4
     },
     "CB Bucknor": {
       "total": 1,
