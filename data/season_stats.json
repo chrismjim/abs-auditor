@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05",
+  "last_updated": "2026-05-06",
   "total_challenges": 1495,
   "total_overturned": 497,
   "team_stats": {
@@ -494,11 +494,11 @@
       "total": 8,
       "correct": 5,
       "correct_rate": 0.625,
-      "total_called": 741,
-      "correct_called": 680,
-      "wrong_strikes": 40,
-      "wrong_balls": 21,
-      "accuracy_pct": 91.8
+      "total_called": 861,
+      "correct_called": 794,
+      "wrong_strikes": 44,
+      "wrong_balls": 23,
+      "accuracy_pct": 92.2
     },
     "Ryan Wills": {
       "total": 23,
