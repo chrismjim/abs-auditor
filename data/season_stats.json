@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-05-07",
-  "total_challenges": 1565,
+  "total_challenges": 1566,
   "total_overturned": 528,
   "team_stats": {
     "CIN": {
@@ -39,7 +39,7 @@
       "missed_calls": 14
     },
     "TEX": {
-      "challenges": 68,
+      "challenges": 69,
       "overturned": 7,
       "missed_calls": 6
     },
@@ -54,7 +54,7 @@
       "missed_calls": 34
     },
     "NYY": {
-      "challenges": 135,
+      "challenges": 136,
       "overturned": 25,
       "missed_calls": 40
     },
@@ -169,11 +169,11 @@
       "total": 22,
       "correct": 18,
       "correct_rate": 0.8181818181818182,
-      "total_called": 2365,
-      "correct_called": 2262,
-      "wrong_strikes": 61,
-      "wrong_balls": 42,
-      "accuracy_pct": 95.6
+      "total_called": 2517,
+      "correct_called": 2398,
+      "wrong_strikes": 65,
+      "wrong_balls": 54,
+      "accuracy_pct": 95.3
     },
     "Ryan Additon": {
       "total": 59,
@@ -861,13 +861,13 @@
       "accuracy_pct": 93.3
     },
     "Brock Ballou": {
-      "total": 2,
-      "correct": 1,
-      "correct_rate": 0.5,
-      "total_called": 172,
-      "correct_called": 163,
-      "wrong_strikes": 4,
-      "wrong_balls": 5,
+      "total": 3,
+      "correct": 2,
+      "correct_rate": 0.6666666666666666,
+      "total_called": 344,
+      "correct_called": 326,
+      "wrong_strikes": 8,
+      "wrong_balls": 10,
       "accuracy_pct": 94.8
     },
     "John Libka": {
