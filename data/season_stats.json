@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-09",
-  "total_challenges": 1658,
-  "total_overturned": 560,
+  "total_challenges": 1659,
+  "total_overturned": 561,
   "team_stats": {
     "CIN": {
       "challenges": 111,
@@ -69,8 +69,8 @@
       "missed_calls": 39
     },
     "TOR": {
-      "challenges": 82,
-      "overturned": 18,
+      "challenges": 83,
+      "overturned": 19,
       "missed_calls": 14
     },
     "STL": {
@@ -109,8 +109,8 @@
       "missed_calls": 40
     },
     "LAA": {
-      "challenges": 90,
-      "overturned": 21,
+      "challenges": 91,
+      "overturned": 22,
       "missed_calls": 31
     },
     "MIN": {
@@ -431,14 +431,14 @@
       "accuracy_pct": 92.1
     },
     "Malachi Moore": {
-      "total": 16,
-      "correct": 12,
-      "correct_rate": 0.75,
-      "total_called": 2256,
-      "correct_called": 2032,
-      "wrong_strikes": 109,
-      "wrong_balls": 115,
-      "accuracy_pct": 90.1
+      "total": 17,
+      "correct": 13,
+      "correct_rate": 0.7647058823529411,
+      "total_called": 2418,
+      "correct_called": 2182,
+      "wrong_strikes": 116,
+      "wrong_balls": 120,
+      "accuracy_pct": 90.2
     },
     "Chris Segal": {
       "total": 39,
