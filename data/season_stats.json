@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-09",
-  "total_challenges": 1660,
-  "total_overturned": 562,
+  "total_challenges": 1663,
+  "total_overturned": 563,
   "team_stats": {
     "CIN": {
       "challenges": 111,
@@ -24,9 +24,9 @@
       "missed_calls": 41
     },
     "ATH": {
-      "challenges": 68,
+      "challenges": 70,
       "overturned": 17,
-      "missed_calls": 6
+      "missed_calls": 8
     },
     "NYM": {
       "challenges": 102,
@@ -64,13 +64,13 @@
       "missed_calls": 10
     },
     "BAL": {
-      "challenges": 128,
+      "challenges": 130,
       "overturned": 30,
-      "missed_calls": 39
+      "missed_calls": 41
     },
     "TOR": {
-      "challenges": 84,
-      "overturned": 20,
+      "challenges": 85,
+      "overturned": 21,
       "missed_calls": 14
     },
     "STL": {
@@ -109,8 +109,8 @@
       "missed_calls": 40
     },
     "LAA": {
-      "challenges": 92,
-      "overturned": 23,
+      "challenges": 93,
+      "overturned": 24,
       "missed_calls": 31
     },
     "MIN": {
@@ -359,11 +359,11 @@
       "total": 14,
       "correct": 13,
       "correct_rate": 0.9285714285714286,
-      "total_called": 1252,
-      "correct_called": 1182,
-      "wrong_strikes": 42,
-      "wrong_balls": 28,
-      "accuracy_pct": 94.4
+      "total_called": 1382,
+      "correct_called": 1303,
+      "wrong_strikes": 48,
+      "wrong_balls": 31,
+      "accuracy_pct": 94.3
     },
     "Tripp Gibson": {
       "total": 6,
@@ -431,14 +431,14 @@
       "accuracy_pct": 92.1
     },
     "Malachi Moore": {
-      "total": 18,
-      "correct": 14,
-      "correct_rate": 0.7777777777777778,
-      "total_called": 2580,
-      "correct_called": 2332,
-      "wrong_strikes": 123,
-      "wrong_balls": 125,
-      "accuracy_pct": 90.4
+      "total": 19,
+      "correct": 15,
+      "correct_rate": 0.7894736842105263,
+      "total_called": 2742,
+      "correct_called": 2482,
+      "wrong_strikes": 130,
+      "wrong_balls": 130,
+      "accuracy_pct": 90.5
     },
     "Chris Segal": {
       "total": 39,
@@ -966,14 +966,14 @@
       "accuracy_pct": 94.2
     },
     "Austin Jones": {
-      "total": 8,
+      "total": 10,
       "correct": 8,
-      "total_called": 1442,
-      "correct_called": 1330,
-      "wrong_strikes": 88,
-      "wrong_balls": 24,
-      "correct_rate": 1.0,
-      "accuracy_pct": 92.2
+      "total_called": 1617,
+      "correct_called": 1490,
+      "wrong_strikes": 101,
+      "wrong_balls": 26,
+      "correct_rate": 0.8,
+      "accuracy_pct": 92.1
     },
     "Scott Barry": {
       "total": 15,
