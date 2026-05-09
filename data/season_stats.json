@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-07",
-  "total_challenges": 1615,
-  "total_overturned": 534,
+  "last_updated": "2026-05-08",
+  "total_challenges": 1617,
+  "total_overturned": 536,
   "team_stats": {
     "CIN": {
-      "challenges": 103,
-      "overturned": 54,
+      "challenges": 105,
+      "overturned": 56,
       "missed_calls": 16
     },
     "PIT": {
@@ -124,8 +124,8 @@
       "missed_calls": 33
     },
     "HOU": {
-      "challenges": 89,
-      "overturned": 26,
+      "challenges": 91,
+      "overturned": 28,
       "missed_calls": 14
     },
     "SD": {
@@ -676,14 +676,14 @@
       "accuracy_pct": 91.3
     },
     "Jeremie Rehak": {
-      "total": 3,
-      "correct": 3,
+      "total": 5,
+      "correct": 5,
       "correct_rate": 1.0,
-      "total_called": 1904,
-      "correct_called": 1742,
-      "wrong_strikes": 96,
-      "wrong_balls": 66,
-      "accuracy_pct": 91.5
+      "total_called": 2049,
+      "correct_called": 1873,
+      "wrong_strikes": 106,
+      "wrong_balls": 70,
+      "accuracy_pct": 91.4
     },
     "Ramon De Jesus": {
       "total": 15,
