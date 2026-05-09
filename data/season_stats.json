@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-05-08",
-  "total_challenges": 1617,
-  "total_overturned": 536,
+  "total_challenges": 1623,
+  "total_overturned": 541,
   "team_stats": {
     "CIN": {
-      "challenges": 105,
-      "overturned": 56,
+      "challenges": 107,
+      "overturned": 58,
       "missed_calls": 16
     },
     "PIT": {
@@ -14,8 +14,8 @@
       "missed_calls": 4
     },
     "TB": {
-      "challenges": 104,
-      "overturned": 36,
+      "challenges": 106,
+      "overturned": 38,
       "missed_calls": 18
     },
     "ATL": {
@@ -69,8 +69,8 @@
       "missed_calls": 39
     },
     "TOR": {
-      "challenges": 76,
-      "overturned": 15,
+      "challenges": 78,
+      "overturned": 16,
       "missed_calls": 14
     },
     "STL": {
@@ -89,8 +89,8 @@
       "missed_calls": 23
     },
     "BOS": {
-      "challenges": 118,
-      "overturned": 33,
+      "challenges": 120,
+      "overturned": 35,
       "missed_calls": 5
     },
     "MIA": {
@@ -109,8 +109,8 @@
       "missed_calls": 40
     },
     "LAA": {
-      "challenges": 84,
-      "overturned": 18,
+      "challenges": 86,
+      "overturned": 19,
       "missed_calls": 31
     },
     "MIN": {
@@ -124,8 +124,8 @@
       "missed_calls": 33
     },
     "HOU": {
-      "challenges": 91,
-      "overturned": 28,
+      "challenges": 93,
+      "overturned": 30,
       "missed_calls": 14
     },
     "SD": {
@@ -556,13 +556,13 @@
       "accuracy_pct": 91.1
     },
     "Mike Estabrook": {
-      "total": 19,
-      "correct": 4,
-      "correct_rate": 0.21052631578947367,
-      "total_called": 2423,
-      "correct_called": 2196,
-      "wrong_strikes": 109,
-      "wrong_balls": 118,
+      "total": 21,
+      "correct": 6,
+      "correct_rate": 0.2857142857142857,
+      "total_called": 2565,
+      "correct_called": 2324,
+      "wrong_strikes": 118,
+      "wrong_balls": 123,
       "accuracy_pct": 90.6
     },
     "Jordan Baker": {
@@ -676,14 +676,14 @@
       "accuracy_pct": 91.3
     },
     "Jeremie Rehak": {
-      "total": 5,
-      "correct": 5,
+      "total": 7,
+      "correct": 7,
       "correct_rate": 1.0,
-      "total_called": 2049,
-      "correct_called": 1873,
-      "wrong_strikes": 106,
-      "wrong_balls": 70,
-      "accuracy_pct": 91.4
+      "total_called": 2194,
+      "correct_called": 2004,
+      "wrong_strikes": 116,
+      "wrong_balls": 74,
+      "accuracy_pct": 91.3
     },
     "Ramon De Jesus": {
       "total": 15,
@@ -846,9 +846,14 @@
       "accuracy_pct": 91.4
     },
     "Steven Jaschinski": {
-      "total": 3,
-      "correct": 2,
-      "correct_rate": 0.6666666666666666
+      "total": 5,
+      "correct": 4,
+      "correct_rate": 0.8,
+      "total_called": 125,
+      "correct_called": 106,
+      "wrong_strikes": 15,
+      "wrong_balls": 4,
+      "accuracy_pct": 84.8
     },
     "Dexter Kelley": {
       "total": 14,
