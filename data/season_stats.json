@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-10",
-  "total_challenges": 1703,
-  "total_overturned": 579,
+  "total_challenges": 1706,
+  "total_overturned": 581,
   "team_stats": {
     "CIN": {
       "challenges": 111,
@@ -24,8 +24,8 @@
       "missed_calls": 41
     },
     "ATH": {
-      "challenges": 82,
-      "overturned": 17,
+      "challenges": 85,
+      "overturned": 19,
       "missed_calls": 20
     },
     "NYM": {
@@ -64,8 +64,8 @@
       "missed_calls": 10
     },
     "BAL": {
-      "challenges": 142,
-      "overturned": 30,
+      "challenges": 145,
+      "overturned": 32,
       "missed_calls": 53
     },
     "TOR": {
@@ -259,11 +259,11 @@
       "total": 10,
       "correct": 8,
       "correct_rate": 0.8,
-      "total_called": 1015,
-      "correct_called": 944,
-      "wrong_strikes": 41,
-      "wrong_balls": 30,
-      "accuracy_pct": 93.0
+      "total_called": 1159,
+      "correct_called": 1077,
+      "wrong_strikes": 50,
+      "wrong_balls": 32,
+      "accuracy_pct": 92.9
     },
     "James Hoye": {
       "total": 7,
@@ -329,10 +329,10 @@
       "total": 54,
       "correct": 30,
       "correct_rate": 0.5555555555555556,
-      "total_called": 3297,
-      "correct_called": 3047,
-      "wrong_strikes": 144,
-      "wrong_balls": 106,
+      "total_called": 3418,
+      "correct_called": 3157,
+      "wrong_strikes": 154,
+      "wrong_balls": 107,
       "accuracy_pct": 92.4
     },
     "Will Little": {
@@ -474,21 +474,21 @@
       "total": 15,
       "correct": 13,
       "correct_rate": 0.8666666666666667,
-      "total_called": 901,
-      "correct_called": 831,
-      "wrong_strikes": 38,
-      "wrong_balls": 32,
-      "accuracy_pct": 92.2
+      "total_called": 1060,
+      "correct_called": 973,
+      "wrong_strikes": 50,
+      "wrong_balls": 37,
+      "accuracy_pct": 91.8
     },
     "Carlos Torres": {
-      "total": 21,
-      "correct": 19,
-      "correct_rate": 0.9047619047619048,
-      "total_called": 1711,
-      "correct_called": 1617,
-      "wrong_strikes": 62,
-      "wrong_balls": 32,
-      "accuracy_pct": 94.5
+      "total": 24,
+      "correct": 22,
+      "correct_rate": 0.9166666666666666,
+      "total_called": 1871,
+      "correct_called": 1755,
+      "wrong_strikes": 74,
+      "wrong_balls": 42,
+      "accuracy_pct": 93.8
     },
     "Nestor Ceja": {
       "total": 8,
@@ -699,11 +699,11 @@
       "total": 13,
       "correct": 13,
       "correct_rate": 1.0,
-      "total_called": 758,
-      "correct_called": 704,
-      "wrong_strikes": 35,
-      "wrong_balls": 19,
-      "accuracy_pct": 92.9
+      "total_called": 889,
+      "correct_called": 832,
+      "wrong_strikes": 37,
+      "wrong_balls": 20,
+      "accuracy_pct": 93.6
     },
     "Charlie Ramos": {
       "total": 41,
@@ -879,11 +879,11 @@
       "total": 27,
       "correct": 18,
       "correct_rate": 0.6666666666666666,
-      "total_called": 2002,
-      "correct_called": 1859,
-      "wrong_strikes": 97,
-      "wrong_balls": 46,
-      "accuracy_pct": 92.9
+      "total_called": 2132,
+      "correct_called": 1975,
+      "wrong_strikes": 102,
+      "wrong_balls": 55,
+      "accuracy_pct": 92.6
     },
     "Roberto Ortiz": {
       "total": 62,
