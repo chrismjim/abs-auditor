@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09",
+  "last_updated": "2026-05-10",
   "total_challenges": 1703,
   "total_overturned": 579,
   "team_stats": {
@@ -259,11 +259,11 @@
       "total": 10,
       "correct": 8,
       "correct_rate": 0.8,
-      "total_called": 871,
-      "correct_called": 811,
-      "wrong_strikes": 32,
-      "wrong_balls": 28,
-      "accuracy_pct": 93.1
+      "total_called": 1015,
+      "correct_called": 944,
+      "wrong_strikes": 41,
+      "wrong_balls": 30,
+      "accuracy_pct": 93.0
     },
     "James Hoye": {
       "total": 7,
