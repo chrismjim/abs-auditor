@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "total_challenges": 1848,
   "total_overturned": 670,
   "team_stats": {
@@ -219,11 +219,11 @@
       "total": 45,
       "correct": 27,
       "correct_rate": 0.6,
-      "total_called": 3881,
-      "correct_called": 3580,
-      "wrong_strikes": 180,
-      "wrong_balls": 121,
-      "accuracy_pct": 92.2
+      "total_called": 4021,
+      "correct_called": 3714,
+      "wrong_strikes": 185,
+      "wrong_balls": 122,
+      "accuracy_pct": 92.4
     },
     "Adrian Johnson": {
       "total": 7,
@@ -1018,12 +1018,12 @@
     "Jonathan Parra": {
       "total": 0,
       "correct": 0,
-      "total_called": 510,
-      "correct_called": 489,
-      "wrong_strikes": 12,
-      "wrong_balls": 9,
+      "total_called": 712,
+      "correct_called": 672,
+      "wrong_strikes": 25,
+      "wrong_balls": 15,
       "correct_rate": 0.0,
-      "accuracy_pct": 95.9
+      "accuracy_pct": 94.4
     }
   }
 }
