@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-13",
-  "total_challenges": 1892,
-  "total_overturned": 687,
+  "total_challenges": 1896,
+  "total_overturned": 688,
   "team_stats": {
     "CIN": {
       "challenges": 113,
@@ -54,9 +54,9 @@
       "missed_calls": 34
     },
     "NYY": {
-      "challenges": 182,
-      "overturned": 56,
-      "missed_calls": 44
+      "challenges": 184,
+      "overturned": 57,
+      "missed_calls": 45
     },
     "SF": {
       "challenges": 87,
@@ -64,9 +64,9 @@
       "missed_calls": 16
     },
     "BAL": {
-      "challenges": 189,
-      "overturned": 61,
-      "missed_calls": 57
+      "challenges": 191,
+      "overturned": 62,
+      "missed_calls": 58
     },
     "TOR": {
       "challenges": 97,
@@ -109,7 +109,7 @@
       "missed_calls": 40
     },
     "LAA": {
-      "challenges": 107,
+      "challenges": 109,
       "overturned": 30,
       "missed_calls": 31
     },
@@ -119,7 +119,7 @@
       "missed_calls": 28
     },
     "CLE": {
-      "challenges": 202,
+      "challenges": 204,
       "overturned": 52,
       "missed_calls": 46
     },
@@ -186,13 +186,13 @@
       "accuracy_pct": 88.8
     },
     "Dan Iassogna": {
-      "total": 38,
-      "correct": 16,
-      "correct_rate": 0.42105263157894735,
-      "total_called": 1449,
-      "correct_called": 1331,
-      "wrong_strikes": 64,
-      "wrong_balls": 54,
+      "total": 40,
+      "correct": 18,
+      "correct_rate": 0.45,
+      "total_called": 1602,
+      "correct_called": 1473,
+      "wrong_strikes": 69,
+      "wrong_balls": 60,
       "accuracy_pct": 91.9
     },
     "Willie Traynor": {
@@ -696,14 +696,14 @@
       "accuracy_pct": 93.8
     },
     "Edwin Moscoso": {
-      "total": 21,
-      "correct": 17,
-      "correct_rate": 0.8095238095238095,
-      "total_called": 2990,
-      "correct_called": 2852,
-      "wrong_strikes": 79,
-      "wrong_balls": 59,
-      "accuracy_pct": 95.4
+      "total": 23,
+      "correct": 18,
+      "correct_rate": 0.782608695652174,
+      "total_called": 3155,
+      "correct_called": 3005,
+      "wrong_strikes": 84,
+      "wrong_balls": 66,
+      "accuracy_pct": 95.2
     },
     "Charlie Ramos": {
       "total": 41,
