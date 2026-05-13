@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-11",
-  "total_challenges": 1854,
-  "total_overturned": 670,
+  "last_updated": "2026-05-12",
+  "total_challenges": 1856,
+  "total_overturned": 671,
   "team_stats": {
     "CIN": {
       "challenges": 111,
@@ -9,9 +9,9 @@
       "missed_calls": 16
     },
     "PIT": {
-      "challenges": 104,
+      "challenges": 105,
       "overturned": 36,
-      "missed_calls": 9
+      "missed_calls": 10
     },
     "TB": {
       "challenges": 114,
@@ -54,8 +54,8 @@
       "missed_calls": 34
     },
     "NYY": {
-      "challenges": 171,
-      "overturned": 49,
+      "challenges": 172,
+      "overturned": 50,
       "missed_calls": 40
     },
     "SF": {
@@ -64,8 +64,8 @@
       "missed_calls": 15
     },
     "BAL": {
-      "challenges": 178,
-      "overturned": 54,
+      "challenges": 179,
+      "overturned": 55,
       "missed_calls": 53
     },
     "TOR": {
@@ -144,9 +144,9 @@
       "missed_calls": 8
     },
     "COL": {
-      "challenges": 166,
+      "challenges": 167,
       "overturned": 75,
-      "missed_calls": 3
+      "missed_calls": 4
     },
     "MIL": {
       "challenges": 103,
@@ -586,13 +586,13 @@
       "accuracy_pct": 93.8
     },
     "Hunter Wendelstedt": {
-      "total": 43,
-      "correct": 31,
-      "correct_rate": 0.7209302325581395,
-      "total_called": 2460,
-      "correct_called": 2305,
-      "wrong_strikes": 72,
-      "wrong_balls": 83,
+      "total": 44,
+      "correct": 32,
+      "correct_rate": 0.7272727272727273,
+      "total_called": 2615,
+      "correct_called": 2450,
+      "wrong_strikes": 79,
+      "wrong_balls": 86,
       "accuracy_pct": 93.7
     },
     "Bill Miller": {
@@ -669,21 +669,21 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 1461,
-      "correct_called": 1334,
-      "wrong_strikes": 67,
-      "wrong_balls": 60,
-      "accuracy_pct": 91.3
+      "total_called": 1592,
+      "correct_called": 1458,
+      "wrong_strikes": 71,
+      "wrong_balls": 63,
+      "accuracy_pct": 91.6
     },
     "Jeremie Rehak": {
       "total": 11,
       "correct": 11,
       "correct_rate": 1.0,
-      "total_called": 2484,
-      "correct_called": 2266,
-      "wrong_strikes": 136,
-      "wrong_balls": 82,
-      "accuracy_pct": 91.2
+      "total_called": 2663,
+      "correct_called": 2432,
+      "wrong_strikes": 143,
+      "wrong_balls": 88,
+      "accuracy_pct": 91.3
     },
     "Ramon De Jesus": {
       "total": 19,
@@ -866,14 +866,14 @@
       "accuracy_pct": 92.2
     },
     "Brock Ballou": {
-      "total": 12,
+      "total": 13,
       "correct": 11,
-      "correct_rate": 0.9166666666666666,
-      "total_called": 1880,
-      "correct_called": 1781,
-      "wrong_strikes": 44,
+      "correct_rate": 0.8461538461538461,
+      "total_called": 2016,
+      "correct_called": 1905,
+      "wrong_strikes": 56,
       "wrong_balls": 55,
-      "accuracy_pct": 94.7
+      "accuracy_pct": 94.5
     },
     "John Libka": {
       "total": 27,
@@ -1008,12 +1008,12 @@
     "Tyler Jones": {
       "total": 29,
       "correct": 29,
-      "total_called": 1591,
-      "correct_called": 1490,
-      "wrong_strikes": 61,
-      "wrong_balls": 40,
+      "total_called": 1731,
+      "correct_called": 1621,
+      "wrong_strikes": 68,
+      "wrong_balls": 42,
       "correct_rate": 1.0,
-      "accuracy_pct": 93.7
+      "accuracy_pct": 93.6
     },
     "Jonathan Parra": {
       "total": 0,
