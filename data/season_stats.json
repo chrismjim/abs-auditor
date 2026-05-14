@@ -1,16 +1,16 @@
 {
   "last_updated": "2026-05-14",
-  "total_challenges": 1978,
-  "total_overturned": 733,
+  "total_challenges": 1991,
+  "total_overturned": 741,
   "team_stats": {
     "CIN": {
-      "challenges": 120,
-      "overturned": 71,
+      "challenges": 121,
+      "overturned": 72,
       "missed_calls": 16
     },
     "PIT": {
-      "challenges": 114,
-      "overturned": 43,
+      "challenges": 115,
+      "overturned": 44,
       "missed_calls": 12
     },
     "TB": {
@@ -24,19 +24,19 @@
       "missed_calls": 41
     },
     "ATH": {
-      "challenges": 120,
-      "overturned": 42,
+      "challenges": 123,
+      "overturned": 45,
       "missed_calls": 20
     },
     "NYM": {
-      "challenges": 135,
+      "challenges": 136,
       "overturned": 48,
       "missed_calls": 27
     },
     "SEA": {
-      "challenges": 141,
-      "overturned": 64,
-      "missed_calls": 28
+      "challenges": 144,
+      "overturned": 66,
+      "missed_calls": 29
     },
     "TEX": {
       "challenges": 82,
@@ -74,8 +74,8 @@
       "missed_calls": 16
     },
     "STL": {
-      "challenges": 156,
-      "overturned": 69,
+      "challenges": 159,
+      "overturned": 72,
       "missed_calls": 32
     },
     "PHI": {
@@ -94,13 +94,13 @@
       "missed_calls": 5
     },
     "MIA": {
-      "challenges": 87,
+      "challenges": 88,
       "overturned": 21,
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 113,
-      "overturned": 68,
+      "challenges": 114,
+      "overturned": 69,
       "missed_calls": 12
     },
     "AZ": {
@@ -114,7 +114,7 @@
       "missed_calls": 31
     },
     "MIN": {
-      "challenges": 176,
+      "challenges": 177,
       "overturned": 68,
       "missed_calls": 28
     },
@@ -124,17 +124,17 @@
       "missed_calls": 46
     },
     "HOU": {
-      "challenges": 109,
-      "overturned": 40,
-      "missed_calls": 17
+      "challenges": 112,
+      "overturned": 42,
+      "missed_calls": 18
     },
     "SD": {
-      "challenges": 97,
-      "overturned": 34,
-      "missed_calls": 6
+      "challenges": 100,
+      "overturned": 35,
+      "missed_calls": 7
     },
     "DET": {
-      "challenges": 127,
+      "challenges": 128,
       "overturned": 49,
       "missed_calls": 24
     },
@@ -144,14 +144,14 @@
       "missed_calls": 8
     },
     "COL": {
-      "challenges": 176,
-      "overturned": 82,
+      "challenges": 177,
+      "overturned": 83,
       "missed_calls": 6
     },
     "MIL": {
-      "challenges": 113,
-      "overturned": 49,
-      "missed_calls": 16
+      "challenges": 116,
+      "overturned": 50,
+      "missed_calls": 17
     }
   },
   "umpire_stats": {
@@ -196,14 +196,14 @@
       "accuracy_pct": 92.2
     },
     "Willie Traynor": {
-      "total": 39,
-      "correct": 38,
-      "correct_rate": 0.9743589743589743,
-      "total_called": 1956,
-      "correct_called": 1795,
-      "wrong_strikes": 57,
-      "wrong_balls": 104,
-      "accuracy_pct": 91.8
+      "total": 42,
+      "correct": 40,
+      "correct_rate": 0.9523809523809523,
+      "total_called": 2132,
+      "correct_called": 1955,
+      "wrong_strikes": 68,
+      "wrong_balls": 109,
+      "accuracy_pct": 91.7
     },
     "Jim Wolf": {
       "total": 48,
@@ -276,13 +276,13 @@
       "accuracy_pct": 94.3
     },
     "Lance Barksdale": {
-      "total": 16,
-      "correct": 14,
-      "correct_rate": 0.875,
-      "total_called": 1149,
-      "correct_called": 1059,
-      "wrong_strikes": 43,
-      "wrong_balls": 47,
+      "total": 19,
+      "correct": 16,
+      "correct_rate": 0.8421052631578947,
+      "total_called": 1332,
+      "correct_called": 1228,
+      "wrong_strikes": 48,
+      "wrong_balls": 56,
       "accuracy_pct": 92.2
     },
     "Chad Fairchild": {
@@ -306,14 +306,14 @@
       "accuracy_pct": 92.1
     },
     "Doug Eddings": {
-      "total": 26,
-      "correct": 14,
-      "correct_rate": 0.5384615384615384,
-      "total_called": 2800,
-      "correct_called": 2578,
-      "wrong_strikes": 182,
-      "wrong_balls": 40,
-      "accuracy_pct": 92.1
+      "total": 27,
+      "correct": 15,
+      "correct_rate": 0.5555555555555556,
+      "total_called": 2955,
+      "correct_called": 2716,
+      "wrong_strikes": 196,
+      "wrong_balls": 43,
+      "accuracy_pct": 91.9
     },
     "John Tumpane": {
       "total": 7,
@@ -566,14 +566,14 @@
       "accuracy_pct": 90.5
     },
     "Jordan Baker": {
-      "total": 12,
-      "correct": 12,
+      "total": 13,
+      "correct": 13,
       "correct_rate": 1.0,
-      "total_called": 2163,
-      "correct_called": 1939,
-      "wrong_strikes": 141,
-      "wrong_balls": 83,
-      "accuracy_pct": 89.6
+      "total_called": 2301,
+      "correct_called": 2059,
+      "wrong_strikes": 151,
+      "wrong_balls": 91,
+      "accuracy_pct": 89.5
     },
     "Mark Ripperger": {
       "total": 21,
@@ -656,13 +656,13 @@
       "accuracy_pct": 91.6
     },
     "Tom Hanahan": {
-      "total": 43,
-      "correct": 27,
-      "correct_rate": 0.627906976744186,
-      "total_called": 4271,
-      "correct_called": 3913,
-      "wrong_strikes": 179,
-      "wrong_balls": 179,
+      "total": 44,
+      "correct": 28,
+      "correct_rate": 0.6363636363636364,
+      "total_called": 4424,
+      "correct_called": 4054,
+      "wrong_strikes": 188,
+      "wrong_balls": 182,
       "accuracy_pct": 91.6
     },
     "Dan Merzel": {
@@ -756,14 +756,14 @@
       "accuracy_pct": 93.3
     },
     "Paul Clemons": {
-      "total": 17,
-      "correct": 14,
-      "correct_rate": 0.8235294117647058,
-      "total_called": 1796,
-      "correct_called": 1646,
-      "wrong_strikes": 79,
-      "wrong_balls": 71,
-      "accuracy_pct": 91.6
+      "total": 18,
+      "correct": 15,
+      "correct_rate": 0.8333333333333334,
+      "total_called": 1928,
+      "correct_called": 1768,
+      "wrong_strikes": 84,
+      "wrong_balls": 76,
+      "accuracy_pct": 91.7
     },
     "James Jean": {
       "total": 10,
@@ -1044,6 +1044,16 @@
       "wrong_balls": 20,
       "correct_rate": 1.0,
       "accuracy_pct": 91.1
+    },
+    "Felix Neon": {
+      "total": 3,
+      "correct": 3,
+      "total_called": 143,
+      "correct_called": 134,
+      "wrong_strikes": 7,
+      "wrong_balls": 2,
+      "correct_rate": 1.0,
+      "accuracy_pct": 93.7
     }
   }
 }
