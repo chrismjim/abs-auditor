@@ -179,10 +179,10 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 2710,
-      "correct_called": 2402,
-      "wrong_strikes": 181,
-      "wrong_balls": 127,
+      "total_called": 2838,
+      "correct_called": 2514,
+      "wrong_strikes": 194,
+      "wrong_balls": 130,
       "accuracy_pct": 88.6
     },
     "Dan Iassogna": {
@@ -674,11 +674,11 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 2592,
-      "correct_called": 2396,
-      "wrong_strikes": 109,
-      "wrong_balls": 87,
-      "accuracy_pct": 92.4
+      "total_called": 2715,
+      "correct_called": 2511,
+      "wrong_strikes": 114,
+      "wrong_balls": 90,
+      "accuracy_pct": 92.5
     },
     "Jeremie Rehak": {
       "total": 11,
@@ -774,11 +774,11 @@
       "total": 10,
       "correct": 0,
       "correct_rate": 0.0,
-      "total_called": 2535,
-      "correct_called": 2349,
-      "wrong_strikes": 110,
-      "wrong_balls": 76,
-      "accuracy_pct": 92.7
+      "total_called": 2690,
+      "correct_called": 2492,
+      "wrong_strikes": 116,
+      "wrong_balls": 82,
+      "accuracy_pct": 92.6
     },
     "Edwin Jimenez": {
       "total": 11,
@@ -923,12 +923,12 @@
     "Mike Muchlinski": {
       "total": 15,
       "correct": 15,
-      "total_called": 6480,
-      "correct_called": 5984,
-      "wrong_strikes": 306,
-      "wrong_balls": 190,
+      "total_called": 6638,
+      "correct_called": 6134,
+      "wrong_strikes": 313,
+      "wrong_balls": 191,
       "correct_rate": 1.0,
-      "accuracy_pct": 92.3
+      "accuracy_pct": 92.4
     },
     "John Bacon": {
       "total": 40,
