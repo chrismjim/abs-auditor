@@ -179,11 +179,11 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 2582,
-      "correct_called": 2290,
-      "wrong_strikes": 168,
-      "wrong_balls": 124,
-      "accuracy_pct": 88.7
+      "total_called": 2710,
+      "correct_called": 2402,
+      "wrong_strikes": 181,
+      "wrong_balls": 127,
+      "accuracy_pct": 88.6
     },
     "Dan Iassogna": {
       "total": 50,
@@ -674,10 +674,10 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 2469,
-      "correct_called": 2281,
-      "wrong_strikes": 104,
-      "wrong_balls": 84,
+      "total_called": 2592,
+      "correct_called": 2396,
+      "wrong_strikes": 109,
+      "wrong_balls": 87,
       "accuracy_pct": 92.4
     },
     "Jeremie Rehak": {
@@ -774,10 +774,10 @@
       "total": 10,
       "correct": 0,
       "correct_rate": 0.0,
-      "total_called": 2380,
-      "correct_called": 2206,
-      "wrong_strikes": 104,
-      "wrong_balls": 70,
+      "total_called": 2535,
+      "correct_called": 2349,
+      "wrong_strikes": 110,
+      "wrong_balls": 76,
       "accuracy_pct": 92.7
     },
     "Edwin Jimenez": {
