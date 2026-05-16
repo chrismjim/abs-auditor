@@ -179,11 +179,11 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 2454,
-      "correct_called": 2178,
-      "wrong_strikes": 155,
-      "wrong_balls": 121,
-      "accuracy_pct": 88.8
+      "total_called": 2582,
+      "correct_called": 2290,
+      "wrong_strikes": 168,
+      "wrong_balls": 124,
+      "accuracy_pct": 88.7
     },
     "Dan Iassogna": {
       "total": 50,
@@ -674,11 +674,11 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 2346,
-      "correct_called": 2166,
-      "wrong_strikes": 99,
-      "wrong_balls": 81,
-      "accuracy_pct": 92.3
+      "total_called": 2469,
+      "correct_called": 2281,
+      "wrong_strikes": 104,
+      "wrong_balls": 84,
+      "accuracy_pct": 92.4
     },
     "Jeremie Rehak": {
       "total": 11,
