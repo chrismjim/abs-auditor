@@ -674,11 +674,11 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 2100,
-      "correct_called": 1936,
-      "wrong_strikes": 89,
-      "wrong_balls": 75,
-      "accuracy_pct": 92.2
+      "total_called": 2223,
+      "correct_called": 2051,
+      "wrong_strikes": 94,
+      "wrong_balls": 78,
+      "accuracy_pct": 92.3
     },
     "Jeremie Rehak": {
       "total": 11,
