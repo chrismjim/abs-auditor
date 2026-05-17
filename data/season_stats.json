@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-16",
-  "total_challenges": 2118,
-  "total_overturned": 810,
+  "total_challenges": 2125,
+  "total_overturned": 813,
   "team_stats": {
     "CIN": {
       "challenges": 130,
@@ -14,8 +14,8 @@
       "missed_calls": 12
     },
     "TB": {
-      "challenges": 123,
-      "overturned": 47,
+      "challenges": 126,
+      "overturned": 48,
       "missed_calls": 20
     },
     "ATL": {
@@ -64,9 +64,9 @@
       "missed_calls": 17
     },
     "BAL": {
-      "challenges": 208,
-      "overturned": 69,
-      "missed_calls": 64
+      "challenges": 212,
+      "overturned": 71,
+      "missed_calls": 65
     },
     "TOR": {
       "challenges": 101,
@@ -94,14 +94,14 @@
       "missed_calls": 5
     },
     "MIA": {
-      "challenges": 98,
-      "overturned": 22,
+      "challenges": 101,
+      "overturned": 23,
       "missed_calls": 30
     },
     "WSH": {
-      "challenges": 128,
-      "overturned": 78,
-      "missed_calls": 13
+      "challenges": 132,
+      "overturned": 80,
+      "missed_calls": 14
     },
     "AZ": {
       "challenges": 124,
@@ -179,10 +179,10 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 2966,
-      "correct_called": 2626,
-      "wrong_strikes": 207,
-      "wrong_balls": 133,
+      "total_called": 3094,
+      "correct_called": 2738,
+      "wrong_strikes": 220,
+      "wrong_balls": 136,
       "accuracy_pct": 88.5
     },
     "Dan Iassogna": {
@@ -246,14 +246,14 @@
       "accuracy_pct": 89.2
     },
     "Chris Conroy": {
-      "total": 25,
-      "correct": 5,
-      "correct_rate": 0.2,
-      "total_called": 2172,
-      "correct_called": 2022,
-      "wrong_strikes": 85,
-      "wrong_balls": 65,
-      "accuracy_pct": 93.1
+      "total": 29,
+      "correct": 8,
+      "correct_rate": 0.27586206896551724,
+      "total_called": 2332,
+      "correct_called": 2165,
+      "wrong_strikes": 94,
+      "wrong_balls": 73,
+      "accuracy_pct": 92.8
     },
     "Chris Guccione": {
       "total": 10,
@@ -674,11 +674,11 @@
       "total": 13,
       "correct": 11,
       "correct_rate": 0.8461538461538461,
-      "total_called": 2838,
-      "correct_called": 2626,
-      "wrong_strikes": 119,
-      "wrong_balls": 93,
-      "accuracy_pct": 92.5
+      "total_called": 2961,
+      "correct_called": 2741,
+      "wrong_strikes": 124,
+      "wrong_balls": 96,
+      "accuracy_pct": 92.6
     },
     "Jeremie Rehak": {
       "total": 11,
@@ -774,10 +774,10 @@
       "total": 10,
       "correct": 0,
       "correct_rate": 0.0,
-      "total_called": 2845,
-      "correct_called": 2635,
-      "wrong_strikes": 122,
-      "wrong_balls": 88,
+      "total_called": 3000,
+      "correct_called": 2778,
+      "wrong_strikes": 128,
+      "wrong_balls": 94,
       "accuracy_pct": 92.6
     },
     "Edwin Jimenez": {
@@ -871,14 +871,14 @@
       "accuracy_pct": 92.0
     },
     "Brock Ballou": {
-      "total": 18,
-      "correct": 14,
-      "correct_rate": 0.7777777777777778,
-      "total_called": 2455,
-      "correct_called": 2302,
-      "wrong_strikes": 94,
-      "wrong_balls": 59,
-      "accuracy_pct": 93.8
+      "total": 21,
+      "correct": 17,
+      "correct_rate": 0.8095238095238095,
+      "total_called": 2622,
+      "correct_called": 2451,
+      "wrong_strikes": 108,
+      "wrong_balls": 63,
+      "accuracy_pct": 93.5
     },
     "John Libka": {
       "total": 27,
@@ -923,10 +923,10 @@
     "Mike Muchlinski": {
       "total": 15,
       "correct": 15,
-      "total_called": 6796,
-      "correct_called": 6284,
-      "wrong_strikes": 320,
-      "wrong_balls": 192,
+      "total_called": 6954,
+      "correct_called": 6434,
+      "wrong_strikes": 327,
+      "wrong_balls": 193,
       "correct_rate": 1.0,
       "accuracy_pct": 92.5
     },
