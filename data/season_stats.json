@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-17",
-  "total_challenges": 2179,
-  "total_overturned": 832,
+  "total_challenges": 2181,
+  "total_overturned": 833,
   "team_stats": {
     "CIN": {
       "challenges": 142,
@@ -14,9 +14,9 @@
       "missed_calls": 12
     },
     "TB": {
-      "challenges": 140,
-      "overturned": 53,
-      "missed_calls": 21
+      "challenges": 142,
+      "overturned": 54,
+      "missed_calls": 22
     },
     "ATL": {
       "challenges": 193,
@@ -94,9 +94,9 @@
       "missed_calls": 5
     },
     "MIA": {
-      "challenges": 115,
-      "overturned": 28,
-      "missed_calls": 31
+      "challenges": 117,
+      "overturned": 29,
+      "missed_calls": 32
     },
     "WSH": {
       "challenges": 148,
@@ -691,13 +691,13 @@
       "accuracy_pct": 91.5
     },
     "Ramon De Jesus": {
-      "total": 24,
-      "correct": 21,
-      "correct_rate": 0.875,
-      "total_called": 2555,
-      "correct_called": 2390,
-      "wrong_strikes": 121,
-      "wrong_balls": 44,
+      "total": 26,
+      "correct": 22,
+      "correct_rate": 0.8461538461538461,
+      "total_called": 2710,
+      "correct_called": 2533,
+      "wrong_strikes": 130,
+      "wrong_balls": 47,
       "accuracy_pct": 93.5
     },
     "Edwin Moscoso": {
