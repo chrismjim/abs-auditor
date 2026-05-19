@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-17",
-  "total_challenges": 2296,
-  "total_overturned": 881,
+  "last_updated": "2026-05-18",
+  "total_challenges": 2303,
+  "total_overturned": 885,
   "team_stats": {
     "CIN": {
-      "challenges": 153,
-      "overturned": 90,
+      "challenges": 155,
+      "overturned": 92,
       "missed_calls": 20
     },
     "PIT": {
@@ -14,13 +14,13 @@
       "missed_calls": 12
     },
     "TB": {
-      "challenges": 164,
+      "challenges": 165,
       "overturned": 65,
       "missed_calls": 33
     },
     "ATL": {
-      "challenges": 203,
-      "overturned": 88,
+      "challenges": 205,
+      "overturned": 90,
       "missed_calls": 41
     },
     "ATH": {
@@ -64,7 +64,7 @@
       "missed_calls": 18
     },
     "BAL": {
-      "challenges": 228,
+      "challenges": 229,
       "overturned": 79,
       "missed_calls": 69
     },
@@ -79,8 +79,8 @@
       "missed_calls": 32
     },
     "PHI": {
-      "challenges": 135,
-      "overturned": 30,
+      "challenges": 137,
+      "overturned": 32,
       "missed_calls": 28
     },
     "CWS": {
@@ -89,13 +89,13 @@
       "missed_calls": 34
     },
     "BOS": {
-      "challenges": 142,
+      "challenges": 144,
       "overturned": 41,
-      "missed_calls": 5
+      "missed_calls": 6
     },
     "MIA": {
-      "challenges": 139,
-      "overturned": 40,
+      "challenges": 141,
+      "overturned": 42,
       "missed_calls": 43
     },
     "WSH": {
@@ -139,9 +139,9 @@
       "missed_calls": 24
     },
     "KC": {
-      "challenges": 93,
+      "challenges": 95,
       "overturned": 23,
-      "missed_calls": 8
+      "missed_calls": 9
     },
     "COL": {
       "challenges": 186,
@@ -236,14 +236,14 @@
       "accuracy_pct": 91.7
     },
     "Laz Diaz": {
-      "total": 33,
-      "correct": 32,
-      "correct_rate": 0.9696969696969697,
-      "total_called": 2892,
-      "correct_called": 2580,
-      "wrong_strikes": 180,
-      "wrong_balls": 132,
-      "accuracy_pct": 89.2
+      "total": 35,
+      "correct": 33,
+      "correct_rate": 0.9428571428571428,
+      "total_called": 3029,
+      "correct_called": 2707,
+      "wrong_strikes": 186,
+      "wrong_balls": 136,
+      "accuracy_pct": 89.4
     },
     "Chris Conroy": {
       "total": 45,
@@ -276,14 +276,14 @@
       "accuracy_pct": 92.8
     },
     "Lance Barksdale": {
-      "total": 40,
-      "correct": 30,
-      "correct_rate": 0.75,
-      "total_called": 2613,
-      "correct_called": 2411,
-      "wrong_strikes": 83,
-      "wrong_balls": 119,
-      "accuracy_pct": 92.3
+      "total": 42,
+      "correct": 32,
+      "correct_rate": 0.7619047619047619,
+      "total_called": 2752,
+      "correct_called": 2543,
+      "wrong_strikes": 85,
+      "wrong_balls": 124,
+      "accuracy_pct": 92.4
     },
     "Chad Fairchild": {
       "total": 22,
@@ -571,14 +571,14 @@
       "accuracy_pct": 90.5
     },
     "Jordan Baker": {
-      "total": 20,
-      "correct": 20,
+      "total": 21,
+      "correct": 21,
       "correct_rate": 1.0,
-      "total_called": 3267,
-      "correct_called": 2899,
-      "wrong_strikes": 221,
-      "wrong_balls": 147,
-      "accuracy_pct": 88.7
+      "total_called": 3447,
+      "correct_called": 3067,
+      "wrong_strikes": 231,
+      "wrong_balls": 149,
+      "accuracy_pct": 89.0
     },
     "Mark Ripperger": {
       "total": 23,
@@ -611,14 +611,14 @@
       "accuracy_pct": 93.5
     },
     "Alfonso M\u00e1rquez": {
-      "total": 14,
-      "correct": 14,
+      "total": 16,
+      "correct": 16,
       "correct_rate": 1.0,
-      "total_called": 2574,
-      "correct_called": 2363,
-      "wrong_strikes": 105,
-      "wrong_balls": 106,
-      "accuracy_pct": 91.8
+      "total_called": 2742,
+      "correct_called": 2522,
+      "wrong_strikes": 109,
+      "wrong_balls": 111,
+      "accuracy_pct": 92.0
     },
     "Shane Livensparger": {
       "total": 34,
