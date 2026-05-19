@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-18",
-  "total_challenges": 2328,
-  "total_overturned": 897,
+  "last_updated": "2026-05-19",
+  "total_challenges": 2331,
+  "total_overturned": 898,
   "team_stats": {
     "CIN": {
       "challenges": 159,
@@ -19,8 +19,8 @@
       "missed_calls": 33
     },
     "ATL": {
-      "challenges": 209,
-      "overturned": 94,
+      "challenges": 212,
+      "overturned": 95,
       "missed_calls": 41
     },
     "ATH": {
@@ -94,8 +94,8 @@
       "missed_calls": 8
     },
     "MIA": {
-      "challenges": 145,
-      "overturned": 46,
+      "challenges": 148,
+      "overturned": 47,
       "missed_calls": 43
     },
     "WSH": {
@@ -1021,14 +1021,14 @@
       "accuracy_pct": 92.8
     },
     "Jonathan Parra": {
-      "total": 2,
-      "correct": 2,
-      "total_called": 1460,
-      "correct_called": 1354,
-      "wrong_strikes": 67,
-      "wrong_balls": 39,
+      "total": 5,
+      "correct": 5,
+      "total_called": 1649,
+      "correct_called": 1531,
+      "wrong_strikes": 74,
+      "wrong_balls": 44,
       "correct_rate": 1.0,
-      "accuracy_pct": 92.7
+      "accuracy_pct": 92.8
     },
     "Dillon Wilson": {
       "total": 5,
