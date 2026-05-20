@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-20",
-  "total_challenges": 2388,
-  "total_overturned": 924,
+  "total_challenges": 2391,
+  "total_overturned": 927,
   "team_stats": {
     "CIN": {
       "challenges": 165,
@@ -14,8 +14,8 @@
       "missed_calls": 12
     },
     "TB": {
-      "challenges": 176,
-      "overturned": 71,
+      "challenges": 179,
+      "overturned": 74,
       "missed_calls": 36
     },
     "ATL": {
@@ -64,8 +64,8 @@
       "missed_calls": 18
     },
     "BAL": {
-      "challenges": 240,
-      "overturned": 85,
+      "challenges": 243,
+      "overturned": 88,
       "missed_calls": 72
     },
     "TOR": {
@@ -179,10 +179,10 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 3765,
-      "correct_called": 3327,
-      "wrong_strikes": 283,
-      "wrong_balls": 155,
+      "total_called": 3924,
+      "correct_called": 3468,
+      "wrong_strikes": 294,
+      "wrong_balls": 162,
       "accuracy_pct": 88.4
     },
     "Dan Iassogna": {
@@ -454,11 +454,11 @@
       "total": 15,
       "correct": 6,
       "correct_rate": 0.4,
-      "total_called": 4492,
-      "correct_called": 4169,
-      "wrong_strikes": 248,
-      "wrong_balls": 75,
-      "accuracy_pct": 92.8
+      "total_called": 4614,
+      "correct_called": 4277,
+      "wrong_strikes": 256,
+      "wrong_balls": 81,
+      "accuracy_pct": 92.7
     },
     "Ryan Blakney": {
       "total": 18,
@@ -901,13 +901,13 @@
       "accuracy_pct": 91.3
     },
     "Stu Scheurwater": {
-      "total": 17,
-      "correct": 16,
-      "total_called": 2729,
-      "correct_called": 2508,
-      "wrong_strikes": 139,
-      "wrong_balls": 82,
-      "correct_rate": 0.9411764705882353,
+      "total": 20,
+      "correct": 19,
+      "total_called": 2891,
+      "correct_called": 2657,
+      "wrong_strikes": 147,
+      "wrong_balls": 87,
+      "correct_rate": 0.95,
       "accuracy_pct": 91.9
     },
     "Jacob Metz": {
