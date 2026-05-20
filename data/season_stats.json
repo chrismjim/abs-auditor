@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-19",
-  "total_challenges": 2385,
-  "total_overturned": 921,
+  "last_updated": "2026-05-20",
+  "total_challenges": 2388,
+  "total_overturned": 924,
   "team_stats": {
     "CIN": {
       "challenges": 165,
@@ -14,8 +14,8 @@
       "missed_calls": 12
     },
     "TB": {
-      "challenges": 173,
-      "overturned": 68,
+      "challenges": 176,
+      "overturned": 71,
       "missed_calls": 36
     },
     "ATL": {
@@ -64,8 +64,8 @@
       "missed_calls": 18
     },
     "BAL": {
-      "challenges": 237,
-      "overturned": 82,
+      "challenges": 240,
+      "overturned": 85,
       "missed_calls": 72
     },
     "TOR": {
@@ -179,10 +179,10 @@
       "total": 61,
       "correct": 36,
       "correct_rate": 0.5901639344262295,
-      "total_called": 3606,
-      "correct_called": 3186,
-      "wrong_strikes": 272,
-      "wrong_balls": 148,
+      "total_called": 3765,
+      "correct_called": 3327,
+      "wrong_strikes": 283,
+      "wrong_balls": 155,
       "accuracy_pct": 88.4
     },
     "Dan Iassogna": {
@@ -454,11 +454,11 @@
       "total": 15,
       "correct": 6,
       "correct_rate": 0.4,
-      "total_called": 4370,
-      "correct_called": 4061,
-      "wrong_strikes": 240,
-      "wrong_balls": 69,
-      "accuracy_pct": 92.9
+      "total_called": 4492,
+      "correct_called": 4169,
+      "wrong_strikes": 248,
+      "wrong_balls": 75,
+      "accuracy_pct": 92.8
     },
     "Ryan Blakney": {
       "total": 18,
@@ -901,13 +901,13 @@
       "accuracy_pct": 91.3
     },
     "Stu Scheurwater": {
-      "total": 14,
-      "correct": 13,
-      "total_called": 2567,
-      "correct_called": 2359,
-      "wrong_strikes": 131,
-      "wrong_balls": 77,
-      "correct_rate": 0.9285714285714286,
+      "total": 17,
+      "correct": 16,
+      "total_called": 2729,
+      "correct_called": 2508,
+      "wrong_strikes": 139,
+      "wrong_balls": 82,
+      "correct_rate": 0.9411764705882353,
       "accuracy_pct": 91.9
     },
     "Jacob Metz": {
