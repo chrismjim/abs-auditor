@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-20",
-  "total_challenges": 2460,
-  "total_overturned": 967,
+  "last_updated": "2026-05-21",
+  "total_challenges": 2464,
+  "total_overturned": 969,
   "team_stats": {
     "CIN": {
       "challenges": 165,
@@ -9,9 +9,9 @@
       "missed_calls": 20
     },
     "PIT": {
-      "challenges": 132,
-      "overturned": 51,
-      "missed_calls": 12
+      "challenges": 135,
+      "overturned": 52,
+      "missed_calls": 13
     },
     "TB": {
       "challenges": 203,
@@ -74,9 +74,9 @@
       "missed_calls": 16
     },
     "STL": {
-      "challenges": 188,
-      "overturned": 95,
-      "missed_calls": 32
+      "challenges": 191,
+      "overturned": 96,
+      "missed_calls": 33
     },
     "PHI": {
       "challenges": 147,
@@ -119,8 +119,8 @@
       "missed_calls": 28
     },
     "CLE": {
-      "challenges": 239,
-      "overturned": 63,
+      "challenges": 240,
+      "overturned": 64,
       "missed_calls": 50
     },
     "HOU": {
@@ -134,8 +134,8 @@
       "missed_calls": 16
     },
     "DET": {
-      "challenges": 146,
-      "overturned": 49,
+      "challenges": 147,
+      "overturned": 50,
       "missed_calls": 24
     },
     "KC": {
@@ -266,14 +266,14 @@
       "accuracy_pct": 92.6
     },
     "James Hoye": {
-      "total": 9,
-      "correct": 7,
-      "correct_rate": 0.7777777777777778,
-      "total_called": 1035,
-      "correct_called": 960,
-      "wrong_strikes": 38,
-      "wrong_balls": 37,
-      "accuracy_pct": 92.8
+      "total": 12,
+      "correct": 9,
+      "correct_rate": 0.75,
+      "total_called": 1162,
+      "correct_called": 1071,
+      "wrong_strikes": 45,
+      "wrong_balls": 46,
+      "accuracy_pct": 92.2
     },
     "Lance Barksdale": {
       "total": 46,
@@ -631,14 +631,14 @@
       "accuracy_pct": 91.3
     },
     "Manny Gonzalez": {
-      "total": 27,
-      "correct": 21,
-      "correct_rate": 0.7777777777777778,
-      "total_called": 4160,
-      "correct_called": 3823,
-      "wrong_strikes": 185,
-      "wrong_balls": 152,
-      "accuracy_pct": 91.9
+      "total": 28,
+      "correct": 22,
+      "correct_rate": 0.7857142857142857,
+      "total_called": 4313,
+      "correct_called": 3969,
+      "wrong_strikes": 189,
+      "wrong_balls": 155,
+      "accuracy_pct": 92.0
     },
     "Andy Fletcher": {
       "total": 14,
