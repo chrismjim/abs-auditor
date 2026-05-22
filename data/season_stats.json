@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-22",
-  "total_challenges": 2522,
-  "total_overturned": 995,
+  "total_challenges": 2523,
+  "total_overturned": 996,
   "team_stats": {
     "CIN": {
       "challenges": 165,
@@ -49,8 +49,8 @@
       "missed_calls": 34
     },
     "CHC": {
-      "challenges": 161,
-      "overturned": 72,
+      "challenges": 162,
+      "overturned": 73,
       "missed_calls": 34
     },
     "NYY": {
@@ -124,8 +124,8 @@
       "missed_calls": 50
     },
     "HOU": {
-      "challenges": 141,
-      "overturned": 56,
+      "challenges": 142,
+      "overturned": 57,
       "missed_calls": 25
     },
     "SD": {
@@ -286,14 +286,14 @@
       "accuracy_pct": 92.6
     },
     "Chad Fairchild": {
-      "total": 22,
-      "correct": 21,
-      "correct_rate": 0.9545454545454546,
-      "total_called": 2491,
-      "correct_called": 2375,
-      "wrong_strikes": 53,
-      "wrong_balls": 63,
-      "accuracy_pct": 95.3
+      "total": 23,
+      "correct": 22,
+      "correct_rate": 0.9565217391304348,
+      "total_called": 2659,
+      "correct_called": 2527,
+      "wrong_strikes": 60,
+      "wrong_balls": 72,
+      "accuracy_pct": 95.0
     },
     "Marvin Hudson": {
       "total": 7,
