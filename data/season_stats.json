@@ -824,11 +824,11 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 1073,
-      "correct_called": 1002,
-      "wrong_strikes": 37,
-      "wrong_balls": 34,
-      "accuracy_pct": 93.4
+      "total_called": 1238,
+      "correct_called": 1154,
+      "wrong_strikes": 43,
+      "wrong_balls": 41,
+      "accuracy_pct": 93.2
     },
     "Derek Thomas": {
       "total": 5,
