@@ -424,10 +424,10 @@
       "total": 30,
       "correct": 19,
       "correct_rate": 0.6333333333333333,
-      "total_called": 1570,
-      "correct_called": 1450,
-      "wrong_strikes": 77,
-      "wrong_balls": 43,
+      "total_called": 1720,
+      "correct_called": 1589,
+      "wrong_strikes": 85,
+      "wrong_balls": 46,
       "accuracy_pct": 92.4
     },
     "Malachi Moore": {
@@ -824,11 +824,11 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 1568,
-      "correct_called": 1458,
-      "wrong_strikes": 55,
-      "wrong_balls": 55,
-      "accuracy_pct": 93.0
+      "total_called": 1733,
+      "correct_called": 1610,
+      "wrong_strikes": 61,
+      "wrong_balls": 62,
+      "accuracy_pct": 92.9
     },
     "Derek Thomas": {
       "total": 5,
