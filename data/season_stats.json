@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-22",
-  "total_challenges": 2526,
-  "total_overturned": 999,
+  "total_challenges": 2529,
+  "total_overturned": 1000,
   "team_stats": {
     "CIN": {
       "challenges": 165,
@@ -49,8 +49,8 @@
       "missed_calls": 34
     },
     "CHC": {
-      "challenges": 165,
-      "overturned": 76,
+      "challenges": 166,
+      "overturned": 77,
       "missed_calls": 34
     },
     "NYY": {
@@ -79,9 +79,9 @@
       "missed_calls": 43
     },
     "PHI": {
-      "challenges": 147,
+      "challenges": 149,
       "overturned": 42,
-      "missed_calls": 28
+      "missed_calls": 29
     },
     "CWS": {
       "challenges": 171,
@@ -119,13 +119,13 @@
       "missed_calls": 28
     },
     "CLE": {
-      "challenges": 250,
+      "challenges": 252,
       "overturned": 74,
-      "missed_calls": 50
+      "missed_calls": 51
     },
     "HOU": {
-      "challenges": 145,
-      "overturned": 60,
+      "challenges": 146,
+      "overturned": 61,
       "missed_calls": 25
     },
     "SD": {
@@ -286,14 +286,14 @@
       "accuracy_pct": 92.6
     },
     "Chad Fairchild": {
-      "total": 26,
-      "correct": 25,
-      "correct_rate": 0.9615384615384616,
-      "total_called": 3163,
-      "correct_called": 2983,
-      "wrong_strikes": 81,
-      "wrong_balls": 99,
-      "accuracy_pct": 94.3
+      "total": 27,
+      "correct": 26,
+      "correct_rate": 0.9629629629629629,
+      "total_called": 3331,
+      "correct_called": 3135,
+      "wrong_strikes": 88,
+      "wrong_balls": 108,
+      "accuracy_pct": 94.1
     },
     "Marvin Hudson": {
       "total": 7,
@@ -721,13 +721,13 @@
       "accuracy_pct": 93.1
     },
     "Junior Valentine": {
-      "total": 13,
-      "correct": 13,
-      "correct_rate": 1.0,
-      "total_called": 3257,
-      "correct_called": 3038,
-      "wrong_strikes": 176,
-      "wrong_balls": 43,
+      "total": 15,
+      "correct": 14,
+      "correct_rate": 0.9333333333333333,
+      "total_called": 3364,
+      "correct_called": 3137,
+      "wrong_strikes": 181,
+      "wrong_balls": 46,
       "accuracy_pct": 93.3
     },
     "Todd Tichenor": {
