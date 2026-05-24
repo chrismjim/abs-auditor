@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-24",
-  "total_challenges": 2604,
-  "total_overturned": 1015,
+  "total_challenges": 2606,
+  "total_overturned": 1016,
   "team_stats": {
     "CIN": {
       "challenges": 167,
@@ -14,9 +14,9 @@
       "missed_calls": 23
     },
     "TB": {
-      "challenges": 203,
-      "overturned": 98,
-      "missed_calls": 36
+      "challenges": 205,
+      "overturned": 99,
+      "missed_calls": 37
     },
     "ATL": {
       "challenges": 238,
@@ -54,9 +54,9 @@
       "missed_calls": 34
     },
     "NYY": {
-      "challenges": 221,
-      "overturned": 71,
-      "missed_calls": 52
+      "challenges": 223,
+      "overturned": 72,
+      "missed_calls": 53
     },
     "SF": {
       "challenges": 111,
@@ -199,11 +199,11 @@
       "total": 63,
       "correct": 54,
       "correct_rate": 0.8571428571428571,
-      "total_called": 3529,
-      "correct_called": 3230,
-      "wrong_strikes": 150,
-      "wrong_balls": 149,
-      "accuracy_pct": 91.5
+      "total_called": 3694,
+      "correct_called": 3385,
+      "wrong_strikes": 155,
+      "wrong_balls": 154,
+      "accuracy_pct": 91.6
     },
     "Jim Wolf": {
       "total": 63,
@@ -306,14 +306,14 @@
       "accuracy_pct": 92.1
     },
     "Doug Eddings": {
-      "total": 37,
-      "correct": 25,
-      "correct_rate": 0.6756756756756757,
-      "total_called": 4469,
-      "correct_called": 4075,
-      "wrong_strikes": 321,
-      "wrong_balls": 73,
-      "accuracy_pct": 91.2
+      "total": 39,
+      "correct": 26,
+      "correct_rate": 0.6666666666666666,
+      "total_called": 4594,
+      "correct_called": 4193,
+      "wrong_strikes": 327,
+      "wrong_balls": 74,
+      "accuracy_pct": 91.3
     },
     "John Tumpane": {
       "total": 16,
@@ -1023,12 +1023,12 @@
     "Jonathan Parra": {
       "total": 20,
       "correct": 20,
-      "total_called": 2753,
-      "correct_called": 2558,
-      "wrong_strikes": 120,
-      "wrong_balls": 75,
+      "total_called": 2912,
+      "correct_called": 2700,
+      "wrong_strikes": 131,
+      "wrong_balls": 81,
       "correct_rate": 1.0,
-      "accuracy_pct": 92.9
+      "accuracy_pct": 92.7
     },
     "Dillon Wilson": {
       "total": 5,
