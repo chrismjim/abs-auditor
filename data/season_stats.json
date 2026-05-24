@@ -199,11 +199,11 @@
       "total": 63,
       "correct": 54,
       "correct_rate": 0.8571428571428571,
-      "total_called": 3364,
-      "correct_called": 3075,
-      "wrong_strikes": 145,
-      "wrong_balls": 144,
-      "accuracy_pct": 91.4
+      "total_called": 3529,
+      "correct_called": 3230,
+      "wrong_strikes": 150,
+      "wrong_balls": 149,
+      "accuracy_pct": 91.5
     },
     "Jim Wolf": {
       "total": 63,
@@ -1023,12 +1023,12 @@
     "Jonathan Parra": {
       "total": 20,
       "correct": 20,
-      "total_called": 2594,
-      "correct_called": 2416,
-      "wrong_strikes": 109,
-      "wrong_balls": 69,
+      "total_called": 2753,
+      "correct_called": 2558,
+      "wrong_strikes": 120,
+      "wrong_balls": 75,
       "correct_rate": 1.0,
-      "accuracy_pct": 93.1
+      "accuracy_pct": 92.9
     },
     "Dillon Wilson": {
       "total": 5,
