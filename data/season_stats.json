@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-25",
-  "total_challenges": 2692,
-  "total_overturned": 1054,
+  "total_challenges": 2696,
+  "total_overturned": 1057,
   "team_stats": {
     "CIN": {
       "challenges": 167,
@@ -9,9 +9,9 @@
       "missed_calls": 20
     },
     "PIT": {
-      "challenges": 175,
+      "challenges": 176,
       "overturned": 62,
-      "missed_calls": 25
+      "missed_calls": 26
     },
     "TB": {
       "challenges": 225,
@@ -49,9 +49,9 @@
       "missed_calls": 34
     },
     "CHC": {
-      "challenges": 180,
+      "challenges": 181,
       "overturned": 80,
-      "missed_calls": 36
+      "missed_calls": 37
     },
     "NYY": {
       "challenges": 243,
@@ -74,8 +74,8 @@
       "missed_calls": 16
     },
     "STL": {
-      "challenges": 224,
-      "overturned": 109,
+      "challenges": 225,
+      "overturned": 110,
       "missed_calls": 43
     },
     "PHI": {
@@ -84,8 +84,8 @@
       "missed_calls": 36
     },
     "CWS": {
-      "challenges": 187,
-      "overturned": 91,
+      "challenges": 189,
+      "overturned": 93,
       "missed_calls": 41
     },
     "BOS": {
@@ -114,8 +114,8 @@
       "missed_calls": 32
     },
     "MIN": {
-      "challenges": 220,
-      "overturned": 73,
+      "challenges": 222,
+      "overturned": 75,
       "missed_calls": 34
     },
     "CLE": {
@@ -149,8 +149,8 @@
       "missed_calls": 6
     },
     "MIL": {
-      "challenges": 165,
-      "overturned": 63,
+      "challenges": 166,
+      "overturned": 64,
       "missed_calls": 24
     }
   },
@@ -186,14 +186,14 @@
       "accuracy_pct": 88.5
     },
     "Dan Iassogna": {
-      "total": 52,
-      "correct": 30,
-      "correct_rate": 0.5769230769230769,
-      "total_called": 2498,
-      "correct_called": 2307,
-      "wrong_strikes": 99,
-      "wrong_balls": 92,
-      "accuracy_pct": 92.4
+      "total": 54,
+      "correct": 32,
+      "correct_rate": 0.5925925925925926,
+      "total_called": 2629,
+      "correct_called": 2431,
+      "wrong_strikes": 104,
+      "wrong_balls": 94,
+      "accuracy_pct": 92.5
     },
     "Willie Traynor": {
       "total": 63,
@@ -296,13 +296,13 @@
       "accuracy_pct": 93.6
     },
     "Marvin Hudson": {
-      "total": 8,
-      "correct": 6,
-      "correct_rate": 0.75,
-      "total_called": 1185,
-      "correct_called": 1092,
-      "wrong_strikes": 58,
-      "wrong_balls": 35,
+      "total": 9,
+      "correct": 7,
+      "correct_rate": 0.7777777777777778,
+      "total_called": 1335,
+      "correct_called": 1231,
+      "wrong_strikes": 65,
+      "wrong_balls": 39,
       "accuracy_pct": 92.2
     },
     "Doug Eddings": {
@@ -581,13 +581,13 @@
       "accuracy_pct": 90.1
     },
     "Mark Ripperger": {
-      "total": 25,
+      "total": 26,
       "correct": 22,
-      "correct_rate": 0.88,
-      "total_called": 3317,
-      "correct_called": 3110,
-      "wrong_strikes": 135,
-      "wrong_balls": 72,
+      "correct_rate": 0.8461538461538461,
+      "total_called": 3444,
+      "correct_called": 3229,
+      "wrong_strikes": 141,
+      "wrong_balls": 74,
       "accuracy_pct": 93.8
     },
     "Hunter Wendelstedt": {
