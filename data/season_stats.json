@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-24",
-  "total_challenges": 2687,
+  "last_updated": "2026-05-25",
+  "total_challenges": 2688,
   "total_overturned": 1051,
   "team_stats": {
     "CIN": {
@@ -9,9 +9,9 @@
       "missed_calls": 20
     },
     "PIT": {
-      "challenges": 173,
+      "challenges": 174,
       "overturned": 62,
-      "missed_calls": 23
+      "missed_calls": 24
     },
     "TB": {
       "challenges": 225,
@@ -49,9 +49,9 @@
       "missed_calls": 34
     },
     "CHC": {
-      "challenges": 178,
+      "challenges": 179,
       "overturned": 80,
-      "missed_calls": 34
+      "missed_calls": 35
     },
     "NYY": {
       "challenges": 243,
@@ -581,13 +581,13 @@
       "accuracy_pct": 90.1
     },
     "Mark Ripperger": {
-      "total": 23,
+      "total": 24,
       "correct": 22,
-      "correct_rate": 0.9565217391304348,
-      "total_called": 3063,
-      "correct_called": 2872,
-      "wrong_strikes": 123,
-      "wrong_balls": 68,
+      "correct_rate": 0.9166666666666666,
+      "total_called": 3190,
+      "correct_called": 2991,
+      "wrong_strikes": 129,
+      "wrong_balls": 70,
       "accuracy_pct": 93.8
     },
     "Hunter Wendelstedt": {
