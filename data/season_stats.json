@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-25",
-  "total_challenges": 2696,
-  "total_overturned": 1057,
+  "total_challenges": 2704,
+  "total_overturned": 1061,
   "team_stats": {
     "CIN": {
       "challenges": 167,
@@ -9,14 +9,14 @@
       "missed_calls": 20
     },
     "PIT": {
-      "challenges": 176,
+      "challenges": 177,
       "overturned": 62,
-      "missed_calls": 26
+      "missed_calls": 27
     },
     "TB": {
-      "challenges": 225,
-      "overturned": 109,
-      "missed_calls": 47
+      "challenges": 229,
+      "overturned": 110,
+      "missed_calls": 48
     },
     "ATL": {
       "challenges": 238,
@@ -49,9 +49,9 @@
       "missed_calls": 34
     },
     "CHC": {
-      "challenges": 181,
+      "challenges": 182,
       "overturned": 80,
-      "missed_calls": 37
+      "missed_calls": 38
     },
     "NYY": {
       "challenges": 243,
@@ -64,9 +64,9 @@
       "missed_calls": 18
     },
     "BAL": {
-      "challenges": 271,
-      "overturned": 116,
-      "missed_calls": 72
+      "challenges": 275,
+      "overturned": 117,
+      "missed_calls": 73
     },
     "TOR": {
       "challenges": 131,
@@ -74,8 +74,8 @@
       "missed_calls": 16
     },
     "STL": {
-      "challenges": 225,
-      "overturned": 110,
+      "challenges": 226,
+      "overturned": 111,
       "missed_calls": 43
     },
     "PHI": {
@@ -84,8 +84,8 @@
       "missed_calls": 36
     },
     "CWS": {
-      "challenges": 189,
-      "overturned": 93,
+      "challenges": 191,
+      "overturned": 95,
       "missed_calls": 41
     },
     "BOS": {
@@ -114,8 +114,8 @@
       "missed_calls": 32
     },
     "MIN": {
-      "challenges": 222,
-      "overturned": 75,
+      "challenges": 224,
+      "overturned": 77,
       "missed_calls": 34
     },
     "CLE": {
@@ -149,8 +149,8 @@
       "missed_calls": 6
     },
     "MIL": {
-      "challenges": 166,
-      "overturned": 64,
+      "challenges": 167,
+      "overturned": 65,
       "missed_calls": 24
     }
   },
@@ -176,24 +176,24 @@
       "accuracy_pct": 93.2
     },
     "Ryan Additon": {
-      "total": 61,
-      "correct": 36,
-      "correct_rate": 0.5901639344262295,
-      "total_called": 5196,
-      "correct_called": 4596,
-      "wrong_strikes": 382,
-      "wrong_balls": 218,
-      "accuracy_pct": 88.5
+      "total": 65,
+      "correct": 39,
+      "correct_rate": 0.6,
+      "total_called": 5404,
+      "correct_called": 4787,
+      "wrong_strikes": 393,
+      "wrong_balls": 224,
+      "accuracy_pct": 88.6
     },
     "Dan Iassogna": {
-      "total": 54,
-      "correct": 32,
-      "correct_rate": 0.5925925925925926,
-      "total_called": 2629,
-      "correct_called": 2431,
-      "wrong_strikes": 104,
-      "wrong_balls": 94,
-      "accuracy_pct": 92.5
+      "total": 56,
+      "correct": 34,
+      "correct_rate": 0.6071428571428571,
+      "total_called": 2760,
+      "correct_called": 2555,
+      "wrong_strikes": 109,
+      "wrong_balls": 96,
+      "accuracy_pct": 92.6
     },
     "Willie Traynor": {
       "total": 63,
@@ -296,14 +296,14 @@
       "accuracy_pct": 93.6
     },
     "Marvin Hudson": {
-      "total": 9,
-      "correct": 7,
-      "correct_rate": 0.7777777777777778,
-      "total_called": 1335,
-      "correct_called": 1231,
-      "wrong_strikes": 65,
-      "wrong_balls": 39,
-      "accuracy_pct": 92.2
+      "total": 10,
+      "correct": 8,
+      "correct_rate": 0.8,
+      "total_called": 1485,
+      "correct_called": 1370,
+      "wrong_strikes": 72,
+      "wrong_balls": 43,
+      "accuracy_pct": 92.3
     },
     "Doug Eddings": {
       "total": 59,
@@ -581,13 +581,13 @@
       "accuracy_pct": 90.1
     },
     "Mark Ripperger": {
-      "total": 26,
+      "total": 27,
       "correct": 22,
-      "correct_rate": 0.8461538461538461,
-      "total_called": 3444,
-      "correct_called": 3229,
-      "wrong_strikes": 141,
-      "wrong_balls": 74,
+      "correct_rate": 0.8148148148148148,
+      "total_called": 3571,
+      "correct_called": 3348,
+      "wrong_strikes": 147,
+      "wrong_balls": 76,
       "accuracy_pct": 93.8
     },
     "Hunter Wendelstedt": {
