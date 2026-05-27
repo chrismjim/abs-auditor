@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-27",
-  "total_challenges": 2845,
-  "total_overturned": 1129,
+  "total_challenges": 2848,
+  "total_overturned": 1131,
   "team_stats": {
     "CIN": {
       "challenges": 177,
@@ -74,8 +74,8 @@
       "missed_calls": 16
     },
     "STL": {
-      "challenges": 237,
-      "overturned": 120,
+      "challenges": 239,
+      "overturned": 122,
       "missed_calls": 45
     },
     "PHI": {
@@ -99,9 +99,9 @@
       "missed_calls": 46
     },
     "WSH": {
-      "challenges": 185,
+      "challenges": 186,
       "overturned": 102,
-      "missed_calls": 30
+      "missed_calls": 31
     },
     "AZ": {
       "challenges": 136,
@@ -119,9 +119,9 @@
       "missed_calls": 34
     },
     "CLE": {
-      "challenges": 279,
+      "challenges": 280,
       "overturned": 82,
-      "missed_calls": 63
+      "missed_calls": 64
     },
     "HOU": {
       "challenges": 164,
@@ -149,8 +149,8 @@
       "missed_calls": 6
     },
     "MIL": {
-      "challenges": 178,
-      "overturned": 74,
+      "challenges": 180,
+      "overturned": 76,
       "missed_calls": 26
     }
   },
@@ -731,14 +731,14 @@
       "accuracy_pct": 93.2
     },
     "Todd Tichenor": {
-      "total": 21,
-      "correct": 20,
-      "correct_rate": 0.9523809523809523,
-      "total_called": 2896,
-      "correct_called": 2650,
-      "wrong_strikes": 138,
-      "wrong_balls": 108,
-      "accuracy_pct": 91.5
+      "total": 23,
+      "correct": 22,
+      "correct_rate": 0.9565217391304348,
+      "total_called": 3018,
+      "correct_called": 2763,
+      "wrong_strikes": 142,
+      "wrong_balls": 113,
+      "accuracy_pct": 91.6
     },
     "Nick Mahrley": {
       "total": 9,
@@ -973,12 +973,12 @@
     "Austin Jones": {
       "total": 25,
       "correct": 11,
-      "total_called": 3061,
-      "correct_called": 2795,
-      "wrong_strikes": 213,
-      "wrong_balls": 53,
+      "total_called": 3201,
+      "correct_called": 2927,
+      "wrong_strikes": 219,
+      "wrong_balls": 55,
       "correct_rate": 0.44,
-      "accuracy_pct": 91.3
+      "accuracy_pct": 91.4
     },
     "Scott Barry": {
       "total": 19,
@@ -1021,13 +1021,13 @@
       "accuracy_pct": 93.2
     },
     "Jonathan Parra": {
-      "total": 21,
+      "total": 22,
       "correct": 20,
-      "total_called": 4641,
-      "correct_called": 4247,
-      "wrong_strikes": 246,
-      "wrong_balls": 148,
-      "correct_rate": 0.9523809523809523,
+      "total_called": 4780,
+      "correct_called": 4374,
+      "wrong_strikes": 251,
+      "wrong_balls": 155,
+      "correct_rate": 0.9090909090909091,
       "accuracy_pct": 91.5
     },
     "Dillon Wilson": {
