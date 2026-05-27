@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-25",
-  "total_challenges": 2796,
-  "total_overturned": 1105,
+  "last_updated": "2026-05-26",
+  "total_challenges": 2799,
+  "total_overturned": 1107,
   "team_stats": {
     "CIN": {
       "challenges": 173,
@@ -99,9 +99,9 @@
       "missed_calls": 46
     },
     "WSH": {
-      "challenges": 172,
-      "overturned": 94,
-      "missed_calls": 25
+      "challenges": 175,
+      "overturned": 96,
+      "missed_calls": 26
     },
     "AZ": {
       "challenges": 134,
@@ -119,9 +119,9 @@
       "missed_calls": 34
     },
     "CLE": {
-      "challenges": 266,
-      "overturned": 74,
-      "missed_calls": 58
+      "challenges": 269,
+      "overturned": 76,
+      "missed_calls": 59
     },
     "HOU": {
       "challenges": 164,
@@ -504,11 +504,11 @@
       "total": 29,
       "correct": 8,
       "correct_rate": 0.27586206896551724,
-      "total_called": 4004,
-      "correct_called": 3557,
-      "wrong_strikes": 270,
-      "wrong_balls": 177,
-      "accuracy_pct": 88.8
+      "total_called": 4127,
+      "correct_called": 3667,
+      "wrong_strikes": 277,
+      "wrong_balls": 183,
+      "accuracy_pct": 88.9
     },
     "Ron Kulpa": {
       "total": 9,
@@ -561,14 +561,14 @@
       "accuracy_pct": 91.5
     },
     "Mike Estabrook": {
-      "total": 25,
-      "correct": 10,
-      "correct_rate": 0.4,
-      "total_called": 3141,
-      "correct_called": 2842,
-      "wrong_strikes": 164,
-      "wrong_balls": 135,
-      "accuracy_pct": 90.5
+      "total": 28,
+      "correct": 12,
+      "correct_rate": 0.42857142857142855,
+      "total_called": 3312,
+      "correct_called": 3004,
+      "wrong_strikes": 168,
+      "wrong_balls": 140,
+      "accuracy_pct": 90.7
     },
     "Jordan Baker": {
       "total": 31,
