@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "total_challenges": 2909,
   "total_overturned": 1178,
   "team_stats": {
@@ -824,10 +824,10 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 3053,
-      "correct_called": 2826,
-      "wrong_strikes": 109,
-      "wrong_balls": 118,
+      "total_called": 3228,
+      "correct_called": 2989,
+      "wrong_strikes": 115,
+      "wrong_balls": 124,
       "accuracy_pct": 92.6
     },
     "Derek Thomas": {
