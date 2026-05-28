@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-28",
-  "total_challenges": 2913,
-  "total_overturned": 1180,
+  "total_challenges": 2915,
+  "total_overturned": 1181,
   "team_stats": {
     "CIN": {
       "challenges": 177,
@@ -84,8 +84,8 @@
       "missed_calls": 40
     },
     "CWS": {
-      "challenges": 219,
-      "overturned": 117,
+      "challenges": 221,
+      "overturned": 118,
       "missed_calls": 41
     },
     "BOS": {
@@ -114,8 +114,8 @@
       "missed_calls": 32
     },
     "MIN": {
-      "challenges": 252,
-      "overturned": 99,
+      "challenges": 254,
+      "overturned": 100,
       "missed_calls": 34
     },
     "CLE": {
@@ -681,14 +681,14 @@
       "accuracy_pct": 92.7
     },
     "Jeremie Rehak": {
-      "total": 25,
-      "correct": 25,
+      "total": 27,
+      "correct": 27,
       "correct_rate": 1.0,
-      "total_called": 5192,
-      "correct_called": 4789,
-      "wrong_strikes": 259,
-      "wrong_balls": 144,
-      "accuracy_pct": 92.2
+      "total_called": 5332,
+      "correct_called": 4921,
+      "wrong_strikes": 265,
+      "wrong_balls": 146,
+      "accuracy_pct": 92.3
     },
     "Ramon De Jesus": {
       "total": 48,
@@ -824,11 +824,11 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 3578,
-      "correct_called": 3315,
-      "wrong_strikes": 127,
-      "wrong_balls": 136,
-      "accuracy_pct": 92.6
+      "total_called": 3753,
+      "correct_called": 3478,
+      "wrong_strikes": 133,
+      "wrong_balls": 142,
+      "accuracy_pct": 92.7
     },
     "Derek Thomas": {
       "total": 12,
