@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-05-28",
-  "total_challenges": 2918,
-  "total_overturned": 1183,
+  "total_challenges": 2921,
+  "total_overturned": 1185,
   "team_stats": {
     "CIN": {
       "challenges": 177,
@@ -19,8 +19,8 @@
       "missed_calls": 55
     },
     "ATL": {
-      "challenges": 242,
-      "overturned": 104,
+      "challenges": 243,
+      "overturned": 105,
       "missed_calls": 47
     },
     "ATH": {
@@ -84,13 +84,13 @@
       "missed_calls": 40
     },
     "CWS": {
-      "challenges": 223,
-      "overturned": 119,
+      "challenges": 225,
+      "overturned": 120,
       "missed_calls": 41
     },
     "BOS": {
-      "challenges": 171,
-      "overturned": 42,
+      "challenges": 172,
+      "overturned": 43,
       "missed_calls": 19
     },
     "MIA": {
@@ -114,8 +114,8 @@
       "missed_calls": 32
     },
     "MIN": {
-      "challenges": 256,
-      "overturned": 101,
+      "challenges": 258,
+      "overturned": 102,
       "missed_calls": 34
     },
     "CLE": {
@@ -196,14 +196,14 @@
       "accuracy_pct": 93.1
     },
     "Willie Traynor": {
-      "total": 64,
-      "correct": 55,
-      "correct_rate": 0.859375,
-      "total_called": 5492,
-      "correct_called": 5075,
-      "wrong_strikes": 210,
-      "wrong_balls": 207,
-      "accuracy_pct": 92.4
+      "total": 65,
+      "correct": 56,
+      "correct_rate": 0.8615384615384616,
+      "total_called": 5640,
+      "correct_called": 5215,
+      "wrong_strikes": 215,
+      "wrong_balls": 210,
+      "accuracy_pct": 92.5
     },
     "Jim Wolf": {
       "total": 63,
@@ -681,14 +681,14 @@
       "accuracy_pct": 92.7
     },
     "Jeremie Rehak": {
-      "total": 29,
-      "correct": 29,
+      "total": 31,
+      "correct": 31,
       "correct_rate": 1.0,
-      "total_called": 5472,
-      "correct_called": 5053,
-      "wrong_strikes": 271,
-      "wrong_balls": 148,
-      "accuracy_pct": 92.3
+      "total_called": 5612,
+      "correct_called": 5185,
+      "wrong_strikes": 277,
+      "wrong_balls": 150,
+      "accuracy_pct": 92.4
     },
     "Ramon De Jesus": {
       "total": 48,
@@ -824,10 +824,10 @@
       "total": 4,
       "correct": 4,
       "correct_rate": 1.0,
-      "total_called": 3928,
-      "correct_called": 3641,
-      "wrong_strikes": 139,
-      "wrong_balls": 148,
+      "total_called": 4103,
+      "correct_called": 3804,
+      "wrong_strikes": 145,
+      "wrong_balls": 154,
       "accuracy_pct": 92.7
     },
     "Derek Thomas": {
