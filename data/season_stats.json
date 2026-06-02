@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-31",
-  "total_challenges": 3204,
-  "total_overturned": 1310,
+  "last_updated": "2026-06-01",
+  "total_challenges": 3209,
+  "total_overturned": 1312,
   "team_stats": {
     "CIN": {
       "challenges": 190,
@@ -14,8 +14,8 @@
       "missed_calls": 34
     },
     "TB": {
-      "challenges": 270,
-      "overturned": 120,
+      "challenges": 271,
+      "overturned": 121,
       "missed_calls": 55
     },
     "ATL": {
@@ -94,14 +94,14 @@
       "missed_calls": 32
     },
     "MIA": {
-      "challenges": 240,
-      "overturned": 91,
-      "missed_calls": 62
+      "challenges": 244,
+      "overturned": 92,
+      "missed_calls": 63
     },
     "WSH": {
-      "challenges": 213,
-      "overturned": 111,
-      "missed_calls": 39
+      "challenges": 217,
+      "overturned": 112,
+      "missed_calls": 40
     },
     "AZ": {
       "challenges": 143,
@@ -134,8 +134,8 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 208,
-      "overturned": 95,
+      "challenges": 209,
+      "overturned": 96,
       "missed_calls": 24
     },
     "KC": {
@@ -199,21 +199,21 @@
       "total": 69,
       "correct": 60,
       "correct_rate": 0.8695652173913043,
-      "total_called": 6232,
-      "correct_called": 5775,
-      "wrong_strikes": 235,
-      "wrong_balls": 222,
+      "total_called": 6411,
+      "correct_called": 5944,
+      "wrong_strikes": 238,
+      "wrong_balls": 229,
       "accuracy_pct": 92.7
     },
     "Jim Wolf": {
-      "total": 63,
-      "correct": 26,
-      "correct_rate": 0.4126984126984127,
-      "total_called": 2219,
-      "correct_called": 2047,
-      "wrong_strikes": 98,
-      "wrong_balls": 74,
-      "accuracy_pct": 92.2
+      "total": 67,
+      "correct": 29,
+      "correct_rate": 0.43283582089552236,
+      "total_called": 2364,
+      "correct_called": 2177,
+      "wrong_strikes": 109,
+      "wrong_balls": 78,
+      "accuracy_pct": 92.1
     },
     "Nic Lentz": {
       "total": 55,
@@ -541,14 +541,14 @@
       "accuracy_pct": 91.4
     },
     "Dan Bellino": {
-      "total": 26,
-      "correct": 22,
-      "correct_rate": 0.8461538461538461,
-      "total_called": 4182,
-      "correct_called": 3855,
-      "wrong_strikes": 197,
-      "wrong_balls": 130,
-      "accuracy_pct": 92.2
+      "total": 27,
+      "correct": 23,
+      "correct_rate": 0.8518518518518519,
+      "total_called": 4366,
+      "correct_called": 4030,
+      "wrong_strikes": 203,
+      "wrong_balls": 133,
+      "accuracy_pct": 92.3
     },
     "Vic Carapazza": {
       "total": 51,
