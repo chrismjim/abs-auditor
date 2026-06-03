@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-02",
-  "total_challenges": 3266,
+  "last_updated": "2026-06-03",
+  "total_challenges": 3268,
   "total_overturned": 1344,
   "team_stats": {
     "CIN": {
@@ -14,9 +14,9 @@
       "missed_calls": 36
     },
     "TB": {
-      "challenges": 277,
+      "challenges": 279,
       "overturned": 123,
-      "missed_calls": 55
+      "missed_calls": 56
     },
     "ATL": {
       "challenges": 263,
@@ -134,9 +134,9 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 215,
+      "challenges": 217,
       "overturned": 98,
-      "missed_calls": 24
+      "missed_calls": 25
     },
     "KC": {
       "challenges": 166,
@@ -831,13 +831,13 @@
       "accuracy_pct": 92.8
     },
     "Derek Thomas": {
-      "total": 18,
-      "correct": 17,
-      "correct_rate": 0.9444444444444444,
-      "total_called": 2621,
-      "correct_called": 2338,
-      "wrong_strikes": 170,
-      "wrong_balls": 113,
+      "total": 20,
+      "correct": 18,
+      "correct_rate": 0.9,
+      "total_called": 2739,
+      "correct_called": 2444,
+      "wrong_strikes": 177,
+      "wrong_balls": 118,
       "accuracy_pct": 89.2
     },
     "Alan Porter": {
