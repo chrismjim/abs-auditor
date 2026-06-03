@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-03",
-  "total_challenges": 3268,
-  "total_overturned": 1344,
+  "total_challenges": 3272,
+  "total_overturned": 1346,
   "team_stats": {
     "CIN": {
       "challenges": 193,
@@ -14,9 +14,9 @@
       "missed_calls": 36
     },
     "TB": {
-      "challenges": 279,
+      "challenges": 281,
       "overturned": 123,
-      "missed_calls": 56
+      "missed_calls": 57
     },
     "ATL": {
       "challenges": 263,
@@ -84,8 +84,8 @@
       "missed_calls": 40
     },
     "CWS": {
-      "challenges": 269,
-      "overturned": 150,
+      "challenges": 270,
+      "overturned": 151,
       "missed_calls": 41
     },
     "BOS": {
@@ -94,13 +94,13 @@
       "missed_calls": 32
     },
     "MIA": {
-      "challenges": 258,
-      "overturned": 100,
+      "challenges": 259,
+      "overturned": 101,
       "missed_calls": 65
     },
     "WSH": {
-      "challenges": 231,
-      "overturned": 120,
+      "challenges": 232,
+      "overturned": 121,
       "missed_calls": 42
     },
     "AZ": {
@@ -114,8 +114,8 @@
       "missed_calls": 32
     },
     "MIN": {
-      "challenges": 276,
-      "overturned": 110,
+      "challenges": 277,
+      "overturned": 111,
       "missed_calls": 34
     },
     "CLE": {
@@ -134,9 +134,9 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 217,
+      "challenges": 219,
       "overturned": 98,
-      "missed_calls": 25
+      "missed_calls": 26
     },
     "KC": {
       "challenges": 166,
@@ -156,13 +156,13 @@
   },
   "umpire_stats": {
     "Brennan Miller": {
-      "total": 47,
-      "correct": 27,
-      "correct_rate": 0.574468085106383,
-      "total_called": 4977,
-      "correct_called": 4546,
-      "wrong_strikes": 259,
-      "wrong_balls": 172,
+      "total": 48,
+      "correct": 28,
+      "correct_rate": 0.5833333333333334,
+      "total_called": 5128,
+      "correct_called": 4684,
+      "wrong_strikes": 266,
+      "wrong_balls": 178,
       "accuracy_pct": 91.3
     },
     "Nate Tomlinson": {
@@ -831,24 +831,24 @@
       "accuracy_pct": 92.8
     },
     "Derek Thomas": {
-      "total": 20,
-      "correct": 18,
-      "correct_rate": 0.9,
-      "total_called": 2739,
-      "correct_called": 2444,
-      "wrong_strikes": 177,
-      "wrong_balls": 118,
-      "accuracy_pct": 89.2
+      "total": 22,
+      "correct": 19,
+      "correct_rate": 0.8636363636363636,
+      "total_called": 2857,
+      "correct_called": 2550,
+      "wrong_strikes": 184,
+      "wrong_balls": 123,
+      "accuracy_pct": 89.3
     },
     "Alan Porter": {
-      "total": 29,
-      "correct": 27,
-      "correct_rate": 0.9310344827586207,
-      "total_called": 3458,
-      "correct_called": 3138,
-      "wrong_strikes": 147,
-      "wrong_balls": 173,
-      "accuracy_pct": 90.7
+      "total": 30,
+      "correct": 28,
+      "correct_rate": 0.9333333333333333,
+      "total_called": 3630,
+      "correct_called": 3302,
+      "wrong_strikes": 151,
+      "wrong_balls": 177,
+      "accuracy_pct": 91.0
     },
     "Steven Jaschinski": {
       "total": 22,
