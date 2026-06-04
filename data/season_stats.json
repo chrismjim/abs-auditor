@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-03",
-  "total_challenges": 3333,
-  "total_overturned": 1381,
+  "last_updated": "2026-06-04",
+  "total_challenges": 3338,
+  "total_overturned": 1384,
   "team_stats": {
     "CIN": {
       "challenges": 193,
@@ -54,9 +54,9 @@
       "missed_calls": 53
     },
     "NYY": {
-      "challenges": 270,
-      "overturned": 106,
-      "missed_calls": 64
+      "challenges": 273,
+      "overturned": 108,
+      "missed_calls": 65
     },
     "SF": {
       "challenges": 147,
@@ -64,8 +64,8 @@
       "missed_calls": 24
     },
     "BAL": {
-      "challenges": 324,
-      "overturned": 139,
+      "challenges": 325,
+      "overturned": 140,
       "missed_calls": 80
     },
     "TOR": {
@@ -79,7 +79,7 @@
       "missed_calls": 53
     },
     "PHI": {
-      "challenges": 205,
+      "challenges": 206,
       "overturned": 70,
       "missed_calls": 40
     },
@@ -89,8 +89,8 @@
       "missed_calls": 41
     },
     "BOS": {
-      "challenges": 220,
-      "overturned": 60,
+      "challenges": 221,
+      "overturned": 61,
       "missed_calls": 32
     },
     "MIA": {
@@ -119,9 +119,9 @@
       "missed_calls": 34
     },
     "CLE": {
-      "challenges": 332,
-      "overturned": 98,
-      "missed_calls": 85
+      "challenges": 335,
+      "overturned": 100,
+      "missed_calls": 86
     },
     "HOU": {
       "challenges": 177,
@@ -129,7 +129,7 @@
       "missed_calls": 27
     },
     "SD": {
-      "challenges": 178,
+      "challenges": 179,
       "overturned": 73,
       "missed_calls": 20
     },
@@ -296,14 +296,14 @@
       "accuracy_pct": 93.5
     },
     "Marvin Hudson": {
-      "total": 20,
-      "correct": 18,
-      "correct_rate": 0.9,
-      "total_called": 3030,
-      "correct_called": 2796,
-      "wrong_strikes": 157,
-      "wrong_balls": 77,
-      "accuracy_pct": 92.3
+      "total": 21,
+      "correct": 19,
+      "correct_rate": 0.9047619047619048,
+      "total_called": 3165,
+      "correct_called": 2926,
+      "wrong_strikes": 160,
+      "wrong_balls": 79,
+      "accuracy_pct": 92.4
     },
     "Doug Eddings": {
       "total": 59,
@@ -551,13 +551,13 @@
       "accuracy_pct": 92.5
     },
     "Vic Carapazza": {
-      "total": 51,
-      "correct": 49,
-      "correct_rate": 0.9607843137254902,
-      "total_called": 6770,
-      "correct_called": 6225,
-      "wrong_strikes": 409,
-      "wrong_balls": 136,
+      "total": 52,
+      "correct": 50,
+      "correct_rate": 0.9615384615384616,
+      "total_called": 6929,
+      "correct_called": 6371,
+      "wrong_strikes": 416,
+      "wrong_balls": 142,
       "accuracy_pct": 91.9
     },
     "Mike Estabrook": {
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "James Jean": {
-      "total": 17,
-      "correct": 5,
-      "correct_rate": 0.29411764705882354,
-      "total_called": 5238,
-      "correct_called": 4862,
-      "wrong_strikes": 214,
-      "wrong_balls": 162,
+      "total": 20,
+      "correct": 7,
+      "correct_rate": 0.35,
+      "total_called": 5372,
+      "correct_called": 4986,
+      "wrong_strikes": 220,
+      "wrong_balls": 166,
       "accuracy_pct": 92.8
     },
     "Edwin Jimenez": {
