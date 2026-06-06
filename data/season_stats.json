@@ -754,11 +754,11 @@
       "total": 33,
       "correct": 19,
       "correct_rate": 0.5757575757575758,
-      "total_called": 4948,
-      "correct_called": 4624,
-      "wrong_strikes": 209,
-      "wrong_balls": 115,
-      "accuracy_pct": 93.5
+      "total_called": 5113,
+      "correct_called": 4778,
+      "wrong_strikes": 217,
+      "wrong_balls": 118,
+      "accuracy_pct": 93.4
     },
     "Paul Clemons": {
       "total": 33,
