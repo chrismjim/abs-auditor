@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-06-06",
-  "total_challenges": 3407,
+  "total_challenges": 3409,
   "total_overturned": 1419,
   "team_stats": {
     "CIN": {
@@ -34,7 +34,7 @@
       "missed_calls": 52
     },
     "SEA": {
-      "challenges": 234,
+      "challenges": 236,
       "overturned": 103,
       "missed_calls": 53
     },
@@ -134,7 +134,7 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 235,
+      "challenges": 237,
       "overturned": 98,
       "missed_calls": 33
     },
@@ -441,14 +441,14 @@
       "accuracy_pct": 91.1
     },
     "Chris Segal": {
-      "total": 68,
-      "correct": 58,
-      "correct_rate": 0.8529411764705882,
-      "total_called": 6221,
-      "correct_called": 5856,
-      "wrong_strikes": 252,
-      "wrong_balls": 113,
-      "accuracy_pct": 94.1
+      "total": 70,
+      "correct": 60,
+      "correct_rate": 0.8571428571428571,
+      "total_called": 6350,
+      "correct_called": 5972,
+      "wrong_strikes": 263,
+      "wrong_balls": 115,
+      "accuracy_pct": 94.0
     },
     "Gabe Morales": {
       "total": 21,
