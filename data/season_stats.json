@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-05",
-  "total_challenges": 3388,
-  "total_overturned": 1414,
+  "total_challenges": 3390,
+  "total_overturned": 1415,
   "team_stats": {
     "CIN": {
       "challenges": 193,
@@ -9,8 +9,8 @@
       "missed_calls": 30
     },
     "PIT": {
-      "challenges": 210,
-      "overturned": 67,
+      "challenges": 212,
+      "overturned": 68,
       "missed_calls": 36
     },
     "TB": {
@@ -19,8 +19,8 @@
       "missed_calls": 64
     },
     "ATL": {
-      "challenges": 265,
-      "overturned": 112,
+      "challenges": 267,
+      "overturned": 113,
       "missed_calls": 57
     },
     "ATH": {
@@ -219,10 +219,10 @@
       "total": 55,
       "correct": 37,
       "correct_rate": 0.6727272727272727,
-      "total_called": 6322,
-      "correct_called": 5875,
-      "wrong_strikes": 252,
-      "wrong_balls": 195,
+      "total_called": 6477,
+      "correct_called": 6014,
+      "wrong_strikes": 267,
+      "wrong_balls": 196,
       "accuracy_pct": 92.9
     },
     "Adrian Johnson": {
@@ -534,11 +534,11 @@
       "total": 12,
       "correct": 7,
       "correct_rate": 0.5833333333333334,
-      "total_called": 3280,
-      "correct_called": 2997,
-      "wrong_strikes": 195,
-      "wrong_balls": 88,
-      "accuracy_pct": 91.4
+      "total_called": 3431,
+      "correct_called": 3140,
+      "wrong_strikes": 200,
+      "wrong_balls": 91,
+      "accuracy_pct": 91.5
     },
     "Dan Bellino": {
       "total": 29,
@@ -691,14 +691,14 @@
       "accuracy_pct": 92.6
     },
     "Ramon De Jesus": {
-      "total": 50,
-      "correct": 35,
-      "correct_rate": 0.7,
-      "total_called": 5099,
-      "correct_called": 4750,
-      "wrong_strikes": 247,
-      "wrong_balls": 102,
-      "accuracy_pct": 93.2
+      "total": 52,
+      "correct": 37,
+      "correct_rate": 0.7115384615384616,
+      "total_called": 5256,
+      "correct_called": 4891,
+      "wrong_strikes": 256,
+      "wrong_balls": 109,
+      "accuracy_pct": 93.1
     },
     "Edwin Moscoso": {
       "total": 36,
@@ -754,10 +754,10 @@
       "total": 33,
       "correct": 19,
       "correct_rate": 0.5757575757575758,
-      "total_called": 5113,
-      "correct_called": 4778,
-      "wrong_strikes": 217,
-      "wrong_balls": 118,
+      "total_called": 5278,
+      "correct_called": 4932,
+      "wrong_strikes": 225,
+      "wrong_balls": 121,
       "accuracy_pct": 93.4
     },
     "Paul Clemons": {
@@ -894,11 +894,11 @@
       "total": 65,
       "correct": 56,
       "correct_rate": 0.8615384615384616,
-      "total_called": 4612,
-      "correct_called": 4210,
-      "wrong_strikes": 238,
-      "wrong_balls": 164,
-      "accuracy_pct": 91.3
+      "total_called": 4759,
+      "correct_called": 4348,
+      "wrong_strikes": 243,
+      "wrong_balls": 168,
+      "accuracy_pct": 91.4
     },
     "Stu Scheurwater": {
       "total": 45,
@@ -913,12 +913,12 @@
     "Jacob Metz": {
       "total": 21,
       "correct": 21,
-      "total_called": 1608,
-      "correct_called": 1460,
-      "wrong_strikes": 109,
-      "wrong_balls": 39,
+      "total_called": 1747,
+      "correct_called": 1590,
+      "wrong_strikes": 117,
+      "wrong_balls": 40,
       "correct_rate": 1.0,
-      "accuracy_pct": 90.8
+      "accuracy_pct": 91.0
     },
     "Mike Muchlinski": {
       "total": 34,
@@ -1003,12 +1003,12 @@
     "Sean Barber": {
       "total": 48,
       "correct": 48,
-      "total_called": 3364,
-      "correct_called": 3067,
-      "wrong_strikes": 167,
-      "wrong_balls": 130,
+      "total_called": 3486,
+      "correct_called": 3173,
+      "wrong_strikes": 176,
+      "wrong_balls": 137,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.2
+      "accuracy_pct": 91.0
     },
     "Tyler Jones": {
       "total": 53,
