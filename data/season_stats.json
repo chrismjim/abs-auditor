@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-06",
-  "total_challenges": 3409,
-  "total_overturned": 1419,
+  "total_challenges": 3412,
+  "total_overturned": 1420,
   "team_stats": {
     "CIN": {
       "challenges": 193,
@@ -34,7 +34,7 @@
       "missed_calls": 52
     },
     "SEA": {
-      "challenges": 236,
+      "challenges": 238,
       "overturned": 103,
       "missed_calls": 53
     },
@@ -114,8 +114,8 @@
       "missed_calls": 33
     },
     "MIN": {
-      "challenges": 285,
-      "overturned": 119,
+      "challenges": 286,
+      "overturned": 120,
       "missed_calls": 34
     },
     "CLE": {
@@ -134,13 +134,13 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 237,
+      "challenges": 239,
       "overturned": 98,
       "missed_calls": 33
     },
     "KC": {
-      "challenges": 167,
-      "overturned": 45,
+      "challenges": 168,
+      "overturned": 46,
       "missed_calls": 22
     },
     "COL": {
@@ -199,11 +199,11 @@
       "total": 69,
       "correct": 60,
       "correct_rate": 0.8695652173913043,
-      "total_called": 6769,
-      "correct_called": 6282,
-      "wrong_strikes": 244,
-      "wrong_balls": 243,
-      "accuracy_pct": 92.8
+      "total_called": 6954,
+      "correct_called": 6458,
+      "wrong_strikes": 249,
+      "wrong_balls": 247,
+      "accuracy_pct": 92.9
     },
     "Jim Wolf": {
       "total": 75,
@@ -441,13 +441,13 @@
       "accuracy_pct": 91.1
     },
     "Chris Segal": {
-      "total": 70,
-      "correct": 60,
-      "correct_rate": 0.8571428571428571,
-      "total_called": 6350,
-      "correct_called": 5972,
-      "wrong_strikes": 263,
-      "wrong_balls": 115,
+      "total": 72,
+      "correct": 62,
+      "correct_rate": 0.8611111111111112,
+      "total_called": 6479,
+      "correct_called": 6088,
+      "wrong_strikes": 274,
+      "wrong_balls": 117,
       "accuracy_pct": 94.0
     },
     "Gabe Morales": {
@@ -581,13 +581,13 @@
       "accuracy_pct": 90.8
     },
     "Mark Ripperger": {
-      "total": 41,
-      "correct": 29,
-      "correct_rate": 0.7073170731707317,
-      "total_called": 5650,
-      "correct_called": 5274,
-      "wrong_strikes": 253,
-      "wrong_balls": 123,
+      "total": 42,
+      "correct": 30,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 5809,
+      "correct_called": 5420,
+      "wrong_strikes": 261,
+      "wrong_balls": 128,
       "accuracy_pct": 93.3
     },
     "Hunter Wendelstedt": {
@@ -824,10 +824,10 @@
       "total": 6,
       "correct": 6,
       "correct_rate": 1.0,
-      "total_called": 5093,
-      "correct_called": 4724,
-      "wrong_strikes": 181,
-      "wrong_balls": 188,
+      "total_called": 5246,
+      "correct_called": 4868,
+      "wrong_strikes": 186,
+      "wrong_balls": 192,
       "accuracy_pct": 92.8
     },
     "Derek Thomas": {
