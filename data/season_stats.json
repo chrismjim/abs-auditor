@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-07",
-  "total_challenges": 3654,
-  "total_overturned": 1534,
+  "last_updated": "2026-06-08",
+  "total_challenges": 3658,
+  "total_overturned": 1537,
   "team_stats": {
     "CIN": {
       "challenges": 193,
@@ -14,8 +14,8 @@
       "missed_calls": 46
     },
     "TB": {
-      "challenges": 321,
-      "overturned": 123,
+      "challenges": 323,
+      "overturned": 125,
       "missed_calls": 64
     },
     "ATL": {
@@ -34,8 +34,8 @@
       "missed_calls": 52
     },
     "SEA": {
-      "challenges": 281,
-      "overturned": 112,
+      "challenges": 282,
+      "overturned": 113,
       "missed_calls": 62
     },
     "TEX": {
@@ -64,14 +64,14 @@
       "missed_calls": 24
     },
     "BAL": {
-      "challenges": 334,
-      "overturned": 149,
+      "challenges": 335,
+      "overturned": 150,
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 160,
+      "challenges": 161,
       "overturned": 60,
-      "missed_calls": 16
+      "missed_calls": 17
     },
     "STL": {
       "challenges": 275,
@@ -79,9 +79,9 @@
       "missed_calls": 53
     },
     "PHI": {
-      "challenges": 251,
+      "challenges": 252,
       "overturned": 91,
-      "missed_calls": 40
+      "missed_calls": 41
     },
     "CWS": {
       "challenges": 313,
@@ -89,8 +89,8 @@
       "missed_calls": 41
     },
     "BOS": {
-      "challenges": 230,
-      "overturned": 70,
+      "challenges": 232,
+      "overturned": 72,
       "missed_calls": 32
     },
     "MIA": {
@@ -451,13 +451,13 @@
       "accuracy_pct": 93.4
     },
     "Gabe Morales": {
-      "total": 21,
-      "correct": 12,
-      "correct_rate": 0.5714285714285714,
-      "total_called": 5971,
-      "correct_called": 5492,
-      "wrong_strikes": 338,
-      "wrong_balls": 141,
+      "total": 22,
+      "correct": 13,
+      "correct_rate": 0.5909090909090909,
+      "total_called": 6136,
+      "correct_called": 5645,
+      "wrong_strikes": 344,
+      "wrong_balls": 147,
       "accuracy_pct": 92.0
     },
     "Ryan Blakney": {
@@ -841,13 +841,13 @@
       "accuracy_pct": 89.4
     },
     "Alan Porter": {
-      "total": 37,
-      "correct": 35,
-      "correct_rate": 0.9459459459459459,
-      "total_called": 4834,
-      "correct_called": 4450,
-      "wrong_strikes": 179,
-      "wrong_balls": 205,
+      "total": 39,
+      "correct": 37,
+      "correct_rate": 0.9487179487179487,
+      "total_called": 4976,
+      "correct_called": 4583,
+      "wrong_strikes": 182,
+      "wrong_balls": 211,
       "accuracy_pct": 92.1
     },
     "Steven Jaschinski": {
@@ -941,14 +941,14 @@
       "accuracy_pct": 89.9
     },
     "Jansen Visconti": {
-      "total": 22,
+      "total": 23,
       "correct": 22,
-      "total_called": 3544,
-      "correct_called": 3300,
-      "wrong_strikes": 133,
-      "wrong_balls": 111,
-      "correct_rate": 1.0,
-      "accuracy_pct": 93.1
+      "total_called": 3693,
+      "correct_called": 3442,
+      "wrong_strikes": 138,
+      "wrong_balls": 113,
+      "correct_rate": 0.9565217391304348,
+      "accuracy_pct": 93.2
     },
     "Clint Vondrak": {
       "total": 20,
