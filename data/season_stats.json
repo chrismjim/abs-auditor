@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-06-09",
   "total_challenges": 3682,
   "total_overturned": 1551,
   "team_stats": {
@@ -894,10 +894,10 @@
       "total": 65,
       "correct": 56,
       "correct_rate": 0.8615384615384616,
-      "total_called": 5053,
-      "correct_called": 4624,
-      "wrong_strikes": 253,
-      "wrong_balls": 176,
+      "total_called": 5153,
+      "correct_called": 4715,
+      "wrong_strikes": 259,
+      "wrong_balls": 179,
       "accuracy_pct": 91.5
     },
     "Stu Scheurwater": {
