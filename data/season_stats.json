@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-10",
-  "total_challenges": 3719,
-  "total_overturned": 1571,
+  "total_challenges": 3721,
+  "total_overturned": 1573,
   "team_stats": {
     "CIN": {
       "challenges": 202,
@@ -14,8 +14,8 @@
       "missed_calls": 46
     },
     "TB": {
-      "challenges": 329,
-      "overturned": 131,
+      "challenges": 330,
+      "overturned": 132,
       "missed_calls": 64
     },
     "ATL": {
@@ -54,8 +54,8 @@
       "missed_calls": 55
     },
     "NYY": {
-      "challenges": 309,
-      "overturned": 133,
+      "challenges": 310,
+      "overturned": 134,
       "missed_calls": 74
     },
     "SF": {
@@ -89,8 +89,8 @@
       "missed_calls": 41
     },
     "BOS": {
-      "challenges": 238,
-      "overturned": 78,
+      "challenges": 239,
+      "overturned": 79,
       "missed_calls": 32
     },
     "MIA": {
@@ -119,8 +119,8 @@
       "missed_calls": 34
     },
     "CLE": {
-      "challenges": 384,
-      "overturned": 134,
+      "challenges": 385,
+      "overturned": 135,
       "missed_calls": 95
     },
     "HOU": {
@@ -206,13 +206,13 @@
       "accuracy_pct": 93.3
     },
     "Jim Wolf": {
-      "total": 95,
-      "correct": 55,
-      "correct_rate": 0.5789473684210527,
-      "total_called": 3838,
-      "correct_called": 3495,
-      "wrong_strikes": 219,
-      "wrong_balls": 124,
+      "total": 96,
+      "correct": 56,
+      "correct_rate": 0.5833333333333334,
+      "total_called": 3971,
+      "correct_called": 3616,
+      "wrong_strikes": 224,
+      "wrong_balls": 131,
       "accuracy_pct": 91.1
     },
     "Nic Lentz": {
@@ -791,13 +791,13 @@
       "accuracy_pct": 90.3
     },
     "Mark Wegner": {
-      "total": 29,
-      "correct": 17,
-      "correct_rate": 0.5862068965517241,
-      "total_called": 5885,
-      "correct_called": 5435,
-      "wrong_strikes": 283,
-      "wrong_balls": 167,
+      "total": 30,
+      "correct": 18,
+      "correct_rate": 0.6,
+      "total_called": 6051,
+      "correct_called": 5590,
+      "wrong_strikes": 290,
+      "wrong_balls": 171,
       "accuracy_pct": 92.4
     },
     "Alex MacKay": {
