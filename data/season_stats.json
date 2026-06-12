@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-11",
-  "total_challenges": 3786,
-  "total_overturned": 1614,
+  "total_challenges": 3791,
+  "total_overturned": 1618,
   "team_stats": {
     "CIN": {
       "challenges": 202,
@@ -39,8 +39,8 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 177,
-      "overturned": 57,
+      "challenges": 179,
+      "overturned": 59,
       "missed_calls": 10
     },
     "LAD": {
@@ -49,8 +49,8 @@
       "missed_calls": 39
     },
     "CHC": {
-      "challenges": 224,
-      "overturned": 94,
+      "challenges": 225,
+      "overturned": 95,
       "missed_calls": 55
     },
     "NYY": {
@@ -114,9 +114,9 @@
       "missed_calls": 33
     },
     "MIN": {
-      "challenges": 317,
-      "overturned": 135,
-      "missed_calls": 40
+      "challenges": 319,
+      "overturned": 136,
+      "missed_calls": 41
     },
     "CLE": {
       "challenges": 392,
@@ -134,18 +134,18 @@
       "missed_calls": 20
     },
     "DET": {
-      "challenges": 296,
-      "overturned": 114,
-      "missed_calls": 48
+      "challenges": 298,
+      "overturned": 115,
+      "missed_calls": 49
     },
     "KC": {
-      "challenges": 201,
-      "overturned": 64,
+      "challenges": 203,
+      "overturned": 66,
       "missed_calls": 26
     },
     "COL": {
-      "challenges": 239,
-      "overturned": 132,
+      "challenges": 240,
+      "overturned": 133,
       "missed_calls": 10
     },
     "MIL": {
@@ -176,14 +176,14 @@
       "accuracy_pct": 93.2
     },
     "Ryan Additon": {
-      "total": 129,
-      "correct": 84,
-      "correct_rate": 0.6511627906976745,
-      "total_called": 8534,
-      "correct_called": 7684,
-      "wrong_strikes": 560,
-      "wrong_balls": 290,
-      "accuracy_pct": 90.0
+      "total": 131,
+      "correct": 85,
+      "correct_rate": 0.648854961832061,
+      "total_called": 8660,
+      "correct_called": 7800,
+      "wrong_strikes": 568,
+      "wrong_balls": 292,
+      "accuracy_pct": 90.1
     },
     "Dan Iassogna": {
       "total": 80,
@@ -441,14 +441,14 @@
       "accuracy_pct": 91.0
     },
     "Chris Segal": {
-      "total": 94,
-      "correct": 84,
-      "correct_rate": 0.8936170212765957,
-      "total_called": 7937,
-      "correct_called": 7403,
-      "wrong_strikes": 392,
-      "wrong_balls": 142,
-      "accuracy_pct": 93.3
+      "total": 96,
+      "correct": 86,
+      "correct_rate": 0.8958333333333334,
+      "total_called": 8079,
+      "correct_called": 7532,
+      "wrong_strikes": 402,
+      "wrong_balls": 145,
+      "accuracy_pct": 93.2
     },
     "Gabe Morales": {
       "total": 24,
@@ -764,9 +764,9 @@
       "total": 45,
       "correct": 42,
       "correct_rate": 0.9333333333333333,
-      "total_called": 5779,
-      "correct_called": 5355,
-      "wrong_strikes": 260,
+      "total_called": 5916,
+      "correct_called": 5482,
+      "wrong_strikes": 270,
       "wrong_balls": 164,
       "accuracy_pct": 92.7
     },
@@ -983,21 +983,21 @@
     "Scott Barry": {
       "total": 21,
       "correct": 21,
-      "total_called": 7872,
-      "correct_called": 7224,
-      "wrong_strikes": 411,
-      "wrong_balls": 237,
+      "total_called": 8009,
+      "correct_called": 7349,
+      "wrong_strikes": 419,
+      "wrong_balls": 241,
       "correct_rate": 1.0,
       "accuracy_pct": 91.8
     },
     "Louie Krupa": {
-      "total": 35,
-      "correct": 33,
-      "total_called": 3798,
-      "correct_called": 3488,
-      "wrong_strikes": 193,
-      "wrong_balls": 117,
-      "correct_rate": 0.9428571428571428,
+      "total": 36,
+      "correct": 34,
+      "total_called": 3939,
+      "correct_called": 3615,
+      "wrong_strikes": 202,
+      "wrong_balls": 122,
+      "correct_rate": 0.9444444444444444,
       "accuracy_pct": 91.8
     },
     "Sean Barber": {
