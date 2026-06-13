@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-11",
-  "total_challenges": 3809,
-  "total_overturned": 1630,
+  "last_updated": "2026-06-12",
+  "total_challenges": 3812,
+  "total_overturned": 1632,
   "team_stats": {
     "CIN": {
       "challenges": 202,
@@ -9,9 +9,9 @@
       "missed_calls": 30
     },
     "PIT": {
-      "challenges": 270,
+      "challenges": 271,
       "overturned": 83,
-      "missed_calls": 49
+      "missed_calls": 50
     },
     "TB": {
       "challenges": 337,
@@ -79,8 +79,8 @@
       "missed_calls": 53
     },
     "PHI": {
-      "challenges": 256,
-      "overturned": 93,
+      "challenges": 258,
+      "overturned": 95,
       "missed_calls": 43
     },
     "CWS": {
@@ -94,9 +94,9 @@
       "missed_calls": 32
     },
     "MIA": {
-      "challenges": 298,
+      "challenges": 299,
       "overturned": 114,
-      "missed_calls": 65
+      "missed_calls": 66
     },
     "WSH": {
       "challenges": 256,
@@ -149,8 +149,8 @@
       "missed_calls": 10
     },
     "MIL": {
-      "challenges": 235,
-      "overturned": 122,
+      "challenges": 237,
+      "overturned": 124,
       "missed_calls": 27
     }
   },
@@ -286,13 +286,13 @@
       "accuracy_pct": 93.1
     },
     "Chad Fairchild": {
-      "total": 45,
-      "correct": 43,
-      "correct_rate": 0.9555555555555556,
-      "total_called": 4964,
-      "correct_called": 4596,
-      "wrong_strikes": 194,
-      "wrong_balls": 174,
+      "total": 47,
+      "correct": 45,
+      "correct_rate": 0.9574468085106383,
+      "total_called": 5088,
+      "correct_called": 4712,
+      "wrong_strikes": 199,
+      "wrong_balls": 177,
       "accuracy_pct": 92.6
     },
     "Marvin Hudson": {
@@ -454,10 +454,10 @@
       "total": 24,
       "correct": 15,
       "correct_rate": 0.625,
-      "total_called": 6466,
-      "correct_called": 5951,
-      "wrong_strikes": 356,
-      "wrong_balls": 159,
+      "total_called": 6599,
+      "correct_called": 6069,
+      "wrong_strikes": 367,
+      "wrong_balls": 163,
       "accuracy_pct": 92.0
     },
     "Ryan Blakney": {
@@ -721,14 +721,14 @@
       "accuracy_pct": 93.1
     },
     "Junior Valentine": {
-      "total": 38,
+      "total": 39,
       "correct": 33,
-      "correct_rate": 0.868421052631579,
-      "total_called": 4981,
-      "correct_called": 4650,
-      "wrong_strikes": 249,
-      "wrong_balls": 82,
-      "accuracy_pct": 93.4
+      "correct_rate": 0.8461538461538461,
+      "total_called": 5125,
+      "correct_called": 4781,
+      "wrong_strikes": 259,
+      "wrong_balls": 85,
+      "accuracy_pct": 93.3
     },
     "Todd Tichenor": {
       "total": 51,
@@ -824,10 +824,10 @@
       "total": 6,
       "correct": 6,
       "correct_rate": 1.0,
-      "total_called": 6470,
-      "correct_called": 6020,
-      "wrong_strikes": 226,
-      "wrong_balls": 224,
+      "total_called": 6641,
+      "correct_called": 6175,
+      "wrong_strikes": 239,
+      "wrong_balls": 227,
       "accuracy_pct": 93.0
     },
     "Derek Thomas": {
@@ -963,10 +963,10 @@
     "Brian Walsh": {
       "total": 17,
       "correct": 16,
-      "total_called": 4508,
-      "correct_called": 4177,
-      "wrong_strikes": 218,
-      "wrong_balls": 113,
+      "total_called": 4636,
+      "correct_called": 4297,
+      "wrong_strikes": 223,
+      "wrong_balls": 116,
       "correct_rate": 0.9411764705882353,
       "accuracy_pct": 92.7
     },
