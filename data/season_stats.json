@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-13",
-  "total_challenges": 3837,
-  "total_overturned": 1652,
+  "total_challenges": 3838,
+  "total_overturned": 1653,
   "team_stats": {
     "CIN": {
       "challenges": 208,
@@ -74,8 +74,8 @@
       "missed_calls": 19
     },
     "STL": {
-      "challenges": 281,
-      "overturned": 147,
+      "challenges": 282,
+      "overturned": 148,
       "missed_calls": 53
     },
     "PHI": {
@@ -114,8 +114,8 @@
       "missed_calls": 33
     },
     "MIN": {
-      "challenges": 328,
-      "overturned": 142,
+      "challenges": 329,
+      "overturned": 143,
       "missed_calls": 44
     },
     "CLE": {
@@ -471,14 +471,14 @@
       "accuracy_pct": 93.5
     },
     "Adam Beck": {
-      "total": 42,
-      "correct": 36,
-      "correct_rate": 0.8571428571428571,
-      "total_called": 4821,
-      "correct_called": 4350,
-      "wrong_strikes": 324,
-      "wrong_balls": 147,
-      "accuracy_pct": 90.2
+      "total": 43,
+      "correct": 37,
+      "correct_rate": 0.8604651162790697,
+      "total_called": 4982,
+      "correct_called": 4499,
+      "wrong_strikes": 330,
+      "wrong_balls": 153,
+      "accuracy_pct": 90.3
     },
     "Carlos Torres": {
       "total": 66,
@@ -694,11 +694,11 @@
       "total": 62,
       "correct": 47,
       "correct_rate": 0.7580645161290323,
-      "total_called": 6008,
-      "correct_called": 5566,
-      "wrong_strikes": 295,
-      "wrong_balls": 147,
-      "accuracy_pct": 92.6
+      "total_called": 6147,
+      "correct_called": 5696,
+      "wrong_strikes": 300,
+      "wrong_balls": 151,
+      "accuracy_pct": 92.7
     },
     "Edwin Moscoso": {
       "total": 36,
