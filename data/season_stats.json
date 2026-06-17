@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16",
+  "last_updated": "2026-06-17",
   "total_challenges": 4107,
   "total_overturned": 1759,
   "team_stats": {
@@ -169,11 +169,11 @@
       "total": 49,
       "correct": 45,
       "correct_rate": 0.9183673469387755,
-      "total_called": 6152,
-      "correct_called": 5739,
-      "wrong_strikes": 198,
-      "wrong_balls": 215,
-      "accuracy_pct": 93.3
+      "total_called": 6306,
+      "correct_called": 5888,
+      "wrong_strikes": 201,
+      "wrong_balls": 217,
+      "accuracy_pct": 93.4
     },
     "Ryan Additon": {
       "total": 137,
