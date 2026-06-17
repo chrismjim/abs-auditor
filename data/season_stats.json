@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-06-17",
-  "total_challenges": 4107,
+  "total_challenges": 4108,
   "total_overturned": 1759,
   "team_stats": {
     "CIN": {
@@ -99,9 +99,9 @@
       "missed_calls": 68
     },
     "WSH": {
-      "challenges": 273,
+      "challenges": 274,
       "overturned": 136,
-      "missed_calls": 44
+      "missed_calls": 45
     },
     "AZ": {
       "challenges": 187,
@@ -139,9 +139,9 @@
       "missed_calls": 61
     },
     "KC": {
-      "challenges": 220,
+      "challenges": 221,
       "overturned": 74,
-      "missed_calls": 26
+      "missed_calls": 27
     },
     "COL": {
       "challenges": 255,
@@ -169,11 +169,11 @@
       "total": 49,
       "correct": 45,
       "correct_rate": 0.9183673469387755,
-      "total_called": 6306,
-      "correct_called": 5888,
-      "wrong_strikes": 201,
-      "wrong_balls": 217,
-      "accuracy_pct": 93.4
+      "total_called": 6460,
+      "correct_called": 6037,
+      "wrong_strikes": 204,
+      "wrong_balls": 219,
+      "accuracy_pct": 93.5
     },
     "Ryan Additon": {
       "total": 137,
@@ -574,10 +574,10 @@
       "total": 32,
       "correct": 28,
       "correct_rate": 0.875,
-      "total_called": 6153,
-      "correct_called": 5585,
-      "wrong_strikes": 357,
-      "wrong_balls": 211,
+      "total_called": 6332,
+      "correct_called": 5750,
+      "wrong_strikes": 365,
+      "wrong_balls": 217,
       "accuracy_pct": 90.8
     },
     "Mark Ripperger": {
@@ -601,14 +601,14 @@
       "accuracy_pct": 93.7
     },
     "Bill Miller": {
-      "total": 65,
+      "total": 66,
       "correct": 55,
-      "correct_rate": 0.8461538461538461,
-      "total_called": 5338,
-      "correct_called": 4978,
-      "wrong_strikes": 235,
-      "wrong_balls": 125,
-      "accuracy_pct": 93.3
+      "correct_rate": 0.8333333333333334,
+      "total_called": 5506,
+      "correct_called": 5127,
+      "wrong_strikes": 247,
+      "wrong_balls": 132,
+      "accuracy_pct": 93.1
     },
     "Alfonso M\u00e1rquez": {
       "total": 24,
@@ -864,11 +864,11 @@
       "total": 32,
       "correct": 32,
       "correct_rate": 1.0,
-      "total_called": 5750,
-      "correct_called": 5300,
-      "wrong_strikes": 348,
-      "wrong_balls": 102,
-      "accuracy_pct": 92.2
+      "total_called": 5891,
+      "correct_called": 5426,
+      "wrong_strikes": 360,
+      "wrong_balls": 105,
+      "accuracy_pct": 92.1
     },
     "Brock Ballou": {
       "total": 35,
