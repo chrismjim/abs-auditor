@@ -279,10 +279,10 @@
       "total": 55,
       "correct": 45,
       "correct_rate": 0.8181818181818182,
-      "total_called": 4759,
-      "correct_called": 4459,
-      "wrong_strikes": 148,
-      "wrong_balls": 152,
+      "total_called": 4971,
+      "correct_called": 4657,
+      "wrong_strikes": 157,
+      "wrong_balls": 157,
       "accuracy_pct": 93.7
     },
     "Chad Fairchild": {
@@ -564,11 +564,11 @@
       "total": 48,
       "correct": 29,
       "correct_rate": 0.6041666666666666,
-      "total_called": 5601,
-      "correct_called": 5067,
-      "wrong_strikes": 314,
-      "wrong_balls": 220,
-      "accuracy_pct": 90.5
+      "total_called": 5765,
+      "correct_called": 5210,
+      "wrong_strikes": 329,
+      "wrong_balls": 226,
+      "accuracy_pct": 90.4
     },
     "Jordan Baker": {
       "total": 32,
@@ -634,11 +634,11 @@
       "total": 48,
       "correct": 42,
       "correct_rate": 0.875,
-      "total_called": 7783,
-      "correct_called": 7219,
-      "wrong_strikes": 329,
-      "wrong_balls": 235,
-      "accuracy_pct": 92.8
+      "total_called": 7892,
+      "correct_called": 7312,
+      "wrong_strikes": 342,
+      "wrong_balls": 238,
+      "accuracy_pct": 92.7
     },
     "Andy Fletcher": {
       "total": 17,
