@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-18",
-  "total_challenges": 4176,
-  "total_overturned": 1802,
+  "total_challenges": 4179,
+  "total_overturned": 1804,
   "team_stats": {
     "CIN": {
       "challenges": 230,
@@ -34,8 +34,8 @@
       "missed_calls": 62
     },
     "SEA": {
-      "challenges": 301,
-      "overturned": 117,
+      "challenges": 304,
+      "overturned": 119,
       "missed_calls": 62
     },
     "TEX": {
@@ -64,8 +64,8 @@
       "missed_calls": 34
     },
     "BAL": {
-      "challenges": 363,
-      "overturned": 154,
+      "challenges": 366,
+      "overturned": 156,
       "missed_calls": 80
     },
     "TOR": {
@@ -279,10 +279,10 @@
       "total": 55,
       "correct": 45,
       "correct_rate": 0.8181818181818182,
-      "total_called": 4971,
-      "correct_called": 4657,
-      "wrong_strikes": 157,
-      "wrong_balls": 157,
+      "total_called": 5183,
+      "correct_called": 4855,
+      "wrong_strikes": 166,
+      "wrong_balls": 162,
       "accuracy_pct": 93.7
     },
     "Chad Fairchild": {
@@ -564,11 +564,11 @@
       "total": 48,
       "correct": 29,
       "correct_rate": 0.6041666666666666,
-      "total_called": 5765,
-      "correct_called": 5210,
-      "wrong_strikes": 329,
-      "wrong_balls": 226,
-      "accuracy_pct": 90.4
+      "total_called": 5929,
+      "correct_called": 5353,
+      "wrong_strikes": 344,
+      "wrong_balls": 232,
+      "accuracy_pct": 90.3
     },
     "Jordan Baker": {
       "total": 32,
@@ -634,11 +634,11 @@
       "total": 48,
       "correct": 42,
       "correct_rate": 0.875,
-      "total_called": 7892,
-      "correct_called": 7312,
-      "wrong_strikes": 342,
-      "wrong_balls": 238,
-      "accuracy_pct": 92.7
+      "total_called": 8001,
+      "correct_called": 7405,
+      "wrong_strikes": 355,
+      "wrong_balls": 241,
+      "accuracy_pct": 92.6
     },
     "Andy Fletcher": {
       "total": 17,
@@ -1011,13 +1011,13 @@
       "accuracy_pct": 90.4
     },
     "Tyler Jones": {
-      "total": 55,
-      "correct": 50,
-      "total_called": 4617,
-      "correct_called": 4286,
-      "wrong_strikes": 156,
-      "wrong_balls": 175,
-      "correct_rate": 0.9090909090909091,
+      "total": 58,
+      "correct": 53,
+      "total_called": 4740,
+      "correct_called": 4398,
+      "wrong_strikes": 160,
+      "wrong_balls": 182,
+      "correct_rate": 0.9137931034482759,
       "accuracy_pct": 92.8
     },
     "Jonathan Parra": {
