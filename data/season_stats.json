@@ -634,11 +634,11 @@
       "total": 48,
       "correct": 42,
       "correct_rate": 0.875,
-      "total_called": 7565,
-      "correct_called": 7033,
-      "wrong_strikes": 303,
-      "wrong_balls": 229,
-      "accuracy_pct": 93.0
+      "total_called": 7674,
+      "correct_called": 7126,
+      "wrong_strikes": 316,
+      "wrong_balls": 232,
+      "accuracy_pct": 92.9
     },
     "Andy Fletcher": {
       "total": 17,
