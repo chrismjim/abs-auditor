@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-06-19",
-  "total_challenges": 4205,
-  "total_overturned": 1816,
+  "total_challenges": 4211,
+  "total_overturned": 1818,
   "team_stats": {
     "CIN": {
-      "challenges": 230,
-      "overturned": 132,
+      "challenges": 232,
+      "overturned": 133,
       "missed_calls": 33
     },
     "PIT": {
@@ -19,9 +19,9 @@
       "missed_calls": 78
     },
     "ATL": {
-      "challenges": 334,
+      "challenges": 336,
       "overturned": 137,
-      "missed_calls": 74
+      "missed_calls": 76
     },
     "ATH": {
       "challenges": 228,
@@ -49,18 +49,18 @@
       "missed_calls": 53
     },
     "CHC": {
-      "challenges": 253,
+      "challenges": 254,
       "overturned": 104,
       "missed_calls": 64
     },
     "NYY": {
-      "challenges": 343,
-      "overturned": 155,
+      "challenges": 345,
+      "overturned": 156,
       "missed_calls": 74
     },
     "SF": {
-      "challenges": 172,
-      "overturned": 61,
+      "challenges": 173,
+      "overturned": 62,
       "missed_calls": 34
     },
     "BAL": {
@@ -69,7 +69,7 @@
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 201,
+      "challenges": 202,
       "overturned": 80,
       "missed_calls": 19
     },
@@ -94,8 +94,8 @@
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 320,
-      "overturned": 118,
+      "challenges": 321,
+      "overturned": 119,
       "missed_calls": 68
     },
     "WSH": {
@@ -149,9 +149,9 @@
       "missed_calls": 10
     },
     "MIL": {
-      "challenges": 241,
+      "challenges": 243,
       "overturned": 128,
-      "missed_calls": 27
+      "missed_calls": 29
     }
   },
   "umpire_stats": {
@@ -326,23 +326,23 @@
       "accuracy_pct": 91.8
     },
     "Lance Barrett": {
-      "total": 74,
-      "correct": 47,
-      "correct_rate": 0.6351351351351351,
-      "total_called": 7482,
-      "correct_called": 6871,
-      "wrong_strikes": 400,
-      "wrong_balls": 211,
+      "total": 75,
+      "correct": 48,
+      "correct_rate": 0.64,
+      "total_called": 7655,
+      "correct_called": 7031,
+      "wrong_strikes": 408,
+      "wrong_balls": 216,
       "accuracy_pct": 91.8
     },
     "Will Little": {
       "total": 60,
       "correct": 54,
       "correct_rate": 0.9,
-      "total_called": 4794,
-      "correct_called": 4498,
-      "wrong_strikes": 166,
-      "wrong_balls": 130,
+      "total_called": 4908,
+      "correct_called": 4605,
+      "wrong_strikes": 170,
+      "wrong_balls": 133,
       "accuracy_pct": 93.8
     },
     "Cory Blaser": {
@@ -404,10 +404,10 @@
       "total": 60,
       "correct": 57,
       "correct_rate": 0.95,
-      "total_called": 7119,
-      "correct_called": 6485,
-      "wrong_strikes": 465,
-      "wrong_balls": 169,
+      "total_called": 7257,
+      "correct_called": 6612,
+      "wrong_strikes": 474,
+      "wrong_balls": 171,
       "accuracy_pct": 91.1
     },
     "Bruce Dreckman": {
@@ -441,13 +441,13 @@
       "accuracy_pct": 90.4
     },
     "Chris Segal": {
-      "total": 102,
-      "correct": 92,
-      "correct_rate": 0.9019607843137255,
-      "total_called": 8505,
-      "correct_called": 7919,
-      "wrong_strikes": 432,
-      "wrong_balls": 154,
+      "total": 104,
+      "correct": 94,
+      "correct_rate": 0.9038461538461539,
+      "total_called": 8652,
+      "correct_called": 8052,
+      "wrong_strikes": 441,
+      "wrong_balls": 159,
       "accuracy_pct": 93.1
     },
     "Gabe Morales": {
@@ -661,14 +661,14 @@
       "accuracy_pct": 92.6
     },
     "Tom Hanahan": {
-      "total": 67,
+      "total": 69,
       "correct": 45,
-      "correct_rate": 0.6716417910447762,
-      "total_called": 7681,
-      "correct_called": 7064,
-      "wrong_strikes": 355,
-      "wrong_balls": 262,
-      "accuracy_pct": 92.0
+      "correct_rate": 0.6521739130434783,
+      "total_called": 7816,
+      "correct_called": 7186,
+      "wrong_strikes": 366,
+      "wrong_balls": 264,
+      "accuracy_pct": 91.9
     },
     "Dan Merzel": {
       "total": 29,
@@ -911,14 +911,14 @@
       "accuracy_pct": 91.8
     },
     "Jacob Metz": {
-      "total": 24,
-      "correct": 24,
-      "total_called": 3739,
-      "correct_called": 3424,
-      "wrong_strikes": 205,
-      "wrong_balls": 110,
+      "total": 25,
+      "correct": 25,
+      "total_called": 3895,
+      "correct_called": 3564,
+      "wrong_strikes": 217,
+      "wrong_balls": 114,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.6
+      "accuracy_pct": 91.5
     },
     "Mike Muchlinski": {
       "total": 40,
