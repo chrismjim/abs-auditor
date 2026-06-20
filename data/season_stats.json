@@ -1,12 +1,12 @@
 {
   "last_updated": "2026-06-20",
-  "total_challenges": 4246,
-  "total_overturned": 1831,
+  "total_challenges": 4253,
+  "total_overturned": 1833,
   "team_stats": {
     "CIN": {
-      "challenges": 239,
+      "challenges": 240,
       "overturned": 135,
-      "missed_calls": 36
+      "missed_calls": 37
     },
     "PIT": {
       "challenges": 286,
@@ -19,7 +19,7 @@
       "missed_calls": 78
     },
     "ATL": {
-      "challenges": 340,
+      "challenges": 342,
       "overturned": 137,
       "missed_calls": 80
     },
@@ -49,14 +49,14 @@
       "missed_calls": 53
     },
     "CHC": {
-      "challenges": 260,
-      "overturned": 106,
-      "missed_calls": 66
+      "challenges": 262,
+      "overturned": 107,
+      "missed_calls": 67
     },
     "NYY": {
-      "challenges": 352,
+      "challenges": 353,
       "overturned": 158,
-      "missed_calls": 77
+      "missed_calls": 78
     },
     "SF": {
       "challenges": 175,
@@ -69,9 +69,9 @@
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 208,
-      "overturned": 82,
-      "missed_calls": 21
+      "challenges": 210,
+      "overturned": 83,
+      "missed_calls": 22
     },
     "STL": {
       "challenges": 328,
@@ -84,8 +84,8 @@
       "missed_calls": 43
     },
     "CWS": {
-      "challenges": 357,
-      "overturned": 201,
+      "challenges": 359,
+      "overturned": 202,
       "missed_calls": 47
     },
     "BOS": {
@@ -134,8 +134,8 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 341,
-      "overturned": 141,
+      "challenges": 343,
+      "overturned": 142,
       "missed_calls": 61
     },
     "KC": {
@@ -149,7 +149,7 @@
       "missed_calls": 10
     },
     "MIL": {
-      "challenges": 247,
+      "challenges": 249,
       "overturned": 128,
       "missed_calls": 33
     }
@@ -236,14 +236,14 @@
       "accuracy_pct": 91.6
     },
     "Laz Diaz": {
-      "total": 75,
+      "total": 76,
       "correct": 59,
-      "correct_rate": 0.7866666666666666,
-      "total_called": 6328,
-      "correct_called": 5693,
-      "wrong_strikes": 418,
-      "wrong_balls": 217,
-      "accuracy_pct": 90.0
+      "correct_rate": 0.7763157894736842,
+      "total_called": 6491,
+      "correct_called": 5835,
+      "wrong_strikes": 433,
+      "wrong_balls": 223,
+      "accuracy_pct": 89.9
     },
     "Chris Conroy": {
       "total": 54,
@@ -431,13 +431,13 @@
       "accuracy_pct": 92.3
     },
     "Malachi Moore": {
-      "total": 43,
-      "correct": 37,
-      "correct_rate": 0.8604651162790697,
-      "total_called": 7231,
-      "correct_called": 6545,
-      "wrong_strikes": 402,
-      "wrong_balls": 284,
+      "total": 45,
+      "correct": 38,
+      "correct_rate": 0.8444444444444444,
+      "total_called": 7426,
+      "correct_called": 6724,
+      "wrong_strikes": 414,
+      "wrong_balls": 288,
       "accuracy_pct": 90.5
     },
     "Chris Segal": {
@@ -511,14 +511,14 @@
       "accuracy_pct": 90.0
     },
     "Ron Kulpa": {
-      "total": 20,
-      "correct": 19,
-      "correct_rate": 0.95,
-      "total_called": 2162,
-      "correct_called": 1966,
-      "wrong_strikes": 134,
-      "wrong_balls": 62,
-      "accuracy_pct": 90.9
+      "total": 22,
+      "correct": 21,
+      "correct_rate": 0.9545454545454546,
+      "total_called": 2299,
+      "correct_called": 2091,
+      "wrong_strikes": 142,
+      "wrong_balls": 66,
+      "accuracy_pct": 91.0
     },
     "Emil Jimenez": {
       "total": 17,
@@ -901,14 +901,14 @@
       "accuracy_pct": 91.7
     },
     "Stu Scheurwater": {
-      "total": 73,
-      "correct": 72,
-      "total_called": 7717,
-      "correct_called": 7088,
-      "wrong_strikes": 379,
-      "wrong_balls": 250,
-      "correct_rate": 0.9863013698630136,
-      "accuracy_pct": 91.8
+      "total": 75,
+      "correct": 74,
+      "total_called": 7867,
+      "correct_called": 7226,
+      "wrong_strikes": 389,
+      "wrong_balls": 252,
+      "correct_rate": 0.9866666666666667,
+      "accuracy_pct": 91.9
     },
     "Jacob Metz": {
       "total": 27,
