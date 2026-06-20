@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-06-19",
-  "total_challenges": 4204,
+  "total_challenges": 4205,
   "total_overturned": 1816,
   "team_stats": {
     "CIN": {
@@ -49,7 +49,7 @@
       "missed_calls": 53
     },
     "CHC": {
-      "challenges": 252,
+      "challenges": 253,
       "overturned": 104,
       "missed_calls": 64
     },
@@ -69,7 +69,7 @@
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 200,
+      "challenges": 201,
       "overturned": 80,
       "missed_calls": 19
     },
@@ -326,13 +326,13 @@
       "accuracy_pct": 91.8
     },
     "Lance Barrett": {
-      "total": 73,
-      "correct": 46,
-      "correct_rate": 0.6301369863013698,
-      "total_called": 7309,
-      "correct_called": 6711,
-      "wrong_strikes": 392,
-      "wrong_balls": 206,
+      "total": 74,
+      "correct": 47,
+      "correct_rate": 0.6351351351351351,
+      "total_called": 7482,
+      "correct_called": 6871,
+      "wrong_strikes": 400,
+      "wrong_balls": 211,
       "accuracy_pct": 91.8
     },
     "Will Little": {
