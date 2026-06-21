@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-06-21",
-  "total_challenges": 4328,
+  "total_challenges": 4329,
   "total_overturned": 1860,
   "team_stats": {
     "CIN": {
@@ -14,7 +14,7 @@
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 380,
+      "challenges": 381,
       "overturned": 168,
       "missed_calls": 78
     },
@@ -99,7 +99,7 @@
       "missed_calls": 68
     },
     "WSH": {
-      "challenges": 289,
+      "challenges": 290,
       "overturned": 142,
       "missed_calls": 54
     },
@@ -484,10 +484,10 @@
       "total": 69,
       "correct": 64,
       "correct_rate": 0.927536231884058,
-      "total_called": 5747,
-      "correct_called": 5196,
-      "wrong_strikes": 345,
-      "wrong_balls": 206,
+      "total_called": 5858,
+      "correct_called": 5298,
+      "wrong_strikes": 353,
+      "wrong_balls": 207,
       "accuracy_pct": 90.4
     },
     "Nestor Ceja": {
@@ -501,14 +501,14 @@
       "accuracy_pct": 94.5
     },
     "Ryan Wills": {
-      "total": 49,
-      "correct": 18,
-      "correct_rate": 0.3673469387755102,
-      "total_called": 6635,
-      "correct_called": 5970,
-      "wrong_strikes": 436,
-      "wrong_balls": 229,
-      "accuracy_pct": 90.0
+      "total": 50,
+      "correct": 19,
+      "correct_rate": 0.38,
+      "total_called": 6778,
+      "correct_called": 6105,
+      "wrong_strikes": 442,
+      "wrong_balls": 231,
+      "accuracy_pct": 90.1
     },
     "Ron Kulpa": {
       "total": 34,
@@ -983,12 +983,12 @@
     "Scott Barry": {
       "total": 24,
       "correct": 24,
-      "total_called": 8861,
-      "correct_called": 8141,
-      "wrong_strikes": 458,
-      "wrong_balls": 262,
+      "total_called": 9003,
+      "correct_called": 8267,
+      "wrong_strikes": 471,
+      "wrong_balls": 265,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.9
+      "accuracy_pct": 91.8
     },
     "Louie Krupa": {
       "total": 39,
