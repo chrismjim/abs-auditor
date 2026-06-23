@@ -1,12 +1,12 @@
 {
   "last_updated": "2026-06-22",
-  "total_challenges": 4419,
-  "total_overturned": 1890,
+  "total_challenges": 4426,
+  "total_overturned": 1891,
   "team_stats": {
     "CIN": {
-      "challenges": 256,
-      "overturned": 145,
-      "missed_calls": 43
+      "challenges": 258,
+      "overturned": 146,
+      "missed_calls": 44
     },
     "PIT": {
       "challenges": 294,
@@ -14,7 +14,7 @@
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 392,
+      "challenges": 393,
       "overturned": 168,
       "missed_calls": 78
     },
@@ -39,7 +39,7 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 223,
+      "challenges": 225,
       "overturned": 73,
       "missed_calls": 16
     },
@@ -54,7 +54,7 @@
       "missed_calls": 73
     },
     "NYY": {
-      "challenges": 370,
+      "challenges": 371,
       "overturned": 168,
       "missed_calls": 84
     },
@@ -69,9 +69,9 @@
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 222,
+      "challenges": 223,
       "overturned": 89,
-      "missed_calls": 28
+      "missed_calls": 29
     },
     "STL": {
       "challenges": 337,
@@ -94,7 +94,7 @@
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 335,
+      "challenges": 337,
       "overturned": 127,
       "missed_calls": 68
     },
@@ -124,9 +124,9 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 236,
+      "challenges": 237,
       "overturned": 119,
-      "missed_calls": 29
+      "missed_calls": 30
     },
     "SD": {
       "challenges": 246,
@@ -134,12 +134,12 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 366,
+      "challenges": 367,
       "overturned": 148,
       "missed_calls": 61
     },
     "KC": {
-      "challenges": 248,
+      "challenges": 249,
       "overturned": 76,
       "missed_calls": 36
     },
@@ -149,9 +149,9 @@
       "missed_calls": 10
     },
     "MIL": {
-      "challenges": 261,
-      "overturned": 128,
-      "missed_calls": 33
+      "challenges": 263,
+      "overturned": 129,
+      "missed_calls": 34
     }
   },
   "umpire_stats": {
@@ -206,14 +206,14 @@
       "accuracy_pct": 93.5
     },
     "Jim Wolf": {
-      "total": 104,
-      "correct": 64,
-      "correct_rate": 0.6153846153846154,
-      "total_called": 5045,
-      "correct_called": 4588,
-      "wrong_strikes": 273,
-      "wrong_balls": 184,
-      "accuracy_pct": 90.9
+      "total": 105,
+      "correct": 65,
+      "correct_rate": 0.6190476190476191,
+      "total_called": 5188,
+      "correct_called": 4713,
+      "wrong_strikes": 287,
+      "wrong_balls": 188,
+      "accuracy_pct": 90.8
     },
     "Nic Lentz": {
       "total": 69,
@@ -346,14 +346,14 @@
       "accuracy_pct": 93.8
     },
     "Cory Blaser": {
-      "total": 24,
-      "correct": 14,
-      "correct_rate": 0.5833333333333334,
-      "total_called": 3379,
-      "correct_called": 3127,
-      "wrong_strikes": 133,
-      "wrong_balls": 119,
-      "accuracy_pct": 92.5
+      "total": 26,
+      "correct": 16,
+      "correct_rate": 0.6153846153846154,
+      "total_called": 3531,
+      "correct_called": 3268,
+      "wrong_strikes": 140,
+      "wrong_balls": 123,
+      "accuracy_pct": 92.6
     },
     "David Rackley": {
       "total": 37,
@@ -451,14 +451,14 @@
       "accuracy_pct": 93.0
     },
     "Gabe Morales": {
-      "total": 25,
-      "correct": 16,
-      "correct_rate": 0.64,
-      "total_called": 7325,
-      "correct_called": 6734,
-      "wrong_strikes": 405,
-      "wrong_balls": 186,
-      "accuracy_pct": 91.9
+      "total": 26,
+      "correct": 17,
+      "correct_rate": 0.6538461538461539,
+      "total_called": 7460,
+      "correct_called": 6862,
+      "wrong_strikes": 409,
+      "wrong_balls": 189,
+      "accuracy_pct": 92.0
     },
     "Ryan Blakney": {
       "total": 34,
@@ -601,13 +601,13 @@
       "accuracy_pct": 93.8
     },
     "Bill Miller": {
-      "total": 75,
+      "total": 76,
       "correct": 55,
-      "correct_rate": 0.7333333333333333,
-      "total_called": 7018,
-      "correct_called": 6468,
-      "wrong_strikes": 355,
-      "wrong_balls": 195,
+      "correct_rate": 0.7236842105263158,
+      "total_called": 7186,
+      "correct_called": 6627,
+      "wrong_strikes": 359,
+      "wrong_balls": 200,
       "accuracy_pct": 92.2
     },
     "Alfonso M\u00e1rquez": {
@@ -1011,14 +1011,14 @@
       "accuracy_pct": 91.2
     },
     "Tyler Jones": {
-      "total": 73,
-      "correct": 68,
-      "total_called": 5355,
-      "correct_called": 4958,
-      "wrong_strikes": 180,
-      "wrong_balls": 217,
-      "correct_rate": 0.9315068493150684,
-      "accuracy_pct": 92.6
+      "total": 75,
+      "correct": 69,
+      "total_called": 5514,
+      "correct_called": 5095,
+      "wrong_strikes": 188,
+      "wrong_balls": 231,
+      "correct_rate": 0.92,
+      "accuracy_pct": 92.4
     },
     "Jonathan Parra": {
       "total": 38,
