@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
-  "total_challenges": 4505,
-  "total_overturned": 1921,
+  "total_challenges": 4508,
+  "total_overturned": 1922,
   "team_stats": {
     "CIN": {
       "challenges": 268,
@@ -39,9 +39,9 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 250,
-      "overturned": 85,
-      "missed_calls": 22
+      "challenges": 252,
+      "overturned": 86,
+      "missed_calls": 23
     },
     "LAD": {
       "challenges": 264,
@@ -89,14 +89,14 @@
       "missed_calls": 47
     },
     "BOS": {
-      "challenges": 294,
+      "challenges": 295,
       "overturned": 103,
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 362,
-      "overturned": 139,
-      "missed_calls": 74
+      "challenges": 364,
+      "overturned": 140,
+      "missed_calls": 75
     },
     "WSH": {
       "challenges": 302,
@@ -144,7 +144,7 @@
       "missed_calls": 36
     },
     "COL": {
-      "challenges": 272,
+      "challenges": 273,
       "overturned": 147,
       "missed_calls": 10
     },
@@ -156,14 +156,14 @@
   },
   "umpire_stats": {
     "Brennan Miller": {
-      "total": 62,
-      "correct": 42,
-      "correct_rate": 0.6774193548387096,
-      "total_called": 7838,
-      "correct_called": 7149,
-      "wrong_strikes": 396,
-      "wrong_balls": 293,
-      "accuracy_pct": 91.2
+      "total": 63,
+      "correct": 43,
+      "correct_rate": 0.6825396825396826,
+      "total_called": 7961,
+      "correct_called": 7253,
+      "wrong_strikes": 411,
+      "wrong_balls": 297,
+      "accuracy_pct": 91.1
     },
     "Nate Tomlinson": {
       "total": 49,
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "James Jean": {
-      "total": 63,
-      "correct": 33,
-      "correct_rate": 0.5238095238095238,
-      "total_called": 9172,
-      "correct_called": 8536,
-      "wrong_strikes": 399,
-      "wrong_balls": 237,
+      "total": 65,
+      "correct": 34,
+      "correct_rate": 0.5230769230769231,
+      "total_called": 9289,
+      "correct_called": 8644,
+      "wrong_strikes": 406,
+      "wrong_balls": 239,
       "accuracy_pct": 93.1
     },
     "Edwin Jimenez": {
@@ -973,9 +973,9 @@
     "Austin Jones": {
       "total": 55,
       "correct": 31,
-      "total_called": 6617,
-      "correct_called": 6131,
-      "wrong_strikes": 375,
+      "total_called": 6786,
+      "correct_called": 6293,
+      "wrong_strikes": 382,
       "wrong_balls": 111,
       "correct_rate": 0.5636363636363636,
       "accuracy_pct": 92.7
