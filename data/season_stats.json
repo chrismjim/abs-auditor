@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
-  "total_challenges": 4496,
-  "total_overturned": 1917,
+  "total_challenges": 4498,
+  "total_overturned": 1918,
   "team_stats": {
     "CIN": {
       "challenges": 268,
@@ -39,9 +39,9 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 242,
-      "overturned": 81,
-      "missed_calls": 18
+      "challenges": 244,
+      "overturned": 82,
+      "missed_calls": 19
     },
     "LAD": {
       "challenges": 264,
@@ -94,9 +94,9 @@
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 354,
-      "overturned": 135,
-      "missed_calls": 70
+      "challenges": 356,
+      "overturned": 136,
+      "missed_calls": 71
     },
     "WSH": {
       "challenges": 302,
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "James Jean": {
-      "total": 55,
-      "correct": 29,
-      "correct_rate": 0.5272727272727272,
-      "total_called": 8704,
-      "correct_called": 8104,
-      "wrong_strikes": 371,
-      "wrong_balls": 229,
+      "total": 57,
+      "correct": 30,
+      "correct_rate": 0.5263157894736842,
+      "total_called": 8821,
+      "correct_called": 8212,
+      "wrong_strikes": 378,
+      "wrong_balls": 231,
       "accuracy_pct": 93.1
     },
     "Edwin Jimenez": {
@@ -973,12 +973,12 @@
     "Austin Jones": {
       "total": 55,
       "correct": 31,
-      "total_called": 5941,
-      "correct_called": 5483,
-      "wrong_strikes": 347,
+      "total_called": 6110,
+      "correct_called": 5645,
+      "wrong_strikes": 354,
       "wrong_balls": 111,
       "correct_rate": 0.5636363636363636,
-      "accuracy_pct": 92.3
+      "accuracy_pct": 92.4
     },
     "Scott Barry": {
       "total": 24,
