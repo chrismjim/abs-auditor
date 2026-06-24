@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-23",
-  "total_challenges": 4492,
-  "total_overturned": 1915,
+  "last_updated": "2026-06-24",
+  "total_challenges": 4494,
+  "total_overturned": 1916,
   "team_stats": {
     "CIN": {
       "challenges": 268,
@@ -39,9 +39,9 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 238,
-      "overturned": 79,
-      "missed_calls": 16
+      "challenges": 240,
+      "overturned": 80,
+      "missed_calls": 17
     },
     "LAD": {
       "challenges": 264,
@@ -94,9 +94,9 @@
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 350,
-      "overturned": 133,
-      "missed_calls": 68
+      "challenges": 352,
+      "overturned": 134,
+      "missed_calls": 69
     },
     "WSH": {
       "challenges": 302,
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "James Jean": {
-      "total": 51,
-      "correct": 27,
-      "correct_rate": 0.5294117647058824,
-      "total_called": 8470,
-      "correct_called": 7888,
-      "wrong_strikes": 357,
-      "wrong_balls": 225,
+      "total": 53,
+      "correct": 28,
+      "correct_rate": 0.5283018867924528,
+      "total_called": 8587,
+      "correct_called": 7996,
+      "wrong_strikes": 364,
+      "wrong_balls": 227,
       "accuracy_pct": 93.1
     },
     "Edwin Jimenez": {
