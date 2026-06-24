@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-22",
-  "total_challenges": 4450,
+  "last_updated": "2026-06-23",
+  "total_challenges": 4451,
   "total_overturned": 1898,
   "team_stats": {
     "CIN": {
@@ -69,7 +69,7 @@
       "missed_calls": 80
     },
     "TOR": {
-      "challenges": 225,
+      "challenges": 226,
       "overturned": 89,
       "missed_calls": 31
     },
@@ -124,7 +124,7 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 239,
+      "challenges": 240,
       "overturned": 119,
       "missed_calls": 32
     },
@@ -961,14 +961,14 @@
       "accuracy_pct": 92.2
     },
     "Brian Walsh": {
-      "total": 17,
-      "correct": 16,
-      "total_called": 5378,
-      "correct_called": 4984,
-      "wrong_strikes": 260,
-      "wrong_balls": 134,
-      "correct_rate": 0.9411764705882353,
-      "accuracy_pct": 92.7
+      "total": 18,
+      "correct": 17,
+      "total_called": 5577,
+      "correct_called": 5158,
+      "wrong_strikes": 278,
+      "wrong_balls": 141,
+      "correct_rate": 0.9444444444444444,
+      "accuracy_pct": 92.5
     },
     "Austin Jones": {
       "total": 55,
