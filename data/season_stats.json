@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-24",
-  "total_challenges": 4513,
-  "total_overturned": 1925,
+  "total_challenges": 4518,
+  "total_overturned": 1928,
   "team_stats": {
     "CIN": {
       "challenges": 268,
@@ -39,9 +39,9 @@
       "missed_calls": 62
     },
     "TEX": {
-      "challenges": 254,
-      "overturned": 87,
-      "missed_calls": 24
+      "challenges": 256,
+      "overturned": 88,
+      "missed_calls": 25
     },
     "LAD": {
       "challenges": 264,
@@ -64,8 +64,8 @@
       "missed_calls": 35
     },
     "BAL": {
-      "challenges": 394,
-      "overturned": 172,
+      "challenges": 396,
+      "overturned": 174,
       "missed_calls": 81
     },
     "TOR": {
@@ -89,14 +89,14 @@
       "missed_calls": 47
     },
     "BOS": {
-      "challenges": 296,
+      "challenges": 297,
       "overturned": 103,
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 366,
-      "overturned": 141,
-      "missed_calls": 76
+      "challenges": 368,
+      "overturned": 142,
+      "missed_calls": 77
     },
     "WSH": {
       "challenges": 302,
@@ -109,8 +109,8 @@
       "missed_calls": 56
     },
     "LAA": {
-      "challenges": 226,
-      "overturned": 83,
+      "challenges": 228,
+      "overturned": 85,
       "missed_calls": 48
     },
     "MIN": {
@@ -144,7 +144,7 @@
       "missed_calls": 36
     },
     "COL": {
-      "challenges": 274,
+      "challenges": 275,
       "overturned": 147,
       "missed_calls": 10
     },
@@ -156,14 +156,14 @@
   },
   "umpire_stats": {
     "Brennan Miller": {
-      "total": 64,
-      "correct": 44,
-      "correct_rate": 0.6875,
-      "total_called": 8084,
-      "correct_called": 7357,
-      "wrong_strikes": 426,
-      "wrong_balls": 301,
-      "accuracy_pct": 91.0
+      "total": 65,
+      "correct": 45,
+      "correct_rate": 0.6923076923076923,
+      "total_called": 8207,
+      "correct_called": 7461,
+      "wrong_strikes": 441,
+      "wrong_balls": 305,
+      "accuracy_pct": 90.9
     },
     "Nate Tomlinson": {
       "total": 49,
@@ -266,14 +266,14 @@
       "accuracy_pct": 91.6
     },
     "James Hoye": {
-      "total": 57,
-      "correct": 39,
-      "correct_rate": 0.6842105263157895,
-      "total_called": 4101,
-      "correct_called": 3700,
-      "wrong_strikes": 198,
-      "wrong_balls": 203,
-      "accuracy_pct": 90.2
+      "total": 59,
+      "correct": 41,
+      "correct_rate": 0.6949152542372882,
+      "total_called": 4284,
+      "correct_called": 3871,
+      "wrong_strikes": 204,
+      "wrong_balls": 209,
+      "accuracy_pct": 90.4
     },
     "Lance Barksdale": {
       "total": 59,
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "James Jean": {
-      "total": 67,
-      "correct": 35,
-      "correct_rate": 0.5223880597014925,
-      "total_called": 9406,
-      "correct_called": 8752,
-      "wrong_strikes": 413,
-      "wrong_balls": 241,
+      "total": 69,
+      "correct": 36,
+      "correct_rate": 0.5217391304347826,
+      "total_called": 9523,
+      "correct_called": 8860,
+      "wrong_strikes": 420,
+      "wrong_balls": 243,
       "accuracy_pct": 93.0
     },
     "Edwin Jimenez": {
@@ -973,12 +973,12 @@
     "Austin Jones": {
       "total": 55,
       "correct": 31,
-      "total_called": 6955,
-      "correct_called": 6455,
-      "wrong_strikes": 389,
+      "total_called": 7124,
+      "correct_called": 6617,
+      "wrong_strikes": 396,
       "wrong_balls": 111,
       "correct_rate": 0.5636363636363636,
-      "accuracy_pct": 92.8
+      "accuracy_pct": 92.9
     },
     "Scott Barry": {
       "total": 24,
