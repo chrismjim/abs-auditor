@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-25",
-  "total_challenges": 4600,
-  "total_overturned": 1966,
+  "total_challenges": 4606,
+  "total_overturned": 1969,
   "team_stats": {
     "CIN": {
       "challenges": 272,
@@ -9,13 +9,13 @@
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 311,
+      "challenges": 312,
       "overturned": 92,
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 422,
-      "overturned": 180,
+      "challenges": 425,
+      "overturned": 181,
       "missed_calls": 81
     },
     "ATL": {
@@ -24,8 +24,8 @@
       "missed_calls": 80
     },
     "ATH": {
-      "challenges": 238,
-      "overturned": 121,
+      "challenges": 240,
+      "overturned": 123,
       "missed_calls": 25
     },
     "NYM": {
@@ -34,7 +34,7 @@
       "missed_calls": 62
     },
     "SEA": {
-      "challenges": 343,
+      "challenges": 344,
       "overturned": 138,
       "missed_calls": 62
     },
@@ -59,8 +59,8 @@
       "missed_calls": 84
     },
     "SF": {
-      "challenges": 189,
-      "overturned": 71,
+      "challenges": 191,
+      "overturned": 73,
       "missed_calls": 35
     },
     "BAL": {
@@ -139,8 +139,8 @@
       "missed_calls": 61
     },
     "KC": {
-      "challenges": 278,
-      "overturned": 88,
+      "challenges": 281,
+      "overturned": 89,
       "missed_calls": 39
     },
     "COL": {
@@ -521,12 +521,12 @@
       "accuracy_pct": 91.0
     },
     "Emil Jimenez": {
-      "total": 35,
-      "correct": 35,
+      "total": 38,
+      "correct": 38,
       "correct_rate": 1.0,
-      "total_called": 4863,
-      "correct_called": 4488,
-      "wrong_strikes": 282,
+      "total_called": 5007,
+      "correct_called": 4623,
+      "wrong_strikes": 291,
       "wrong_balls": 93,
       "accuracy_pct": 92.3
     },
@@ -701,13 +701,13 @@
       "accuracy_pct": 92.8
     },
     "Edwin Moscoso": {
-      "total": 62,
-      "correct": 52,
-      "correct_rate": 0.8387096774193549,
-      "total_called": 7782,
-      "correct_called": 7377,
-      "wrong_strikes": 248,
-      "wrong_balls": 157,
+      "total": 63,
+      "correct": 53,
+      "correct_rate": 0.8412698412698413,
+      "total_called": 7908,
+      "correct_called": 7498,
+      "wrong_strikes": 251,
+      "wrong_balls": 159,
       "accuracy_pct": 94.8
     },
     "Charlie Ramos": {
@@ -761,13 +761,13 @@
       "accuracy_pct": 93.1
     },
     "Paul Clemons": {
-      "total": 47,
-      "correct": 42,
-      "correct_rate": 0.8936170212765957,
-      "total_called": 6826,
-      "correct_called": 6317,
-      "wrong_strikes": 334,
-      "wrong_balls": 175,
+      "total": 49,
+      "correct": 44,
+      "correct_rate": 0.8979591836734694,
+      "total_called": 6994,
+      "correct_called": 6467,
+      "wrong_strikes": 344,
+      "wrong_balls": 183,
       "accuracy_pct": 92.5
     },
     "James Jean": {
