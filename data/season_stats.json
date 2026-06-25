@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-25",
-  "total_challenges": 4596,
-  "total_overturned": 1965,
+  "total_challenges": 4600,
+  "total_overturned": 1966,
   "team_stats": {
     "CIN": {
       "challenges": 272,
@@ -9,13 +9,13 @@
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 310,
+      "challenges": 311,
       "overturned": 92,
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 419,
-      "overturned": 179,
+      "challenges": 422,
+      "overturned": 180,
       "missed_calls": 81
     },
     "ATL": {
@@ -34,7 +34,7 @@
       "missed_calls": 62
     },
     "SEA": {
-      "challenges": 342,
+      "challenges": 343,
       "overturned": 138,
       "missed_calls": 62
     },
@@ -139,8 +139,8 @@
       "missed_calls": 61
     },
     "KC": {
-      "challenges": 275,
-      "overturned": 87,
+      "challenges": 278,
+      "overturned": 88,
       "missed_calls": 39
     },
     "COL": {
@@ -521,14 +521,14 @@
       "accuracy_pct": 91.0
     },
     "Emil Jimenez": {
-      "total": 32,
-      "correct": 32,
+      "total": 35,
+      "correct": 35,
       "correct_rate": 1.0,
-      "total_called": 4719,
-      "correct_called": 4353,
-      "wrong_strikes": 273,
+      "total_called": 4863,
+      "correct_called": 4488,
+      "wrong_strikes": 282,
       "wrong_balls": 93,
-      "accuracy_pct": 92.2
+      "accuracy_pct": 92.3
     },
     "Erich Bacchus": {
       "total": 18,
@@ -701,13 +701,13 @@
       "accuracy_pct": 92.8
     },
     "Edwin Moscoso": {
-      "total": 61,
-      "correct": 51,
-      "correct_rate": 0.8360655737704918,
-      "total_called": 7656,
-      "correct_called": 7256,
-      "wrong_strikes": 245,
-      "wrong_balls": 155,
+      "total": 62,
+      "correct": 52,
+      "correct_rate": 0.8387096774193549,
+      "total_called": 7782,
+      "correct_called": 7377,
+      "wrong_strikes": 248,
+      "wrong_balls": 157,
       "accuracy_pct": 94.8
     },
     "Charlie Ramos": {
