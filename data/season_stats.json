@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-25",
-  "total_challenges": 4588,
-  "total_overturned": 1963,
+  "total_challenges": 4592,
+  "total_overturned": 1964,
   "team_stats": {
     "CIN": {
       "challenges": 272,
@@ -9,13 +9,13 @@
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 308,
+      "challenges": 309,
       "overturned": 92,
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 413,
-      "overturned": 177,
+      "challenges": 416,
+      "overturned": 178,
       "missed_calls": 81
     },
     "ATL": {
@@ -34,7 +34,7 @@
       "missed_calls": 62
     },
     "SEA": {
-      "challenges": 340,
+      "challenges": 341,
       "overturned": 138,
       "missed_calls": 62
     },
@@ -139,8 +139,8 @@
       "missed_calls": 61
     },
     "KC": {
-      "challenges": 269,
-      "overturned": 85,
+      "challenges": 272,
+      "overturned": 86,
       "missed_calls": 39
     },
     "COL": {
@@ -521,14 +521,14 @@
       "accuracy_pct": 91.0
     },
     "Emil Jimenez": {
-      "total": 26,
-      "correct": 26,
+      "total": 29,
+      "correct": 29,
       "correct_rate": 1.0,
-      "total_called": 4431,
-      "correct_called": 4083,
-      "wrong_strikes": 255,
+      "total_called": 4575,
+      "correct_called": 4218,
+      "wrong_strikes": 264,
       "wrong_balls": 93,
-      "accuracy_pct": 92.1
+      "accuracy_pct": 92.2
     },
     "Erich Bacchus": {
       "total": 18,
@@ -701,14 +701,14 @@
       "accuracy_pct": 92.8
     },
     "Edwin Moscoso": {
-      "total": 59,
-      "correct": 49,
-      "correct_rate": 0.8305084745762712,
-      "total_called": 7404,
-      "correct_called": 7014,
-      "wrong_strikes": 239,
-      "wrong_balls": 151,
-      "accuracy_pct": 94.7
+      "total": 60,
+      "correct": 50,
+      "correct_rate": 0.8333333333333334,
+      "total_called": 7530,
+      "correct_called": 7135,
+      "wrong_strikes": 242,
+      "wrong_balls": 153,
+      "accuracy_pct": 94.8
     },
     "Charlie Ramos": {
       "total": 44,
