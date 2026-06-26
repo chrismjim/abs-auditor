@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-06-25",
-  "total_challenges": 4612,
-  "total_overturned": 1972,
+  "total_challenges": 4620,
+  "total_overturned": 1975,
   "team_stats": {
     "CIN": {
       "challenges": 272,
@@ -9,13 +9,13 @@
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 313,
+      "challenges": 314,
       "overturned": 92,
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 428,
-      "overturned": 182,
+      "challenges": 431,
+      "overturned": 183,
       "missed_calls": 81
     },
     "ATL": {
@@ -24,8 +24,8 @@
       "missed_calls": 80
     },
     "ATH": {
-      "challenges": 242,
-      "overturned": 125,
+      "challenges": 244,
+      "overturned": 127,
       "missed_calls": 25
     },
     "NYM": {
@@ -34,7 +34,7 @@
       "missed_calls": 62
     },
     "SEA": {
-      "challenges": 345,
+      "challenges": 346,
       "overturned": 138,
       "missed_calls": 62
     },
@@ -59,8 +59,8 @@
       "missed_calls": 84
     },
     "SF": {
-      "challenges": 193,
-      "overturned": 75,
+      "challenges": 195,
+      "overturned": 77,
       "missed_calls": 35
     },
     "BAL": {
@@ -124,9 +124,9 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 249,
+      "challenges": 251,
       "overturned": 122,
-      "missed_calls": 32
+      "missed_calls": 33
     },
     "SD": {
       "challenges": 248,
@@ -134,13 +134,13 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 375,
+      "challenges": 377,
       "overturned": 151,
-      "missed_calls": 61
+      "missed_calls": 62
     },
     "KC": {
-      "challenges": 284,
-      "overturned": 90,
+      "challenges": 287,
+      "overturned": 91,
       "missed_calls": 39
     },
     "COL": {
@@ -501,14 +501,14 @@
       "accuracy_pct": 94.5
     },
     "Ryan Wills": {
-      "total": 60,
-      "correct": 29,
-      "correct_rate": 0.48333333333333334,
-      "total_called": 8208,
-      "correct_called": 7455,
-      "wrong_strikes": 502,
-      "wrong_balls": 251,
-      "accuracy_pct": 90.8
+      "total": 62,
+      "correct": 30,
+      "correct_rate": 0.4838709677419355,
+      "total_called": 8332,
+      "correct_called": 7574,
+      "wrong_strikes": 506,
+      "wrong_balls": 252,
+      "accuracy_pct": 90.9
     },
     "Ron Kulpa": {
       "total": 34,
@@ -521,12 +521,12 @@
       "accuracy_pct": 91.0
     },
     "Emil Jimenez": {
-      "total": 41,
-      "correct": 41,
+      "total": 44,
+      "correct": 44,
       "correct_rate": 1.0,
-      "total_called": 5151,
-      "correct_called": 4758,
-      "wrong_strikes": 300,
+      "total_called": 5295,
+      "correct_called": 4893,
+      "wrong_strikes": 309,
       "wrong_balls": 93,
       "accuracy_pct": 92.4
     },
@@ -701,14 +701,14 @@
       "accuracy_pct": 92.8
     },
     "Edwin Moscoso": {
-      "total": 64,
-      "correct": 54,
-      "correct_rate": 0.84375,
-      "total_called": 8034,
-      "correct_called": 7619,
-      "wrong_strikes": 254,
-      "wrong_balls": 161,
-      "accuracy_pct": 94.8
+      "total": 65,
+      "correct": 55,
+      "correct_rate": 0.8461538461538461,
+      "total_called": 8160,
+      "correct_called": 7740,
+      "wrong_strikes": 257,
+      "wrong_balls": 163,
+      "accuracy_pct": 94.9
     },
     "Charlie Ramos": {
       "total": 44,
@@ -761,14 +761,14 @@
       "accuracy_pct": 93.1
     },
     "Paul Clemons": {
-      "total": 51,
-      "correct": 46,
-      "correct_rate": 0.9019607843137255,
-      "total_called": 7162,
-      "correct_called": 6617,
-      "wrong_strikes": 354,
-      "wrong_balls": 191,
-      "accuracy_pct": 92.4
+      "total": 53,
+      "correct": 48,
+      "correct_rate": 0.9056603773584906,
+      "total_called": 7330,
+      "correct_called": 6767,
+      "wrong_strikes": 364,
+      "wrong_balls": 199,
+      "accuracy_pct": 92.3
     },
     "James Jean": {
       "total": 77,
