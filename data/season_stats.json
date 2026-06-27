@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-06-27",
-  "total_challenges": 4685,
+  "total_challenges": 4687,
   "total_overturned": 2004,
   "team_stats": {
     "CIN": {
@@ -54,7 +54,7 @@
       "missed_calls": 73
     },
     "NYY": {
-      "challenges": 382,
+      "challenges": 383,
       "overturned": 171,
       "missed_calls": 84
     },
@@ -89,7 +89,7 @@
       "missed_calls": 47
     },
     "BOS": {
-      "challenges": 304,
+      "challenges": 305,
       "overturned": 103,
       "missed_calls": 38
     },
@@ -124,7 +124,7 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 259,
+      "challenges": 260,
       "overturned": 122,
       "missed_calls": 36
     },
@@ -134,7 +134,7 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 385,
+      "challenges": 386,
       "overturned": 151,
       "missed_calls": 65
     },
@@ -336,14 +336,14 @@
       "accuracy_pct": 91.9
     },
     "Will Little": {
-      "total": 64,
-      "correct": 56,
-      "correct_rate": 0.875,
-      "total_called": 5728,
-      "correct_called": 5381,
-      "wrong_strikes": 194,
-      "wrong_balls": 153,
-      "accuracy_pct": 93.9
+      "total": 65,
+      "correct": 57,
+      "correct_rate": 0.8769230769230769,
+      "total_called": 5857,
+      "correct_called": 5505,
+      "wrong_strikes": 195,
+      "wrong_balls": 157,
+      "accuracy_pct": 94.0
     },
     "Cory Blaser": {
       "total": 30,
@@ -951,13 +951,13 @@
       "accuracy_pct": 93.4
     },
     "Clint Vondrak": {
-      "total": 44,
-      "correct": 35,
-      "total_called": 5975,
-      "correct_called": 5490,
-      "wrong_strikes": 294,
-      "wrong_balls": 191,
-      "correct_rate": 0.7954545454545454,
+      "total": 45,
+      "correct": 36,
+      "total_called": 6093,
+      "correct_called": 5597,
+      "wrong_strikes": 300,
+      "wrong_balls": 196,
+      "correct_rate": 0.8,
       "accuracy_pct": 91.9
     },
     "Brian Walsh": {
