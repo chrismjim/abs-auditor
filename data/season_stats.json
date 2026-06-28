@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-27",
-  "total_challenges": 4724,
-  "total_overturned": 2023,
+  "last_updated": "2026-06-28",
+  "total_challenges": 4727,
+  "total_overturned": 2025,
   "team_stats": {
     "CIN": {
       "challenges": 285,
@@ -14,8 +14,8 @@
       "missed_calls": 52
     },
     "TB": {
-      "challenges": 443,
-      "overturned": 186,
+      "challenges": 444,
+      "overturned": 187,
       "missed_calls": 81
     },
     "ATL": {
@@ -74,9 +74,9 @@
       "missed_calls": 31
     },
     "STL": {
-      "challenges": 344,
+      "challenges": 345,
       "overturned": 182,
-      "missed_calls": 64
+      "missed_calls": 65
     },
     "PHI": {
       "challenges": 279,
@@ -94,9 +94,9 @@
       "missed_calls": 38
     },
     "MIA": {
-      "challenges": 383,
+      "challenges": 384,
       "overturned": 151,
-      "missed_calls": 81
+      "missed_calls": 82
     },
     "WSH": {
       "challenges": 307,
@@ -104,8 +104,8 @@
       "missed_calls": 56
     },
     "AZ": {
-      "challenges": 207,
-      "overturned": 90,
+      "challenges": 208,
+      "overturned": 91,
       "missed_calls": 56
     },
     "LAA": {
@@ -114,8 +114,8 @@
       "missed_calls": 48
     },
     "MIN": {
-      "challenges": 386,
-      "overturned": 179,
+      "challenges": 387,
+      "overturned": 180,
       "missed_calls": 57
     },
     "CLE": {
@@ -144,8 +144,8 @@
       "missed_calls": 39
     },
     "COL": {
-      "challenges": 287,
-      "overturned": 149,
+      "challenges": 288,
+      "overturned": 150,
       "missed_calls": 12
     },
     "MIL": {
@@ -671,14 +671,14 @@
       "accuracy_pct": 91.9
     },
     "Dan Merzel": {
-      "total": 31,
-      "correct": 29,
-      "correct_rate": 0.9354838709677419,
-      "total_called": 5938,
-      "correct_called": 5536,
-      "wrong_strikes": 219,
+      "total": 32,
+      "correct": 30,
+      "correct_rate": 0.9375,
+      "total_called": 6044,
+      "correct_called": 5639,
+      "wrong_strikes": 222,
       "wrong_balls": 183,
-      "accuracy_pct": 93.2
+      "accuracy_pct": 93.3
     },
     "Jeremie Rehak": {
       "total": 53,
@@ -844,10 +844,10 @@
       "total": 60,
       "correct": 51,
       "correct_rate": 0.85,
-      "total_called": 6487,
-      "correct_called": 5986,
-      "wrong_strikes": 241,
-      "wrong_balls": 260,
+      "total_called": 6636,
+      "correct_called": 6122,
+      "wrong_strikes": 252,
+      "wrong_balls": 262,
       "accuracy_pct": 92.3
     },
     "Steven Jaschinski": {
@@ -901,14 +901,14 @@
       "accuracy_pct": 91.9
     },
     "Stu Scheurwater": {
-      "total": 89,
+      "total": 90,
       "correct": 88,
-      "total_called": 9099,
-      "correct_called": 8356,
-      "wrong_strikes": 469,
-      "wrong_balls": 274,
-      "correct_rate": 0.9887640449438202,
-      "accuracy_pct": 91.8
+      "total_called": 9230,
+      "correct_called": 8481,
+      "wrong_strikes": 473,
+      "wrong_balls": 276,
+      "correct_rate": 0.9777777777777777,
+      "accuracy_pct": 91.9
     },
     "Jacob Metz": {
       "total": 27,
@@ -943,10 +943,10 @@
     "Jansen Visconti": {
       "total": 34,
       "correct": 31,
-      "total_called": 5275,
-      "correct_called": 4929,
-      "wrong_strikes": 193,
-      "wrong_balls": 153,
+      "total_called": 5438,
+      "correct_called": 5080,
+      "wrong_strikes": 199,
+      "wrong_balls": 159,
       "correct_rate": 0.9117647058823529,
       "accuracy_pct": 93.4
     },
@@ -961,14 +961,14 @@
       "accuracy_pct": 91.7
     },
     "Brian Walsh": {
-      "total": 21,
-      "correct": 20,
-      "total_called": 6174,
-      "correct_called": 5680,
-      "wrong_strikes": 332,
+      "total": 22,
+      "correct": 21,
+      "total_called": 6298,
+      "correct_called": 5800,
+      "wrong_strikes": 336,
       "wrong_balls": 162,
-      "correct_rate": 0.9523809523809523,
-      "accuracy_pct": 92.0
+      "correct_rate": 0.9545454545454546,
+      "accuracy_pct": 92.1
     },
     "Austin Jones": {
       "total": 58,
