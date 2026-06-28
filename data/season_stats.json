@@ -1,16 +1,16 @@
 {
   "last_updated": "2026-06-27",
-  "total_challenges": 4693,
-  "total_overturned": 2004,
+  "total_challenges": 4697,
+  "total_overturned": 2006,
   "team_stats": {
     "CIN": {
-      "challenges": 275,
-      "overturned": 151,
+      "challenges": 277,
+      "overturned": 153,
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 320,
-      "overturned": 95,
+      "challenges": 322,
+      "overturned": 97,
       "missed_calls": 52
     },
     "TB": {
@@ -54,7 +54,7 @@
       "missed_calls": 73
     },
     "NYY": {
-      "challenges": 386,
+      "challenges": 387,
       "overturned": 171,
       "missed_calls": 84
     },
@@ -89,7 +89,7 @@
       "missed_calls": 47
     },
     "BOS": {
-      "challenges": 308,
+      "challenges": 309,
       "overturned": 103,
       "missed_calls": 38
     },
@@ -124,7 +124,7 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 263,
+      "challenges": 264,
       "overturned": 122,
       "missed_calls": 36
     },
@@ -134,7 +134,7 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 389,
+      "challenges": 390,
       "overturned": 151,
       "missed_calls": 65
     },
@@ -186,14 +186,14 @@
       "accuracy_pct": 90.3
     },
     "Dan Iassogna": {
-      "total": 82,
-      "correct": 60,
-      "correct_rate": 0.7317073170731707,
-      "total_called": 5517,
-      "correct_called": 5094,
-      "wrong_strikes": 244,
-      "wrong_balls": 179,
-      "accuracy_pct": 92.3
+      "total": 84,
+      "correct": 62,
+      "correct_rate": 0.7380952380952381,
+      "total_called": 5680,
+      "correct_called": 5250,
+      "wrong_strikes": 247,
+      "wrong_balls": 183,
+      "accuracy_pct": 92.4
     },
     "Willie Traynor": {
       "total": 73,
@@ -309,11 +309,11 @@
       "total": 88,
       "correct": 58,
       "correct_rate": 0.6590909090909091,
-      "total_called": 8879,
-      "correct_called": 8173,
-      "wrong_strikes": 547,
-      "wrong_balls": 159,
-      "accuracy_pct": 92.0
+      "total_called": 9030,
+      "correct_called": 8316,
+      "wrong_strikes": 553,
+      "wrong_balls": 161,
+      "accuracy_pct": 92.1
     },
     "John Tumpane": {
       "total": 24,
@@ -336,14 +336,14 @@
       "accuracy_pct": 91.9
     },
     "Will Little": {
-      "total": 68,
-      "correct": 60,
-      "correct_rate": 0.8823529411764706,
-      "total_called": 6244,
-      "correct_called": 5877,
-      "wrong_strikes": 198,
-      "wrong_balls": 169,
-      "accuracy_pct": 94.1
+      "total": 69,
+      "correct": 61,
+      "correct_rate": 0.8840579710144928,
+      "total_called": 6373,
+      "correct_called": 6001,
+      "wrong_strikes": 199,
+      "wrong_balls": 173,
+      "accuracy_pct": 94.2
     },
     "Cory Blaser": {
       "total": 30,
@@ -804,10 +804,10 @@
       "total": 75,
       "correct": 74,
       "correct_rate": 0.9866666666666667,
-      "total_called": 7241,
-      "correct_called": 6763,
-      "wrong_strikes": 315,
-      "wrong_balls": 163,
+      "total_called": 7403,
+      "correct_called": 6913,
+      "wrong_strikes": 324,
+      "wrong_balls": 166,
       "accuracy_pct": 93.4
     },
     "Adam Hamari": {
@@ -884,11 +884,11 @@
       "total": 30,
       "correct": 21,
       "correct_rate": 0.7,
-      "total_called": 5686,
-      "correct_called": 5212,
-      "wrong_strikes": 244,
-      "wrong_balls": 230,
-      "accuracy_pct": 91.7
+      "total_called": 5827,
+      "correct_called": 5339,
+      "wrong_strikes": 253,
+      "wrong_balls": 235,
+      "accuracy_pct": 91.6
     },
     "Roberto Ortiz": {
       "total": 68,
@@ -951,13 +951,13 @@
       "accuracy_pct": 93.4
     },
     "Clint Vondrak": {
-      "total": 48,
-      "correct": 39,
-      "total_called": 6447,
-      "correct_called": 5918,
-      "wrong_strikes": 318,
-      "wrong_balls": 211,
-      "correct_rate": 0.8125,
+      "total": 49,
+      "correct": 40,
+      "total_called": 6565,
+      "correct_called": 6025,
+      "wrong_strikes": 324,
+      "wrong_balls": 216,
+      "correct_rate": 0.8163265306122449,
       "accuracy_pct": 91.8
     },
     "Brian Walsh": {
