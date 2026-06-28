@@ -1,16 +1,16 @@
 {
   "last_updated": "2026-06-27",
-  "total_challenges": 4697,
-  "total_overturned": 2006,
+  "total_challenges": 4701,
+  "total_overturned": 2008,
   "team_stats": {
     "CIN": {
-      "challenges": 277,
-      "overturned": 153,
+      "challenges": 279,
+      "overturned": 155,
       "missed_calls": 46
     },
     "PIT": {
-      "challenges": 322,
-      "overturned": 97,
+      "challenges": 324,
+      "overturned": 99,
       "missed_calls": 52
     },
     "TB": {
@@ -54,7 +54,7 @@
       "missed_calls": 73
     },
     "NYY": {
-      "challenges": 387,
+      "challenges": 388,
       "overturned": 171,
       "missed_calls": 84
     },
@@ -89,7 +89,7 @@
       "missed_calls": 47
     },
     "BOS": {
-      "challenges": 309,
+      "challenges": 310,
       "overturned": 103,
       "missed_calls": 38
     },
@@ -124,7 +124,7 @@
       "missed_calls": 102
     },
     "HOU": {
-      "challenges": 264,
+      "challenges": 265,
       "overturned": 122,
       "missed_calls": 36
     },
@@ -134,7 +134,7 @@
       "missed_calls": 22
     },
     "DET": {
-      "challenges": 390,
+      "challenges": 391,
       "overturned": 151,
       "missed_calls": 65
     },
@@ -186,14 +186,14 @@
       "accuracy_pct": 90.3
     },
     "Dan Iassogna": {
-      "total": 84,
-      "correct": 62,
-      "correct_rate": 0.7380952380952381,
-      "total_called": 5680,
-      "correct_called": 5250,
-      "wrong_strikes": 247,
-      "wrong_balls": 183,
-      "accuracy_pct": 92.4
+      "total": 86,
+      "correct": 64,
+      "correct_rate": 0.7441860465116279,
+      "total_called": 5843,
+      "correct_called": 5406,
+      "wrong_strikes": 250,
+      "wrong_balls": 187,
+      "accuracy_pct": 92.5
     },
     "Willie Traynor": {
       "total": 73,
@@ -309,10 +309,10 @@
       "total": 88,
       "correct": 58,
       "correct_rate": 0.6590909090909091,
-      "total_called": 9030,
-      "correct_called": 8316,
-      "wrong_strikes": 553,
-      "wrong_balls": 161,
+      "total_called": 9181,
+      "correct_called": 8459,
+      "wrong_strikes": 559,
+      "wrong_balls": 163,
       "accuracy_pct": 92.1
     },
     "John Tumpane": {
@@ -336,13 +336,13 @@
       "accuracy_pct": 91.9
     },
     "Will Little": {
-      "total": 69,
-      "correct": 61,
-      "correct_rate": 0.8840579710144928,
-      "total_called": 6373,
-      "correct_called": 6001,
-      "wrong_strikes": 199,
-      "wrong_balls": 173,
+      "total": 70,
+      "correct": 62,
+      "correct_rate": 0.8857142857142857,
+      "total_called": 6502,
+      "correct_called": 6125,
+      "wrong_strikes": 200,
+      "wrong_balls": 177,
       "accuracy_pct": 94.2
     },
     "Cory Blaser": {
@@ -604,10 +604,10 @@
       "total": 78,
       "correct": 55,
       "correct_rate": 0.7051282051282052,
-      "total_called": 7522,
-      "correct_called": 6945,
-      "wrong_strikes": 367,
-      "wrong_balls": 210,
+      "total_called": 7658,
+      "correct_called": 7072,
+      "wrong_strikes": 374,
+      "wrong_balls": 212,
       "accuracy_pct": 92.3
     },
     "Alfonso M\u00e1rquez": {
@@ -804,10 +804,10 @@
       "total": 75,
       "correct": 74,
       "correct_rate": 0.9866666666666667,
-      "total_called": 7403,
-      "correct_called": 6913,
-      "wrong_strikes": 324,
-      "wrong_balls": 166,
+      "total_called": 7565,
+      "correct_called": 7063,
+      "wrong_strikes": 333,
+      "wrong_balls": 169,
       "accuracy_pct": 93.4
     },
     "Adam Hamari": {
@@ -884,10 +884,10 @@
       "total": 30,
       "correct": 21,
       "correct_rate": 0.7,
-      "total_called": 5827,
-      "correct_called": 5339,
-      "wrong_strikes": 253,
-      "wrong_balls": 235,
+      "total_called": 5968,
+      "correct_called": 5466,
+      "wrong_strikes": 262,
+      "wrong_balls": 240,
       "accuracy_pct": 91.6
     },
     "Roberto Ortiz": {
@@ -951,13 +951,13 @@
       "accuracy_pct": 93.4
     },
     "Clint Vondrak": {
-      "total": 49,
-      "correct": 40,
-      "total_called": 6565,
-      "correct_called": 6025,
-      "wrong_strikes": 324,
-      "wrong_balls": 216,
-      "correct_rate": 0.8163265306122449,
+      "total": 50,
+      "correct": 41,
+      "total_called": 6683,
+      "correct_called": 6132,
+      "wrong_strikes": 330,
+      "wrong_balls": 221,
+      "correct_rate": 0.82,
       "accuracy_pct": 91.8
     },
     "Brian Walsh": {
