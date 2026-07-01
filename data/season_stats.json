@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "total_challenges": 4903,
   "total_overturned": 2118,
   "team_stats": {
@@ -379,11 +379,11 @@
       "total": 43,
       "correct": 29,
       "correct_rate": 0.6744186046511628,
-      "total_called": 5431,
-      "correct_called": 4897,
-      "wrong_strikes": 392,
-      "wrong_balls": 142,
-      "accuracy_pct": 90.2
+      "total_called": 5550,
+      "correct_called": 5009,
+      "wrong_strikes": 398,
+      "wrong_balls": 143,
+      "accuracy_pct": 90.3
     },
     "D.J. Reyburn": {
       "total": 64,
