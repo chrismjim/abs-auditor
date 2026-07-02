@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-07-02",
-  "total_challenges": 4999,
-  "total_overturned": 2180,
+  "total_challenges": 5001,
+  "total_overturned": 2181,
   "team_stats": {
     "CIN": {
-      "challenges": 298,
-      "overturned": 164,
+      "challenges": 299,
+      "overturned": 165,
       "missed_calls": 48
     },
     "PIT": {
@@ -94,9 +94,9 @@
       "missed_calls": 45
     },
     "MIA": {
-      "challenges": 398,
+      "challenges": 399,
       "overturned": 153,
-      "missed_calls": 91
+      "missed_calls": 92
     },
     "WSH": {
       "challenges": 325,
@@ -144,13 +144,13 @@
       "missed_calls": 48
     },
     "COL": {
-      "challenges": 302,
+      "challenges": 303,
       "overturned": 161,
-      "missed_calls": 12
+      "missed_calls": 13
     },
     "MIL": {
-      "challenges": 291,
-      "overturned": 143,
+      "challenges": 292,
+      "overturned": 144,
       "missed_calls": 38
     }
   },
@@ -671,13 +671,13 @@
       "accuracy_pct": 91.9
     },
     "Dan Merzel": {
-      "total": 42,
-      "correct": 40,
-      "correct_rate": 0.9523809523809523,
-      "total_called": 7156,
-      "correct_called": 6714,
-      "wrong_strikes": 256,
-      "wrong_balls": 186,
+      "total": 43,
+      "correct": 41,
+      "correct_rate": 0.9534883720930233,
+      "total_called": 7314,
+      "correct_called": 6862,
+      "wrong_strikes": 263,
+      "wrong_balls": 189,
       "accuracy_pct": 93.8
     },
     "Jeremie Rehak": {
@@ -691,14 +691,14 @@
       "accuracy_pct": 92.0
     },
     "Ramon De Jesus": {
-      "total": 69,
+      "total": 70,
       "correct": 48,
-      "correct_rate": 0.6956521739130435,
-      "total_called": 8168,
-      "correct_called": 7576,
-      "wrong_strikes": 388,
-      "wrong_balls": 204,
-      "accuracy_pct": 92.8
+      "correct_rate": 0.6857142857142857,
+      "total_called": 8322,
+      "correct_called": 7717,
+      "wrong_strikes": 397,
+      "wrong_balls": 208,
+      "accuracy_pct": 92.7
     },
     "Edwin Moscoso": {
       "total": 77,
@@ -943,12 +943,12 @@
     "Jansen Visconti": {
       "total": 34,
       "correct": 31,
-      "total_called": 7233,
-      "correct_called": 6725,
-      "wrong_strikes": 269,
-      "wrong_balls": 239,
+      "total_called": 7397,
+      "correct_called": 6868,
+      "wrong_strikes": 277,
+      "wrong_balls": 252,
       "correct_rate": 0.9117647058823529,
-      "accuracy_pct": 93.0
+      "accuracy_pct": 92.8
     },
     "Clint Vondrak": {
       "total": 53,
