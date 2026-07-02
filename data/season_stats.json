@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01",
+  "last_updated": "2026-07-02",
   "total_challenges": 4998,
   "total_overturned": 2179,
   "team_stats": {
@@ -943,12 +943,12 @@
     "Jansen Visconti": {
       "total": 34,
       "correct": 31,
-      "total_called": 6905,
-      "correct_called": 6439,
-      "wrong_strikes": 253,
-      "wrong_balls": 213,
+      "total_called": 7069,
+      "correct_called": 6582,
+      "wrong_strikes": 261,
+      "wrong_balls": 226,
       "correct_rate": 0.9117647058823529,
-      "accuracy_pct": 93.3
+      "accuracy_pct": 93.1
     },
     "Clint Vondrak": {
       "total": 53,
