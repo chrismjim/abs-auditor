@@ -1,11 +1,11 @@
 {
   "last_updated": "2026-07-02",
-  "total_challenges": 5003,
-  "total_overturned": 2182,
+  "total_challenges": 5005,
+  "total_overturned": 2183,
   "team_stats": {
     "CIN": {
-      "challenges": 300,
-      "overturned": 166,
+      "challenges": 301,
+      "overturned": 167,
       "missed_calls": 48
     },
     "PIT": {
@@ -94,9 +94,9 @@
       "missed_calls": 45
     },
     "MIA": {
-      "challenges": 400,
+      "challenges": 401,
       "overturned": 153,
-      "missed_calls": 93
+      "missed_calls": 94
     },
     "WSH": {
       "challenges": 325,
@@ -144,13 +144,13 @@
       "missed_calls": 48
     },
     "COL": {
-      "challenges": 304,
+      "challenges": 305,
       "overturned": 161,
-      "missed_calls": 14
+      "missed_calls": 15
     },
     "MIL": {
-      "challenges": 293,
-      "overturned": 145,
+      "challenges": 294,
+      "overturned": 146,
       "missed_calls": 38
     }
   },
@@ -199,10 +199,10 @@
       "total": 73,
       "correct": 64,
       "correct_rate": 0.8767123287671232,
-      "total_called": 11016,
-      "correct_called": 10313,
-      "wrong_strikes": 348,
-      "wrong_balls": 355,
+      "total_called": 11177,
+      "correct_called": 10460,
+      "wrong_strikes": 357,
+      "wrong_balls": 360,
       "accuracy_pct": 93.6
     },
     "Jim Wolf": {
@@ -554,10 +554,10 @@
       "total": 78,
       "correct": 76,
       "correct_rate": 0.9743589743589743,
-      "total_called": 10810,
-      "correct_called": 9920,
-      "wrong_strikes": 655,
-      "wrong_balls": 235,
+      "total_called": 10986,
+      "correct_called": 10086,
+      "wrong_strikes": 662,
+      "wrong_balls": 238,
       "accuracy_pct": 91.8
     },
     "Mike Estabrook": {
@@ -671,13 +671,13 @@
       "accuracy_pct": 91.9
     },
     "Dan Merzel": {
-      "total": 44,
-      "correct": 42,
-      "correct_rate": 0.9545454545454546,
-      "total_called": 7472,
-      "correct_called": 7010,
-      "wrong_strikes": 270,
-      "wrong_balls": 192,
+      "total": 45,
+      "correct": 43,
+      "correct_rate": 0.9555555555555556,
+      "total_called": 7630,
+      "correct_called": 7158,
+      "wrong_strikes": 277,
+      "wrong_balls": 195,
       "accuracy_pct": 93.8
     },
     "Jeremie Rehak": {
@@ -691,13 +691,13 @@
       "accuracy_pct": 92.0
     },
     "Ramon De Jesus": {
-      "total": 71,
+      "total": 72,
       "correct": 48,
-      "correct_rate": 0.676056338028169,
-      "total_called": 8476,
-      "correct_called": 7858,
-      "wrong_strikes": 406,
-      "wrong_balls": 212,
+      "correct_rate": 0.6666666666666666,
+      "total_called": 8630,
+      "correct_called": 7999,
+      "wrong_strikes": 415,
+      "wrong_balls": 216,
       "accuracy_pct": 92.7
     },
     "Edwin Moscoso": {
@@ -844,10 +844,10 @@
       "total": 60,
       "correct": 51,
       "correct_rate": 0.85,
-      "total_called": 7977,
-      "correct_called": 7346,
-      "wrong_strikes": 351,
-      "wrong_balls": 280,
+      "total_called": 8130,
+      "correct_called": 7489,
+      "wrong_strikes": 358,
+      "wrong_balls": 283,
       "accuracy_pct": 92.1
     },
     "Steven Jaschinski": {
@@ -943,12 +943,12 @@
     "Jansen Visconti": {
       "total": 34,
       "correct": 31,
-      "total_called": 7561,
-      "correct_called": 7011,
-      "wrong_strikes": 285,
-      "wrong_balls": 265,
+      "total_called": 7725,
+      "correct_called": 7154,
+      "wrong_strikes": 293,
+      "wrong_balls": 278,
       "correct_rate": 0.9117647058823529,
-      "accuracy_pct": 92.7
+      "accuracy_pct": 92.6
     },
     "Clint Vondrak": {
       "total": 53,
@@ -973,12 +973,12 @@
     "Austin Jones": {
       "total": 58,
       "correct": 34,
-      "total_called": 8199,
-      "correct_called": 7619,
-      "wrong_strikes": 451,
-      "wrong_balls": 129,
+      "total_called": 8342,
+      "correct_called": 7755,
+      "wrong_strikes": 454,
+      "wrong_balls": 133,
       "correct_rate": 0.5862068965517241,
-      "accuracy_pct": 92.9
+      "accuracy_pct": 93.0
     },
     "Scott Barry": {
       "total": 24,
