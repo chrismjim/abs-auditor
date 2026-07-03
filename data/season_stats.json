@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-07-03",
   "total_challenges": 5009,
   "total_overturned": 2184,
   "team_stats": {
@@ -544,10 +544,10 @@
       "total": 31,
       "correct": 27,
       "correct_rate": 0.8709677419354839,
-      "total_called": 5728,
-      "correct_called": 5300,
-      "wrong_strikes": 256,
-      "wrong_balls": 172,
+      "total_called": 5895,
+      "correct_called": 5454,
+      "wrong_strikes": 263,
+      "wrong_balls": 178,
       "accuracy_pct": 92.5
     },
     "Vic Carapazza": {
