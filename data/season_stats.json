@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-04",
-  "total_challenges": 5037,
-  "total_overturned": 2197,
+  "total_challenges": 5041,
+  "total_overturned": 2199,
   "team_stats": {
     "CIN": {
       "challenges": 306,
@@ -9,7 +9,7 @@
       "missed_calls": 48
     },
     "PIT": {
-      "challenges": 351,
+      "challenges": 352,
       "overturned": 108,
       "missed_calls": 58
     },
@@ -54,9 +54,9 @@
       "missed_calls": 75
     },
     "NYY": {
-      "challenges": 424,
-      "overturned": 195,
-      "missed_calls": 88
+      "challenges": 427,
+      "overturned": 197,
+      "missed_calls": 89
     },
     "SF": {
       "challenges": 206,
@@ -99,7 +99,7 @@
       "missed_calls": 95
     },
     "WSH": {
-      "challenges": 329,
+      "challenges": 330,
       "overturned": 153,
       "missed_calls": 61
     },
@@ -114,9 +114,9 @@
       "missed_calls": 51
     },
     "MIN": {
-      "challenges": 412,
-      "overturned": 198,
-      "missed_calls": 59
+      "challenges": 415,
+      "overturned": 200,
+      "missed_calls": 60
     },
     "CLE": {
       "challenges": 470,
@@ -159,10 +159,10 @@
       "total": 69,
       "correct": 49,
       "correct_rate": 0.7101449275362319,
-      "total_called": 8983,
-      "correct_called": 8141,
-      "wrong_strikes": 517,
-      "wrong_balls": 325,
+      "total_called": 9107,
+      "correct_called": 8255,
+      "wrong_strikes": 525,
+      "wrong_balls": 327,
       "accuracy_pct": 90.6
     },
     "Nate Tomlinson": {
@@ -266,13 +266,13 @@
       "accuracy_pct": 91.7
     },
     "James Hoye": {
-      "total": 76,
-      "correct": 56,
-      "correct_rate": 0.7368421052631579,
-      "total_called": 5839,
-      "correct_called": 5307,
-      "wrong_strikes": 283,
-      "wrong_balls": 249,
+      "total": 79,
+      "correct": 58,
+      "correct_rate": 0.7341772151898734,
+      "total_called": 6040,
+      "correct_called": 5491,
+      "wrong_strikes": 295,
+      "wrong_balls": 254,
       "accuracy_pct": 90.9
     },
     "Lance Barksdale": {
@@ -411,13 +411,13 @@
       "accuracy_pct": 91.1
     },
     "Bruce Dreckman": {
-      "total": 81,
-      "correct": 77,
-      "correct_rate": 0.9506172839506173,
-      "total_called": 7269,
-      "correct_called": 6600,
-      "wrong_strikes": 407,
-      "wrong_balls": 262,
+      "total": 82,
+      "correct": 78,
+      "correct_rate": 0.9512195121951219,
+      "total_called": 7415,
+      "correct_called": 6736,
+      "wrong_strikes": 411,
+      "wrong_balls": 268,
       "accuracy_pct": 90.8
     },
     "Chad Whitson": {
@@ -654,10 +654,10 @@
       "total": 98,
       "correct": 69,
       "correct_rate": 0.7040816326530612,
-      "total_called": 8258,
-      "correct_called": 7655,
-      "wrong_strikes": 399,
-      "wrong_balls": 204,
+      "total_called": 8395,
+      "correct_called": 7783,
+      "wrong_strikes": 406,
+      "wrong_balls": 206,
       "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
