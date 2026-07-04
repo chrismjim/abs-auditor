@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-04",
-  "total_challenges": 5029,
-  "total_overturned": 2193,
+  "total_challenges": 5033,
+  "total_overturned": 2195,
   "team_stats": {
     "CIN": {
       "challenges": 306,
@@ -9,7 +9,7 @@
       "missed_calls": 48
     },
     "PIT": {
-      "challenges": 349,
+      "challenges": 350,
       "overturned": 108,
       "missed_calls": 58
     },
@@ -54,9 +54,9 @@
       "missed_calls": 75
     },
     "NYY": {
-      "challenges": 418,
-      "overturned": 191,
-      "missed_calls": 86
+      "challenges": 421,
+      "overturned": 193,
+      "missed_calls": 87
     },
     "SF": {
       "challenges": 206,
@@ -99,7 +99,7 @@
       "missed_calls": 95
     },
     "WSH": {
-      "challenges": 327,
+      "challenges": 328,
       "overturned": 153,
       "missed_calls": 61
     },
@@ -114,9 +114,9 @@
       "missed_calls": 51
     },
     "MIN": {
-      "challenges": 406,
-      "overturned": 194,
-      "missed_calls": 57
+      "challenges": 409,
+      "overturned": 196,
+      "missed_calls": 58
     },
     "CLE": {
       "challenges": 470,
@@ -266,13 +266,13 @@
       "accuracy_pct": 91.7
     },
     "James Hoye": {
-      "total": 70,
-      "correct": 52,
-      "correct_rate": 0.7428571428571429,
-      "total_called": 5436,
-      "correct_called": 4939,
-      "wrong_strikes": 258,
-      "wrong_balls": 239,
+      "total": 73,
+      "correct": 54,
+      "correct_rate": 0.7397260273972602,
+      "total_called": 5638,
+      "correct_called": 5123,
+      "wrong_strikes": 271,
+      "wrong_balls": 244,
       "accuracy_pct": 90.9
     },
     "Lance Barksdale": {
@@ -411,13 +411,13 @@
       "accuracy_pct": 91.1
     },
     "Bruce Dreckman": {
-      "total": 79,
-      "correct": 75,
-      "correct_rate": 0.9493670886075949,
-      "total_called": 6977,
-      "correct_called": 6328,
-      "wrong_strikes": 399,
-      "wrong_balls": 250,
+      "total": 80,
+      "correct": 76,
+      "correct_rate": 0.95,
+      "total_called": 7123,
+      "correct_called": 6464,
+      "wrong_strikes": 403,
+      "wrong_balls": 256,
       "accuracy_pct": 90.7
     },
     "Chad Whitson": {
