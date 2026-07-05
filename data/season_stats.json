@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-04",
-  "total_challenges": 5071,
-  "total_overturned": 2210,
+  "last_updated": "2026-07-05",
+  "total_challenges": 5073,
+  "total_overturned": 2212,
   "team_stats": {
     "CIN": {
-      "challenges": 308,
-      "overturned": 172,
+      "challenges": 310,
+      "overturned": 174,
       "missed_calls": 48
     },
     "PIT": {
@@ -64,8 +64,8 @@
       "missed_calls": 37
     },
     "BAL": {
-      "challenges": 448,
-      "overturned": 218,
+      "challenges": 450,
+      "overturned": 220,
       "missed_calls": 81
     },
     "TOR": {
@@ -376,14 +376,14 @@
       "accuracy_pct": 91.2
     },
     "Brian O'Nora": {
-      "total": 43,
-      "correct": 29,
-      "correct_rate": 0.6744186046511628,
-      "total_called": 5907,
-      "correct_called": 5345,
-      "wrong_strikes": 416,
-      "wrong_balls": 146,
-      "accuracy_pct": 90.5
+      "total": 45,
+      "correct": 31,
+      "correct_rate": 0.6888888888888889,
+      "total_called": 6038,
+      "correct_called": 5460,
+      "wrong_strikes": 425,
+      "wrong_balls": 153,
+      "accuracy_pct": 90.4
     },
     "D.J. Reyburn": {
       "total": 66,
