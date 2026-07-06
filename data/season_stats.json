@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-06",
-  "total_challenges": 5147,
-  "total_overturned": 2253,
+  "total_challenges": 5149,
+  "total_overturned": 2254,
   "team_stats": {
     "CIN": {
       "challenges": 320,
@@ -79,9 +79,9 @@
       "missed_calls": 74
     },
     "PHI": {
-      "challenges": 295,
-      "overturned": 110,
-      "missed_calls": 55
+      "challenges": 297,
+      "overturned": 111,
+      "missed_calls": 56
     },
     "CWS": {
       "challenges": 446,
@@ -139,9 +139,9 @@
       "missed_calls": 65
     },
     "KC": {
-      "challenges": 323,
-      "overturned": 95,
-      "missed_calls": 49
+      "challenges": 325,
+      "overturned": 96,
+      "missed_calls": 50
     },
     "COL": {
       "challenges": 318,
@@ -841,13 +841,13 @@
       "accuracy_pct": 90.6
     },
     "Alan Porter": {
-      "total": 62,
-      "correct": 52,
-      "correct_rate": 0.8387096774193549,
-      "total_called": 8482,
-      "correct_called": 7813,
-      "wrong_strikes": 377,
-      "wrong_balls": 292,
+      "total": 64,
+      "correct": 53,
+      "correct_rate": 0.828125,
+      "total_called": 8681,
+      "correct_called": 7994,
+      "wrong_strikes": 389,
+      "wrong_balls": 298,
       "accuracy_pct": 92.1
     },
     "Steven Jaschinski": {
