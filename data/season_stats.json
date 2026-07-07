@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-07-07",
-  "total_challenges": 5179,
+  "total_challenges": 5182,
   "total_overturned": 2267,
   "team_stats": {
     "CIN": {
@@ -74,9 +74,9 @@
       "missed_calls": 32
     },
     "STL": {
-      "challenges": 372,
+      "challenges": 375,
       "overturned": 186,
-      "missed_calls": 78
+      "missed_calls": 79
     },
     "PHI": {
       "challenges": 303,
@@ -149,9 +149,9 @@
       "missed_calls": 16
     },
     "MIL": {
-      "challenges": 310,
+      "challenges": 313,
       "overturned": 152,
-      "missed_calls": 43
+      "missed_calls": 44
     }
   },
   "umpire_stats": {
@@ -951,13 +951,13 @@
       "accuracy_pct": 92.5
     },
     "Clint Vondrak": {
-      "total": 59,
-      "correct": 48,
-      "total_called": 7311,
-      "correct_called": 6711,
-      "wrong_strikes": 358,
-      "wrong_balls": 242,
-      "correct_rate": 0.8135593220338984,
+      "total": 62,
+      "correct": 50,
+      "total_called": 7448,
+      "correct_called": 6840,
+      "wrong_strikes": 363,
+      "wrong_balls": 245,
+      "correct_rate": 0.8064516129032258,
       "accuracy_pct": 91.8
     },
     "Brian Walsh": {
