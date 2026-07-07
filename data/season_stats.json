@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-06",
-  "total_challenges": 5149,
-  "total_overturned": 2254,
+  "total_challenges": 5151,
+  "total_overturned": 2255,
   "team_stats": {
     "CIN": {
       "challenges": 320,
@@ -79,9 +79,9 @@
       "missed_calls": 74
     },
     "PHI": {
-      "challenges": 297,
-      "overturned": 111,
-      "missed_calls": 56
+      "challenges": 299,
+      "overturned": 112,
+      "missed_calls": 57
     },
     "CWS": {
       "challenges": 446,
@@ -139,9 +139,9 @@
       "missed_calls": 65
     },
     "KC": {
-      "challenges": 325,
-      "overturned": 96,
-      "missed_calls": 50
+      "challenges": 327,
+      "overturned": 97,
+      "missed_calls": 51
     },
     "COL": {
       "challenges": 318,
@@ -524,10 +524,10 @@
       "total": 53,
       "correct": 53,
       "correct_rate": 1.0,
-      "total_called": 5727,
-      "correct_called": 5298,
-      "wrong_strikes": 336,
-      "wrong_balls": 93,
+      "total_called": 5857,
+      "correct_called": 5415,
+      "wrong_strikes": 343,
+      "wrong_balls": 99,
       "accuracy_pct": 92.5
     },
     "Erich Bacchus": {
@@ -841,13 +841,13 @@
       "accuracy_pct": 90.6
     },
     "Alan Porter": {
-      "total": 64,
-      "correct": 53,
-      "correct_rate": 0.828125,
-      "total_called": 8681,
-      "correct_called": 7994,
-      "wrong_strikes": 389,
-      "wrong_balls": 298,
+      "total": 66,
+      "correct": 54,
+      "correct_rate": 0.8181818181818182,
+      "total_called": 8880,
+      "correct_called": 8175,
+      "wrong_strikes": 401,
+      "wrong_balls": 304,
       "accuracy_pct": 92.1
     },
     "Steven Jaschinski": {
