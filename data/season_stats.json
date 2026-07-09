@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-08",
-  "total_challenges": 5231,
-  "total_overturned": 2292,
+  "total_challenges": 5233,
+  "total_overturned": 2293,
   "team_stats": {
     "CIN": {
       "challenges": 326,
@@ -59,9 +59,9 @@
       "missed_calls": 92
     },
     "SF": {
-      "challenges": 221,
-      "overturned": 90,
-      "missed_calls": 40
+      "challenges": 223,
+      "overturned": 91,
+      "missed_calls": 41
     },
     "BAL": {
       "challenges": 462,
@@ -69,9 +69,9 @@
       "missed_calls": 81
     },
     "TOR": {
-      "challenges": 266,
-      "overturned": 109,
-      "missed_calls": 34
+      "challenges": 268,
+      "overturned": 110,
+      "missed_calls": 35
     },
     "STL": {
       "challenges": 384,
@@ -901,13 +901,13 @@
       "accuracy_pct": 91.7
     },
     "Stu Scheurwater": {
-      "total": 101,
-      "correct": 89,
-      "total_called": 10557,
-      "correct_called": 9743,
-      "wrong_strikes": 515,
-      "wrong_balls": 299,
-      "correct_rate": 0.8811881188118812,
+      "total": 103,
+      "correct": 90,
+      "total_called": 10705,
+      "correct_called": 9880,
+      "wrong_strikes": 521,
+      "wrong_balls": 304,
+      "correct_rate": 0.8737864077669902,
       "accuracy_pct": 92.3
     },
     "Jacob Metz": {
