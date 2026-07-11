@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-07-11",
-  "total_challenges": 5312,
+  "total_challenges": 5315,
   "total_overturned": 2333,
   "team_stats": {
     "CIN": {
@@ -9,7 +9,7 @@
       "missed_calls": 50
     },
     "PIT": {
-      "challenges": 371,
+      "challenges": 373,
       "overturned": 108,
       "missed_calls": 60
     },
@@ -24,7 +24,7 @@
       "missed_calls": 87
     },
     "ATH": {
-      "challenges": 276,
+      "challenges": 277,
       "overturned": 148,
       "missed_calls": 27
     },
@@ -84,7 +84,7 @@
       "missed_calls": 59
     },
     "CWS": {
-      "challenges": 459,
+      "challenges": 460,
       "overturned": 251,
       "missed_calls": 60
     },
@@ -149,7 +149,7 @@
       "missed_calls": 16
     },
     "MIL": {
-      "challenges": 328,
+      "challenges": 330,
       "overturned": 154,
       "missed_calls": 47
     }
@@ -326,13 +326,13 @@
       "accuracy_pct": 91.6
     },
     "Lance Barrett": {
-      "total": 97,
-      "correct": 70,
-      "correct_rate": 0.7216494845360825,
-      "total_called": 9631,
-      "correct_called": 8885,
-      "wrong_strikes": 462,
-      "wrong_balls": 284,
+      "total": 99,
+      "correct": 72,
+      "correct_rate": 0.7272727272727273,
+      "total_called": 9805,
+      "correct_called": 9052,
+      "wrong_strikes": 465,
+      "wrong_balls": 288,
       "accuracy_pct": 92.3
     },
     "Will Little": {
@@ -451,13 +451,13 @@
       "accuracy_pct": 93.0
     },
     "Gabe Morales": {
-      "total": 34,
-      "correct": 22,
-      "correct_rate": 0.6470588235294118,
-      "total_called": 8352,
-      "correct_called": 7676,
-      "wrong_strikes": 471,
-      "wrong_balls": 205,
+      "total": 35,
+      "correct": 23,
+      "correct_rate": 0.6571428571428571,
+      "total_called": 8474,
+      "correct_called": 7791,
+      "wrong_strikes": 477,
+      "wrong_balls": 206,
       "accuracy_pct": 91.9
     },
     "Ryan Blakney": {
