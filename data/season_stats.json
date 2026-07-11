@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-11",
-  "total_challenges": 5319,
-  "total_overturned": 2334,
+  "total_challenges": 5326,
+  "total_overturned": 2338,
   "team_stats": {
     "CIN": {
       "challenges": 328,
@@ -9,7 +9,7 @@
       "missed_calls": 50
     },
     "PIT": {
-      "challenges": 375,
+      "challenges": 377,
       "overturned": 108,
       "missed_calls": 60
     },
@@ -24,7 +24,7 @@
       "missed_calls": 87
     },
     "ATH": {
-      "challenges": 278,
+      "challenges": 279,
       "overturned": 148,
       "missed_calls": 27
     },
@@ -59,8 +59,8 @@
       "missed_calls": 94
     },
     "SF": {
-      "challenges": 229,
-      "overturned": 93,
+      "challenges": 230,
+      "overturned": 94,
       "missed_calls": 43
     },
     "BAL": {
@@ -84,7 +84,7 @@
       "missed_calls": 59
     },
     "CWS": {
-      "challenges": 461,
+      "challenges": 462,
       "overturned": 251,
       "missed_calls": 60
     },
@@ -94,8 +94,8 @@
       "missed_calls": 45
     },
     "MIA": {
-      "challenges": 417,
-      "overturned": 160,
+      "challenges": 419,
+      "overturned": 162,
       "missed_calls": 97
     },
     "WSH": {
@@ -109,18 +109,18 @@
       "missed_calls": 59
     },
     "LAA": {
-      "challenges": 266,
-      "overturned": 111,
+      "challenges": 267,
+      "overturned": 112,
       "missed_calls": 51
     },
     "MIN": {
-      "challenges": 451,
-      "overturned": 229,
+      "challenges": 452,
+      "overturned": 230,
       "missed_calls": 65
     },
     "CLE": {
-      "challenges": 497,
-      "overturned": 219,
+      "challenges": 499,
+      "overturned": 221,
       "missed_calls": 108
     },
     "HOU": {
@@ -144,12 +144,12 @@
       "missed_calls": 53
     },
     "COL": {
-      "challenges": 324,
-      "overturned": 168,
+      "challenges": 325,
+      "overturned": 169,
       "missed_calls": 16
     },
     "MIL": {
-      "challenges": 332,
+      "challenges": 334,
       "overturned": 154,
       "missed_calls": 47
     }
@@ -276,13 +276,13 @@
       "accuracy_pct": 91.0
     },
     "Lance Barksdale": {
-      "total": 61,
-      "correct": 51,
-      "correct_rate": 0.8360655737704918,
-      "total_called": 7139,
-      "correct_called": 6640,
-      "wrong_strikes": 261,
-      "wrong_balls": 238,
+      "total": 62,
+      "correct": 52,
+      "correct_rate": 0.8387096774193549,
+      "total_called": 7272,
+      "correct_called": 6765,
+      "wrong_strikes": 267,
+      "wrong_balls": 240,
       "accuracy_pct": 93.0
     },
     "Chad Fairchild": {
@@ -326,13 +326,13 @@
       "accuracy_pct": 91.6
     },
     "Lance Barrett": {
-      "total": 101,
-      "correct": 74,
-      "correct_rate": 0.7326732673267327,
-      "total_called": 9979,
-      "correct_called": 9219,
-      "wrong_strikes": 468,
-      "wrong_balls": 292,
+      "total": 103,
+      "correct": 76,
+      "correct_rate": 0.7378640776699029,
+      "total_called": 10153,
+      "correct_called": 9386,
+      "wrong_strikes": 471,
+      "wrong_balls": 296,
       "accuracy_pct": 92.4
     },
     "Will Little": {
@@ -421,13 +421,13 @@
       "accuracy_pct": 91.0
     },
     "Chad Whitson": {
-      "total": 46,
-      "correct": 35,
-      "correct_rate": 0.7608695652173914,
-      "total_called": 4999,
-      "correct_called": 4607,
-      "wrong_strikes": 268,
-      "wrong_balls": 124,
+      "total": 48,
+      "correct": 37,
+      "correct_rate": 0.7708333333333334,
+      "total_called": 5142,
+      "correct_called": 4739,
+      "wrong_strikes": 278,
+      "wrong_balls": 125,
       "accuracy_pct": 92.2
     },
     "Malachi Moore": {
@@ -441,23 +441,23 @@
       "accuracy_pct": 90.7
     },
     "Chris Segal": {
-      "total": 123,
-      "correct": 111,
-      "correct_rate": 0.9024390243902439,
-      "total_called": 10666,
-      "correct_called": 9925,
-      "wrong_strikes": 535,
-      "wrong_balls": 206,
+      "total": 124,
+      "correct": 112,
+      "correct_rate": 0.9032258064516129,
+      "total_called": 10816,
+      "correct_called": 10066,
+      "wrong_strikes": 541,
+      "wrong_balls": 209,
       "accuracy_pct": 93.1
     },
     "Gabe Morales": {
-      "total": 36,
-      "correct": 24,
-      "correct_rate": 0.6666666666666666,
-      "total_called": 8596,
-      "correct_called": 7906,
-      "wrong_strikes": 483,
-      "wrong_balls": 207,
+      "total": 37,
+      "correct": 25,
+      "correct_rate": 0.6756756756756757,
+      "total_called": 8718,
+      "correct_called": 8021,
+      "wrong_strikes": 489,
+      "wrong_balls": 208,
       "accuracy_pct": 92.0
     },
     "Ryan Blakney": {
