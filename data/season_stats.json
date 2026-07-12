@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-11",
-  "total_challenges": 5376,
-  "total_overturned": 2358,
+  "last_updated": "2026-07-12",
+  "total_challenges": 5378,
+  "total_overturned": 2360,
   "team_stats": {
     "CIN": {
       "challenges": 332,
@@ -9,8 +9,8 @@
       "missed_calls": 50
     },
     "PIT": {
-      "challenges": 386,
-      "overturned": 108,
+      "challenges": 388,
+      "overturned": 110,
       "missed_calls": 60
     },
     "TB": {
@@ -149,8 +149,8 @@
       "missed_calls": 16
     },
     "MIL": {
-      "challenges": 343,
-      "overturned": 154,
+      "challenges": 345,
+      "overturned": 156,
       "missed_calls": 47
     }
   },
@@ -611,14 +611,14 @@
       "accuracy_pct": 92.4
     },
     "Alfonso M\u00e1rquez": {
-      "total": 34,
-      "correct": 34,
+      "total": 36,
+      "correct": 36,
       "correct_rate": 1.0,
-      "total_called": 7265,
-      "correct_called": 6659,
-      "wrong_strikes": 321,
-      "wrong_balls": 285,
-      "accuracy_pct": 91.7
+      "total_called": 7419,
+      "correct_called": 6799,
+      "wrong_strikes": 331,
+      "wrong_balls": 289,
+      "accuracy_pct": 91.6
     },
     "Shane Livensparger": {
       "total": 47,
