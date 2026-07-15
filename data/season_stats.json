@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-12",
-  "total_challenges": 5464,
+  "last_updated": "2026-07-14",
+  "total_challenges": 5465,
   "total_overturned": 2400,
   "team_stats": {
     "CIN": {
@@ -152,6 +152,16 @@
       "challenges": 357,
       "overturned": 168,
       "missed_calls": 47
+    },
+    "NL": {
+      "challenges": 1,
+      "overturned": 0,
+      "missed_calls": 1
+    },
+    "AL": {
+      "challenges": 1,
+      "overturned": 0,
+      "missed_calls": 1
     }
   },
   "umpire_stats": {
@@ -841,13 +851,13 @@
       "accuracy_pct": 90.8
     },
     "Alan Porter": {
-      "total": 72,
+      "total": 73,
       "correct": 58,
-      "correct_rate": 0.8055555555555556,
-      "total_called": 9450,
-      "correct_called": 8693,
-      "wrong_strikes": 433,
-      "wrong_balls": 324,
+      "correct_rate": 0.7945205479452054,
+      "total_called": 9569,
+      "correct_called": 8801,
+      "wrong_strikes": 440,
+      "wrong_balls": 328,
       "accuracy_pct": 92.0
     },
     "Steven Jaschinski": {
