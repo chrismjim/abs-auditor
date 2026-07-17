@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-14",
-  "total_challenges": 5465,
+  "last_updated": "2026-07-16",
+  "total_challenges": 5466,
   "total_overturned": 2400,
   "team_stats": {
     "CIN": {
@@ -29,9 +29,9 @@
       "missed_calls": 27
     },
     "NYM": {
-      "challenges": 378,
+      "challenges": 379,
       "overturned": 160,
-      "missed_calls": 70
+      "missed_calls": 71
     },
     "SEA": {
       "challenges": 411,
@@ -79,9 +79,9 @@
       "missed_calls": 87
     },
     "PHI": {
-      "challenges": 319,
+      "challenges": 320,
       "overturned": 118,
-      "missed_calls": 65
+      "missed_calls": 66
     },
     "CWS": {
       "challenges": 465,
@@ -196,13 +196,13 @@
       "accuracy_pct": 90.5
     },
     "Dan Iassogna": {
-      "total": 95,
+      "total": 96,
       "correct": 73,
-      "correct_rate": 0.7684210526315789,
-      "total_called": 7809,
-      "correct_called": 7218,
-      "wrong_strikes": 362,
-      "wrong_balls": 229,
+      "correct_rate": 0.7604166666666666,
+      "total_called": 7942,
+      "correct_called": 7339,
+      "wrong_strikes": 372,
+      "wrong_balls": 231,
       "accuracy_pct": 92.4
     },
     "Willie Traynor": {
