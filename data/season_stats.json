@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-17",
   "total_challenges": 5467,
   "total_overturned": 2400,
   "team_stats": {
@@ -574,11 +574,11 @@
       "total": 66,
       "correct": 42,
       "correct_rate": 0.6363636363636364,
-      "total_called": 8250,
-      "correct_called": 7417,
-      "wrong_strikes": 537,
-      "wrong_balls": 296,
-      "accuracy_pct": 89.9
+      "total_called": 8367,
+      "correct_called": 7527,
+      "wrong_strikes": 539,
+      "wrong_balls": 301,
+      "accuracy_pct": 90.0
     },
     "Jordan Baker": {
       "total": 44,
