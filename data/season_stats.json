@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-17",
-  "total_challenges": 5494,
-  "total_overturned": 2411,
+  "last_updated": "2026-07-18",
+  "total_challenges": 5495,
+  "total_overturned": 2412,
   "team_stats": {
     "CIN": {
       "challenges": 339,
@@ -9,8 +9,8 @@
       "missed_calls": 50
     },
     "PIT": {
-      "challenges": 400,
-      "overturned": 122,
+      "challenges": 401,
+      "overturned": 123,
       "missed_calls": 60
     },
     "TB": {
@@ -119,8 +119,8 @@
       "missed_calls": 65
     },
     "CLE": {
-      "challenges": 517,
-      "overturned": 233,
+      "challenges": 518,
+      "overturned": 234,
       "missed_calls": 108
     },
     "HOU": {
@@ -901,14 +901,14 @@
       "accuracy_pct": 91.6
     },
     "Roberto Ortiz": {
-      "total": 75,
-      "correct": 66,
-      "correct_rate": 0.88,
-      "total_called": 8829,
-      "correct_called": 8100,
-      "wrong_strikes": 432,
-      "wrong_balls": 297,
-      "accuracy_pct": 91.7
+      "total": 76,
+      "correct": 67,
+      "correct_rate": 0.881578947368421,
+      "total_called": 8951,
+      "correct_called": 8213,
+      "wrong_strikes": 440,
+      "wrong_balls": 298,
+      "accuracy_pct": 91.8
     },
     "Stu Scheurwater": {
       "total": 107,
