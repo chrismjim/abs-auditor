@@ -574,11 +574,11 @@
       "total": 66,
       "correct": 42,
       "correct_rate": 0.6363636363636364,
-      "total_called": 8718,
-      "correct_called": 7857,
-      "wrong_strikes": 545,
-      "wrong_balls": 316,
-      "accuracy_pct": 90.1
+      "total_called": 8835,
+      "correct_called": 7967,
+      "wrong_strikes": 547,
+      "wrong_balls": 321,
+      "accuracy_pct": 90.2
     },
     "Jordan Baker": {
       "total": 44,
