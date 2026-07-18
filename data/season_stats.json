@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-17",
-  "total_challenges": 5467,
-  "total_overturned": 2400,
+  "total_challenges": 5473,
+  "total_overturned": 2402,
   "team_stats": {
     "CIN": {
       "challenges": 338,
@@ -14,13 +14,13 @@
       "missed_calls": 60
     },
     "TB": {
-      "challenges": 468,
+      "challenges": 470,
       "overturned": 201,
       "missed_calls": 83
     },
     "ATL": {
-      "challenges": 402,
-      "overturned": 153,
+      "challenges": 404,
+      "overturned": 154,
       "missed_calls": 92
     },
     "ATH": {
@@ -39,12 +39,12 @@
       "missed_calls": 67
     },
     "TEX": {
-      "challenges": 301,
-      "overturned": 110,
+      "challenges": 303,
+      "overturned": 111,
       "missed_calls": 31
     },
     "LAD": {
-      "challenges": 291,
+      "challenges": 292,
       "overturned": 139,
       "missed_calls": 62
     },
@@ -54,7 +54,7 @@
       "missed_calls": 77
     },
     "NYY": {
-      "challenges": 455,
+      "challenges": 456,
       "overturned": 214,
       "missed_calls": 94
     },
@@ -69,8 +69,8 @@
       "missed_calls": 83
     },
     "TOR": {
-      "challenges": 277,
-      "overturned": 116,
+      "challenges": 278,
+      "overturned": 117,
       "missed_calls": 37
     },
     "STL": {
@@ -84,12 +84,12 @@
       "missed_calls": 67
     },
     "CWS": {
-      "challenges": 465,
-      "overturned": 251,
+      "challenges": 466,
+      "overturned": 252,
       "missed_calls": 60
     },
     "BOS": {
-      "challenges": 365,
+      "challenges": 367,
       "overturned": 127,
       "missed_calls": 45
     },
@@ -256,13 +256,13 @@
       "accuracy_pct": 90.0
     },
     "Chris Conroy": {
-      "total": 58,
-      "correct": 33,
-      "correct_rate": 0.5689655172413793,
-      "total_called": 5148,
-      "correct_called": 4718,
-      "wrong_strikes": 259,
-      "wrong_balls": 171,
+      "total": 60,
+      "correct": 35,
+      "correct_rate": 0.5833333333333334,
+      "total_called": 5303,
+      "correct_called": 4855,
+      "wrong_strikes": 270,
+      "wrong_balls": 178,
       "accuracy_pct": 91.6
     },
     "Chris Guccione": {
@@ -336,13 +336,13 @@
       "accuracy_pct": 91.6
     },
     "Lance Barrett": {
-      "total": 109,
-      "correct": 82,
-      "correct_rate": 0.7522935779816514,
-      "total_called": 10675,
-      "correct_called": 9887,
-      "wrong_strikes": 480,
-      "wrong_balls": 308,
+      "total": 111,
+      "correct": 84,
+      "correct_rate": 0.7567567567567568,
+      "total_called": 10796,
+      "correct_called": 10000,
+      "wrong_strikes": 486,
+      "wrong_balls": 310,
       "accuracy_pct": 92.6
     },
     "Will Little": {
@@ -574,10 +574,10 @@
       "total": 66,
       "correct": 42,
       "correct_rate": 0.6363636363636364,
-      "total_called": 8835,
-      "correct_called": 7967,
-      "wrong_strikes": 547,
-      "wrong_balls": 321,
+      "total_called": 8952,
+      "correct_called": 8077,
+      "wrong_strikes": 549,
+      "wrong_balls": 326,
       "accuracy_pct": 90.2
     },
     "Jordan Baker": {
@@ -731,13 +731,13 @@
       "accuracy_pct": 93.1
     },
     "Junior Valentine": {
-      "total": 57,
-      "correct": 49,
-      "correct_rate": 0.8596491228070176,
-      "total_called": 7123,
-      "correct_called": 6642,
-      "wrong_strikes": 355,
-      "wrong_balls": 126,
+      "total": 58,
+      "correct": 50,
+      "correct_rate": 0.8620689655172413,
+      "total_called": 7274,
+      "correct_called": 6780,
+      "wrong_strikes": 361,
+      "wrong_balls": 133,
       "accuracy_pct": 93.2
     },
     "Todd Tichenor": {
@@ -991,12 +991,12 @@
       "accuracy_pct": 93.0
     },
     "Scott Barry": {
-      "total": 28,
-      "correct": 28,
-      "total_called": 10719,
-      "correct_called": 9801,
-      "wrong_strikes": 615,
-      "wrong_balls": 303,
+      "total": 29,
+      "correct": 29,
+      "total_called": 10883,
+      "correct_called": 9951,
+      "wrong_strikes": 622,
+      "wrong_balls": 310,
       "correct_rate": 1.0,
       "accuracy_pct": 91.4
     },
