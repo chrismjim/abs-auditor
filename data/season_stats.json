@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-18",
-  "total_challenges": 5557,
-  "total_overturned": 2444,
+  "last_updated": "2026-07-19",
+  "total_challenges": 5561,
+  "total_overturned": 2447,
   "team_stats": {
     "CIN": {
       "challenges": 339,
@@ -44,8 +44,8 @@
       "missed_calls": 31
     },
     "LAD": {
-      "challenges": 293,
-      "overturned": 139,
+      "challenges": 295,
+      "overturned": 141,
       "missed_calls": 62
     },
     "CHC": {
@@ -54,8 +54,8 @@
       "missed_calls": 77
     },
     "NYY": {
-      "challenges": 457,
-      "overturned": 214,
+      "challenges": 459,
+      "overturned": 216,
       "missed_calls": 94
     },
     "SF": {
@@ -69,8 +69,8 @@
       "missed_calls": 83
     },
     "TOR": {
-      "challenges": 284,
-      "overturned": 118,
+      "challenges": 286,
+      "overturned": 119,
       "missed_calls": 42
     },
     "STL": {
@@ -84,8 +84,8 @@
       "missed_calls": 67
     },
     "CWS": {
-      "challenges": 472,
-      "overturned": 253,
+      "challenges": 474,
+      "overturned": 254,
       "missed_calls": 65
     },
     "BOS": {
@@ -411,13 +411,13 @@
       "correct_rate": 0.0
     },
     "Rob Drake": {
-      "total": 63,
-      "correct": 58,
-      "correct_rate": 0.9206349206349206,
-      "total_called": 8010,
-      "correct_called": 7301,
-      "wrong_strikes": 520,
-      "wrong_balls": 189,
+      "total": 65,
+      "correct": 60,
+      "correct_rate": 0.9230769230769231,
+      "total_called": 8174,
+      "correct_called": 7450,
+      "wrong_strikes": 530,
+      "wrong_balls": 194,
       "accuracy_pct": 91.1
     },
     "Bruce Dreckman": {
@@ -671,13 +671,13 @@
       "accuracy_pct": 92.8
     },
     "Tom Hanahan": {
-      "total": 80,
-      "correct": 52,
-      "correct_rate": 0.65,
-      "total_called": 8898,
-      "correct_called": 8161,
-      "wrong_strikes": 438,
-      "wrong_balls": 299,
+      "total": 82,
+      "correct": 54,
+      "correct_rate": 0.6585365853658537,
+      "total_called": 9016,
+      "correct_called": 8269,
+      "wrong_strikes": 446,
+      "wrong_balls": 301,
       "accuracy_pct": 91.7
     },
     "Dan Merzel": {
