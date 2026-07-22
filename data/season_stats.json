@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-21",
-  "total_challenges": 5712,
+  "last_updated": "2026-07-22",
+  "total_challenges": 5716,
   "total_overturned": 2528,
   "team_stats": {
     "CIN": {
@@ -9,7 +9,7 @@
       "missed_calls": 50
     },
     "PIT": {
-      "challenges": 416,
+      "challenges": 419,
       "overturned": 138,
       "missed_calls": 60
     },
@@ -54,7 +54,7 @@
       "missed_calls": 77
     },
     "NYY": {
-      "challenges": 475,
+      "challenges": 478,
       "overturned": 230,
       "missed_calls": 94
     },
@@ -64,7 +64,7 @@
       "missed_calls": 44
     },
     "BAL": {
-      "challenges": 474,
+      "challenges": 475,
       "overturned": 234,
       "missed_calls": 85
     },
@@ -89,7 +89,7 @@
       "missed_calls": 65
     },
     "BOS": {
-      "challenges": 391,
+      "challenges": 392,
       "overturned": 138,
       "missed_calls": 53
     },
@@ -444,9 +444,9 @@
       "total": 74,
       "correct": 61,
       "correct_rate": 0.8243243243243243,
-      "total_called": 10132,
-      "correct_called": 9206,
-      "wrong_strikes": 559,
+      "total_called": 10248,
+      "correct_called": 9314,
+      "wrong_strikes": 567,
       "wrong_balls": 367,
       "accuracy_pct": 90.9
     },
@@ -661,14 +661,14 @@
       "accuracy_pct": 92.5
     },
     "Quinn Wolcott": {
-      "total": 100,
-      "correct": 71,
-      "correct_rate": 0.71,
-      "total_called": 9096,
-      "correct_called": 8437,
-      "wrong_strikes": 437,
-      "wrong_balls": 222,
-      "accuracy_pct": 92.8
+      "total": 103,
+      "correct": 74,
+      "correct_rate": 0.7184466019417476,
+      "total_called": 9263,
+      "correct_called": 8590,
+      "wrong_strikes": 445,
+      "wrong_balls": 228,
+      "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
       "total": 94,
@@ -1061,14 +1061,14 @@
       "accuracy_pct": 91.4
     },
     "Felix Neon": {
-      "total": 47,
-      "correct": 44,
-      "total_called": 4214,
-      "correct_called": 3877,
-      "wrong_strikes": 225,
-      "wrong_balls": 112,
-      "correct_rate": 0.9361702127659575,
-      "accuracy_pct": 92.0
+      "total": 48,
+      "correct": 45,
+      "total_called": 4316,
+      "correct_called": 3973,
+      "wrong_strikes": 228,
+      "wrong_balls": 115,
+      "correct_rate": 0.9375,
+      "accuracy_pct": 92.1
     }
   }
 }
