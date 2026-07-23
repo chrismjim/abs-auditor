@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-23",
-  "total_challenges": 5797,
-  "total_overturned": 2558,
+  "total_challenges": 5800,
+  "total_overturned": 2560,
   "team_stats": {
     "CIN": {
       "challenges": 359,
@@ -114,14 +114,14 @@
       "missed_calls": 55
     },
     "MIN": {
-      "challenges": 505,
-      "overturned": 259,
-      "missed_calls": 69
+      "challenges": 508,
+      "overturned": 261,
+      "missed_calls": 70
     },
     "CLE": {
-      "challenges": 549,
-      "overturned": 253,
-      "missed_calls": 112
+      "challenges": 552,
+      "overturned": 255,
+      "missed_calls": 113
     },
     "HOU": {
       "challenges": 338,
@@ -169,10 +169,10 @@
       "total": 69,
       "correct": 49,
       "correct_rate": 0.7101449275362319,
-      "total_called": 10383,
-      "correct_called": 9448,
-      "wrong_strikes": 577,
-      "wrong_balls": 358,
+      "total_called": 10501,
+      "correct_called": 9555,
+      "wrong_strikes": 587,
+      "wrong_balls": 359,
       "accuracy_pct": 91.0
     },
     "Nate Tomlinson": {
@@ -319,11 +319,11 @@
       "total": 90,
       "correct": 58,
       "correct_rate": 0.6444444444444445,
-      "total_called": 10929,
-      "correct_called": 10062,
-      "wrong_strikes": 688,
+      "total_called": 11058,
+      "correct_called": 10178,
+      "wrong_strikes": 701,
       "wrong_balls": 179,
-      "accuracy_pct": 92.1
+      "accuracy_pct": 92.0
     },
     "John Tumpane": {
       "total": 30,
@@ -721,13 +721,13 @@
       "accuracy_pct": 94.9
     },
     "Charlie Ramos": {
-      "total": 54,
-      "correct": 47,
-      "correct_rate": 0.8703703703703703,
-      "total_called": 5787,
-      "correct_called": 5347,
-      "wrong_strikes": 240,
-      "wrong_balls": 200,
+      "total": 57,
+      "correct": 49,
+      "correct_rate": 0.8596491228070176,
+      "total_called": 5968,
+      "correct_called": 5513,
+      "wrong_strikes": 253,
+      "wrong_balls": 202,
       "accuracy_pct": 92.4
     },
     "Junior Valentine": {
