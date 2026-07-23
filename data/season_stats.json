@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-23",
-  "total_challenges": 5794,
-  "total_overturned": 2556,
+  "total_challenges": 5797,
+  "total_overturned": 2558,
   "team_stats": {
     "CIN": {
       "challenges": 359,
@@ -114,14 +114,14 @@
       "missed_calls": 55
     },
     "MIN": {
-      "challenges": 502,
-      "overturned": 257,
-      "missed_calls": 68
+      "challenges": 505,
+      "overturned": 259,
+      "missed_calls": 69
     },
     "CLE": {
-      "challenges": 546,
-      "overturned": 251,
-      "missed_calls": 111
+      "challenges": 549,
+      "overturned": 253,
+      "missed_calls": 112
     },
     "HOU": {
       "challenges": 338,
@@ -169,10 +169,10 @@
       "total": 69,
       "correct": 49,
       "correct_rate": 0.7101449275362319,
-      "total_called": 10265,
-      "correct_called": 9341,
-      "wrong_strikes": 567,
-      "wrong_balls": 357,
+      "total_called": 10383,
+      "correct_called": 9448,
+      "wrong_strikes": 577,
+      "wrong_balls": 358,
       "accuracy_pct": 91.0
     },
     "Nate Tomlinson": {
@@ -319,9 +319,9 @@
       "total": 90,
       "correct": 58,
       "correct_rate": 0.6444444444444445,
-      "total_called": 10800,
-      "correct_called": 9946,
-      "wrong_strikes": 675,
+      "total_called": 10929,
+      "correct_called": 10062,
+      "wrong_strikes": 688,
       "wrong_balls": 179,
       "accuracy_pct": 92.1
     },
@@ -721,13 +721,13 @@
       "accuracy_pct": 94.9
     },
     "Charlie Ramos": {
-      "total": 51,
-      "correct": 45,
-      "correct_rate": 0.8823529411764706,
-      "total_called": 5606,
-      "correct_called": 5181,
-      "wrong_strikes": 227,
-      "wrong_balls": 198,
+      "total": 54,
+      "correct": 47,
+      "correct_rate": 0.8703703703703703,
+      "total_called": 5787,
+      "correct_called": 5347,
+      "wrong_strikes": 240,
+      "wrong_balls": 200,
       "accuracy_pct": 92.4
     },
     "Junior Valentine": {
