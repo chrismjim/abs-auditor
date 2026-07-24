@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-23",
-  "total_challenges": 5803,
-  "total_overturned": 2562,
+  "total_challenges": 5806,
+  "total_overturned": 2564,
   "team_stats": {
     "CIN": {
       "challenges": 359,
@@ -114,14 +114,14 @@
       "missed_calls": 55
     },
     "MIN": {
-      "challenges": 511,
-      "overturned": 263,
-      "missed_calls": 71
+      "challenges": 514,
+      "overturned": 265,
+      "missed_calls": 72
     },
     "CLE": {
-      "challenges": 555,
-      "overturned": 257,
-      "missed_calls": 114
+      "challenges": 558,
+      "overturned": 259,
+      "missed_calls": 115
     },
     "HOU": {
       "challenges": 338,
@@ -169,10 +169,10 @@
       "total": 69,
       "correct": 49,
       "correct_rate": 0.7101449275362319,
-      "total_called": 10619,
-      "correct_called": 9662,
-      "wrong_strikes": 597,
-      "wrong_balls": 360,
+      "total_called": 10737,
+      "correct_called": 9769,
+      "wrong_strikes": 607,
+      "wrong_balls": 361,
       "accuracy_pct": 91.0
     },
     "Nate Tomlinson": {
@@ -319,9 +319,9 @@
       "total": 90,
       "correct": 58,
       "correct_rate": 0.6444444444444445,
-      "total_called": 11187,
-      "correct_called": 10294,
-      "wrong_strikes": 714,
+      "total_called": 11316,
+      "correct_called": 10410,
+      "wrong_strikes": 727,
       "wrong_balls": 179,
       "accuracy_pct": 92.0
     },
@@ -454,10 +454,10 @@
       "total": 132,
       "correct": 120,
       "correct_rate": 0.9090909090909091,
-      "total_called": 12126,
-      "correct_called": 11289,
-      "wrong_strikes": 594,
-      "wrong_balls": 243,
+      "total_called": 12279,
+      "correct_called": 11430,
+      "wrong_strikes": 604,
+      "wrong_balls": 245,
       "accuracy_pct": 93.1
     },
     "Gabe Morales": {
@@ -624,10 +624,10 @@
       "total": 60,
       "correct": 54,
       "correct_rate": 0.9,
-      "total_called": 9391,
-      "correct_called": 8590,
-      "wrong_strikes": 437,
-      "wrong_balls": 364,
+      "total_called": 9557,
+      "correct_called": 8742,
+      "wrong_strikes": 447,
+      "wrong_balls": 368,
       "accuracy_pct": 91.5
     },
     "Shane Livensparger": {
@@ -721,14 +721,14 @@
       "accuracy_pct": 94.9
     },
     "Charlie Ramos": {
-      "total": 60,
-      "correct": 51,
-      "correct_rate": 0.85,
-      "total_called": 6149,
-      "correct_called": 5679,
-      "wrong_strikes": 266,
-      "wrong_balls": 204,
-      "accuracy_pct": 92.4
+      "total": 63,
+      "correct": 53,
+      "correct_rate": 0.8412698412698413,
+      "total_called": 6330,
+      "correct_called": 5845,
+      "wrong_strikes": 279,
+      "wrong_balls": 206,
+      "accuracy_pct": 92.3
     },
     "Junior Valentine": {
       "total": 59,
