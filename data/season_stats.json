@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "total_challenges": 5809,
   "total_overturned": 2566,
   "team_stats": {
@@ -369,11 +369,11 @@
       "total": 52,
       "correct": 44,
       "correct_rate": 0.8461538461538461,
-      "total_called": 7204,
-      "correct_called": 6537,
-      "wrong_strikes": 433,
-      "wrong_balls": 234,
-      "accuracy_pct": 90.7
+      "total_called": 7364,
+      "correct_called": 6691,
+      "wrong_strikes": 437,
+      "wrong_balls": 236,
+      "accuracy_pct": 90.9
     },
     "Tripp Gibson": {
       "total": 30,
