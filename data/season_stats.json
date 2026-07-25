@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "total_challenges": 5851,
   "total_overturned": 2590,
   "team_stats": {
@@ -544,10 +544,10 @@
       "total": 21,
       "correct": 14,
       "correct_rate": 0.6666666666666666,
-      "total_called": 6814,
-      "correct_called": 6239,
-      "wrong_strikes": 364,
-      "wrong_balls": 211,
+      "total_called": 6933,
+      "correct_called": 6354,
+      "wrong_strikes": 366,
+      "wrong_balls": 213,
       "accuracy_pct": 91.6
     },
     "Dan Bellino": {
