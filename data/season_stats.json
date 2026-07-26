@@ -664,11 +664,11 @@
       "total": 118,
       "correct": 89,
       "correct_rate": 0.7542372881355932,
-      "total_called": 10098,
-      "correct_called": 9355,
-      "wrong_strikes": 485,
-      "wrong_balls": 258,
-      "accuracy_pct": 92.6
+      "total_called": 10223,
+      "correct_called": 9472,
+      "wrong_strikes": 491,
+      "wrong_balls": 260,
+      "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
       "total": 94,
@@ -953,12 +953,12 @@
     "Jansen Visconti": {
       "total": 35,
       "correct": 32,
-      "total_called": 8328,
-      "correct_called": 7706,
-      "wrong_strikes": 321,
-      "wrong_balls": 301,
+      "total_called": 8476,
+      "correct_called": 7845,
+      "wrong_strikes": 326,
+      "wrong_balls": 305,
       "correct_rate": 0.9142857142857143,
-      "accuracy_pct": 92.5
+      "accuracy_pct": 92.6
     },
     "Clint Vondrak": {
       "total": 81,
@@ -1023,10 +1023,10 @@
     "Tyler Jones": {
       "total": 84,
       "correct": 76,
-      "total_called": 7252,
-      "correct_called": 6693,
-      "wrong_strikes": 257,
-      "wrong_balls": 302,
+      "total_called": 7356,
+      "correct_called": 6789,
+      "wrong_strikes": 263,
+      "wrong_balls": 304,
       "correct_rate": 0.9047619047619048,
       "accuracy_pct": 92.3
     },
