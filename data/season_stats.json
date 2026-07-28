@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-27",
-  "total_challenges": 5955,
-  "total_overturned": 2628,
+  "total_challenges": 5956,
+  "total_overturned": 2629,
   "team_stats": {
     "CIN": {
       "challenges": 361,
@@ -34,13 +34,13 @@
       "missed_calls": 80
     },
     "SEA": {
-      "challenges": 427,
-      "overturned": 190,
+      "challenges": 428,
+      "overturned": 191,
       "missed_calls": 68
     },
     "TEX": {
-      "challenges": 314,
-      "overturned": 119,
+      "challenges": 315,
+      "overturned": 120,
       "missed_calls": 31
     },
     "LAD": {
@@ -841,14 +841,14 @@
       "accuracy_pct": 93.0
     },
     "Derek Thomas": {
-      "total": 64,
-      "correct": 51,
-      "correct_rate": 0.796875,
-      "total_called": 7027,
-      "correct_called": 6390,
-      "wrong_strikes": 409,
-      "wrong_balls": 228,
-      "accuracy_pct": 90.9
+      "total": 65,
+      "correct": 52,
+      "correct_rate": 0.8,
+      "total_called": 7154,
+      "correct_called": 6508,
+      "wrong_strikes": 413,
+      "wrong_balls": 233,
+      "accuracy_pct": 91.0
     },
     "Alan Porter": {
       "total": 73,
