@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-07-30",
-  "total_challenges": 6046,
-  "total_overturned": 2673,
+  "total_challenges": 6052,
+  "total_overturned": 2675,
   "team_stats": {
     "CIN": {
       "challenges": 383,
@@ -14,8 +14,8 @@
       "missed_calls": 62
     },
     "TB": {
-      "challenges": 508,
-      "overturned": 220,
+      "challenges": 511,
+      "overturned": 222,
       "missed_calls": 89
     },
     "ATL": {
@@ -39,8 +39,8 @@
       "missed_calls": 70
     },
     "TEX": {
-      "challenges": 325,
-      "overturned": 128,
+      "challenges": 328,
+      "overturned": 130,
       "missed_calls": 31
     },
     "LAD": {
@@ -54,9 +54,9 @@
       "missed_calls": 83
     },
     "NYY": {
-      "challenges": 513,
+      "challenges": 515,
       "overturned": 236,
-      "missed_calls": 96
+      "missed_calls": 97
     },
     "SF": {
       "challenges": 263,
@@ -84,9 +84,9 @@
       "missed_calls": 69
     },
     "CWS": {
-      "challenges": 513,
+      "challenges": 515,
       "overturned": 273,
-      "missed_calls": 67
+      "missed_calls": 68
     },
     "BOS": {
       "challenges": 422,
@@ -114,7 +114,7 @@
       "missed_calls": 55
     },
     "MIN": {
-      "challenges": 528,
+      "challenges": 529,
       "overturned": 273,
       "missed_calls": 73
     },
@@ -139,7 +139,7 @@
       "missed_calls": 86
     },
     "KC": {
-      "challenges": 362,
+      "challenges": 363,
       "overturned": 112,
       "missed_calls": 63
     },
@@ -751,13 +751,13 @@
       "accuracy_pct": 92.4
     },
     "Nick Mahrley": {
-      "total": 34,
-      "correct": 22,
-      "correct_rate": 0.6470588235294118,
-      "total_called": 6290,
-      "correct_called": 5679,
-      "wrong_strikes": 433,
-      "wrong_balls": 178,
+      "total": 35,
+      "correct": 23,
+      "correct_rate": 0.6571428571428571,
+      "total_called": 6424,
+      "correct_called": 5801,
+      "wrong_strikes": 439,
+      "wrong_balls": 184,
       "accuracy_pct": 90.3
     },
     "Alex Tosi": {
@@ -811,14 +811,14 @@
       "accuracy_pct": 92.3
     },
     "Alex MacKay": {
-      "total": 91,
-      "correct": 87,
-      "correct_rate": 0.9560439560439561,
-      "total_called": 10596,
-      "correct_called": 9858,
-      "wrong_strikes": 466,
-      "wrong_balls": 272,
-      "accuracy_pct": 93.0
+      "total": 93,
+      "correct": 88,
+      "correct_rate": 0.946236559139785,
+      "total_called": 10767,
+      "correct_called": 10019,
+      "wrong_strikes": 474,
+      "wrong_balls": 274,
+      "accuracy_pct": 93.1
     },
     "Adam Hamari": {
       "total": 35,
@@ -911,13 +911,13 @@
       "accuracy_pct": 91.9
     },
     "Stu Scheurwater": {
-      "total": 117,
-      "correct": 100,
-      "total_called": 12687,
-      "correct_called": 11698,
-      "wrong_strikes": 625,
-      "wrong_balls": 364,
-      "correct_rate": 0.8547008547008547,
+      "total": 120,
+      "correct": 103,
+      "total_called": 12837,
+      "correct_called": 11834,
+      "wrong_strikes": 631,
+      "wrong_balls": 372,
+      "correct_rate": 0.8583333333333333,
       "accuracy_pct": 92.2
     },
     "Jacob Metz": {
@@ -1023,10 +1023,10 @@
     "Tyler Jones": {
       "total": 84,
       "correct": 76,
-      "total_called": 8154,
-      "correct_called": 7531,
-      "wrong_strikes": 301,
-      "wrong_balls": 322,
+      "total_called": 8328,
+      "correct_called": 7697,
+      "wrong_strikes": 303,
+      "wrong_balls": 328,
       "correct_rate": 0.9047619047619048,
       "accuracy_pct": 92.4
     },
