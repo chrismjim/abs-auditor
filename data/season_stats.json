@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-01",
   "total_challenges": 6096,
   "total_overturned": 2695,
   "team_stats": {
@@ -414,9 +414,9 @@
       "total": 81,
       "correct": 76,
       "correct_rate": 0.9382716049382716,
-      "total_called": 9712,
-      "correct_called": 8858,
-      "wrong_strikes": 620,
+      "total_called": 9864,
+      "correct_called": 8996,
+      "wrong_strikes": 634,
       "wrong_balls": 234,
       "accuracy_pct": 91.2
     },
