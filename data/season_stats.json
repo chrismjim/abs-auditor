@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-05",
-  "total_challenges": 6277,
-  "total_overturned": 2771,
+  "total_challenges": 6280,
+  "total_overturned": 2772,
   "team_stats": {
     "CIN": {
       "challenges": 393,
@@ -14,9 +14,9 @@
       "missed_calls": 68
     },
     "TB": {
-      "challenges": 536,
+      "challenges": 537,
       "overturned": 235,
-      "missed_calls": 93
+      "missed_calls": 94
     },
     "ATL": {
       "challenges": 441,
@@ -44,14 +44,14 @@
       "missed_calls": 32
     },
     "LAD": {
-      "challenges": 347,
-      "overturned": 172,
-      "missed_calls": 75
+      "challenges": 349,
+      "overturned": 173,
+      "missed_calls": 76
     },
     "CHC": {
-      "challenges": 373,
-      "overturned": 176,
-      "missed_calls": 86
+      "challenges": 375,
+      "overturned": 177,
+      "missed_calls": 87
     },
     "NYY": {
       "challenges": 536,
@@ -144,9 +144,9 @@
       "missed_calls": 65
     },
     "COL": {
-      "challenges": 375,
+      "challenges": 376,
       "overturned": 199,
-      "missed_calls": 17
+      "missed_calls": 18
     },
     "MIL": {
       "challenges": 404,
@@ -541,14 +541,14 @@
       "accuracy_pct": 92.1
     },
     "Erich Bacchus": {
-      "total": 23,
-      "correct": 15,
-      "correct_rate": 0.6521739130434783,
-      "total_called": 7788,
-      "correct_called": 7167,
-      "wrong_strikes": 391,
-      "wrong_balls": 230,
-      "accuracy_pct": 92.0
+      "total": 25,
+      "correct": 16,
+      "correct_rate": 0.64,
+      "total_called": 7929,
+      "correct_called": 7290,
+      "wrong_strikes": 404,
+      "wrong_balls": 235,
+      "accuracy_pct": 91.9
     },
     "Dan Bellino": {
       "total": 41,
@@ -901,13 +901,13 @@
       "accuracy_pct": 91.6
     },
     "Roberto Ortiz": {
-      "total": 89,
+      "total": 90,
       "correct": 80,
-      "correct_rate": 0.898876404494382,
-      "total_called": 10393,
-      "correct_called": 9552,
-      "wrong_strikes": 511,
-      "wrong_balls": 330,
+      "correct_rate": 0.8888888888888888,
+      "total_called": 10515,
+      "correct_called": 9662,
+      "wrong_strikes": 518,
+      "wrong_balls": 335,
       "accuracy_pct": 91.9
     },
     "Stu Scheurwater": {
@@ -933,10 +933,10 @@
     "Mike Muchlinski": {
       "total": 57,
       "correct": 47,
-      "total_called": 14734,
-      "correct_called": 13532,
-      "wrong_strikes": 813,
-      "wrong_balls": 389,
+      "total_called": 14896,
+      "correct_called": 13680,
+      "wrong_strikes": 822,
+      "wrong_balls": 394,
       "correct_rate": 0.8245614035087719,
       "accuracy_pct": 91.8
     },
@@ -1003,10 +1003,10 @@
     "Louie Krupa": {
       "total": 41,
       "correct": 39,
-      "total_called": 5132,
-      "correct_called": 4707,
-      "wrong_strikes": 265,
-      "wrong_balls": 160,
+      "total_called": 5290,
+      "correct_called": 4849,
+      "wrong_strikes": 273,
+      "wrong_balls": 168,
       "correct_rate": 0.9512195121951219,
       "accuracy_pct": 91.7
     },
