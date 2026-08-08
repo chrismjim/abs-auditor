@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-07",
-  "total_challenges": 6393,
-  "total_overturned": 2816,
+  "last_updated": "2026-08-08",
+  "total_challenges": 6395,
+  "total_overturned": 2817,
   "team_stats": {
     "CIN": {
       "challenges": 405,
@@ -19,9 +19,9 @@
       "missed_calls": 97
     },
     "ATL": {
-      "challenges": 444,
-      "overturned": 174,
-      "missed_calls": 103
+      "challenges": 446,
+      "overturned": 175,
+      "missed_calls": 104
     },
     "ATH": {
       "challenges": 343,
@@ -54,9 +54,9 @@
       "missed_calls": 93
     },
     "NYY": {
-      "challenges": 542,
-      "overturned": 247,
-      "missed_calls": 104
+      "challenges": 544,
+      "overturned": 248,
+      "missed_calls": 105
     },
     "SF": {
       "challenges": 279,
@@ -681,13 +681,13 @@
       "accuracy_pct": 91.9
     },
     "Dan Merzel": {
-      "total": 68,
-      "correct": 62,
-      "correct_rate": 0.9117647058823529,
-      "total_called": 10100,
-      "correct_called": 9408,
-      "wrong_strikes": 444,
-      "wrong_balls": 248,
+      "total": 70,
+      "correct": 63,
+      "correct_rate": 0.9,
+      "total_called": 10254,
+      "correct_called": 9548,
+      "wrong_strikes": 452,
+      "wrong_balls": 254,
       "accuracy_pct": 93.1
     },
     "Jeremie Rehak": {
