@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-08",
-  "total_challenges": 6399,
-  "total_overturned": 2818,
+  "total_challenges": 6403,
+  "total_overturned": 2819,
   "team_stats": {
     "CIN": {
       "challenges": 405,
@@ -19,14 +19,14 @@
       "missed_calls": 97
     },
     "ATL": {
-      "challenges": 448,
-      "overturned": 176,
-      "missed_calls": 105
+      "challenges": 450,
+      "overturned": 177,
+      "missed_calls": 106
     },
     "ATH": {
-      "challenges": 345,
+      "challenges": 347,
       "overturned": 184,
-      "missed_calls": 32
+      "missed_calls": 34
     },
     "NYM": {
       "challenges": 438,
@@ -54,9 +54,9 @@
       "missed_calls": 93
     },
     "NYY": {
-      "challenges": 546,
-      "overturned": 249,
-      "missed_calls": 106
+      "challenges": 548,
+      "overturned": 250,
+      "missed_calls": 107
     },
     "SF": {
       "challenges": 279,
@@ -89,9 +89,9 @@
       "missed_calls": 78
     },
     "BOS": {
-      "challenges": 445,
+      "challenges": 447,
       "overturned": 160,
-      "missed_calls": 64
+      "missed_calls": 66
     },
     "MIA": {
       "challenges": 512,
@@ -289,10 +289,10 @@
       "total": 69,
       "correct": 59,
       "correct_rate": 0.855072463768116,
-      "total_called": 10105,
-      "correct_called": 9407,
-      "wrong_strikes": 386,
-      "wrong_balls": 312,
+      "total_called": 10257,
+      "correct_called": 9550,
+      "wrong_strikes": 391,
+      "wrong_balls": 316,
       "accuracy_pct": 93.1
     },
     "Chad Fairchild": {
@@ -671,23 +671,23 @@
       "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
-      "total": 100,
+      "total": 102,
       "correct": 70,
-      "correct_rate": 0.7,
-      "total_called": 10831,
-      "correct_called": 9953,
-      "wrong_strikes": 549,
-      "wrong_balls": 329,
-      "accuracy_pct": 91.9
+      "correct_rate": 0.6862745098039216,
+      "total_called": 10973,
+      "correct_called": 10078,
+      "wrong_strikes": 558,
+      "wrong_balls": 337,
+      "accuracy_pct": 91.8
     },
     "Dan Merzel": {
-      "total": 72,
-      "correct": 64,
-      "correct_rate": 0.8888888888888888,
-      "total_called": 10408,
-      "correct_called": 9688,
-      "wrong_strikes": 460,
-      "wrong_balls": 260,
+      "total": 74,
+      "correct": 65,
+      "correct_rate": 0.8783783783783784,
+      "total_called": 10562,
+      "correct_called": 9828,
+      "wrong_strikes": 468,
+      "wrong_balls": 266,
       "accuracy_pct": 93.1
     },
     "Jeremie Rehak": {
