@@ -874,10 +874,10 @@
       "total": 52,
       "correct": 50,
       "correct_rate": 0.9615384615384616,
-      "total_called": 9229,
-      "correct_called": 8461,
-      "wrong_strikes": 560,
-      "wrong_balls": 208,
+      "total_called": 9361,
+      "correct_called": 8580,
+      "wrong_strikes": 566,
+      "wrong_balls": 215,
       "accuracy_pct": 91.7
     },
     "Brock Ballou": {
