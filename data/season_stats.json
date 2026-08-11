@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-09",
-  "total_challenges": 6527,
-  "total_overturned": 2878,
+  "last_updated": "2026-08-10",
+  "total_challenges": 6529,
+  "total_overturned": 2880,
   "team_stats": {
     "CIN": {
       "challenges": 408,
@@ -69,8 +69,8 @@
       "missed_calls": 98
     },
     "TOR": {
-      "challenges": 370,
-      "overturned": 152,
+      "challenges": 372,
+      "overturned": 154,
       "missed_calls": 59
     },
     "STL": {
@@ -89,8 +89,8 @@
       "missed_calls": 78
     },
     "BOS": {
-      "challenges": 474,
-      "overturned": 174,
+      "challenges": 476,
+      "overturned": 176,
       "missed_calls": 72
     },
     "MIA": {
@@ -721,14 +721,14 @@
       "accuracy_pct": 94.5
     },
     "Charlie Ramos": {
-      "total": 72,
-      "correct": 61,
-      "correct_rate": 0.8472222222222222,
-      "total_called": 6829,
-      "correct_called": 6315,
-      "wrong_strikes": 298,
-      "wrong_balls": 216,
-      "accuracy_pct": 92.5
+      "total": 74,
+      "correct": 63,
+      "correct_rate": 0.8513513513513513,
+      "total_called": 6980,
+      "correct_called": 6450,
+      "wrong_strikes": 307,
+      "wrong_balls": 223,
+      "accuracy_pct": 92.4
     },
     "Junior Valentine": {
       "total": 59,
