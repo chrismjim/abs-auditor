@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-10",
-  "total_challenges": 6529,
-  "total_overturned": 2880,
+  "total_challenges": 6537,
+  "total_overturned": 2885,
   "team_stats": {
     "CIN": {
       "challenges": 408,
@@ -19,8 +19,8 @@
       "missed_calls": 97
     },
     "ATL": {
-      "challenges": 463,
-      "overturned": 180,
+      "challenges": 464,
+      "overturned": 181,
       "missed_calls": 109
     },
     "ATH": {
@@ -29,8 +29,8 @@
       "missed_calls": 40
     },
     "NYM": {
-      "challenges": 448,
-      "overturned": 182,
+      "challenges": 449,
+      "overturned": 183,
       "missed_calls": 91
     },
     "SEA": {
@@ -64,22 +64,22 @@
       "missed_calls": 50
     },
     "BAL": {
-      "challenges": 524,
-      "overturned": 252,
+      "challenges": 527,
+      "overturned": 254,
       "missed_calls": 98
     },
     "TOR": {
-      "challenges": 372,
-      "overturned": 154,
+      "challenges": 374,
+      "overturned": 156,
       "missed_calls": 59
     },
     "STL": {
-      "challenges": 456,
+      "challenges": 458,
       "overturned": 209,
       "missed_calls": 102
     },
     "PHI": {
-      "challenges": 382,
+      "challenges": 384,
       "overturned": 139,
       "missed_calls": 69
     },
@@ -89,8 +89,8 @@
       "missed_calls": 78
     },
     "BOS": {
-      "challenges": 476,
-      "overturned": 176,
+      "challenges": 478,
+      "overturned": 178,
       "missed_calls": 72
     },
     "MIA": {
@@ -114,8 +114,8 @@
       "missed_calls": 58
     },
     "MIN": {
-      "challenges": 562,
-      "overturned": 286,
+      "challenges": 565,
+      "overturned": 288,
       "missed_calls": 76
     },
     "CLE": {
@@ -356,13 +356,13 @@
       "accuracy_pct": 93.9
     },
     "Cory Blaser": {
-      "total": 39,
-      "correct": 28,
-      "correct_rate": 0.717948717948718,
-      "total_called": 5733,
-      "correct_called": 5302,
-      "wrong_strikes": 249,
-      "wrong_balls": 182,
+      "total": 40,
+      "correct": 29,
+      "correct_rate": 0.725,
+      "total_called": 5912,
+      "correct_called": 5468,
+      "wrong_strikes": 256,
+      "wrong_balls": 188,
       "accuracy_pct": 92.5
     },
     "David Rackley": {
@@ -721,14 +721,14 @@
       "accuracy_pct": 94.5
     },
     "Charlie Ramos": {
-      "total": 74,
-      "correct": 63,
-      "correct_rate": 0.8513513513513513,
-      "total_called": 6980,
-      "correct_called": 6450,
-      "wrong_strikes": 307,
-      "wrong_balls": 223,
-      "accuracy_pct": 92.4
+      "total": 76,
+      "correct": 65,
+      "correct_rate": 0.8552631578947368,
+      "total_called": 7131,
+      "correct_called": 6585,
+      "wrong_strikes": 316,
+      "wrong_balls": 230,
+      "accuracy_pct": 92.3
     },
     "Junior Valentine": {
       "total": 59,
@@ -821,14 +821,14 @@
       "accuracy_pct": 93.1
     },
     "Adam Hamari": {
-      "total": 37,
-      "correct": 24,
-      "correct_rate": 0.6486486486486487,
-      "total_called": 6335,
-      "correct_called": 5853,
-      "wrong_strikes": 303,
-      "wrong_balls": 179,
-      "accuracy_pct": 92.4
+      "total": 40,
+      "correct": 27,
+      "correct_rate": 0.675,
+      "total_called": 6502,
+      "correct_called": 6002,
+      "wrong_strikes": 313,
+      "wrong_balls": 187,
+      "accuracy_pct": 92.3
     },
     "Ben May": {
       "total": 25,
@@ -1001,13 +1001,13 @@
       "accuracy_pct": 91.4
     },
     "Louie Krupa": {
-      "total": 41,
-      "correct": 39,
-      "total_called": 5764,
-      "correct_called": 5275,
-      "wrong_strikes": 297,
-      "wrong_balls": 192,
-      "correct_rate": 0.9512195121951219,
+      "total": 43,
+      "correct": 41,
+      "total_called": 5945,
+      "correct_called": 5439,
+      "wrong_strikes": 306,
+      "wrong_balls": 200,
+      "correct_rate": 0.9534883720930233,
       "accuracy_pct": 91.5
     },
     "Sean Barber": {
