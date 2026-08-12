@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-12",
-  "total_challenges": 6581,
-  "total_overturned": 2913,
+  "total_challenges": 6584,
+  "total_overturned": 2914,
   "team_stats": {
     "CIN": {
       "challenges": 409,
@@ -14,8 +14,8 @@
       "missed_calls": 68
     },
     "TB": {
-      "challenges": 543,
-      "overturned": 237,
+      "challenges": 544,
+      "overturned": 238,
       "missed_calls": 97
     },
     "ATL": {
@@ -24,8 +24,8 @@
       "missed_calls": 109
     },
     "ATH": {
-      "challenges": 376,
-      "overturned": 200,
+      "challenges": 377,
+      "overturned": 201,
       "missed_calls": 40
     },
     "NYM": {
@@ -74,14 +74,14 @@
       "missed_calls": 59
     },
     "STL": {
-      "challenges": 463,
+      "challenges": 465,
       "overturned": 209,
-      "missed_calls": 104
+      "missed_calls": 105
     },
     "PHI": {
-      "challenges": 389,
+      "challenges": 391,
       "overturned": 139,
-      "missed_calls": 71
+      "missed_calls": 72
     },
     "CWS": {
       "challenges": 547,
@@ -179,10 +179,10 @@
       "total": 90,
       "correct": 86,
       "correct_rate": 0.9555555555555556,
-      "total_called": 11421,
-      "correct_called": 10708,
-      "wrong_strikes": 360,
-      "wrong_balls": 353,
+      "total_called": 11554,
+      "correct_called": 10832,
+      "wrong_strikes": 367,
+      "wrong_balls": 355,
       "accuracy_pct": 93.8
     },
     "Ryan Additon": {
@@ -196,14 +196,14 @@
       "accuracy_pct": 90.6
     },
     "Dan Iassogna": {
-      "total": 104,
-      "correct": 76,
-      "correct_rate": 0.7307692307692307,
-      "total_called": 9189,
-      "correct_called": 8487,
-      "wrong_strikes": 443,
-      "wrong_balls": 259,
-      "accuracy_pct": 92.4
+      "total": 106,
+      "correct": 77,
+      "correct_rate": 0.7264150943396226,
+      "total_called": 9339,
+      "correct_called": 8623,
+      "wrong_strikes": 449,
+      "wrong_balls": 267,
+      "accuracy_pct": 92.3
     },
     "Willie Traynor": {
       "total": 90,
@@ -236,13 +236,13 @@
       "accuracy_pct": 92.7
     },
     "Adrian Johnson": {
-      "total": 30,
-      "correct": 21,
-      "correct_rate": 0.7,
-      "total_called": 3665,
-      "correct_called": 3426,
-      "wrong_strikes": 143,
-      "wrong_balls": 96,
+      "total": 31,
+      "correct": 22,
+      "correct_rate": 0.7096774193548387,
+      "total_called": 3798,
+      "correct_called": 3550,
+      "wrong_strikes": 149,
+      "wrong_balls": 99,
       "accuracy_pct": 93.5
     },
     "Laz Diaz": {
@@ -1023,10 +1023,10 @@
     "Tyler Jones": {
       "total": 87,
       "correct": 79,
-      "total_called": 9646,
-      "correct_called": 8927,
-      "wrong_strikes": 347,
-      "wrong_balls": 372,
+      "total_called": 9797,
+      "correct_called": 9065,
+      "wrong_strikes": 356,
+      "wrong_balls": 376,
       "correct_rate": 0.9080459770114943,
       "accuracy_pct": 92.5
     },
