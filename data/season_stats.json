@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-11",
-  "total_challenges": 6579,
+  "last_updated": "2026-08-12",
+  "total_challenges": 6581,
   "total_overturned": 2913,
   "team_stats": {
     "CIN": {
@@ -74,14 +74,14 @@
       "missed_calls": 59
     },
     "STL": {
-      "challenges": 461,
+      "challenges": 463,
       "overturned": 209,
-      "missed_calls": 103
+      "missed_calls": 104
     },
     "PHI": {
-      "challenges": 387,
+      "challenges": 389,
       "overturned": 139,
-      "missed_calls": 70
+      "missed_calls": 71
     },
     "CWS": {
       "challenges": 547,
@@ -196,13 +196,13 @@
       "accuracy_pct": 90.6
     },
     "Dan Iassogna": {
-      "total": 102,
-      "correct": 75,
-      "correct_rate": 0.7352941176470589,
-      "total_called": 9039,
-      "correct_called": 8351,
-      "wrong_strikes": 437,
-      "wrong_balls": 251,
+      "total": 104,
+      "correct": 76,
+      "correct_rate": 0.7307692307692307,
+      "total_called": 9189,
+      "correct_called": 8487,
+      "wrong_strikes": 443,
+      "wrong_balls": 259,
       "accuracy_pct": 92.4
     },
     "Willie Traynor": {
@@ -1023,12 +1023,12 @@
     "Tyler Jones": {
       "total": 87,
       "correct": 79,
-      "total_called": 9495,
-      "correct_called": 8789,
-      "wrong_strikes": 338,
-      "wrong_balls": 368,
+      "total_called": 9646,
+      "correct_called": 8927,
+      "wrong_strikes": 347,
+      "wrong_balls": 372,
       "correct_rate": 0.9080459770114943,
-      "accuracy_pct": 92.6
+      "accuracy_pct": 92.5
     },
     "Jonathan Parra": {
       "total": 42,
