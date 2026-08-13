@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-08-12",
-  "total_challenges": 6639,
-  "total_overturned": 2950,
+  "last_updated": "2026-08-13",
+  "total_challenges": 6644,
+  "total_overturned": 2953,
   "team_stats": {
     "CIN": {
-      "challenges": 415,
-      "overturned": 228,
-      "missed_calls": 61
+      "challenges": 419,
+      "overturned": 231,
+      "missed_calls": 62
     },
     "PIT": {
-      "challenges": 495,
+      "challenges": 496,
       "overturned": 165,
-      "missed_calls": 68
+      "missed_calls": 69
     },
     "TB": {
       "challenges": 548,
@@ -84,9 +84,9 @@
       "missed_calls": 76
     },
     "CWS": {
-      "challenges": 553,
-      "overturned": 286,
-      "missed_calls": 78
+      "challenges": 557,
+      "overturned": 289,
+      "missed_calls": 79
     },
     "BOS": {
       "challenges": 480,
@@ -94,9 +94,9 @@
       "missed_calls": 72
     },
     "MIA": {
-      "challenges": 543,
+      "challenges": 544,
       "overturned": 227,
-      "missed_calls": 111
+      "missed_calls": 112
     },
     "WSH": {
       "challenges": 431,
@@ -279,10 +279,10 @@
       "total": 100,
       "correct": 75,
       "correct_rate": 0.75,
-      "total_called": 7857,
-      "correct_called": 7154,
-      "wrong_strikes": 403,
-      "wrong_balls": 300,
+      "total_called": 8008,
+      "correct_called": 7294,
+      "wrong_strikes": 407,
+      "wrong_balls": 307,
       "accuracy_pct": 91.1
     },
     "Lance Barksdale": {
@@ -851,14 +851,14 @@
       "accuracy_pct": 91.2
     },
     "Alan Porter": {
-      "total": 75,
-      "correct": 59,
-      "correct_rate": 0.7866666666666666,
-      "total_called": 10058,
-      "correct_called": 9244,
-      "wrong_strikes": 474,
-      "wrong_balls": 340,
-      "accuracy_pct": 91.9
+      "total": 79,
+      "correct": 62,
+      "correct_rate": 0.7848101265822784,
+      "total_called": 10254,
+      "correct_called": 9418,
+      "wrong_strikes": 484,
+      "wrong_balls": 352,
+      "accuracy_pct": 91.8
     },
     "Steven Jaschinski": {
       "total": 54,
@@ -881,14 +881,14 @@
       "accuracy_pct": 91.5
     },
     "Brock Ballou": {
-      "total": 69,
+      "total": 70,
       "correct": 62,
-      "correct_rate": 0.8985507246376812,
-      "total_called": 7446,
-      "correct_called": 6898,
-      "wrong_strikes": 358,
-      "wrong_balls": 190,
-      "accuracy_pct": 92.6
+      "correct_rate": 0.8857142857142857,
+      "total_called": 7587,
+      "correct_called": 7019,
+      "wrong_strikes": 375,
+      "wrong_balls": 193,
+      "accuracy_pct": 92.5
     },
     "John Libka": {
       "total": 42,
