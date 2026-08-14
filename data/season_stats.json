@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "total_challenges": 6712,
   "total_overturned": 2996,
   "team_stats": {
@@ -774,11 +774,11 @@
       "total": 81,
       "correct": 72,
       "correct_rate": 0.8888888888888888,
-      "total_called": 10384,
-      "correct_called": 9546,
-      "wrong_strikes": 526,
-      "wrong_balls": 312,
-      "accuracy_pct": 91.9
+      "total_called": 10544,
+      "correct_called": 9700,
+      "wrong_strikes": 530,
+      "wrong_balls": 314,
+      "accuracy_pct": 92.0
     },
     "James Jean": {
       "total": 102,
