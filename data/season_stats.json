@@ -774,11 +774,11 @@
       "total": 81,
       "correct": 72,
       "correct_rate": 0.8888888888888888,
-      "total_called": 10544,
-      "correct_called": 9700,
-      "wrong_strikes": 530,
-      "wrong_balls": 314,
-      "accuracy_pct": 92.0
+      "total_called": 10704,
+      "correct_called": 9854,
+      "wrong_strikes": 534,
+      "wrong_balls": 316,
+      "accuracy_pct": 92.1
     },
     "James Jean": {
       "total": 102,
