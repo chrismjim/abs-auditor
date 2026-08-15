@@ -1,10 +1,10 @@
 {
   "last_updated": "2026-08-14",
-  "total_challenges": 6712,
-  "total_overturned": 2996,
+  "total_challenges": 6714,
+  "total_overturned": 2997,
   "team_stats": {
     "CIN": {
-      "challenges": 443,
+      "challenges": 444,
       "overturned": 249,
       "missed_calls": 68
     },
@@ -84,8 +84,8 @@
       "missed_calls": 76
     },
     "CWS": {
-      "challenges": 581,
-      "overturned": 307,
+      "challenges": 582,
+      "overturned": 308,
       "missed_calls": 85
     },
     "BOS": {
@@ -94,7 +94,7 @@
       "missed_calls": 72
     },
     "MIA": {
-      "challenges": 550,
+      "challenges": 551,
       "overturned": 227,
       "missed_calls": 118
     },
@@ -134,8 +134,8 @@
       "missed_calls": 38
     },
     "DET": {
-      "challenges": 532,
-      "overturned": 220,
+      "challenges": 533,
+      "overturned": 221,
       "missed_calls": 91
     },
     "KC": {
@@ -396,13 +396,13 @@
       "accuracy_pct": 90.9
     },
     "D.J. Reyburn": {
-      "total": 78,
-      "correct": 65,
-      "correct_rate": 0.8333333333333334,
-      "total_called": 8583,
-      "correct_called": 7781,
-      "wrong_strikes": 513,
-      "wrong_balls": 289,
+      "total": 79,
+      "correct": 66,
+      "correct_rate": 0.8354430379746836,
+      "total_called": 8729,
+      "correct_called": 7916,
+      "wrong_strikes": 519,
+      "wrong_balls": 294,
       "accuracy_pct": 90.7
     },
     "CB Bucknor": {
@@ -774,20 +774,20 @@
       "total": 81,
       "correct": 72,
       "correct_rate": 0.8888888888888888,
-      "total_called": 11344,
-      "correct_called": 10470,
-      "wrong_strikes": 550,
-      "wrong_balls": 324,
-      "accuracy_pct": 92.3
+      "total_called": 11504,
+      "correct_called": 10624,
+      "wrong_strikes": 554,
+      "wrong_balls": 326,
+      "accuracy_pct": 92.4
     },
     "James Jean": {
-      "total": 102,
-      "correct": 58,
-      "correct_rate": 0.5686274509803921,
-      "total_called": 12062,
-      "correct_called": 11177,
-      "wrong_strikes": 576,
-      "wrong_balls": 309,
+      "total": 103,
+      "correct": 59,
+      "correct_rate": 0.5728155339805825,
+      "total_called": 12198,
+      "correct_called": 11304,
+      "wrong_strikes": 583,
+      "wrong_balls": 311,
       "accuracy_pct": 92.7
     },
     "Edwin Jimenez": {
