@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-15",
-  "total_challenges": 6743,
-  "total_overturned": 3018,
+  "total_challenges": 6744,
+  "total_overturned": 3019,
   "team_stats": {
     "CIN": {
       "challenges": 447,
@@ -84,8 +84,8 @@
       "missed_calls": 76
     },
     "CWS": {
-      "challenges": 588,
-      "overturned": 314,
+      "challenges": 589,
+      "overturned": 315,
       "missed_calls": 85
     },
     "BOS": {
@@ -134,8 +134,8 @@
       "missed_calls": 38
     },
     "DET": {
-      "challenges": 539,
-      "overturned": 227,
+      "challenges": 540,
+      "overturned": 228,
       "missed_calls": 91
     },
     "KC": {
@@ -804,10 +804,10 @@
       "total": 70,
       "correct": 55,
       "correct_rate": 0.7857142857142857,
-      "total_called": 11528,
-      "correct_called": 10616,
-      "wrong_strikes": 577,
-      "wrong_balls": 335,
+      "total_called": 11684,
+      "correct_called": 10762,
+      "wrong_strikes": 585,
+      "wrong_balls": 337,
       "accuracy_pct": 92.1
     },
     "Alex MacKay": {
@@ -1001,13 +1001,13 @@
       "accuracy_pct": 91.4
     },
     "Louie Krupa": {
-      "total": 48,
-      "correct": 46,
-      "total_called": 6543,
-      "correct_called": 5987,
-      "wrong_strikes": 348,
+      "total": 49,
+      "correct": 47,
+      "total_called": 6682,
+      "correct_called": 6115,
+      "wrong_strikes": 359,
       "wrong_balls": 208,
-      "correct_rate": 0.9583333333333334,
+      "correct_rate": 0.9591836734693877,
       "accuracy_pct": 91.5
     },
     "Sean Barber": {
