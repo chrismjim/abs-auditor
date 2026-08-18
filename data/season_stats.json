@@ -1,10 +1,10 @@
 {
   "last_updated": "2026-08-17",
-  "total_challenges": 6969,
+  "total_challenges": 6971,
   "total_overturned": 3101,
   "team_stats": {
     "CIN": {
-      "challenges": 492,
+      "challenges": 494,
       "overturned": 266,
       "missed_calls": 68
     },
@@ -74,7 +74,7 @@
       "missed_calls": 59
     },
     "STL": {
-      "challenges": 511,
+      "challenges": 513,
       "overturned": 217,
       "missed_calls": 109
     },
@@ -561,13 +561,13 @@
       "accuracy_pct": 93.0
     },
     "Vic Carapazza": {
-      "total": 98,
-      "correct": 95,
-      "correct_rate": 0.9693877551020408,
-      "total_called": 14506,
-      "correct_called": 13347,
-      "wrong_strikes": 851,
-      "wrong_balls": 308,
+      "total": 100,
+      "correct": 97,
+      "correct_rate": 0.97,
+      "total_called": 14681,
+      "correct_called": 13513,
+      "wrong_strikes": 858,
+      "wrong_balls": 310,
       "accuracy_pct": 92.0
     },
     "Mike Estabrook": {
@@ -1063,12 +1063,12 @@
     "Felix Neon": {
       "total": 53,
       "correct": 50,
-      "total_called": 4826,
-      "correct_called": 4453,
-      "wrong_strikes": 243,
-      "wrong_balls": 130,
+      "total_called": 4971,
+      "correct_called": 4591,
+      "wrong_strikes": 246,
+      "wrong_balls": 134,
       "correct_rate": 0.9433962264150944,
-      "accuracy_pct": 92.3
+      "accuracy_pct": 92.4
     }
   }
 }
