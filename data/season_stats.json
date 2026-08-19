@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-19",
-  "total_challenges": 7065,
-  "total_overturned": 3157,
+  "total_challenges": 7068,
+  "total_overturned": 3159,
   "team_stats": {
     "CIN": {
       "challenges": 503,
@@ -19,8 +19,8 @@
       "missed_calls": 101
     },
     "ATL": {
-      "challenges": 473,
-      "overturned": 188,
+      "challenges": 474,
+      "overturned": 189,
       "missed_calls": 109
     },
     "ATH": {
@@ -29,8 +29,8 @@
       "missed_calls": 40
     },
     "NYM": {
-      "challenges": 506,
-      "overturned": 199,
+      "challenges": 507,
+      "overturned": 200,
       "missed_calls": 100
     },
     "SEA": {
@@ -49,9 +49,9 @@
       "missed_calls": 82
     },
     "CHC": {
-      "challenges": 432,
+      "challenges": 433,
       "overturned": 198,
-      "missed_calls": 101
+      "missed_calls": 102
     },
     "NYY": {
       "challenges": 615,
@@ -84,9 +84,9 @@
       "missed_calls": 82
     },
     "CWS": {
-      "challenges": 602,
+      "challenges": 603,
       "overturned": 326,
-      "missed_calls": 86
+      "missed_calls": 87
     },
     "BOS": {
       "challenges": 509,
@@ -114,8 +114,8 @@
       "missed_calls": 58
     },
     "MIN": {
-      "challenges": 578,
-      "overturned": 293,
+      "challenges": 579,
+      "overturned": 294,
       "missed_calls": 79
     },
     "CLE": {
@@ -129,8 +129,8 @@
       "missed_calls": 38
     },
     "SD": {
-      "challenges": 371,
-      "overturned": 142,
+      "challenges": 372,
+      "overturned": 143,
       "missed_calls": 41
     },
     "DET": {
@@ -259,10 +259,10 @@
       "total": 74,
       "correct": 42,
       "correct_rate": 0.5675675675675675,
-      "total_called": 8695,
-      "correct_called": 8001,
-      "wrong_strikes": 416,
-      "wrong_balls": 278,
+      "total_called": 8855,
+      "correct_called": 8146,
+      "wrong_strikes": 424,
+      "wrong_balls": 285,
       "accuracy_pct": 92.0
     },
     "Chris Guccione": {
@@ -491,13 +491,13 @@
       "accuracy_pct": 91.5
     },
     "Carlos Torres": {
-      "total": 100,
-      "correct": 94,
-      "correct_rate": 0.94,
-      "total_called": 9957,
-      "correct_called": 9087,
-      "wrong_strikes": 577,
-      "wrong_balls": 293,
+      "total": 101,
+      "correct": 95,
+      "correct_rate": 0.9405940594059405,
+      "total_called": 10106,
+      "correct_called": 9226,
+      "wrong_strikes": 583,
+      "wrong_balls": 297,
       "accuracy_pct": 91.3
     },
     "Nestor Ceja": {
@@ -671,13 +671,13 @@
       "accuracy_pct": 92.6
     },
     "Tom Hanahan": {
-      "total": 109,
+      "total": 110,
       "correct": 70,
-      "correct_rate": 0.6422018348623854,
-      "total_called": 11547,
-      "correct_called": 10590,
-      "wrong_strikes": 592,
-      "wrong_balls": 365,
+      "correct_rate": 0.6363636363636364,
+      "total_called": 11695,
+      "correct_called": 10727,
+      "wrong_strikes": 599,
+      "wrong_balls": 369,
       "accuracy_pct": 91.7
     },
     "Dan Merzel": {
@@ -791,13 +791,13 @@
       "accuracy_pct": 92.7
     },
     "Edwin Jimenez": {
-      "total": 23,
-      "correct": 8,
-      "correct_rate": 0.34782608695652173,
-      "total_called": 6438,
-      "correct_called": 5898,
-      "wrong_strikes": 382,
-      "wrong_balls": 158,
+      "total": 24,
+      "correct": 9,
+      "correct_rate": 0.375,
+      "total_called": 6595,
+      "correct_called": 6044,
+      "wrong_strikes": 388,
+      "wrong_balls": 163,
       "accuracy_pct": 91.6
     },
     "Mark Wegner": {
