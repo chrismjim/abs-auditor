@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18",
+  "last_updated": "2026-08-19",
   "total_challenges": 7060,
   "total_overturned": 3153,
   "team_stats": {
@@ -259,11 +259,11 @@
       "total": 74,
       "correct": 42,
       "correct_rate": 0.5675675675675675,
-      "total_called": 8052,
-      "correct_called": 7421,
-      "wrong_strikes": 381,
-      "wrong_balls": 250,
-      "accuracy_pct": 92.2
+      "total_called": 8213,
+      "correct_called": 7566,
+      "wrong_strikes": 390,
+      "wrong_balls": 257,
+      "accuracy_pct": 92.1
     },
     "Chris Guccione": {
       "total": 39,
