@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-17",
-  "total_challenges": 7011,
-  "total_overturned": 3121,
+  "last_updated": "2026-08-18",
+  "total_challenges": 7014,
+  "total_overturned": 3123,
   "team_stats": {
     "CIN": {
       "challenges": 503,
@@ -54,8 +54,8 @@
       "missed_calls": 100
     },
     "NYY": {
-      "challenges": 603,
-      "overturned": 287,
+      "challenges": 606,
+      "overturned": 289,
       "missed_calls": 118
     },
     "SF": {
@@ -64,8 +64,8 @@
       "missed_calls": 50
     },
     "BAL": {
-      "challenges": 567,
-      "overturned": 260,
+      "challenges": 570,
+      "overturned": 262,
       "missed_calls": 102
     },
     "TOR": {
@@ -279,10 +279,10 @@
       "total": 100,
       "correct": 75,
       "correct_rate": 0.75,
-      "total_called": 8914,
-      "correct_called": 8134,
-      "wrong_strikes": 431,
-      "wrong_balls": 349,
+      "total_called": 9066,
+      "correct_called": 8271,
+      "wrong_strikes": 444,
+      "wrong_balls": 351,
       "accuracy_pct": 91.2
     },
     "Lance Barksdale": {
@@ -329,11 +329,11 @@
       "total": 41,
       "correct": 32,
       "correct_rate": 0.7804878048780488,
-      "total_called": 7769,
-      "correct_called": 7108,
+      "total_called": 7863,
+      "correct_called": 7201,
       "wrong_strikes": 386,
-      "wrong_balls": 275,
-      "accuracy_pct": 91.5
+      "wrong_balls": 276,
+      "accuracy_pct": 91.6
     },
     "Lance Barrett": {
       "total": 127,
@@ -346,13 +346,13 @@
       "accuracy_pct": 92.5
     },
     "Will Little": {
-      "total": 123,
-      "correct": 113,
-      "correct_rate": 0.9186991869918699,
-      "total_called": 10020,
-      "correct_called": 9410,
-      "wrong_strikes": 351,
-      "wrong_balls": 259,
+      "total": 126,
+      "correct": 116,
+      "correct_rate": 0.9206349206349206,
+      "total_called": 10173,
+      "correct_called": 9548,
+      "wrong_strikes": 360,
+      "wrong_balls": 265,
       "accuracy_pct": 93.9
     },
     "Cory Blaser": {
@@ -584,10 +584,10 @@
       "total": 73,
       "correct": 63,
       "correct_rate": 0.863013698630137,
-      "total_called": 12261,
-      "correct_called": 11235,
-      "wrong_strikes": 657,
-      "wrong_balls": 369,
+      "total_called": 12426,
+      "correct_called": 11384,
+      "wrong_strikes": 670,
+      "wrong_balls": 372,
       "accuracy_pct": 91.6
     },
     "Mark Ripperger": {
@@ -884,10 +884,10 @@
       "total": 76,
       "correct": 62,
       "correct_rate": 0.8157894736842105,
-      "total_called": 8433,
-      "correct_called": 7745,
-      "wrong_strikes": 477,
-      "wrong_balls": 211,
+      "total_called": 8563,
+      "correct_called": 7857,
+      "wrong_strikes": 488,
+      "wrong_balls": 218,
       "accuracy_pct": 91.8
     },
     "John Libka": {
