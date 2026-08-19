@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-19",
-  "total_challenges": 7060,
-  "total_overturned": 3153,
+  "total_challenges": 7062,
+  "total_overturned": 3155,
   "team_stats": {
     "CIN": {
       "challenges": 503,
@@ -19,8 +19,8 @@
       "missed_calls": 101
     },
     "ATL": {
-      "challenges": 471,
-      "overturned": 186,
+      "challenges": 472,
+      "overturned": 187,
       "missed_calls": 109
     },
     "ATH": {
@@ -29,8 +29,8 @@
       "missed_calls": 40
     },
     "NYM": {
-      "challenges": 504,
-      "overturned": 197,
+      "challenges": 505,
+      "overturned": 198,
       "missed_calls": 100
     },
     "SEA": {
@@ -114,8 +114,8 @@
       "missed_calls": 58
     },
     "MIN": {
-      "challenges": 576,
-      "overturned": 291,
+      "challenges": 577,
+      "overturned": 292,
       "missed_calls": 79
     },
     "CLE": {
@@ -129,8 +129,8 @@
       "missed_calls": 38
     },
     "SD": {
-      "challenges": 369,
-      "overturned": 140,
+      "challenges": 370,
+      "overturned": 141,
       "missed_calls": 41
     },
     "DET": {
@@ -259,11 +259,11 @@
       "total": 74,
       "correct": 42,
       "correct_rate": 0.5675675675675675,
-      "total_called": 8374,
-      "correct_called": 7711,
-      "wrong_strikes": 399,
-      "wrong_balls": 264,
-      "accuracy_pct": 92.1
+      "total_called": 8535,
+      "correct_called": 7856,
+      "wrong_strikes": 408,
+      "wrong_balls": 271,
+      "accuracy_pct": 92.0
     },
     "Chris Guccione": {
       "total": 39,
@@ -491,13 +491,13 @@
       "accuracy_pct": 91.5
     },
     "Carlos Torres": {
-      "total": 98,
-      "correct": 92,
-      "correct_rate": 0.9387755102040817,
-      "total_called": 9659,
-      "correct_called": 8809,
-      "wrong_strikes": 565,
-      "wrong_balls": 285,
+      "total": 99,
+      "correct": 93,
+      "correct_rate": 0.9393939393939394,
+      "total_called": 9808,
+      "correct_called": 8948,
+      "wrong_strikes": 571,
+      "wrong_balls": 289,
       "accuracy_pct": 91.2
     },
     "Nestor Ceja": {
@@ -791,14 +791,14 @@
       "accuracy_pct": 92.7
     },
     "Edwin Jimenez": {
-      "total": 21,
-      "correct": 6,
-      "correct_rate": 0.2857142857142857,
-      "total_called": 6124,
-      "correct_called": 5606,
-      "wrong_strikes": 370,
-      "wrong_balls": 148,
-      "accuracy_pct": 91.5
+      "total": 22,
+      "correct": 7,
+      "correct_rate": 0.3181818181818182,
+      "total_called": 6281,
+      "correct_called": 5752,
+      "wrong_strikes": 376,
+      "wrong_balls": 153,
+      "accuracy_pct": 91.6
     },
     "Mark Wegner": {
       "total": 70,
