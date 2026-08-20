@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-19",
-  "total_challenges": 7118,
-  "total_overturned": 3182,
+  "last_updated": "2026-08-20",
+  "total_challenges": 7120,
+  "total_overturned": 3183,
   "team_stats": {
     "CIN": {
       "challenges": 512,
@@ -14,8 +14,8 @@
       "missed_calls": 78
     },
     "TB": {
-      "challenges": 583,
-      "overturned": 245,
+      "challenges": 585,
+      "overturned": 246,
       "missed_calls": 101
     },
     "ATL": {
@@ -69,8 +69,8 @@
       "missed_calls": 105
     },
     "TOR": {
-      "challenges": 390,
-      "overturned": 172,
+      "challenges": 392,
+      "overturned": 173,
       "missed_calls": 59
     },
     "STL": {
@@ -604,10 +604,10 @@
       "total": 94,
       "correct": 82,
       "correct_rate": 0.8723404255319149,
-      "total_called": 12974,
-      "correct_called": 11988,
-      "wrong_strikes": 585,
-      "wrong_balls": 401,
+      "total_called": 13163,
+      "correct_called": 12169,
+      "wrong_strikes": 589,
+      "wrong_balls": 405,
       "accuracy_pct": 92.4
     },
     "Bill Miller": {
@@ -864,10 +864,10 @@
       "total": 54,
       "correct": 53,
       "correct_rate": 0.9814814814814815,
-      "total_called": 4583,
-      "correct_called": 4255,
-      "wrong_strikes": 242,
-      "wrong_balls": 86,
+      "total_called": 4737,
+      "correct_called": 4394,
+      "wrong_strikes": 252,
+      "wrong_balls": 91,
       "accuracy_pct": 92.8
     },
     "Dexter Kelley": {
@@ -1011,12 +1011,12 @@
       "accuracy_pct": 91.7
     },
     "Sean Barber": {
-      "total": 94,
-      "correct": 94,
-      "total_called": 9967,
-      "correct_called": 9113,
-      "wrong_strikes": 519,
-      "wrong_balls": 335,
+      "total": 96,
+      "correct": 96,
+      "total_called": 10111,
+      "correct_called": 9246,
+      "wrong_strikes": 526,
+      "wrong_balls": 339,
       "correct_rate": 1.0,
       "accuracy_pct": 91.4
     },
