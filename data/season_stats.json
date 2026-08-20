@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-20",
-  "total_challenges": 7120,
-  "total_overturned": 3183,
+  "total_challenges": 7122,
+  "total_overturned": 3184,
   "team_stats": {
     "CIN": {
       "challenges": 512,
@@ -14,8 +14,8 @@
       "missed_calls": 78
     },
     "TB": {
-      "challenges": 585,
-      "overturned": 246,
+      "challenges": 587,
+      "overturned": 247,
       "missed_calls": 101
     },
     "ATL": {
@@ -69,8 +69,8 @@
       "missed_calls": 105
     },
     "TOR": {
-      "challenges": 392,
-      "overturned": 173,
+      "challenges": 394,
+      "overturned": 174,
       "missed_calls": 59
     },
     "STL": {
@@ -524,11 +524,11 @@
       "total": 72,
       "correct": 67,
       "correct_rate": 0.9305555555555556,
-      "total_called": 6172,
-      "correct_called": 5670,
-      "wrong_strikes": 317,
-      "wrong_balls": 185,
-      "accuracy_pct": 91.9
+      "total_called": 6312,
+      "correct_called": 5796,
+      "wrong_strikes": 329,
+      "wrong_balls": 187,
+      "accuracy_pct": 91.8
     },
     "Emil Jimenez": {
       "total": 76,
@@ -604,11 +604,11 @@
       "total": 94,
       "correct": 82,
       "correct_rate": 0.8723404255319149,
-      "total_called": 13163,
-      "correct_called": 12169,
-      "wrong_strikes": 589,
-      "wrong_balls": 405,
-      "accuracy_pct": 92.4
+      "total_called": 13352,
+      "correct_called": 12350,
+      "wrong_strikes": 593,
+      "wrong_balls": 409,
+      "accuracy_pct": 92.5
     },
     "Bill Miller": {
       "total": 94,
@@ -864,11 +864,11 @@
       "total": 54,
       "correct": 53,
       "correct_rate": 0.9814814814814815,
-      "total_called": 4737,
-      "correct_called": 4394,
-      "wrong_strikes": 252,
-      "wrong_balls": 91,
-      "accuracy_pct": 92.8
+      "total_called": 4891,
+      "correct_called": 4533,
+      "wrong_strikes": 262,
+      "wrong_balls": 96,
+      "accuracy_pct": 92.7
     },
     "Dexter Kelley": {
       "total": 54,
@@ -1011,14 +1011,14 @@
       "accuracy_pct": 91.7
     },
     "Sean Barber": {
-      "total": 96,
-      "correct": 96,
-      "total_called": 10111,
-      "correct_called": 9246,
-      "wrong_strikes": 526,
-      "wrong_balls": 339,
+      "total": 98,
+      "correct": 98,
+      "total_called": 10255,
+      "correct_called": 9379,
+      "wrong_strikes": 533,
+      "wrong_balls": 343,
       "correct_rate": 1.0,
-      "accuracy_pct": 91.4
+      "accuracy_pct": 91.5
     },
     "Tyler Jones": {
       "total": 99,
