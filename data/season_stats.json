@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-20",
-  "total_challenges": 7128,
-  "total_overturned": 3187,
+  "total_challenges": 7132,
+  "total_overturned": 3189,
   "team_stats": {
     "CIN": {
       "challenges": 512,
@@ -14,8 +14,8 @@
       "missed_calls": 78
     },
     "TB": {
-      "challenges": 591,
-      "overturned": 249,
+      "challenges": 593,
+      "overturned": 250,
       "missed_calls": 101
     },
     "ATL": {
@@ -34,8 +34,8 @@
       "missed_calls": 100
     },
     "SEA": {
-      "challenges": 493,
-      "overturned": 232,
+      "challenges": 495,
+      "overturned": 233,
       "missed_calls": 82
     },
     "TEX": {
@@ -69,8 +69,8 @@
       "missed_calls": 105
     },
     "TOR": {
-      "challenges": 398,
-      "overturned": 176,
+      "challenges": 400,
+      "overturned": 177,
       "missed_calls": 59
     },
     "STL": {
@@ -149,8 +149,8 @@
       "missed_calls": 21
     },
     "MIL": {
-      "challenges": 455,
-      "overturned": 219,
+      "challenges": 457,
+      "overturned": 220,
       "missed_calls": 54
     },
     "NL": {
@@ -359,11 +359,11 @@
       "total": 41,
       "correct": 30,
       "correct_rate": 0.7317073170731707,
-      "total_called": 8047,
-      "correct_called": 7451,
-      "wrong_strikes": 359,
-      "wrong_balls": 237,
-      "accuracy_pct": 92.6
+      "total_called": 8233,
+      "correct_called": 7628,
+      "wrong_strikes": 365,
+      "wrong_balls": 240,
+      "accuracy_pct": 92.7
     },
     "David Rackley": {
       "total": 52,
@@ -524,10 +524,10 @@
       "total": 72,
       "correct": 67,
       "correct_rate": 0.9305555555555556,
-      "total_called": 6592,
-      "correct_called": 6048,
-      "wrong_strikes": 353,
-      "wrong_balls": 191,
+      "total_called": 6732,
+      "correct_called": 6174,
+      "wrong_strikes": 365,
+      "wrong_balls": 193,
       "accuracy_pct": 91.7
     },
     "Emil Jimenez": {
@@ -604,10 +604,10 @@
       "total": 94,
       "correct": 82,
       "correct_rate": 0.8723404255319149,
-      "total_called": 13730,
-      "correct_called": 12712,
-      "wrong_strikes": 601,
-      "wrong_balls": 417,
+      "total_called": 13919,
+      "correct_called": 12893,
+      "wrong_strikes": 605,
+      "wrong_balls": 421,
       "accuracy_pct": 92.6
     },
     "Bill Miller": {
@@ -661,13 +661,13 @@
       "accuracy_pct": 92.1
     },
     "Quinn Wolcott": {
-      "total": 124,
-      "correct": 95,
-      "correct_rate": 0.7661290322580645,
-      "total_called": 11692,
-      "correct_called": 10831,
-      "wrong_strikes": 569,
-      "wrong_balls": 292,
+      "total": 126,
+      "correct": 97,
+      "correct_rate": 0.7698412698412699,
+      "total_called": 11884,
+      "correct_called": 11009,
+      "wrong_strikes": 579,
+      "wrong_balls": 296,
       "accuracy_pct": 92.6
     },
     "Tom Hanahan": {
@@ -864,10 +864,10 @@
       "total": 54,
       "correct": 53,
       "correct_rate": 0.9814814814814815,
-      "total_called": 5199,
-      "correct_called": 4811,
-      "wrong_strikes": 282,
-      "wrong_balls": 106,
+      "total_called": 5353,
+      "correct_called": 4950,
+      "wrong_strikes": 292,
+      "wrong_balls": 111,
       "accuracy_pct": 92.5
     },
     "Dexter Kelley": {
@@ -1011,12 +1011,12 @@
       "accuracy_pct": 91.7
     },
     "Sean Barber": {
-      "total": 102,
-      "correct": 102,
-      "total_called": 10543,
-      "correct_called": 9645,
-      "wrong_strikes": 547,
-      "wrong_balls": 351,
+      "total": 104,
+      "correct": 104,
+      "total_called": 10687,
+      "correct_called": 9778,
+      "wrong_strikes": 554,
+      "wrong_balls": 355,
       "correct_rate": 1.0,
       "accuracy_pct": 91.5
     },
