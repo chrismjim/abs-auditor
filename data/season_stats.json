@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-08-21",
-  "total_challenges": 7175,
+  "total_challenges": 7177,
   "total_overturned": 3208,
   "team_stats": {
     "CIN": {
@@ -19,9 +19,9 @@
       "missed_calls": 101
     },
     "ATL": {
-      "challenges": 488,
+      "challenges": 490,
       "overturned": 197,
-      "missed_calls": 112
+      "missed_calls": 113
     },
     "ATH": {
       "challenges": 390,
@@ -149,9 +149,9 @@
       "missed_calls": 21
     },
     "MIL": {
-      "challenges": 475,
+      "challenges": 477,
       "overturned": 226,
-      "missed_calls": 57
+      "missed_calls": 58
     },
     "NL": {
       "challenges": 1,
@@ -741,13 +741,13 @@
       "accuracy_pct": 93.4
     },
     "Todd Tichenor": {
-      "total": 92,
-      "correct": 88,
-      "correct_rate": 0.9565217391304348,
-      "total_called": 11140,
-      "correct_called": 10337,
-      "wrong_strikes": 493,
-      "wrong_balls": 310,
+      "total": 94,
+      "correct": 89,
+      "correct_rate": 0.9468085106382979,
+      "total_called": 11280,
+      "correct_called": 10468,
+      "wrong_strikes": 498,
+      "wrong_balls": 314,
       "accuracy_pct": 92.8
     },
     "Nick Mahrley": {
