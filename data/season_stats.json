@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-22",
-  "total_challenges": 7234,
-  "total_overturned": 3238,
+  "total_challenges": 7237,
+  "total_overturned": 3240,
   "team_stats": {
     "CIN": {
       "challenges": 515,
@@ -19,8 +19,8 @@
       "missed_calls": 101
     },
     "ATL": {
-      "challenges": 504,
-      "overturned": 203,
+      "challenges": 505,
+      "overturned": 204,
       "missed_calls": 117
     },
     "ATH": {
@@ -54,9 +54,9 @@
       "missed_calls": 110
     },
     "NYY": {
-      "challenges": 636,
-      "overturned": 307,
-      "missed_calls": 127
+      "challenges": 638,
+      "overturned": 308,
+      "missed_calls": 128
     },
     "SF": {
       "challenges": 325,
@@ -69,9 +69,9 @@
       "missed_calls": 105
     },
     "TOR": {
-      "challenges": 427,
-      "overturned": 192,
-      "missed_calls": 65
+      "challenges": 429,
+      "overturned": 193,
+      "missed_calls": 66
     },
     "STL": {
       "challenges": 534,
@@ -149,8 +149,8 @@
       "missed_calls": 21
     },
     "MIL": {
-      "challenges": 491,
-      "overturned": 232,
+      "challenges": 492,
+      "overturned": 233,
       "missed_calls": 62
     },
     "NL": {
@@ -196,13 +196,13 @@
       "accuracy_pct": 90.7
     },
     "Dan Iassogna": {
-      "total": 126,
-      "correct": 87,
-      "correct_rate": 0.6904761904761905,
-      "total_called": 11483,
-      "correct_called": 10523,
-      "wrong_strikes": 604,
-      "wrong_balls": 356,
+      "total": 128,
+      "correct": 88,
+      "correct_rate": 0.6875,
+      "total_called": 11666,
+      "correct_called": 10685,
+      "wrong_strikes": 619,
+      "wrong_balls": 362,
       "accuracy_pct": 91.6
     },
     "Willie Traynor": {
@@ -326,13 +326,13 @@
       "accuracy_pct": 91.9
     },
     "John Tumpane": {
-      "total": 47,
-      "correct": 38,
-      "correct_rate": 0.8085106382978723,
-      "total_called": 9087,
-      "correct_called": 8356,
-      "wrong_strikes": 422,
-      "wrong_balls": 309,
+      "total": 48,
+      "correct": 39,
+      "correct_rate": 0.8125,
+      "total_called": 9244,
+      "correct_called": 8502,
+      "wrong_strikes": 428,
+      "wrong_balls": 314,
       "accuracy_pct": 92.0
     },
     "Lance Barrett": {
@@ -399,10 +399,10 @@
       "total": 91,
       "correct": 78,
       "correct_rate": 0.8571428571428571,
-      "total_called": 9935,
-      "correct_called": 9046,
-      "wrong_strikes": 565,
-      "wrong_balls": 324,
+      "total_called": 10085,
+      "correct_called": 9188,
+      "wrong_strikes": 570,
+      "wrong_balls": 327,
       "accuracy_pct": 91.1
     },
     "CB Bucknor": {
