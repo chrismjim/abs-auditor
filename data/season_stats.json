@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22",
-  "total_challenges": 7286,
-  "total_overturned": 3273,
+  "last_updated": "2026-08-23",
+  "total_challenges": 7290,
+  "total_overturned": 3274,
   "team_stats": {
     "CIN": {
       "challenges": 521,
@@ -14,8 +14,8 @@
       "missed_calls": 78
     },
     "TB": {
-      "challenges": 605,
-      "overturned": 256,
+      "challenges": 606,
+      "overturned": 257,
       "missed_calls": 101
     },
     "ATL": {
@@ -54,9 +54,9 @@
       "missed_calls": 110
     },
     "NYY": {
-      "challenges": 646,
+      "challenges": 648,
       "overturned": 312,
-      "missed_calls": 132
+      "missed_calls": 134
     },
     "SF": {
       "challenges": 334,
@@ -64,14 +64,14 @@
       "missed_calls": 53
     },
     "BAL": {
-      "challenges": 585,
-      "overturned": 271,
+      "challenges": 586,
+      "overturned": 272,
       "missed_calls": 105
     },
     "TOR": {
-      "challenges": 437,
+      "challenges": 439,
       "overturned": 197,
-      "missed_calls": 70
+      "missed_calls": 72
     },
     "STL": {
       "challenges": 534,
@@ -94,12 +94,12 @@
       "missed_calls": 75
     },
     "MIA": {
-      "challenges": 607,
+      "challenges": 608,
       "overturned": 253,
       "missed_calls": 121
     },
     "WSH": {
-      "challenges": 490,
+      "challenges": 491,
       "overturned": 216,
       "missed_calls": 83
     },
@@ -249,10 +249,10 @@
       "total": 114,
       "correct": 84,
       "correct_rate": 0.7368421052631579,
-      "total_called": 10345,
-      "correct_called": 9369,
-      "wrong_strikes": 628,
-      "wrong_balls": 348,
+      "total_called": 10491,
+      "correct_called": 9506,
+      "wrong_strikes": 635,
+      "wrong_balls": 350,
       "accuracy_pct": 90.6
     },
     "Chris Conroy": {
@@ -711,14 +711,14 @@
       "accuracy_pct": 92.3
     },
     "Edwin Moscoso": {
-      "total": 112,
-      "correct": 90,
-      "correct_rate": 0.8035714285714286,
-      "total_called": 11720,
-      "correct_called": 11082,
-      "wrong_strikes": 394,
-      "wrong_balls": 244,
-      "accuracy_pct": 94.6
+      "total": 113,
+      "correct": 91,
+      "correct_rate": 0.8053097345132744,
+      "total_called": 11865,
+      "correct_called": 11214,
+      "wrong_strikes": 401,
+      "wrong_balls": 250,
+      "accuracy_pct": 94.5
     },
     "Charlie Ramos": {
       "total": 78,
@@ -911,13 +911,13 @@
       "accuracy_pct": 91.8
     },
     "Stu Scheurwater": {
-      "total": 139,
-      "correct": 118,
-      "total_called": 14763,
-      "correct_called": 13572,
-      "wrong_strikes": 725,
-      "wrong_balls": 466,
-      "correct_rate": 0.8489208633093526,
+      "total": 140,
+      "correct": 119,
+      "total_called": 14930,
+      "correct_called": 13727,
+      "wrong_strikes": 736,
+      "wrong_balls": 467,
+      "correct_rate": 0.85,
       "accuracy_pct": 91.9
     },
     "Jacob Metz": {
@@ -1001,13 +1001,13 @@
       "accuracy_pct": 91.5
     },
     "Louie Krupa": {
-      "total": 58,
+      "total": 60,
       "correct": 56,
-      "total_called": 9085,
-      "correct_called": 8329,
-      "wrong_strikes": 512,
-      "wrong_balls": 244,
-      "correct_rate": 0.9655172413793104,
+      "total_called": 9251,
+      "correct_called": 8483,
+      "wrong_strikes": 518,
+      "wrong_balls": 250,
+      "correct_rate": 0.9333333333333333,
       "accuracy_pct": 91.7
     },
     "Sean Barber": {
