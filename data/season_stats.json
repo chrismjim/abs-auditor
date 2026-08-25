@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-24",
-  "total_challenges": 7408,
-  "total_overturned": 3308,
+  "total_challenges": 7415,
+  "total_overturned": 3311,
   "team_stats": {
     "CIN": {
       "challenges": 521,
@@ -39,7 +39,7 @@
       "missed_calls": 82
     },
     "TEX": {
-      "challenges": 397,
+      "challenges": 398,
       "overturned": 167,
       "missed_calls": 40
     },
@@ -84,23 +84,23 @@
       "missed_calls": 82
     },
     "CWS": {
-      "challenges": 625,
+      "challenges": 626,
       "overturned": 326,
       "missed_calls": 98
     },
     "BOS": {
-      "challenges": 524,
-      "overturned": 198,
-      "missed_calls": 76
+      "challenges": 527,
+      "overturned": 200,
+      "missed_calls": 77
     },
     "MIA": {
-      "challenges": 622,
-      "overturned": 255,
-      "missed_calls": 122
+      "challenges": 625,
+      "overturned": 257,
+      "missed_calls": 123
     },
     "WSH": {
-      "challenges": 505,
-      "overturned": 217,
+      "challenges": 508,
+      "overturned": 218,
       "missed_calls": 83
     },
     "AZ": {
@@ -144,8 +144,8 @@
       "missed_calls": 68
     },
     "COL": {
-      "challenges": 431,
-      "overturned": 235,
+      "challenges": 434,
+      "overturned": 236,
       "missed_calls": 21
     },
     "MIL": {
@@ -266,13 +266,13 @@
       "accuracy_pct": 91.8
     },
     "Chris Guccione": {
-      "total": 39,
-      "correct": 34,
-      "correct_rate": 0.8717948717948718,
-      "total_called": 8849,
-      "correct_called": 8126,
-      "wrong_strikes": 461,
-      "wrong_balls": 262,
+      "total": 40,
+      "correct": 35,
+      "correct_rate": 0.875,
+      "total_called": 9023,
+      "correct_called": 8285,
+      "wrong_strikes": 472,
+      "wrong_balls": 266,
       "accuracy_pct": 91.8
     },
     "James Hoye": {
@@ -521,14 +521,14 @@
       "accuracy_pct": 92.2
     },
     "Ron Kulpa": {
-      "total": 75,
-      "correct": 69,
-      "correct_rate": 0.92,
-      "total_called": 7746,
-      "correct_called": 7091,
-      "wrong_strikes": 446,
-      "wrong_balls": 209,
-      "accuracy_pct": 91.5
+      "total": 78,
+      "correct": 71,
+      "correct_rate": 0.9102564102564102,
+      "total_called": 7920,
+      "correct_called": 7252,
+      "wrong_strikes": 455,
+      "wrong_balls": 213,
+      "accuracy_pct": 91.6
     },
     "Emil Jimenez": {
       "total": 76,
@@ -664,10 +664,10 @@
       "total": 138,
       "correct": 109,
       "correct_rate": 0.7898550724637681,
-      "total_called": 13328,
-      "correct_called": 12353,
-      "wrong_strikes": 649,
-      "wrong_balls": 326,
+      "total_called": 13474,
+      "correct_called": 12491,
+      "wrong_strikes": 654,
+      "wrong_balls": 329,
       "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
@@ -751,13 +751,13 @@
       "accuracy_pct": 92.8
     },
     "Nick Mahrley": {
-      "total": 42,
-      "correct": 30,
-      "correct_rate": 0.7142857142857143,
-      "total_called": 7159,
-      "correct_called": 6477,
-      "wrong_strikes": 471,
-      "wrong_balls": 211,
+      "total": 45,
+      "correct": 33,
+      "correct_rate": 0.7333333333333333,
+      "total_called": 7319,
+      "correct_called": 6627,
+      "wrong_strikes": 476,
+      "wrong_balls": 216,
       "accuracy_pct": 90.5
     },
     "Alex Tosi": {
