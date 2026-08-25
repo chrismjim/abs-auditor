@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23",
+  "last_updated": "2026-08-24",
   "total_challenges": 7402,
   "total_overturned": 3305,
   "team_stats": {
@@ -664,11 +664,11 @@
       "total": 138,
       "correct": 109,
       "correct_rate": 0.7898550724637681,
-      "total_called": 13036,
-      "correct_called": 12077,
-      "wrong_strikes": 639,
-      "wrong_balls": 320,
-      "accuracy_pct": 92.6
+      "total_called": 13182,
+      "correct_called": 12215,
+      "wrong_strikes": 644,
+      "wrong_balls": 323,
+      "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
       "total": 128,
