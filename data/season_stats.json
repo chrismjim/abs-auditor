@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-08-24",
-  "total_challenges": 7402,
-  "total_overturned": 3305,
+  "total_challenges": 7408,
+  "total_overturned": 3308,
   "team_stats": {
     "CIN": {
       "challenges": 521,
@@ -89,18 +89,18 @@
       "missed_calls": 98
     },
     "BOS": {
-      "challenges": 521,
-      "overturned": 196,
-      "missed_calls": 75
+      "challenges": 524,
+      "overturned": 198,
+      "missed_calls": 76
     },
     "MIA": {
-      "challenges": 619,
-      "overturned": 253,
-      "missed_calls": 121
+      "challenges": 622,
+      "overturned": 255,
+      "missed_calls": 122
     },
     "WSH": {
-      "challenges": 502,
-      "overturned": 216,
+      "challenges": 505,
+      "overturned": 217,
       "missed_calls": 83
     },
     "AZ": {
@@ -144,8 +144,8 @@
       "missed_calls": 68
     },
     "COL": {
-      "challenges": 428,
-      "overturned": 234,
+      "challenges": 431,
+      "overturned": 235,
       "missed_calls": 21
     },
     "MIL": {
@@ -521,13 +521,13 @@
       "accuracy_pct": 92.2
     },
     "Ron Kulpa": {
-      "total": 72,
-      "correct": 67,
-      "correct_rate": 0.9305555555555556,
-      "total_called": 7572,
-      "correct_called": 6930,
-      "wrong_strikes": 437,
-      "wrong_balls": 205,
+      "total": 75,
+      "correct": 69,
+      "correct_rate": 0.92,
+      "total_called": 7746,
+      "correct_called": 7091,
+      "wrong_strikes": 446,
+      "wrong_balls": 209,
       "accuracy_pct": 91.5
     },
     "Emil Jimenez": {
@@ -664,10 +664,10 @@
       "total": 138,
       "correct": 109,
       "correct_rate": 0.7898550724637681,
-      "total_called": 13182,
-      "correct_called": 12215,
-      "wrong_strikes": 644,
-      "wrong_balls": 323,
+      "total_called": 13328,
+      "correct_called": 12353,
+      "wrong_strikes": 649,
+      "wrong_balls": 326,
       "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
@@ -751,14 +751,14 @@
       "accuracy_pct": 92.8
     },
     "Nick Mahrley": {
-      "total": 39,
-      "correct": 27,
-      "correct_rate": 0.6923076923076923,
-      "total_called": 6999,
-      "correct_called": 6327,
-      "wrong_strikes": 466,
-      "wrong_balls": 206,
-      "accuracy_pct": 90.4
+      "total": 42,
+      "correct": 30,
+      "correct_rate": 0.7142857142857143,
+      "total_called": 7159,
+      "correct_called": 6477,
+      "wrong_strikes": 471,
+      "wrong_balls": 211,
+      "accuracy_pct": 90.5
     },
     "Alex Tosi": {
       "total": 91,
