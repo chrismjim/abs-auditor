@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-24",
-  "total_challenges": 7427,
+  "last_updated": "2026-08-25",
+  "total_challenges": 7429,
   "total_overturned": 3317,
   "team_stats": {
     "CIN": {
@@ -14,7 +14,7 @@
       "missed_calls": 85
     },
     "TB": {
-      "challenges": 617,
+      "challenges": 618,
       "overturned": 268,
       "missed_calls": 101
     },
@@ -99,9 +99,9 @@
       "missed_calls": 124
     },
     "WSH": {
-      "challenges": 511,
+      "challenges": 512,
       "overturned": 219,
-      "missed_calls": 83
+      "missed_calls": 84
     },
     "AZ": {
       "challenges": 302,
@@ -134,7 +134,7 @@
       "missed_calls": 41
     },
     "DET": {
-      "challenges": 573,
+      "challenges": 574,
       "overturned": 256,
       "missed_calls": 94
     },
@@ -144,9 +144,9 @@
       "missed_calls": 68
     },
     "COL": {
-      "challenges": 437,
+      "challenges": 438,
       "overturned": 237,
-      "missed_calls": 21
+      "missed_calls": 22
     },
     "MIL": {
       "challenges": 496,
@@ -306,14 +306,14 @@
       "accuracy_pct": 92.1
     },
     "Marvin Hudson": {
-      "total": 53,
+      "total": 54,
       "correct": 49,
-      "correct_rate": 0.9245283018867925,
-      "total_called": 6698,
-      "correct_called": 6258,
-      "wrong_strikes": 278,
-      "wrong_balls": 162,
-      "accuracy_pct": 93.4
+      "correct_rate": 0.9074074074074074,
+      "total_called": 6856,
+      "correct_called": 6400,
+      "wrong_strikes": 287,
+      "wrong_balls": 169,
+      "accuracy_pct": 93.3
     },
     "Doug Eddings": {
       "total": 96,
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.5
     },
     "Paul Clemons": {
-      "total": 81,
-      "correct": 72,
-      "correct_rate": 0.8888888888888888,
-      "total_called": 11984,
-      "correct_called": 11086,
-      "wrong_strikes": 566,
-      "wrong_balls": 332,
+      "total": 82,
+      "correct": 73,
+      "correct_rate": 0.8902439024390244,
+      "total_called": 12114,
+      "correct_called": 11209,
+      "wrong_strikes": 568,
+      "wrong_balls": 337,
       "accuracy_pct": 92.5
     },
     "James Jean": {
