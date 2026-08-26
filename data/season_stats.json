@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-25",
-  "total_challenges": 7469,
-  "total_overturned": 3344,
+  "last_updated": "2026-08-26",
+  "total_challenges": 7471,
+  "total_overturned": 3345,
   "team_stats": {
     "CIN": {
       "challenges": 522,
@@ -14,9 +14,9 @@
       "missed_calls": 85
     },
     "TB": {
-      "challenges": 621,
-      "overturned": 268,
-      "missed_calls": 101
+      "challenges": 623,
+      "overturned": 269,
+      "missed_calls": 102
     },
     "ATL": {
       "challenges": 515,
@@ -134,9 +134,9 @@
       "missed_calls": 41
     },
     "DET": {
-      "challenges": 577,
-      "overturned": 256,
-      "missed_calls": 94
+      "challenges": 579,
+      "overturned": 257,
+      "missed_calls": 95
     },
     "KC": {
       "challenges": 420,
@@ -236,14 +236,14 @@
       "accuracy_pct": 92.8
     },
     "Adrian Johnson": {
-      "total": 41,
-      "correct": 29,
-      "correct_rate": 0.7073170731707317,
-      "total_called": 5518,
-      "correct_called": 5114,
-      "wrong_strikes": 260,
-      "wrong_balls": 144,
-      "accuracy_pct": 92.7
+      "total": 43,
+      "correct": 30,
+      "correct_rate": 0.6976744186046512,
+      "total_called": 5634,
+      "correct_called": 5214,
+      "wrong_strikes": 272,
+      "wrong_balls": 148,
+      "accuracy_pct": 92.5
     },
     "Laz Diaz": {
       "total": 114,
