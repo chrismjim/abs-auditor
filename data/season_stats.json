@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-27",
-  "total_challenges": 7513,
-  "total_overturned": 3367,
+  "last_updated": "2026-08-28",
+  "total_challenges": 7515,
+  "total_overturned": 3369,
   "team_stats": {
     "CIN": {
-      "challenges": 526,
-      "overturned": 286,
+      "challenges": 528,
+      "overturned": 288,
       "missed_calls": 68
     },
     "PIT": {
@@ -49,8 +49,8 @@
       "missed_calls": 90
     },
     "CHC": {
-      "challenges": 453,
-      "overturned": 204,
+      "challenges": 455,
+      "overturned": 206,
       "missed_calls": 110
     },
     "NYY": {
@@ -611,14 +611,14 @@
       "accuracy_pct": 92.9
     },
     "Bill Miller": {
-      "total": 101,
-      "correct": 78,
-      "correct_rate": 0.7722772277227723,
-      "total_called": 11148,
-      "correct_called": 10312,
-      "wrong_strikes": 554,
-      "wrong_balls": 282,
-      "accuracy_pct": 92.5
+      "total": 103,
+      "correct": 80,
+      "correct_rate": 0.7766990291262136,
+      "total_called": 11345,
+      "correct_called": 10487,
+      "wrong_strikes": 570,
+      "wrong_balls": 288,
+      "accuracy_pct": 92.4
     },
     "Alfonso M\u00e1rquez": {
       "total": 102,
