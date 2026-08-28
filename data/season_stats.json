@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-26",
-  "total_challenges": 7499,
-  "total_overturned": 3361,
+  "last_updated": "2026-08-27",
+  "total_challenges": 7504,
+  "total_overturned": 3363,
   "team_stats": {
     "CIN": {
       "challenges": 526,
@@ -64,9 +64,9 @@
       "missed_calls": 53
     },
     "BAL": {
-      "challenges": 600,
-      "overturned": 286,
-      "missed_calls": 105
+      "challenges": 603,
+      "overturned": 287,
+      "missed_calls": 106
     },
     "TOR": {
       "challenges": 465,
@@ -74,9 +74,9 @@
       "missed_calls": 95
     },
     "STL": {
-      "challenges": 537,
-      "overturned": 226,
-      "missed_calls": 109
+      "challenges": 540,
+      "overturned": 227,
+      "missed_calls": 110
     },
     "PHI": {
       "challenges": 434,
@@ -99,8 +99,8 @@
       "missed_calls": 125
     },
     "WSH": {
-      "challenges": 516,
-      "overturned": 220,
+      "challenges": 518,
+      "overturned": 221,
       "missed_calls": 87
     },
     "AZ": {
@@ -144,8 +144,8 @@
       "missed_calls": 69
     },
     "COL": {
-      "challenges": 442,
-      "overturned": 238,
+      "challenges": 444,
+      "overturned": 239,
       "missed_calls": 25
     },
     "MIL": {
@@ -376,14 +376,14 @@
       "accuracy_pct": 91.0
     },
     "Tripp Gibson": {
-      "total": 39,
-      "correct": 36,
-      "correct_rate": 0.9230769230769231,
-      "total_called": 7495,
-      "correct_called": 6863,
-      "wrong_strikes": 405,
-      "wrong_balls": 227,
-      "accuracy_pct": 91.6
+      "total": 41,
+      "correct": 38,
+      "correct_rate": 0.926829268292683,
+      "total_called": 7661,
+      "correct_called": 7013,
+      "wrong_strikes": 411,
+      "wrong_balls": 237,
+      "accuracy_pct": 91.5
     },
     "Brian O'Nora": {
       "total": 69,
@@ -761,13 +761,13 @@
       "accuracy_pct": 90.6
     },
     "Alex Tosi": {
-      "total": 91,
-      "correct": 69,
-      "correct_rate": 0.7582417582417582,
-      "total_called": 12378,
-      "correct_called": 11453,
-      "wrong_strikes": 578,
-      "wrong_balls": 347,
+      "total": 94,
+      "correct": 71,
+      "correct_rate": 0.7553191489361702,
+      "total_called": 12536,
+      "correct_called": 11600,
+      "wrong_strikes": 585,
+      "wrong_balls": 351,
       "accuracy_pct": 92.5
     },
     "Paul Clemons": {
