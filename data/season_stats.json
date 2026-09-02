@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-31",
-  "total_challenges": 7628,
+  "last_updated": "2026-09-01",
+  "total_challenges": 7629,
   "total_overturned": 3424,
   "team_stats": {
     "CIN": {
@@ -14,7 +14,7 @@
       "missed_calls": 85
     },
     "TB": {
-      "challenges": 640,
+      "challenges": 641,
       "overturned": 277,
       "missed_calls": 107
     },
@@ -29,7 +29,7 @@
       "missed_calls": 41
     },
     "NYM": {
-      "challenges": 536,
+      "challenges": 537,
       "overturned": 212,
       "missed_calls": 104
     },
@@ -249,10 +249,10 @@
       "total": 116,
       "correct": 86,
       "correct_rate": 0.7413793103448276,
-      "total_called": 12244,
-      "correct_called": 11150,
-      "wrong_strikes": 717,
-      "wrong_balls": 377,
+      "total_called": 12383,
+      "correct_called": 11283,
+      "wrong_strikes": 721,
+      "wrong_balls": 379,
       "accuracy_pct": 91.1
     },
     "Chris Conroy": {
@@ -831,13 +831,13 @@
       "accuracy_pct": 92.4
     },
     "Ben May": {
-      "total": 43,
-      "correct": 40,
-      "correct_rate": 0.9302325581395349,
-      "total_called": 11565,
-      "correct_called": 10699,
-      "wrong_strikes": 511,
-      "wrong_balls": 355,
+      "total": 44,
+      "correct": 41,
+      "correct_rate": 0.9318181818181818,
+      "total_called": 11684,
+      "correct_called": 10809,
+      "wrong_strikes": 519,
+      "wrong_balls": 356,
       "accuracy_pct": 92.5
     },
     "Derek Thomas": {
