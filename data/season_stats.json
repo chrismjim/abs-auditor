@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-04",
-  "total_challenges": 7727,
-  "total_overturned": 3474,
+  "total_challenges": 7729,
+  "total_overturned": 3476,
   "team_stats": {
     "CIN": {
       "challenges": 544,
@@ -119,8 +119,8 @@
       "missed_calls": 80
     },
     "CLE": {
-      "challenges": 655,
-      "overturned": 309,
+      "challenges": 657,
+      "overturned": 311,
       "missed_calls": 118
     },
     "HOU": {
@@ -134,8 +134,8 @@
       "missed_calls": 45
     },
     "DET": {
-      "challenges": 596,
-      "overturned": 261,
+      "challenges": 598,
+      "overturned": 263,
       "missed_calls": 97
     },
     "KC": {
@@ -671,13 +671,13 @@
       "accuracy_pct": 92.7
     },
     "Tom Hanahan": {
-      "total": 131,
-      "correct": 83,
-      "correct_rate": 0.6335877862595419,
-      "total_called": 14969,
-      "correct_called": 13739,
-      "wrong_strikes": 795,
-      "wrong_balls": 435,
+      "total": 133,
+      "correct": 85,
+      "correct_rate": 0.6390977443609023,
+      "total_called": 15130,
+      "correct_called": 13886,
+      "wrong_strikes": 805,
+      "wrong_balls": 439,
       "accuracy_pct": 91.8
     },
     "Dan Merzel": {
