@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-06",
-  "total_challenges": 7887,
-  "total_overturned": 3556,
+  "last_updated": "2026-09-07",
+  "total_challenges": 7889,
+  "total_overturned": 3557,
   "team_stats": {
     "CIN": {
       "challenges": 555,
@@ -19,9 +19,9 @@
       "missed_calls": 110
     },
     "ATL": {
-      "challenges": 534,
-      "overturned": 221,
-      "missed_calls": 118
+      "challenges": 536,
+      "overturned": 222,
+      "missed_calls": 119
     },
     "ATH": {
       "challenges": 436,
@@ -79,9 +79,9 @@
       "missed_calls": 114
     },
     "PHI": {
-      "challenges": 452,
-      "overturned": 154,
-      "missed_calls": 86
+      "challenges": 454,
+      "overturned": 155,
+      "missed_calls": 87
     },
     "CWS": {
       "challenges": 660,
@@ -961,14 +961,14 @@
       "accuracy_pct": 92.9
     },
     "Clint Vondrak": {
-      "total": 105,
-      "correct": 88,
-      "total_called": 12970,
-      "correct_called": 11927,
-      "wrong_strikes": 627,
-      "wrong_balls": 416,
-      "correct_rate": 0.8380952380952381,
-      "accuracy_pct": 92.0
+      "total": 107,
+      "correct": 89,
+      "total_called": 13079,
+      "correct_called": 12024,
+      "wrong_strikes": 635,
+      "wrong_balls": 420,
+      "correct_rate": 0.8317757009345794,
+      "accuracy_pct": 91.9
     },
     "Brian Walsh": {
       "total": 69,
