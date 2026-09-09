@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-07",
-  "total_challenges": 7931,
+  "last_updated": "2026-09-08",
+  "total_challenges": 7932,
   "total_overturned": 3571,
   "team_stats": {
     "CIN": {
@@ -29,9 +29,9 @@
       "missed_calls": 45
     },
     "NYM": {
-      "challenges": 557,
+      "challenges": 558,
       "overturned": 214,
-      "missed_calls": 112
+      "missed_calls": 113
     },
     "SEA": {
       "challenges": 550,
@@ -94,9 +94,9 @@
       "missed_calls": 83
     },
     "MIA": {
-      "challenges": 673,
+      "challenges": 674,
       "overturned": 287,
-      "missed_calls": 134
+      "missed_calls": 135
     },
     "WSH": {
       "challenges": 543,
@@ -564,20 +564,20 @@
       "total": 114,
       "correct": 108,
       "correct_rate": 0.9473684210526315,
-      "total_called": 16623,
-      "correct_called": 15279,
-      "wrong_strikes": 987,
-      "wrong_balls": 357,
+      "total_called": 16745,
+      "correct_called": 15395,
+      "wrong_strikes": 991,
+      "wrong_balls": 359,
       "accuracy_pct": 91.9
     },
     "Mike Estabrook": {
-      "total": 92,
+      "total": 93,
       "correct": 57,
-      "correct_rate": 0.6195652173913043,
-      "total_called": 12284,
-      "correct_called": 11136,
-      "wrong_strikes": 704,
-      "wrong_balls": 444,
+      "correct_rate": 0.6129032258064516,
+      "total_called": 12435,
+      "correct_called": 11275,
+      "wrong_strikes": 714,
+      "wrong_balls": 446,
       "accuracy_pct": 90.7
     },
     "Jordan Baker": {
