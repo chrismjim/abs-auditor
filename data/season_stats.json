@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-09",
-  "total_challenges": 7982,
+  "last_updated": "2026-09-10",
+  "total_challenges": 7983,
   "total_overturned": 3597,
   "team_stats": {
     "CIN": {
@@ -14,12 +14,12 @@
       "missed_calls": 89
     },
     "TB": {
-      "challenges": 661,
+      "challenges": 662,
       "overturned": 290,
       "missed_calls": 110
     },
     "ATL": {
-      "challenges": 546,
+      "challenges": 547,
       "overturned": 228,
       "missed_calls": 123
     },
@@ -694,11 +694,11 @@
       "total": 68,
       "correct": 61,
       "correct_rate": 0.8970588235294118,
-      "total_called": 10544,
-      "correct_called": 9691,
-      "wrong_strikes": 557,
-      "wrong_balls": 296,
-      "accuracy_pct": 91.9
+      "total_called": 10664,
+      "correct_called": 9806,
+      "wrong_strikes": 560,
+      "wrong_balls": 298,
+      "accuracy_pct": 92.0
     },
     "Ramon De Jesus": {
       "total": 86,
@@ -951,13 +951,13 @@
       "accuracy_pct": 89.6
     },
     "Jansen Visconti": {
-      "total": 48,
-      "correct": 42,
-      "total_called": 10930,
-      "correct_called": 10154,
-      "wrong_strikes": 412,
-      "wrong_balls": 364,
-      "correct_rate": 0.875,
+      "total": 49,
+      "correct": 43,
+      "total_called": 11033,
+      "correct_called": 10252,
+      "wrong_strikes": 414,
+      "wrong_balls": 367,
+      "correct_rate": 0.8775510204081632,
       "accuracy_pct": 92.9
     },
     "Clint Vondrak": {
