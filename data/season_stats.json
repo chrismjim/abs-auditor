@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-10",
-  "total_challenges": 7989,
-  "total_overturned": 3599,
+  "total_challenges": 7997,
+  "total_overturned": 3603,
   "team_stats": {
     "CIN": {
       "challenges": 561,
@@ -9,17 +9,17 @@
       "missed_calls": 72
     },
     "PIT": {
-      "challenges": 600,
+      "challenges": 602,
       "overturned": 208,
-      "missed_calls": 89
+      "missed_calls": 90
     },
     "TB": {
-      "challenges": 664,
+      "challenges": 665,
       "overturned": 290,
       "missed_calls": 110
     },
     "ATL": {
-      "challenges": 549,
+      "challenges": 550,
       "overturned": 228,
       "missed_calls": 123
     },
@@ -34,14 +34,14 @@
       "missed_calls": 115
     },
     "SEA": {
-      "challenges": 564,
-      "overturned": 262,
-      "missed_calls": 90
+      "challenges": 566,
+      "overturned": 263,
+      "missed_calls": 91
     },
     "TEX": {
-      "challenges": 448,
-      "overturned": 196,
-      "missed_calls": 49
+      "challenges": 450,
+      "overturned": 197,
+      "missed_calls": 50
     },
     "LAD": {
       "challenges": 426,
@@ -54,8 +54,8 @@
       "missed_calls": 113
     },
     "NYY": {
-      "challenges": 701,
-      "overturned": 331,
+      "challenges": 704,
+      "overturned": 334,
       "missed_calls": 157
     },
     "SF": {
@@ -84,9 +84,9 @@
       "missed_calls": 93
     },
     "CWS": {
-      "challenges": 668,
+      "challenges": 670,
       "overturned": 353,
-      "missed_calls": 100
+      "missed_calls": 101
     },
     "BOS": {
       "challenges": 580,
@@ -144,8 +144,8 @@
       "missed_calls": 71
     },
     "COL": {
-      "challenges": 487,
-      "overturned": 265,
+      "challenges": 490,
+      "overturned": 268,
       "missed_calls": 32
     },
     "MIL": {
@@ -186,13 +186,13 @@
       "accuracy_pct": 93.6
     },
     "Ryan Additon": {
-      "total": 213,
-      "correct": 162,
-      "correct_rate": 0.7605633802816901,
-      "total_called": 16681,
-      "correct_called": 15142,
-      "wrong_strikes": 1013,
-      "wrong_balls": 526,
+      "total": 216,
+      "correct": 165,
+      "correct_rate": 0.7638888888888888,
+      "total_called": 16860,
+      "correct_called": 15309,
+      "wrong_strikes": 1023,
+      "wrong_balls": 528,
       "accuracy_pct": 90.8
     },
     "Dan Iassogna": {
@@ -411,13 +411,13 @@
       "correct_rate": 0.0
     },
     "Rob Drake": {
-      "total": 114,
-      "correct": 101,
-      "correct_rate": 0.8859649122807017,
-      "total_called": 12432,
-      "correct_called": 11345,
-      "wrong_strikes": 807,
-      "wrong_balls": 280,
+      "total": 116,
+      "correct": 102,
+      "correct_rate": 0.8793103448275862,
+      "total_called": 12562,
+      "correct_called": 11466,
+      "wrong_strikes": 814,
+      "wrong_balls": 282,
       "accuracy_pct": 91.3
     },
     "Bruce Dreckman": {
@@ -694,11 +694,11 @@
       "total": 68,
       "correct": 61,
       "correct_rate": 0.8970588235294118,
-      "total_called": 10904,
-      "correct_called": 10036,
-      "wrong_strikes": 566,
-      "wrong_balls": 302,
-      "accuracy_pct": 92.0
+      "total_called": 11024,
+      "correct_called": 10151,
+      "wrong_strikes": 569,
+      "wrong_balls": 304,
+      "accuracy_pct": 92.1
     },
     "Ramon De Jesus": {
       "total": 86,
@@ -811,13 +811,13 @@
       "accuracy_pct": 92.2
     },
     "Alex MacKay": {
-      "total": 110,
-      "correct": 102,
-      "correct_rate": 0.9272727272727272,
-      "total_called": 12674,
-      "correct_called": 11809,
-      "wrong_strikes": 546,
-      "wrong_balls": 319,
+      "total": 112,
+      "correct": 103,
+      "correct_rate": 0.9196428571428571,
+      "total_called": 12803,
+      "correct_called": 11928,
+      "wrong_strikes": 552,
+      "wrong_balls": 323,
       "accuracy_pct": 93.2
     },
     "Adam Hamari": {
@@ -951,13 +951,13 @@
       "accuracy_pct": 89.6
     },
     "Jansen Visconti": {
-      "total": 51,
-      "correct": 45,
-      "total_called": 11239,
-      "correct_called": 10448,
-      "wrong_strikes": 418,
-      "wrong_balls": 373,
-      "correct_rate": 0.8823529411764706,
+      "total": 52,
+      "correct": 46,
+      "total_called": 11342,
+      "correct_called": 10546,
+      "wrong_strikes": 420,
+      "wrong_balls": 376,
+      "correct_rate": 0.8846153846153846,
       "accuracy_pct": 93.0
     },
     "Clint Vondrak": {
