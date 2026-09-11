@@ -844,11 +844,11 @@
       "total": 77,
       "correct": 61,
       "correct_rate": 0.7922077922077922,
-      "total_called": 9491,
-      "correct_called": 8706,
-      "wrong_strikes": 489,
-      "wrong_balls": 296,
-      "accuracy_pct": 91.7
+      "total_called": 9629,
+      "correct_called": 8835,
+      "wrong_strikes": 494,
+      "wrong_balls": 300,
+      "accuracy_pct": 91.8
     },
     "Alan Porter": {
       "total": 109,
