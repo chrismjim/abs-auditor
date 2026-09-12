@@ -524,10 +524,10 @@
       "total": 84,
       "correct": 73,
       "correct_rate": 0.8690476190476191,
-      "total_called": 9224,
-      "correct_called": 8475,
-      "wrong_strikes": 511,
-      "wrong_balls": 238,
+      "total_called": 9371,
+      "correct_called": 8612,
+      "wrong_strikes": 519,
+      "wrong_balls": 240,
       "accuracy_pct": 91.9
     },
     "Emil Jimenez": {
@@ -844,10 +844,10 @@
       "total": 77,
       "correct": 61,
       "correct_rate": 0.7922077922077922,
-      "total_called": 9629,
-      "correct_called": 8835,
-      "wrong_strikes": 494,
-      "wrong_balls": 300,
+      "total_called": 9767,
+      "correct_called": 8964,
+      "wrong_strikes": 499,
+      "wrong_balls": 304,
       "accuracy_pct": 91.8
     },
     "Alan Porter": {
