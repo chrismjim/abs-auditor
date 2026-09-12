@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-12",
   "total_challenges": 8023,
   "total_overturned": 3617,
   "team_stats": {
@@ -339,10 +339,10 @@
       "total": 141,
       "correct": 111,
       "correct_rate": 0.7872340425531915,
-      "total_called": 13483,
-      "correct_called": 12435,
-      "wrong_strikes": 673,
-      "wrong_balls": 375,
+      "total_called": 13606,
+      "correct_called": 12545,
+      "wrong_strikes": 684,
+      "wrong_balls": 377,
       "accuracy_pct": 92.2
     },
     "Will Little": {
