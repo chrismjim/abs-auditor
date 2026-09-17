@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-16",
-  "total_challenges": 8160,
-  "total_overturned": 3685,
+  "total_challenges": 8166,
+  "total_overturned": 3689,
   "team_stats": {
     "CIN": {
       "challenges": 568,
@@ -54,12 +54,12 @@
       "missed_calls": 116
     },
     "NYY": {
-      "challenges": 722,
-      "overturned": 346,
+      "challenges": 725,
+      "overturned": 349,
       "missed_calls": 157
     },
     "SF": {
-      "challenges": 375,
+      "challenges": 376,
       "overturned": 171,
       "missed_calls": 59
     },
@@ -69,12 +69,12 @@
       "missed_calls": 115
     },
     "TOR": {
-      "challenges": 498,
-      "overturned": 218,
+      "challenges": 499,
+      "overturned": 219,
       "missed_calls": 95
     },
     "STL": {
-      "challenges": 595,
+      "challenges": 596,
       "overturned": 249,
       "missed_calls": 114
     },
@@ -84,7 +84,7 @@
       "missed_calls": 93
     },
     "CWS": {
-      "challenges": 691,
+      "challenges": 692,
       "overturned": 359,
       "missed_calls": 102
     },
@@ -114,12 +114,12 @@
       "missed_calls": 68
     },
     "MIN": {
-      "challenges": 640,
-      "overturned": 334,
+      "challenges": 643,
+      "overturned": 337,
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 687,
+      "challenges": 688,
       "overturned": 319,
       "missed_calls": 124
     },
@@ -134,8 +134,8 @@
       "missed_calls": 50
     },
     "DET": {
-      "challenges": 622,
-      "overturned": 281,
+      "challenges": 623,
+      "overturned": 282,
       "missed_calls": 100
     },
     "KC": {
@@ -196,13 +196,13 @@
       "accuracy_pct": 90.8
     },
     "Dan Iassogna": {
-      "total": 141,
-      "correct": 95,
-      "correct_rate": 0.6737588652482269,
-      "total_called": 13380,
-      "correct_called": 12240,
-      "wrong_strikes": 729,
-      "wrong_balls": 411,
+      "total": 142,
+      "correct": 96,
+      "correct_rate": 0.676056338028169,
+      "total_called": 13531,
+      "correct_called": 12378,
+      "wrong_strikes": 737,
+      "wrong_balls": 416,
       "accuracy_pct": 91.5
     },
     "Willie Traynor": {
@@ -711,14 +711,14 @@
       "accuracy_pct": 92.3
     },
     "Edwin Moscoso": {
-      "total": 130,
-      "correct": 108,
-      "correct_rate": 0.8307692307692308,
-      "total_called": 14821,
-      "correct_called": 13924,
-      "wrong_strikes": 536,
-      "wrong_balls": 361,
-      "accuracy_pct": 93.9
+      "total": 131,
+      "correct": 109,
+      "correct_rate": 0.8320610687022901,
+      "total_called": 14964,
+      "correct_called": 14060,
+      "wrong_strikes": 540,
+      "wrong_balls": 364,
+      "accuracy_pct": 94.0
     },
     "Charlie Ramos": {
       "total": 92,
@@ -791,23 +791,23 @@
       "accuracy_pct": 92.5
     },
     "Edwin Jimenez": {
-      "total": 53,
-      "correct": 35,
-      "correct_rate": 0.660377358490566,
-      "total_called": 10089,
-      "correct_called": 9281,
-      "wrong_strikes": 550,
-      "wrong_balls": 258,
+      "total": 56,
+      "correct": 38,
+      "correct_rate": 0.6785714285714286,
+      "total_called": 10302,
+      "correct_called": 9480,
+      "wrong_strikes": 557,
+      "wrong_balls": 265,
       "accuracy_pct": 92.0
     },
     "Mark Wegner": {
-      "total": 76,
-      "correct": 61,
-      "correct_rate": 0.8026315789473685,
-      "total_called": 14538,
-      "correct_called": 13403,
-      "wrong_strikes": 750,
-      "wrong_balls": 385,
+      "total": 77,
+      "correct": 62,
+      "correct_rate": 0.8051948051948052,
+      "total_called": 14712,
+      "correct_called": 13567,
+      "wrong_strikes": 756,
+      "wrong_balls": 389,
       "accuracy_pct": 92.2
     },
     "Alex MacKay": {
