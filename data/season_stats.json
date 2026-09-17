@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-16",
-  "total_challenges": 8182,
-  "total_overturned": 3699,
+  "last_updated": "2026-09-17",
+  "total_challenges": 8188,
+  "total_overturned": 3703,
   "team_stats": {
     "CIN": {
       "challenges": 570,
@@ -9,14 +9,14 @@
       "missed_calls": 75
     },
     "PIT": {
-      "challenges": 617,
-      "overturned": 212,
+      "challenges": 622,
+      "overturned": 216,
       "missed_calls": 94
     },
     "TB": {
-      "challenges": 670,
+      "challenges": 671,
       "overturned": 290,
-      "missed_calls": 111
+      "missed_calls": 112
     },
     "ATL": {
       "challenges": 564,
@@ -24,9 +24,9 @@
       "missed_calls": 123
     },
     "ATH": {
-      "challenges": 445,
+      "challenges": 446,
       "overturned": 237,
-      "missed_calls": 46
+      "missed_calls": 47
     },
     "NYM": {
       "challenges": 573,
@@ -149,8 +149,8 @@
       "missed_calls": 32
     },
     "MIL": {
-      "challenges": 542,
-      "overturned": 261,
+      "challenges": 547,
+      "overturned": 265,
       "missed_calls": 67
     },
     "NL": {
@@ -216,14 +216,14 @@
       "accuracy_pct": 93.3
     },
     "Jim Wolf": {
-      "total": 149,
+      "total": 150,
       "correct": 105,
-      "correct_rate": 0.7046979865771812,
-      "total_called": 10039,
-      "correct_called": 9130,
-      "wrong_strikes": 579,
-      "wrong_balls": 330,
-      "accuracy_pct": 90.9
+      "correct_rate": 0.7,
+      "total_called": 10215,
+      "correct_called": 9293,
+      "wrong_strikes": 586,
+      "wrong_balls": 336,
+      "accuracy_pct": 91.0
     },
     "Nic Lentz": {
       "total": 110,
@@ -276,13 +276,13 @@
       "accuracy_pct": 91.9
     },
     "James Hoye": {
-      "total": 115,
-      "correct": 90,
-      "correct_rate": 0.782608695652174,
-      "total_called": 10901,
-      "correct_called": 9942,
-      "wrong_strikes": 562,
-      "wrong_balls": 397,
+      "total": 120,
+      "correct": 95,
+      "correct_rate": 0.7916666666666666,
+      "total_called": 11082,
+      "correct_called": 10109,
+      "wrong_strikes": 572,
+      "wrong_balls": 401,
       "accuracy_pct": 91.2
     },
     "Lance Barksdale": {
@@ -993,10 +993,10 @@
     "Scott Barry": {
       "total": 55,
       "correct": 55,
-      "total_called": 15791,
-      "correct_called": 14419,
-      "wrong_strikes": 817,
-      "wrong_balls": 555,
+      "total_called": 15955,
+      "correct_called": 14572,
+      "wrong_strikes": 822,
+      "wrong_balls": 561,
       "correct_rate": 1.0,
       "accuracy_pct": 91.3
     },
