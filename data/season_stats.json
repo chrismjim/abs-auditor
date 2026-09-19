@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-18",
-  "total_challenges": 8263,
-  "total_overturned": 3736,
+  "last_updated": "2026-09-19",
+  "total_challenges": 8266,
+  "total_overturned": 3738,
   "team_stats": {
     "CIN": {
       "challenges": 570,
@@ -64,8 +64,8 @@
       "missed_calls": 59
     },
     "BAL": {
-      "challenges": 653,
-      "overturned": 313,
+      "challenges": 655,
+      "overturned": 315,
       "missed_calls": 115
     },
     "TOR": {
@@ -84,7 +84,7 @@
       "missed_calls": 93
     },
     "CWS": {
-      "challenges": 701,
+      "challenges": 702,
       "overturned": 363,
       "missed_calls": 102
     },
@@ -134,7 +134,7 @@
       "missed_calls": 54
     },
     "DET": {
-      "challenges": 632,
+      "challenges": 633,
       "overturned": 287,
       "missed_calls": 100
     },
@@ -149,8 +149,8 @@
       "missed_calls": 35
     },
     "MIL": {
-      "challenges": 562,
-      "overturned": 277,
+      "challenges": 564,
+      "overturned": 279,
       "missed_calls": 67
     },
     "NL": {
@@ -801,23 +801,23 @@
       "accuracy_pct": 92.0
     },
     "Mark Wegner": {
-      "total": 78,
-      "correct": 63,
-      "correct_rate": 0.8076923076923077,
-      "total_called": 14886,
-      "correct_called": 13731,
-      "wrong_strikes": 762,
-      "wrong_balls": 393,
+      "total": 79,
+      "correct": 64,
+      "correct_rate": 0.810126582278481,
+      "total_called": 15028,
+      "correct_called": 13856,
+      "wrong_strikes": 775,
+      "wrong_balls": 397,
       "accuracy_pct": 92.2
     },
     "Alex MacKay": {
-      "total": 115,
-      "correct": 104,
-      "correct_rate": 0.9043478260869565,
-      "total_called": 13045,
-      "correct_called": 12148,
-      "wrong_strikes": 566,
-      "wrong_balls": 331,
+      "total": 117,
+      "correct": 106,
+      "correct_rate": 0.905982905982906,
+      "total_called": 13168,
+      "correct_called": 12262,
+      "wrong_strikes": 570,
+      "wrong_balls": 336,
       "accuracy_pct": 93.1
     },
     "Adam Hamari": {
