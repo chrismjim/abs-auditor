@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-09-19",
-  "total_challenges": 8289,
-  "total_overturned": 3749,
+  "last_updated": "2026-09-20",
+  "total_challenges": 8294,
+  "total_overturned": 3753,
   "team_stats": {
     "CIN": {
-      "challenges": 571,
-      "overturned": 311,
+      "challenges": 572,
+      "overturned": 312,
       "missed_calls": 75
     },
     "PIT": {
-      "challenges": 639,
-      "overturned": 228,
+      "challenges": 640,
+      "overturned": 229,
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 682,
+      "challenges": 683,
       "overturned": 290,
       "missed_calls": 117
     },
@@ -29,8 +29,8 @@
       "missed_calls": 52
     },
     "NYM": {
-      "challenges": 577,
-      "overturned": 218,
+      "challenges": 579,
+      "overturned": 220,
       "missed_calls": 117
     },
     "SEA": {
@@ -49,8 +49,8 @@
       "missed_calls": 99
     },
     "CHC": {
-      "challenges": 523,
-      "overturned": 245,
+      "challenges": 524,
+      "overturned": 246,
       "missed_calls": 116
     },
     "NYY": {
@@ -79,8 +79,8 @@
       "missed_calls": 114
     },
     "PHI": {
-      "challenges": 477,
-      "overturned": 167,
+      "challenges": 479,
+      "overturned": 169,
       "missed_calls": 93
     },
     "CWS": {
@@ -89,7 +89,7 @@
       "missed_calls": 102
     },
     "BOS": {
-      "challenges": 598,
+      "challenges": 599,
       "overturned": 232,
       "missed_calls": 85
     },
@@ -139,8 +139,8 @@
       "missed_calls": 100
     },
     "KC": {
-      "challenges": 457,
-      "overturned": 159,
+      "challenges": 458,
+      "overturned": 160,
       "missed_calls": 72
     },
     "COL": {
@@ -396,13 +396,13 @@
       "accuracy_pct": 90.9
     },
     "D.J. Reyburn": {
-      "total": 100,
-      "correct": 87,
-      "correct_rate": 0.87,
-      "total_called": 11507,
-      "correct_called": 10497,
-      "wrong_strikes": 647,
-      "wrong_balls": 363,
+      "total": 101,
+      "correct": 88,
+      "correct_rate": 0.8712871287128713,
+      "total_called": 11638,
+      "correct_called": 10617,
+      "wrong_strikes": 654,
+      "wrong_balls": 367,
       "accuracy_pct": 91.2
     },
     "CB Bucknor": {
@@ -481,13 +481,13 @@
       "accuracy_pct": 93.5
     },
     "Adam Beck": {
-      "total": 86,
-      "correct": 74,
-      "correct_rate": 0.8604651162790697,
-      "total_called": 13784,
-      "correct_called": 12637,
-      "wrong_strikes": 723,
-      "wrong_balls": 424,
+      "total": 87,
+      "correct": 75,
+      "correct_rate": 0.8620689655172413,
+      "total_called": 13904,
+      "correct_called": 12746,
+      "wrong_strikes": 730,
+      "wrong_balls": 428,
       "accuracy_pct": 91.7
     },
     "Carlos Torres": {
@@ -594,10 +594,10 @@
       "total": 124,
       "correct": 93,
       "correct_rate": 0.75,
-      "total_called": 13246,
-      "correct_called": 12289,
-      "wrong_strikes": 604,
-      "wrong_balls": 353,
+      "total_called": 13381,
+      "correct_called": 12414,
+      "wrong_strikes": 612,
+      "wrong_balls": 355,
       "accuracy_pct": 92.8
     },
     "Hunter Wendelstedt": {
@@ -971,14 +971,14 @@
       "accuracy_pct": 91.9
     },
     "Brian Walsh": {
-      "total": 71,
-      "correct": 58,
-      "total_called": 12331,
-      "correct_called": 11360,
-      "wrong_strikes": 678,
-      "wrong_balls": 293,
-      "correct_rate": 0.8169014084507042,
-      "accuracy_pct": 92.1
+      "total": 72,
+      "correct": 59,
+      "total_called": 12476,
+      "correct_called": 11501,
+      "wrong_strikes": 680,
+      "wrong_balls": 295,
+      "correct_rate": 0.8194444444444444,
+      "accuracy_pct": 92.2
     },
     "Austin Jones": {
       "total": 68,
@@ -1021,14 +1021,14 @@
       "accuracy_pct": 91.7
     },
     "Tyler Jones": {
-      "total": 111,
-      "correct": 103,
-      "total_called": 12427,
-      "correct_called": 11539,
-      "wrong_strikes": 457,
-      "wrong_balls": 431,
-      "correct_rate": 0.9279279279279279,
-      "accuracy_pct": 92.9
+      "total": 113,
+      "correct": 105,
+      "total_called": 12602,
+      "correct_called": 11697,
+      "wrong_strikes": 468,
+      "wrong_balls": 437,
+      "correct_rate": 0.9292035398230089,
+      "accuracy_pct": 92.8
     },
     "Jonathan Parra": {
       "total": 62,
