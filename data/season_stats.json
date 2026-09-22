@@ -1013,10 +1013,10 @@
     "Sean Barber": {
       "total": 125,
       "correct": 122,
-      "total_called": 12816,
-      "correct_called": 11753,
-      "wrong_strikes": 641,
-      "wrong_balls": 422,
+      "total_called": 12930,
+      "correct_called": 11855,
+      "wrong_strikes": 648,
+      "wrong_balls": 427,
       "correct_rate": 0.976,
       "accuracy_pct": 91.7
     },
