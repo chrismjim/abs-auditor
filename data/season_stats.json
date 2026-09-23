@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-22",
-  "total_challenges": 8345,
-  "total_overturned": 3779,
+  "last_updated": "2026-09-23",
+  "total_challenges": 8348,
+  "total_overturned": 3780,
   "team_stats": {
     "CIN": {
       "challenges": 575,
@@ -64,14 +64,14 @@
       "missed_calls": 63
     },
     "BAL": {
-      "challenges": 664,
-      "overturned": 323,
-      "missed_calls": 116
+      "challenges": 666,
+      "overturned": 324,
+      "missed_calls": 117
     },
     "TOR": {
-      "challenges": 505,
-      "overturned": 224,
-      "missed_calls": 96
+      "challenges": 507,
+      "overturned": 225,
+      "missed_calls": 97
     },
     "STL": {
       "challenges": 599,
@@ -99,7 +99,7 @@
       "missed_calls": 142
     },
     "WSH": {
-      "challenges": 561,
+      "challenges": 562,
       "overturned": 238,
       "missed_calls": 95
     },
@@ -134,7 +134,7 @@
       "missed_calls": 54
     },
     "DET": {
-      "challenges": 638,
+      "challenges": 639,
       "overturned": 287,
       "missed_calls": 101
     },
@@ -801,13 +801,13 @@
       "accuracy_pct": 92.2
     },
     "Mark Wegner": {
-      "total": 81,
-      "correct": 66,
-      "correct_rate": 0.8148148148148148,
-      "total_called": 15312,
-      "correct_called": 14106,
-      "wrong_strikes": 801,
-      "wrong_balls": 405,
+      "total": 83,
+      "correct": 67,
+      "correct_rate": 0.8072289156626506,
+      "total_called": 15449,
+      "correct_called": 14232,
+      "wrong_strikes": 808,
+      "wrong_balls": 409,
       "accuracy_pct": 92.1
     },
     "Alex MacKay": {
@@ -931,13 +931,13 @@
       "accuracy_pct": 91.9
     },
     "Mike Muchlinski": {
-      "total": 62,
-      "correct": 52,
-      "total_called": 17069,
-      "correct_called": 15659,
-      "wrong_strikes": 974,
-      "wrong_balls": 436,
-      "correct_rate": 0.8387096774193549,
+      "total": 63,
+      "correct": 53,
+      "total_called": 17226,
+      "correct_called": 15803,
+      "wrong_strikes": 982,
+      "wrong_balls": 441,
+      "correct_rate": 0.8412698412698413,
       "accuracy_pct": 91.7
     },
     "John Bacon": {
