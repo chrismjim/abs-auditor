@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-23",
-  "total_challenges": 8348,
-  "total_overturned": 3780,
+  "total_challenges": 8352,
+  "total_overturned": 3781,
   "team_stats": {
     "CIN": {
       "challenges": 575,
@@ -59,19 +59,19 @@
       "missed_calls": 160
     },
     "SF": {
-      "challenges": 383,
+      "challenges": 384,
       "overturned": 171,
       "missed_calls": 63
     },
     "BAL": {
-      "challenges": 666,
-      "overturned": 324,
-      "missed_calls": 117
+      "challenges": 668,
+      "overturned": 325,
+      "missed_calls": 118
     },
     "TOR": {
-      "challenges": 507,
-      "overturned": 225,
-      "missed_calls": 97
+      "challenges": 509,
+      "overturned": 226,
+      "missed_calls": 98
     },
     "STL": {
       "challenges": 599,
@@ -99,7 +99,7 @@
       "missed_calls": 142
     },
     "WSH": {
-      "challenges": 562,
+      "challenges": 563,
       "overturned": 238,
       "missed_calls": 95
     },
@@ -114,7 +114,7 @@
       "missed_calls": 68
     },
     "MIN": {
-      "challenges": 653,
+      "challenges": 654,
       "overturned": 343,
       "missed_calls": 83
     },
@@ -134,7 +134,7 @@
       "missed_calls": 54
     },
     "DET": {
-      "challenges": 639,
+      "challenges": 640,
       "overturned": 287,
       "missed_calls": 101
     },
@@ -801,13 +801,13 @@
       "accuracy_pct": 92.2
     },
     "Mark Wegner": {
-      "total": 83,
-      "correct": 67,
-      "correct_rate": 0.8072289156626506,
-      "total_called": 15449,
-      "correct_called": 14232,
-      "wrong_strikes": 808,
-      "wrong_balls": 409,
+      "total": 85,
+      "correct": 68,
+      "correct_rate": 0.8,
+      "total_called": 15586,
+      "correct_called": 14358,
+      "wrong_strikes": 815,
+      "wrong_balls": 413,
       "accuracy_pct": 92.1
     },
     "Alex MacKay": {
@@ -931,13 +931,13 @@
       "accuracy_pct": 91.9
     },
     "Mike Muchlinski": {
-      "total": 63,
-      "correct": 53,
-      "total_called": 17226,
-      "correct_called": 15803,
-      "wrong_strikes": 982,
-      "wrong_balls": 441,
-      "correct_rate": 0.8412698412698413,
+      "total": 64,
+      "correct": 54,
+      "total_called": 17383,
+      "correct_called": 15947,
+      "wrong_strikes": 990,
+      "wrong_balls": 446,
+      "correct_rate": 0.84375,
       "accuracy_pct": 91.7
     },
     "John Bacon": {
@@ -1041,13 +1041,13 @@
       "accuracy_pct": 91.6
     },
     "Dillon Wilson": {
-      "total": 19,
-      "correct": 17,
-      "total_called": 3408,
-      "correct_called": 3153,
-      "wrong_strikes": 183,
-      "wrong_balls": 72,
-      "correct_rate": 0.8947368421052632,
+      "total": 20,
+      "correct": 18,
+      "total_called": 3565,
+      "correct_called": 3297,
+      "wrong_strikes": 192,
+      "wrong_balls": 76,
+      "correct_rate": 0.9,
       "accuracy_pct": 92.5
     },
     "Jen Pawol": {
