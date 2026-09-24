@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-23",
-  "total_challenges": 8391,
-  "total_overturned": 3797,
+  "last_updated": "2026-09-24",
+  "total_challenges": 8394,
+  "total_overturned": 3800,
   "team_stats": {
     "CIN": {
       "challenges": 577,
@@ -9,8 +9,8 @@
       "missed_calls": 75
     },
     "PIT": {
-      "challenges": 645,
-      "overturned": 232,
+      "challenges": 646,
+      "overturned": 233,
       "missed_calls": 95
     },
     "TB": {
@@ -29,8 +29,8 @@
       "missed_calls": 52
     },
     "NYM": {
-      "challenges": 588,
-      "overturned": 227,
+      "challenges": 590,
+      "overturned": 229,
       "missed_calls": 117
     },
     "SEA": {
@@ -39,8 +39,8 @@
       "missed_calls": 95
     },
     "TEX": {
-      "challenges": 468,
-      "overturned": 208,
+      "challenges": 470,
+      "overturned": 210,
       "missed_calls": 51
     },
     "LAD": {
@@ -74,8 +74,8 @@
       "missed_calls": 100
     },
     "STL": {
-      "challenges": 601,
-      "overturned": 249,
+      "challenges": 602,
+      "overturned": 250,
       "missed_calls": 114
     },
     "PHI": {
@@ -541,13 +541,13 @@
       "accuracy_pct": 91.9
     },
     "Erich Bacchus": {
-      "total": 80,
-      "correct": 64,
-      "correct_rate": 0.8,
-      "total_called": 13681,
-      "correct_called": 12562,
-      "wrong_strikes": 677,
-      "wrong_balls": 442,
+      "total": 82,
+      "correct": 66,
+      "correct_rate": 0.8048780487804879,
+      "total_called": 13816,
+      "correct_called": 12688,
+      "wrong_strikes": 683,
+      "wrong_balls": 445,
       "accuracy_pct": 91.8
     },
     "Dan Bellino": {
@@ -744,10 +744,10 @@
       "total": 121,
       "correct": 112,
       "correct_rate": 0.9256198347107438,
-      "total_called": 13551,
-      "correct_called": 12553,
-      "wrong_strikes": 616,
-      "wrong_balls": 382,
+      "total_called": 13713,
+      "correct_called": 12699,
+      "wrong_strikes": 629,
+      "wrong_balls": 385,
       "accuracy_pct": 92.6
     },
     "Nick Mahrley": {
@@ -764,10 +764,10 @@
       "total": 100,
       "correct": 76,
       "correct_rate": 0.76,
-      "total_called": 13113,
-      "correct_called": 12132,
-      "wrong_strikes": 608,
-      "wrong_balls": 373,
+      "total_called": 13232,
+      "correct_called": 12237,
+      "wrong_strikes": 612,
+      "wrong_balls": 383,
       "accuracy_pct": 92.5
     },
     "Paul Clemons": {
@@ -991,12 +991,12 @@
       "accuracy_pct": 93.1
     },
     "Scott Barry": {
-      "total": 55,
-      "correct": 55,
-      "total_called": 16447,
-      "correct_called": 15031,
-      "wrong_strikes": 837,
-      "wrong_balls": 579,
+      "total": 56,
+      "correct": 56,
+      "total_called": 16606,
+      "correct_called": 15177,
+      "wrong_strikes": 846,
+      "wrong_balls": 583,
       "correct_rate": 1.0,
       "accuracy_pct": 91.4
     },
