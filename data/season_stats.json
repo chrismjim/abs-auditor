@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-25",
-  "total_challenges": 8441,
+  "last_updated": "2026-09-26",
+  "total_challenges": 8443,
   "total_overturned": 3820,
   "team_stats": {
     "CIN": {
-      "challenges": 578,
+      "challenges": 580,
       "overturned": 318,
       "missed_calls": 75
     },
@@ -69,7 +69,7 @@
       "missed_calls": 120
     },
     "TOR": {
-      "challenges": 514,
+      "challenges": 516,
       "overturned": 229,
       "missed_calls": 100
     },
@@ -249,10 +249,10 @@
       "total": 119,
       "correct": 89,
       "correct_rate": 0.7478991596638656,
-      "total_called": 13291,
-      "correct_called": 12122,
-      "wrong_strikes": 759,
-      "wrong_balls": 410,
+      "total_called": 13456,
+      "correct_called": 12267,
+      "wrong_strikes": 773,
+      "wrong_balls": 416,
       "accuracy_pct": 91.2
     },
     "Chris Conroy": {
@@ -771,13 +771,13 @@
       "accuracy_pct": 92.4
     },
     "Paul Clemons": {
-      "total": 97,
-      "correct": 88,
-      "correct_rate": 0.9072164948453608,
-      "total_called": 13874,
-      "correct_called": 12836,
-      "wrong_strikes": 643,
-      "wrong_balls": 395,
+      "total": 99,
+      "correct": 90,
+      "correct_rate": 0.9090909090909091,
+      "total_called": 14019,
+      "correct_called": 12972,
+      "wrong_strikes": 649,
+      "wrong_balls": 398,
       "accuracy_pct": 92.5
     },
     "James Jean": {
@@ -983,10 +983,10 @@
     "Austin Jones": {
       "total": 68,
       "correct": 43,
-      "total_called": 10065,
-      "correct_called": 9375,
-      "wrong_strikes": 530,
-      "wrong_balls": 160,
+      "total_called": 10227,
+      "correct_called": 9523,
+      "wrong_strikes": 541,
+      "wrong_balls": 163,
       "correct_rate": 0.6323529411764706,
       "accuracy_pct": 93.1
     },
