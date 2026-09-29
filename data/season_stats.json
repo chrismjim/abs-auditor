@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-29",
   "total_challenges": 8507,
   "total_overturned": 3841,
   "team_stats": {
@@ -684,10 +684,10 @@
       "total": 93,
       "correct": 80,
       "correct_rate": 0.8602150537634409,
-      "total_called": 12903,
-      "correct_called": 11969,
-      "wrong_strikes": 633,
-      "wrong_balls": 301,
+      "total_called": 13018,
+      "correct_called": 12075,
+      "wrong_strikes": 640,
+      "wrong_balls": 303,
       "accuracy_pct": 92.8
     },
     "Jeremie Rehak": {
