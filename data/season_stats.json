@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-29",
-  "total_challenges": 8507,
-  "total_overturned": 3841,
+  "total_challenges": 8510,
+  "total_overturned": 3843,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -49,13 +49,13 @@
       "missed_calls": 102
     },
     "CHC": {
-      "challenges": 548,
+      "challenges": 549,
       "overturned": 259,
-      "missed_calls": 119
+      "missed_calls": 120
     },
     "NYY": {
-      "challenges": 747,
-      "overturned": 358,
+      "challenges": 749,
+      "overturned": 360,
       "missed_calls": 160
     },
     "SF": {
@@ -89,8 +89,8 @@
       "missed_calls": 104
     },
     "BOS": {
-      "challenges": 619,
-      "overturned": 236,
+      "challenges": 621,
+      "overturned": 238,
       "missed_calls": 88
     },
     "MIA": {
@@ -129,9 +129,9 @@
       "missed_calls": 51
     },
     "SD": {
-      "challenges": 462,
+      "challenges": 463,
       "overturned": 178,
-      "missed_calls": 54
+      "missed_calls": 55
     },
     "DET": {
       "challenges": 649,
@@ -176,13 +176,13 @@
       "accuracy_pct": 91.2
     },
     "Nate Tomlinson": {
-      "total": 117,
-      "correct": 112,
-      "correct_rate": 0.9572649572649573,
-      "total_called": 14926,
-      "correct_called": 13955,
-      "wrong_strikes": 539,
-      "wrong_balls": 432,
+      "total": 119,
+      "correct": 114,
+      "correct_rate": 0.957983193277311,
+      "total_called": 15075,
+      "correct_called": 14095,
+      "wrong_strikes": 547,
+      "wrong_balls": 433,
       "accuracy_pct": 93.5
     },
     "Ryan Additon": {
@@ -684,11 +684,11 @@
       "total": 93,
       "correct": 80,
       "correct_rate": 0.8602150537634409,
-      "total_called": 13133,
-      "correct_called": 12181,
-      "wrong_strikes": 647,
-      "wrong_balls": 305,
-      "accuracy_pct": 92.8
+      "total_called": 13248,
+      "correct_called": 12287,
+      "wrong_strikes": 654,
+      "wrong_balls": 307,
+      "accuracy_pct": 92.7
     },
     "Jeremie Rehak": {
       "total": 74,
@@ -701,14 +701,14 @@
       "accuracy_pct": 92.2
     },
     "Ramon De Jesus": {
-      "total": 91,
+      "total": 92,
       "correct": 64,
-      "correct_rate": 0.7032967032967034,
-      "total_called": 12890,
-      "correct_called": 11886,
-      "wrong_strikes": 671,
-      "wrong_balls": 333,
-      "accuracy_pct": 92.2
+      "correct_rate": 0.6956521739130435,
+      "total_called": 13024,
+      "correct_called": 12017,
+      "wrong_strikes": 673,
+      "wrong_balls": 334,
+      "accuracy_pct": 92.3
     },
     "Edwin Moscoso": {
       "total": 134,
@@ -814,10 +814,10 @@
       "total": 121,
       "correct": 110,
       "correct_rate": 0.9090909090909091,
-      "total_called": 13573,
-      "correct_called": 12638,
-      "wrong_strikes": 584,
-      "wrong_balls": 351,
+      "total_called": 13732,
+      "correct_called": 12786,
+      "wrong_strikes": 590,
+      "wrong_balls": 356,
       "accuracy_pct": 93.1
     },
     "Adam Hamari": {
