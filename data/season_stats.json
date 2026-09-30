@@ -684,10 +684,10 @@
       "total": 93,
       "correct": 80,
       "correct_rate": 0.8602150537634409,
-      "total_called": 13018,
-      "correct_called": 12075,
-      "wrong_strikes": 640,
-      "wrong_balls": 303,
+      "total_called": 13133,
+      "correct_called": 12181,
+      "wrong_strikes": 647,
+      "wrong_balls": 305,
       "accuracy_pct": 92.8
     },
     "Jeremie Rehak": {
@@ -814,10 +814,10 @@
       "total": 121,
       "correct": 110,
       "correct_rate": 0.9090909090909091,
-      "total_called": 13414,
-      "correct_called": 12490,
-      "wrong_strikes": 578,
-      "wrong_balls": 346,
+      "total_called": 13573,
+      "correct_called": 12638,
+      "wrong_strikes": 584,
+      "wrong_balls": 351,
       "accuracy_pct": 93.1
     },
     "Adam Hamari": {
