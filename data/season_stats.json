@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-29",
-  "total_challenges": 8510,
-  "total_overturned": 3843,
+  "last_updated": "2026-09-30",
+  "total_challenges": 8513,
+  "total_overturned": 3845,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -19,9 +19,9 @@
       "missed_calls": 120
     },
     "ATL": {
-      "challenges": 576,
-      "overturned": 244,
-      "missed_calls": 125
+      "challenges": 579,
+      "overturned": 246,
+      "missed_calls": 126
     },
     "ATH": {
       "challenges": 461,
@@ -79,9 +79,9 @@
       "missed_calls": 114
     },
     "PHI": {
-      "challenges": 496,
-      "overturned": 177,
-      "missed_calls": 97
+      "challenges": 499,
+      "overturned": 179,
+      "missed_calls": 98
     },
     "CWS": {
       "challenges": 710,
@@ -481,13 +481,13 @@
       "accuracy_pct": 93.4
     },
     "Adam Beck": {
-      "total": 90,
-      "correct": 78,
-      "correct_rate": 0.8666666666666667,
-      "total_called": 14264,
-      "correct_called": 13073,
-      "wrong_strikes": 751,
-      "wrong_balls": 440,
+      "total": 93,
+      "correct": 80,
+      "correct_rate": 0.8602150537634409,
+      "total_called": 14406,
+      "correct_called": 13204,
+      "wrong_strikes": 758,
+      "wrong_balls": 444,
       "accuracy_pct": 91.7
     },
     "Carlos Torres": {
