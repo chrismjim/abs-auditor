@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-30",
-  "total_challenges": 8525,
-  "total_overturned": 3849,
+  "last_updated": "2026-10-01",
+  "total_challenges": 8526,
+  "total_overturned": 3850,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -19,8 +19,8 @@
       "missed_calls": 120
     },
     "ATL": {
-      "challenges": 585,
-      "overturned": 250,
+      "challenges": 586,
+      "overturned": 251,
       "missed_calls": 128
     },
     "ATH": {
@@ -79,8 +79,8 @@
       "missed_calls": 114
     },
     "PHI": {
-      "challenges": 505,
-      "overturned": 183,
+      "challenges": 506,
+      "overturned": 184,
       "missed_calls": 100
     },
     "CWS": {
@@ -591,14 +591,14 @@
       "accuracy_pct": 91.7
     },
     "Mark Ripperger": {
-      "total": 127,
-      "correct": 96,
-      "correct_rate": 0.7559055118110236,
-      "total_called": 13900,
-      "correct_called": 12894,
-      "wrong_strikes": 641,
-      "wrong_balls": 365,
-      "accuracy_pct": 92.8
+      "total": 128,
+      "correct": 97,
+      "correct_rate": 0.7578125,
+      "total_called": 14048,
+      "correct_called": 13024,
+      "wrong_strikes": 655,
+      "wrong_balls": 369,
+      "accuracy_pct": 92.7
     },
     "Hunter Wendelstedt": {
       "total": 121,
