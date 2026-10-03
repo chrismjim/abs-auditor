@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-03",
   "total_challenges": 8526,
   "total_overturned": 3850,
   "team_stats": {
@@ -359,10 +359,10 @@
       "total": 54,
       "correct": 40,
       "correct_rate": 0.7407407407407407,
-      "total_called": 11013,
-      "correct_called": 10220,
-      "wrong_strikes": 492,
-      "wrong_balls": 301,
+      "total_called": 11169,
+      "correct_called": 10362,
+      "wrong_strikes": 500,
+      "wrong_balls": 307,
       "accuracy_pct": 92.8
     },
     "David Rackley": {
