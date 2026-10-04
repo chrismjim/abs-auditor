@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-10-03",
-  "total_challenges": 8526,
-  "total_overturned": 3850,
+  "total_challenges": 8528,
+  "total_overturned": 3851,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -19,8 +19,8 @@
       "missed_calls": 120
     },
     "ATL": {
-      "challenges": 586,
-      "overturned": 251,
+      "challenges": 588,
+      "overturned": 252,
       "missed_calls": 128
     },
     "ATH": {
@@ -44,8 +44,8 @@
       "missed_calls": 51
     },
     "LAD": {
-      "challenges": 463,
-      "overturned": 218,
+      "challenges": 465,
+      "overturned": 219,
       "missed_calls": 102
     },
     "CHC": {
@@ -359,10 +359,10 @@
       "total": 54,
       "correct": 40,
       "correct_rate": 0.7407407407407407,
-      "total_called": 11169,
-      "correct_called": 10362,
-      "wrong_strikes": 500,
-      "wrong_balls": 307,
+      "total_called": 11325,
+      "correct_called": 10504,
+      "wrong_strikes": 508,
+      "wrong_balls": 313,
       "accuracy_pct": 92.8
     },
     "David Rackley": {
@@ -901,13 +901,13 @@
       "accuracy_pct": 91.8
     },
     "Roberto Ortiz": {
-      "total": 103,
-      "correct": 88,
-      "correct_rate": 0.8543689320388349,
-      "total_called": 12776,
-      "correct_called": 11743,
-      "wrong_strikes": 632,
-      "wrong_balls": 401,
+      "total": 105,
+      "correct": 90,
+      "correct_rate": 0.8571428571428571,
+      "total_called": 12930,
+      "correct_called": 11882,
+      "wrong_strikes": 642,
+      "wrong_balls": 406,
       "accuracy_pct": 91.9
     },
     "Stu Scheurwater": {
