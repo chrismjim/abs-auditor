@@ -464,10 +464,10 @@
       "total": 58,
       "correct": 40,
       "correct_rate": 0.6896551724137931,
-      "total_called": 13135,
-      "correct_called": 12132,
-      "wrong_strikes": 726,
-      "wrong_balls": 277,
+      "total_called": 13301,
+      "correct_called": 12287,
+      "wrong_strikes": 734,
+      "wrong_balls": 280,
       "accuracy_pct": 92.4
     },
     "Ryan Blakney": {
@@ -694,10 +694,10 @@
       "total": 74,
       "correct": 67,
       "correct_rate": 0.9054054054054054,
-      "total_called": 11572,
-      "correct_called": 10669,
-      "wrong_strikes": 582,
-      "wrong_balls": 321,
+      "total_called": 11694,
+      "correct_called": 10784,
+      "wrong_strikes": 587,
+      "wrong_balls": 323,
       "accuracy_pct": 92.2
     },
     "Ramon De Jesus": {
