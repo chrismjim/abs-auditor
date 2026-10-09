@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-07",
-  "total_challenges": 8542,
+  "last_updated": "2026-10-08",
+  "total_challenges": 8543,
   "total_overturned": 3861,
   "team_stats": {
     "CIN": {
@@ -84,7 +84,7 @@
       "missed_calls": 100
     },
     "CWS": {
-      "challenges": 716,
+      "challenges": 717,
       "overturned": 368,
       "missed_calls": 106
     },
@@ -119,7 +119,7 @@
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 702,
+      "challenges": 703,
       "overturned": 322,
       "missed_calls": 126
     },
@@ -951,14 +951,14 @@
       "accuracy_pct": 89.9
     },
     "Jansen Visconti": {
-      "total": 59,
-      "correct": 52,
-      "total_called": 11923,
-      "correct_called": 11095,
-      "wrong_strikes": 438,
-      "wrong_balls": 390,
-      "correct_rate": 0.8813559322033898,
-      "accuracy_pct": 93.1
+      "total": 60,
+      "correct": 53,
+      "total_called": 12122,
+      "correct_called": 11276,
+      "wrong_strikes": 447,
+      "wrong_balls": 399,
+      "correct_rate": 0.8833333333333333,
+      "accuracy_pct": 93.0
     },
     "Clint Vondrak": {
       "total": 119,
