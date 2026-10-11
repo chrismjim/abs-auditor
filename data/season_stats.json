@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-10",
   "total_challenges": 8543,
   "total_overturned": 3861,
   "team_stats": {
@@ -564,10 +564,10 @@
       "total": 122,
       "correct": 116,
       "correct_rate": 0.9508196721311475,
-      "total_called": 17267,
-      "correct_called": 15889,
-      "wrong_strikes": 1007,
-      "wrong_balls": 371,
+      "total_called": 17393,
+      "correct_called": 16006,
+      "wrong_strikes": 1014,
+      "wrong_balls": 373,
       "accuracy_pct": 92.0
     },
     "Mike Estabrook": {
