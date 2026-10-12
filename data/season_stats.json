@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "total_challenges": 8543,
   "total_overturned": 3861,
   "team_stats": {
@@ -714,10 +714,10 @@
       "total": 134,
       "correct": 112,
       "correct_rate": 0.835820895522388,
-      "total_called": 15898,
-      "correct_called": 14934,
-      "wrong_strikes": 579,
-      "wrong_balls": 385,
+      "total_called": 16054,
+      "correct_called": 15078,
+      "wrong_strikes": 584,
+      "wrong_balls": 392,
       "accuracy_pct": 93.9
     },
     "Charlie Ramos": {
