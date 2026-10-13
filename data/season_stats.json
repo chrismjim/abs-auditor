@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "total_challenges": 8543,
   "total_overturned": 3861,
   "team_stats": {
@@ -454,10 +454,10 @@
       "total": 145,
       "correct": 130,
       "correct_rate": 0.896551724137931,
-      "total_called": 15191,
-      "correct_called": 14085,
-      "wrong_strikes": 773,
-      "wrong_balls": 333,
+      "total_called": 15340,
+      "correct_called": 14224,
+      "wrong_strikes": 777,
+      "wrong_balls": 339,
       "accuracy_pct": 92.7
     },
     "Gabe Morales": {
@@ -504,10 +504,10 @@
       "total": 73,
       "correct": 54,
       "correct_rate": 0.7397260273972602,
-      "total_called": 10943,
-      "correct_called": 10196,
-      "wrong_strikes": 467,
-      "wrong_balls": 280,
+      "total_called": 11068,
+      "correct_called": 10311,
+      "wrong_strikes": 472,
+      "wrong_balls": 285,
       "accuracy_pct": 93.2
     },
     "Ryan Wills": {
