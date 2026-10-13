@@ -454,10 +454,10 @@
       "total": 145,
       "correct": 130,
       "correct_rate": 0.896551724137931,
-      "total_called": 15340,
-      "correct_called": 14224,
-      "wrong_strikes": 777,
-      "wrong_balls": 339,
+      "total_called": 15489,
+      "correct_called": 14363,
+      "wrong_strikes": 781,
+      "wrong_balls": 345,
       "accuracy_pct": 92.7
     },
     "Gabe Morales": {
@@ -504,11 +504,11 @@
       "total": 73,
       "correct": 54,
       "correct_rate": 0.7397260273972602,
-      "total_called": 11068,
-      "correct_called": 10311,
-      "wrong_strikes": 472,
-      "wrong_balls": 285,
-      "accuracy_pct": 93.2
+      "total_called": 11193,
+      "correct_called": 10426,
+      "wrong_strikes": 477,
+      "wrong_balls": 290,
+      "accuracy_pct": 93.1
     },
     "Ryan Wills": {
       "total": 115,
