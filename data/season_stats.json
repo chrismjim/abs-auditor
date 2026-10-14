@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-12",
-  "total_challenges": 8543,
-  "total_overturned": 3861,
+  "last_updated": "2026-10-13",
+  "total_challenges": 8544,
+  "total_overturned": 3862,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -14,8 +14,8 @@
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 701,
-      "overturned": 297,
+      "challenges": 702,
+      "overturned": 298,
       "missed_calls": 120
     },
     "ATL": {
@@ -119,8 +119,8 @@
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 703,
-      "overturned": 322,
+      "challenges": 704,
+      "overturned": 323,
       "missed_calls": 126
     },
     "HOU": {
@@ -491,14 +491,14 @@
       "accuracy_pct": 91.7
     },
     "Carlos Torres": {
-      "total": 123,
-      "correct": 113,
-      "correct_rate": 0.9186991869918699,
-      "total_called": 13579,
-      "correct_called": 12430,
-      "wrong_strikes": 765,
-      "wrong_balls": 384,
-      "accuracy_pct": 91.5
+      "total": 124,
+      "correct": 114,
+      "correct_rate": 0.9193548387096774,
+      "total_called": 13701,
+      "correct_called": 12544,
+      "wrong_strikes": 771,
+      "wrong_balls": 386,
+      "accuracy_pct": 91.6
     },
     "Nestor Ceja": {
       "total": 73,
