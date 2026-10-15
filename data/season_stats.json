@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-13",
-  "total_challenges": 8544,
-  "total_overturned": 3862,
+  "last_updated": "2026-10-14",
+  "total_challenges": 8546,
+  "total_overturned": 3864,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -44,8 +44,8 @@
       "missed_calls": 51
     },
     "LAD": {
-      "challenges": 469,
-      "overturned": 220,
+      "challenges": 471,
+      "overturned": 222,
       "missed_calls": 104
     },
     "CHC": {
@@ -149,8 +149,8 @@
       "missed_calls": 35
     },
     "MIL": {
-      "challenges": 589,
-      "overturned": 296,
+      "challenges": 591,
+      "overturned": 298,
       "missed_calls": 68
     },
     "NL": {
@@ -801,13 +801,13 @@
       "accuracy_pct": 92.2
     },
     "Mark Wegner": {
-      "total": 89,
-      "correct": 70,
-      "correct_rate": 0.7865168539325843,
-      "total_called": 15860,
-      "correct_called": 14610,
-      "wrong_strikes": 829,
-      "wrong_balls": 421,
+      "total": 91,
+      "correct": 72,
+      "correct_rate": 0.7912087912087912,
+      "total_called": 16017,
+      "correct_called": 14759,
+      "wrong_strikes": 835,
+      "wrong_balls": 423,
       "accuracy_pct": 92.1
     },
     "Alex MacKay": {
