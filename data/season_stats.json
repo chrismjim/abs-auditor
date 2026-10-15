@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-14",
-  "total_challenges": 8548,
-  "total_overturned": 3866,
+  "last_updated": "2026-10-15",
+  "total_challenges": 8550,
+  "total_overturned": 3867,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -14,8 +14,8 @@
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 702,
-      "overturned": 298,
+      "challenges": 704,
+      "overturned": 299,
       "missed_calls": 120
     },
     "ATL": {
@@ -119,8 +119,8 @@
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 704,
-      "overturned": 323,
+      "challenges": 706,
+      "overturned": 324,
       "missed_calls": 126
     },
     "HOU": {
@@ -611,13 +611,13 @@
       "accuracy_pct": 92.9
     },
     "Bill Miller": {
-      "total": 108,
-      "correct": 85,
-      "correct_rate": 0.7870370370370371,
-      "total_called": 12337,
-      "correct_called": 11349,
-      "wrong_strikes": 655,
-      "wrong_balls": 333,
+      "total": 110,
+      "correct": 87,
+      "correct_rate": 0.7909090909090909,
+      "total_called": 12458,
+      "correct_called": 11460,
+      "wrong_strikes": 659,
+      "wrong_balls": 339,
       "accuracy_pct": 92.0
     },
     "Alfonso M\u00e1rquez": {
