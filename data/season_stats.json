@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-10-15",
-  "total_challenges": 8552,
-  "total_overturned": 3868,
+  "total_challenges": 8554,
+  "total_overturned": 3869,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -14,8 +14,8 @@
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 706,
-      "overturned": 300,
+      "challenges": 708,
+      "overturned": 301,
       "missed_calls": 120
     },
     "ATL": {
@@ -119,8 +119,8 @@
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 708,
-      "overturned": 325,
+      "challenges": 710,
+      "overturned": 326,
       "missed_calls": 126
     },
     "HOU": {
@@ -189,10 +189,10 @@
       "total": 220,
       "correct": 169,
       "correct_rate": 0.7681818181818182,
-      "total_called": 17508,
-      "correct_called": 15901,
-      "wrong_strikes": 1057,
-      "wrong_balls": 550,
+      "total_called": 17664,
+      "correct_called": 16042,
+      "wrong_strikes": 1068,
+      "wrong_balls": 554,
       "accuracy_pct": 90.8
     },
     "Dan Iassogna": {
@@ -611,13 +611,13 @@
       "accuracy_pct": 92.9
     },
     "Bill Miller": {
-      "total": 112,
-      "correct": 89,
-      "correct_rate": 0.7946428571428571,
-      "total_called": 12579,
-      "correct_called": 11571,
-      "wrong_strikes": 663,
-      "wrong_balls": 345,
+      "total": 114,
+      "correct": 91,
+      "correct_rate": 0.7982456140350878,
+      "total_called": 12700,
+      "correct_called": 11682,
+      "wrong_strikes": 667,
+      "wrong_balls": 351,
       "accuracy_pct": 92.0
     },
     "Alfonso M\u00e1rquez": {
