@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-17",
   "total_challenges": 8556,
   "total_overturned": 3870,
   "team_stats": {
@@ -594,10 +594,10 @@
       "total": 128,
       "correct": 97,
       "correct_rate": 0.7578125,
-      "total_called": 14048,
-      "correct_called": 13024,
-      "wrong_strikes": 655,
-      "wrong_balls": 369,
+      "total_called": 14207,
+      "correct_called": 13175,
+      "wrong_strikes": 662,
+      "wrong_balls": 370,
       "accuracy_pct": 92.7
     },
     "Hunter Wendelstedt": {
