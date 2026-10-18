@@ -594,11 +594,11 @@
       "total": 128,
       "correct": 97,
       "correct_rate": 0.7578125,
-      "total_called": 14207,
-      "correct_called": 13175,
-      "wrong_strikes": 662,
-      "wrong_balls": 370,
-      "accuracy_pct": 92.7
+      "total_called": 14366,
+      "correct_called": 13326,
+      "wrong_strikes": 669,
+      "wrong_balls": 371,
+      "accuracy_pct": 92.8
     },
     "Hunter Wendelstedt": {
       "total": 121,
