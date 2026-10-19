@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-10-18",
-  "total_challenges": 8558,
-  "total_overturned": 3871,
+  "total_challenges": 8560,
+  "total_overturned": 3872,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -14,8 +14,8 @@
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 712,
-      "overturned": 303,
+      "challenges": 714,
+      "overturned": 304,
       "missed_calls": 120
     },
     "ATL": {
@@ -119,8 +119,8 @@
       "missed_calls": 83
     },
     "CLE": {
-      "challenges": 714,
-      "overturned": 328,
+      "challenges": 716,
+      "overturned": 329,
       "missed_calls": 126
     },
     "HOU": {
@@ -581,13 +581,13 @@
       "accuracy_pct": 90.8
     },
     "Jordan Baker": {
-      "total": 85,
-      "correct": 75,
-      "correct_rate": 0.8823529411764706,
-      "total_called": 14058,
-      "correct_called": 12893,
-      "wrong_strikes": 744,
-      "wrong_balls": 421,
+      "total": 87,
+      "correct": 77,
+      "correct_rate": 0.8850574712643678,
+      "total_called": 14180,
+      "correct_called": 13006,
+      "wrong_strikes": 748,
+      "wrong_balls": 426,
       "accuracy_pct": 91.7
     },
     "Mark Ripperger": {
