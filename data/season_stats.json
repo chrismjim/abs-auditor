@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-23",
   "total_challenges": 8563,
   "total_overturned": 3874,
   "team_stats": {
@@ -464,10 +464,10 @@
       "total": 58,
       "correct": 40,
       "correct_rate": 0.6896551724137931,
-      "total_called": 13301,
-      "correct_called": 12287,
-      "wrong_strikes": 734,
-      "wrong_balls": 280,
+      "total_called": 13433,
+      "correct_called": 12412,
+      "wrong_strikes": 739,
+      "wrong_balls": 282,
       "accuracy_pct": 92.4
     },
     "Ryan Blakney": {
