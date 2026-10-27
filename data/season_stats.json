@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-24",
-  "total_challenges": 8563,
-  "total_overturned": 3874,
+  "last_updated": "2026-10-26",
+  "total_challenges": 8565,
+  "total_overturned": 3876,
   "team_stats": {
     "CIN": {
       "challenges": 590,
@@ -14,8 +14,8 @@
       "missed_calls": 95
     },
     "TB": {
-      "challenges": 717,
-      "overturned": 306,
+      "challenges": 719,
+      "overturned": 308,
       "missed_calls": 120
     },
     "ATL": {
@@ -149,8 +149,8 @@
       "missed_calls": 35
     },
     "MIL": {
-      "challenges": 593,
-      "overturned": 300,
+      "challenges": 595,
+      "overturned": 302,
       "missed_calls": 68
     },
     "NL": {
@@ -226,13 +226,13 @@
       "accuracy_pct": 91.0
     },
     "Nic Lentz": {
-      "total": 113,
-      "correct": 83,
-      "correct_rate": 0.7345132743362832,
-      "total_called": 15393,
-      "correct_called": 14284,
-      "wrong_strikes": 660,
-      "wrong_balls": 449,
+      "total": 115,
+      "correct": 85,
+      "correct_rate": 0.7391304347826086,
+      "total_called": 15552,
+      "correct_called": 14432,
+      "wrong_strikes": 665,
+      "wrong_balls": 455,
       "accuracy_pct": 92.8
     },
     "Adrian Johnson": {
