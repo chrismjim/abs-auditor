@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "total_challenges": 8565,
   "total_overturned": 3876,
   "team_stats": {
@@ -279,10 +279,10 @@
       "total": 142,
       "correct": 116,
       "correct_rate": 0.8169014084507042,
-      "total_called": 12118,
-      "correct_called": 11072,
-      "wrong_strikes": 626,
-      "wrong_balls": 420,
+      "total_called": 12309,
+      "correct_called": 11245,
+      "wrong_strikes": 638,
+      "wrong_balls": 426,
       "accuracy_pct": 91.4
     },
     "Lance Barksdale": {
